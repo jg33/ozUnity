@@ -35,9 +35,9 @@ function Update () {
 
 function play(){
 	//Handheld.PlayFullScreenMovie(movieFileName, Color.black, FullScreenMovieControlMode.CancelOnInput, FullScreenMovieScalingMode.AspectFit);
-	var movTex:MovieTexture;
-	movTex = desktopVideoPlane.GetComponent(Renderer).material.mainTexture;
-	movTex.Play() ;
+	//var movTex;
+	//movTex = desktopVideoPlane.GetComponent(Renderer).material.mainTexture;
+	//movTex.Play() ;
 
 
 }

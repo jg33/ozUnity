@@ -6,9 +6,9 @@ using WebSocketSharp;
 
 
 public class socketCtrl : MonoBehaviour {
-	public String hostIp = "75.126.136.44";
+	public String hostIp = "192.168.1.69";
 
-	WebSocket client = new WebSocket("ws://localhost:14949");
+	WebSocket client = new WebSocket("ws://192.168.1.69:14949");
 
 
 	public String currentScene = "0";
