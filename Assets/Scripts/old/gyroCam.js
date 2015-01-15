@@ -10,7 +10,7 @@ public var fpc : GameObject;
 
 function Start() {	
 
-	Screen.orientation  = ScreenOrientation.LandscapeLeft;
+	//Screen.orientation  = ScreenOrientation.LandscapeLeft;
         
         
 	var originalParent = transform.parent; // check if this transform has a parent
@@ -26,15 +26,15 @@ function Start() {
 		gyro = Input.gyro;
 		gyro.enabled = true;
 		
-		camParent.transform.eulerAngles = Vector3(90,90,0); //hard fix for orientation
+		//camParent.transform.eulerAngles = Vector3(90,90,0); //hard fix for orientation
 
-		/*
+		
 		if (Screen.orientation == ScreenOrientation.LandscapeLeft) {
 			camParent.transform.eulerAngles = Vector3(90,90,0);
 		} else if (Screen.orientation == ScreenOrientation.Portrait) {
 			camParent.transform.eulerAngles = Vector3(90,180,0);
 		}
-		*/
+		
 
 		if (Screen.orientation == ScreenOrientation.LandscapeLeft) {
 			rotFix = Quaternion(0,0,0.7071,0.7071);
@@ -57,4 +57,9 @@ function Update () {
 		//gameObject.Find("print").guiText.text = direction.ToString();
 		//fpc.transform.rotation = Quaternion.LookRotation(direction);
 		}
+}
+
+function resetGyro(){
+	GameObject.Find("CameraContainer").transform.rotation = Quaternion.Inverse(transform.rotation);
+
 }

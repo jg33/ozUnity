@@ -45,9 +45,14 @@ public class RemoteCamToTex : MonoBehaviour
         }
        
         Application.RequestUserAuthorization(UserAuthorization.WebCam);
+
+        useGUI(false);
+        m_texture = new WebCamTexture(WebCamTexture.devices[0].name);            
+        m_texture.Play();
+        CameraMaterial.mainTexture = m_texture;
     }
 
-    void useGUI(bool use){
+    public void useGUI(bool use){
         bShowGUI = use;
     }
    

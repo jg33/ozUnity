@@ -10,8 +10,8 @@ private var sec2:Section;
 
 function Start () {
 	sec1=new Section();
-  	sec1.startPoint = [2.59,0,-5.28 ];
- 	sec1.endPoint = [4.55,0,-12.55];
+  	sec1.startPoint = [2.59,0.15,-5.28 ];
+ 	sec1.endPoint = [4.55,1,-12.55];
  	sec1.rows = 9;
 
  	sec2 = new Section();
@@ -77,7 +77,11 @@ function findSeat(rowString:String, number:int){
 function letterToInt(row:String){
 	var rowInt:int;
 	rowInt = row[0];
-	rowInt -= 97;
+	if (rowInt>96){
+		rowInt -= 97;
+	} else{
+		rowInt -= 65;
+	}
 
 	Debug.Log("int calc: " + rowInt);
 

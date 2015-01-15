@@ -2,17 +2,20 @@
  
 public class MoveWithCompass : MonoBehaviour
 {
-	public Quaternion stageOrientation;
+	public Transform stageOrientation;
 
     private double _lastCompassUpdateTime = 0;
     private Quaternion _correction = Quaternion.identity;
     private Quaternion _targetCorrection = Quaternion.identity;
     private Quaternion _compassOrientation = Quaternion.identity;
+
+    private Quaternion lastGyro;
    
     void Start()
     {
         Input.gyro.enabled = true;
         Input.compass.enabled = true;
+
     }
    
     void Update()
@@ -24,7 +27,7 @@ public class MoveWithCompass : MonoBehaviour
        
         // First we take the gyro's orientation and make a change of basis so it better
         // represents the orientation we'd like it to have
-        Quaternion gyroOrientation = Quaternion.Euler (90, 0, 0) * Input.gyro.attitude * Quaternion.Euler(0, 0, 90) * Quaternion.Euler(0, 0, 90);
+        Quaternion gyroOrientation = Quaternion.Euler (90, 0, 0) * Input.gyro.attitude * Quaternion.Euler(0, 0, 90) * Quaternion.Euler(0, 0, 90); //added the last one to set landscape orientation
    
         // See if the compass has new data
         if (Input.compass.timestamp > _lastCompassUpdateTime)
@@ -48,7 +51,20 @@ public class MoveWithCompass : MonoBehaviour
             _correction = Quaternion.Slerp(_correction, _targetCorrection, 0.02f);
        
         // Easy bit :)
-        transform.rotation = (_correction * gyroOrientation) * stageOrientation ;
+        transform.localRotation = gyroOrientation;//(_correction * gyroOrientation) ;
+
+        lastGyro = gyroOrientation;
+        
     }
+
+    public void resetGyro(){
+    	Quaternion invertedOrientation;
+    	invertedOrientation = Quaternion.Inverse(transform.localRotation);
+    	var invertedEulers = invertedOrientation.eulerAngles;
+    	invertedOrientation = Quaternion.Euler(transform.localRotation.eulerAngles.z, invertedEulers.y, transform.localRotation.eulerAngles.z   );
+    	transform.parent.rotation = invertedOrientation;
+    }
+
+
 }
  
