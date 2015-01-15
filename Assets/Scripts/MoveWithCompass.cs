@@ -2,7 +2,8 @@
  
 public class MoveWithCompass : MonoBehaviour
 {
-	public Transform stageOrientation;
+	public Vector3 stageOrientation;
+
 
     private double _lastCompassUpdateTime = 0;
     private Quaternion _correction = Quaternion.identity;
@@ -10,11 +11,15 @@ public class MoveWithCompass : MonoBehaviour
     private Quaternion _compassOrientation = Quaternion.identity;
 
     private Quaternion lastGyro;
+
+    private Vector3 initialHeading;
    
     void Start()
     {
         Input.gyro.enabled = true;
         Input.compass.enabled = true;
+        initialHeading = Vector3.Normalize(Input.compass.rawVector);
+        stageOrientation =  Vector3.Normalize(stageOrientation);
 
     }
    
@@ -62,7 +67,16 @@ public class MoveWithCompass : MonoBehaviour
     	invertedOrientation = Quaternion.Inverse(transform.localRotation);
     	var invertedEulers = invertedOrientation.eulerAngles;
     	invertedOrientation = Quaternion.Euler(transform.localRotation.eulerAngles.z, invertedEulers.y, transform.localRotation.eulerAngles.z   );
-    	transform.parent.rotation = invertedOrientation;
+    	transform.parent.localRotation = invertedOrientation;
+    }
+
+    public void orientTo(float target){
+    	
+
+    	Vector3 gravity = Input.gyro.gravity.normalized;
+        Vector3 flatNorth = Input.compass.rawVector - Vector3.Dot(gravity, Input.compass.rawVector) * gravity;
+    	transform.parent.localRotation.SetLookRotation(stageOrientation-initialHeading,gravity) ; 
+
     }
 
 
