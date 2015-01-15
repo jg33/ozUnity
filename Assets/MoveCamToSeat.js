@@ -1,8 +1,8 @@
 ﻿#pragma strict
 
-public var seatWidth = 1;
-public var currentRow:String = "a";
-public var currentNumber:int = 9;
+public var seatWidth:float = 0;
+public var currentRow:String = "h";
+public var currentNumber:int = 8;
 
 private var sec1:Section;
 private var sec2:Section;
@@ -10,13 +10,13 @@ private var sec2:Section;
 
 function Start () {
 	sec1=new Section();
-  	sec1.startPoint = [0,0,-10 ];
- 	sec1.endPoint = [0,0,-50 ];
+  	sec1.startPoint = [2.59,0,-5.28 ];
+ 	sec1.endPoint = [4.55,0,-12.55];
  	sec1.rows = 9;
 
  	sec2 = new Section();
- 	sec2.startPoint = [10,0,-10 ];
- 	sec2.endPoint = [20,0,-50];
+ 	sec2.startPoint = [10.0,0,-10 ];
+ 	sec2.endPoint = [20.0,0,-50];
  	sec2.rows = 9;
 
 	moveToSeat(currentRow,currentNumber);
@@ -51,7 +51,7 @@ function moveToSeat(row:String, number:int){
 }
 
 function findSeat(rowString:String, number:int){
-	var point = [0,0,0];
+	var point = [0.0,0.0,0.0];
 	var thisSection:Section = new Section();
 	var row:float = letterToInt(rowString);
 
@@ -63,9 +63,11 @@ function findSeat(rowString:String, number:int){
 	}
 
 	var reverse = 1;
+	Debug.Log(seatWidth*number);
 
 	point[1] = Mathf.Lerp(thisSection.startPoint[1], thisSection.endPoint[1], ( row ) / thisSection.rows  );
-  	point[0] = Mathf.Lerp(thisSection.startPoint[0], thisSection.endPoint[0], ( row ) / thisSection.rows  ) + (number* seatWidth *reverse )  ;
+  	point[0] = (Mathf.Lerp(thisSection.startPoint[0], thisSection.endPoint[0], ( row ) / thisSection.rows  ) ) - (seatWidth * number  )  ;
+  	//point[0] *= -1.;
   	point[2] = Mathf.Lerp(thisSection.startPoint[2], thisSection.endPoint[2], ( row ) / thisSection.rows );
 
 	return point;
@@ -103,8 +105,8 @@ function letterToInt(row:String){
 }
 
 class Section{
-	var startPoint = [0,0,0];
-	var endPoint = [0,0,0];
+	var startPoint = [0.0,0.0,0.0];
+	var endPoint = [0.0,0.0,0.0];
 
 	var rows:int;
 	var seatMin;
