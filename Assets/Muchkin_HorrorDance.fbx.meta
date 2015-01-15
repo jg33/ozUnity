@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: a36efe847242e471da54658e2759af99
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Eyes
+    100002: Jeans_V1
+    100004: joint1
+    100006: joint10
+    100008: joint11
+    100010: joint12
+    100012: joint13
+    100014: joint14
+    100016: joint15
+    100018: joint16
+    100020: joint17
+    100022: joint2
+    100024: joint3
+    100026: joint4
+    100028: joint5
+    100030: joint6
+    100032: joint7
+    100034: joint8
+    100036: joint9
+    100038: //RootNode
+    100040: pCube1
+    100042: ShirtV2
+    100044: Skin
+    100046: Skin1
+    100048: transform1
+    100050: transform2
+    100052: transform3
+    100054: transform4
+    100056: transform5
+    400000: Eyes
+    400002: Jeans_V1
+    400004: joint1
+    400006: joint10
+    400008: joint11
+    400010: joint12
+    400012: joint13
+    400014: joint14
+    400016: joint15
+    400018: joint16
+    400020: joint17
+    400022: joint2
+    400024: joint3
+    400026: joint4
+    400028: joint5
+    400030: joint6
+    400032: joint7
+    400034: joint8
+    400036: joint9
+    400038: //RootNode
+    400040: pCube1
+    400042: ShirtV2
+    400044: Skin
+    400046: Skin1
+    400048: transform1
+    400050: transform2
+    400052: transform3
+    400054: transform4
+    400056: transform5
+    4300000: Skin1
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Skin1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Eyes
+        weight: 1
+      - path: Eyes/transform4
+        weight: 1
+      - path: Jeans_V1
+        weight: 1
+      - path: Jeans_V1/transform3
+        weight: 1
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint5
+        weight: 1
+      - path: joint1/joint5/joint6
+        weight: 1
+      - path: joint1/joint5/joint6/joint7
+        weight: 1
+      - path: joint1/joint8
+        weight: 1
+      - path: joint1/joint8/joint9
+        weight: 1
+      - path: joint1/joint8/joint10
+        weight: 1
+      - path: joint1/joint8/joint10/joint11
+        weight: 1
+      - path: joint1/joint8/joint10/joint11/joint12
+        weight: 1
+      - path: joint1/joint8/joint10/joint11/joint12/joint13
+        weight: 1
+      - path: joint1/joint8/joint14
+        weight: 1
+      - path: joint1/joint8/joint14/joint15
+        weight: 1
+      - path: joint1/joint8/joint14/joint15/joint16
+        weight: 1
+      - path: joint1/joint8/joint14/joint15/joint16/joint17
+        weight: 1
+      - path: pCube1
+        weight: 1
+      - path: pCube1/transform2
+        weight: 1
+      - path: ShirtV2
+        weight: 1
+      - path: ShirtV2/transform1
+        weight: 1
+      - path: Skin
+        weight: 1
+      - path: Skin/transform5
+        weight: 1
+      - path: Skin1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
