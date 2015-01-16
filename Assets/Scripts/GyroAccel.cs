@@ -87,7 +87,7 @@ namespace MSP_Input {
 			_headingOffset = headingOffset;
 			_pitchOffset = pitchOffset;
 			//
-			transform.rotation = GetRotation();
+			transform.localRotation = GetRotation();
 		}
 
 		//================================================================================
