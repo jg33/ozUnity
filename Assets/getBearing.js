@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
 function Start () {
-
+	Input.compass.enabled = true;
 }
 
 function Update () {

@@ -8,7 +8,7 @@ using WebSocketSharp;
 public class socketCtrl : MonoBehaviour {
 	public String hostIp = "192.168.1.69";
 
-	WebSocket client = new WebSocket("ws://192.168.1.69:14949");
+	WebSocket client = new WebSocket("ws://127.0.0.1:14949");
 
 
 	public String currentScene = "0";
