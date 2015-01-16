@@ -55,6 +55,11 @@ public class MoveWithCompass : MonoBehaviour
         else
             _correction = Quaternion.Slerp(_correction, _targetCorrection, 0.02f);
        
+          //Gyro - accel combine
+            
+
+
+
         // Easy bit :)
         transform.localRotation = gyroOrientation;//(_correction * gyroOrientation) ;
 

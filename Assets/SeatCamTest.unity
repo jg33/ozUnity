@@ -2560,10 +2560,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1359842172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20947ce139a6d45d481ca6e9f57f8b9e, type: 3}
+  m_Script: {fileID: 11500000, guid: cd7c7095db90745c99848cbd8b47b2d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageOrientation: {x: 12.1999998, y: -33.5, z: 2.70000005}
+  forceAccelerometer: 0
+  smoothingTime: .100000001
+  headingOffset: 0
+  pitchOffset: 30
+  pitchOffsetMinimum: -70
+  pitchOffsetMaximum: 70
+  gyroHeadingAmplifier: 1
+  gyroPitchAmplifier: 1
 --- !u!1 &1402949320
 GameObject:
   m_ObjectHideFlags: 0
