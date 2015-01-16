@@ -2353,9 +2353,9 @@ RectTransform:
   - {fileID: 1979838204}
   m_Father: {fileID: 533852910}
   m_RootOrder: 1
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -226, y: -127}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &1236630519
@@ -2764,17 +2764,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1359842172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd7c7095db90745c99848cbd8b47b2d1, type: 3}
+  m_Script: {fileID: 11500000, guid: 20947ce139a6d45d481ca6e9f57f8b9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceAccelerometer: 0
-  smoothingTime: .100000001
-  headingOffset: 0
-  pitchOffset: 30
-  pitchOffsetMinimum: -70
-  pitchOffsetMaximum: 70
-  gyroHeadingAmplifier: 1
-  gyroPitchAmplifier: 1
+  stageOrientation: {x: 0, y: 0, z: 0}
 --- !u!1 &1402949320
 GameObject:
   m_ObjectHideFlags: 0

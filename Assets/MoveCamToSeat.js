@@ -15,8 +15,8 @@ function Start () {
  	sec1.rows = 9;
 
  	sec2 = new Section();
- 	sec2.startPoint = [10.0,0,-10 ];
- 	sec2.endPoint = [20.0,0,-50];
+ 	sec2.startPoint = [3.51, 4.09,-12.45 ];
+ 	sec2.endPoint = [4.93, 6.38, -18.08];
  	sec2.rows = 9;
 
 	moveToSeat(currentRow,currentNumber);
@@ -57,9 +57,12 @@ function findSeat(rowString:String, number:int){
 
 	if(number<50){
 		thisSection = sec1;
-	} else if (number>100){
-		thisSection = sec2;
+	} else if (number>100 && number < 200){
+		thisSection = sec1;
 		number -= 100;
+	} else if (number>=200){
+		thisSection = sec2;
+		number -= 200;
 	}
 
 	var reverse = 1;
