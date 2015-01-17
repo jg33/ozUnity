@@ -1,0 +1,29 @@
+{
+	"Orchestra Center":[ {
+		//"name": "Orchestra Center",
+		"startPoint" : [2.59,0.15,-5.28 ],
+ 		"endPoint" : [4.55,1,-12.55],
+ 		"rows" : 9,
+ 		"firstSeat": 101,
+ 		"lastSeat": 199,
+ 		"isAngled": false,
+ 		"amtToSubtract": 100,
+ 		"seatMultiplier": 1
+ 	}],
+
+ 	"Balcony Center":[ {
+		//"name": "Balcony Center",
+		"startPoint" : [3.51, 4.09,-12.45 ],
+ 		"endPoint" : [4.93, 6.38, -18.08],
+ 		"rows" : 5,
+ 		"firstSeat": 201,
+ 		"lastSeat": 299,
+ 		"isAngled": false,
+ 		"amtToSubtract": 200,
+ 		"seatMultiplier": 1
+ 	}]
+
+
+
+
+}

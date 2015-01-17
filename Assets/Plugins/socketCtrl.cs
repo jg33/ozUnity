@@ -7,9 +7,11 @@ using WebSocketSharp;
 
 public class socketCtrl : MonoBehaviour {
 	public String hostIp = "192.168.1.69";
+	public String hostPort = "14949";
 
 	WebSocket client = new WebSocket("ws://127.0.0.1:14949");
-
+	//client = new WebSocket("ws://"+hostIp+":"+"14949");
+	//client.setHost("ws://"+hostIp+":"+"14949");
 
 	public String currentScene = "0";
 	public String currentMsg;
@@ -27,6 +29,8 @@ public class socketCtrl : MonoBehaviour {
 	bool sendDeviceID; 
 	// Use this for initialization
 	void Start () {
+		client = new WebSocket("ws://"+hostIp+":"+hostPort);
+
 
 		startTime = Time.time*1000;
 		client.OnMessage += (sender, e) => {
@@ -37,13 +41,19 @@ public class socketCtrl : MonoBehaviour {
 				currentScene = message[1];
 				Debug.Log("scene set to " + message[1]);
 				readyToChangeScene = true;
-			} else if (message[0] == "/time"){
+			} else if (message[0] == "/update"){
 				//Debug.Log("Local Time is: "+localTime);
 
 				if( Mathf.Abs( localTime - float.Parse(message[1] ) )> 50 ){
 					localTime = float.Parse(message[1]);
 					readyToSyncTime = true;
-					}
+				} 
+
+				if (message[2] != currentScene){
+					currentScene = message[2];
+					Debug.Log("scene set to " + message[2]);
+					readyToChangeScene = true;
+				}
 
 			} else if (message[0] == "/welcome"){
 				if (message[1] != currentScene) {

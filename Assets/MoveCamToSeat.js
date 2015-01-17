@@ -6,18 +6,21 @@ public var currentNumber:int = 8;
 
 private var sec1:Section;
 private var sec2:Section;
-
+private var sections: Section[];
 
 function Start () {
-	sec1=new Section();
-  	sec1.startPoint = [2.59,0.15,-5.28 ];
- 	sec1.endPoint = [4.55,1,-12.55];
- 	sec1.rows = 9;
+	sections = new Section[2];
 
- 	sec2 = new Section();
- 	sec2.startPoint = [3.51, 4.09,-12.45 ];
- 	sec2.endPoint = [4.93, 6.38, -18.08];
- 	sec2.rows = 9;
+	//Eventually this will load JSON
+	sections[0] = new Section();
+  	sections[0].startPoint = [2.59,0.15,-5.28 ];
+ 	sections[0].endPoint = [4.55,1,-12.55];
+ 	sections[0].rows = 9;
+
+	sections[1] =new Section();
+ 	sections[1].startPoint = [3.51, 4.09,-12.45 ];
+ 	sections[1].endPoint = [4.93, 6.38, -18.08];
+ 	sections[1].rows = 9;
 
 	moveToSeat(currentRow,currentNumber);
 }
@@ -55,24 +58,38 @@ function findSeat(rowString:String, number:int){
 	var thisSection:Section = new Section();
 	var row:float = letterToInt(rowString);
 
+	// FOR WORKING WITH THE ARRAY /*
+	for (section in sections){
+		if(number > section.firstSeat && number < section.lastSeat){
+			thisSection = section;
+		}
+	}
+	// */
+
 	if(number<50){
-		thisSection = sec1;
+		thisSection = sections[0];
 	} else if (number>100 && number < 200){
-		thisSection = sec1;
+		thisSection = sections[0];
 		number -= 100;
 	} else if (number>=200){
-		thisSection = sec2;
+		thisSection = sections[1];
 		number -= 200;
 	}
 
 	var reverse = 1;
 	Debug.Log(seatWidth*number);
 
-	point[1] = Mathf.Lerp(thisSection.startPoint[1], thisSection.endPoint[1], ( row ) / thisSection.rows  );
-  	point[0] = (Mathf.Lerp(thisSection.startPoint[0], thisSection.endPoint[0], ( row ) / thisSection.rows  ) ) - (seatWidth * number  )  ;
-  	//point[0] *= -1.;
-  	point[2] = Mathf.Lerp(thisSection.startPoint[2], thisSection.endPoint[2], ( row ) / thisSection.rows );
-
+	if(thisSection.isAngled){
+		point[1] = Mathf.Lerp(thisSection.startPoint[1], thisSection.endPoint[1], ( row ) / thisSection.rows  );
+  		point[0] = (Mathf.Lerp(thisSection.startPoint[0], thisSection.endPoint[0], ( row ) / thisSection.rows  ) ) - (seatWidth * number  )  ;
+  		//point[0] *= -1.;
+  		point[2] = Mathf.Lerp(thisSection.startPoint[2], thisSection.endPoint[2], ( row ) / thisSection.rows )  ; // some math goes here to determine how the angle effects the proximity to the stage
+	} else {
+		point[1] = Mathf.Lerp(thisSection.startPoint[1], thisSection.endPoint[1], ( row ) / thisSection.rows  );
+  		point[0] = (Mathf.Lerp(thisSection.startPoint[0], thisSection.endPoint[0], ( row ) / thisSection.rows  ) ) - (seatWidth * number  )  ;
+  		//point[0] *= -1.;
+  		point[2] = Mathf.Lerp(thisSection.startPoint[2], thisSection.endPoint[2], ( row ) / thisSection.rows );
+	}
 	return point;
 }
 
@@ -116,12 +133,11 @@ class Section{
 	var endPoint = [0.0,0.0,0.0];
 
 	var rows:int;
-	var seatMin;
-	var seatMax;
+	var firstSeat:int = 100;
+	var lastSeat:int = 199;
 	var isLeftToRight = true;
 
-
-
+	var isAngled:boolean;
 
 
 }
