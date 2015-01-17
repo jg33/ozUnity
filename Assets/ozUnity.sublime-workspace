@@ -1,0 +1,469 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"deviceT",
+				"deviceType	SystemInfo.*"
+			],
+			[
+				"Device",
+				"DeviceType	[class]"
+			],
+			[
+				"Hand",
+				"Handheld	[class]"
+			],
+			[
+				"magn",
+				"magneticHeading	Compass.*"
+			],
+			[
+				"eu",
+				"eulerAngles	Quaternion.*"
+			],
+			[
+				"Inver",
+				"Inverse	Quaternion.*(rotation)"
+			],
+			[
+				"accelera",
+				"acceleration	Input.*"
+			],
+			[
+				"game",
+				"gameObject	*(name)"
+			],
+			[
+				"playOn",
+				"playOnLoad	(?)"
+			],
+			[
+				"scen",
+				"sceneCtrl	(?)"
+			],
+			[
+				"Ren",
+				"Renderer	[class]"
+			],
+			[
+				"desktop",
+				"desktopVideoPlane	(?)"
+			],
+			[
+				"inde",
+				"indexOf	ArrayUtility.*(array, value)"
+			],
+			[
+				"Hide",
+				"HideInInspector	[class]"
+			],
+			[
+				"scene",
+				"sceneController	(?)"
+			],
+			[
+				"dif",
+				"difference"
+			],
+			[
+				"Deub",
+				"Debug.Log	*(message, context)"
+			],
+			[
+				"ready",
+				"readyToSyncTime"
+			],
+			[
+				"read",
+				"readyToSyncTime"
+			],
+			[
+				"master",
+				"masterTime	(num)"
+			],
+			[
+				"get",
+				"getTime()"
+			],
+			[
+				"frame",
+				"frameCount	Time.*"
+			],
+			[
+				"fram",
+				"frameCount	(?)"
+			],
+			[
+				"host",
+				"hostIp"
+			],
+			[
+				"String",
+				"String	[class]"
+			],
+			[
+				"Wait",
+				"WaitForSeconds	[class]"
+			],
+			[
+				"canv",
+				"canvasObject	(?)"
+			],
+			[
+				"hideI",
+				"hideInInspector	[class]"
+			],
+			[
+				"GetChil",
+				"GetComponentInChildren	GameObject.*(type)"
+			],
+			[
+				"setActive",
+				"SetActive"
+			],
+			[
+				"sceneS",
+				"sceneString	(str)"
+			],
+			[
+				"parse",
+				"parseInt  (function)"
+			],
+			[
+				"Deb",
+				"Debug	[class]"
+			],
+			[
+				"Broadcas",
+				"BroadcastMessage	Component.*(methodName, options)"
+			],
+			[
+				"SetAct",
+				"SetActive	(?)"
+			],
+			[
+				"activeI",
+				"activeInHierarchy	GameObject.*"
+			],
+			[
+				"curre",
+				"currentScene	EditorApplication.*"
+			],
+			[
+				"Game",
+				"GameObject	[class]"
+			],
+			[
+				"ball",
+				"y-ball"
+			],
+			[
+				"C",
+				"CSS3DObject(element)"
+			],
+			[
+				"Cuber",
+				"THREE.CubeGeometry"
+			],
+			[
+				"re",
+				"render"
+			],
+			[
+				"rend",
+				"renderer"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Plugins/socketCtrl.cs",
+			"settings":
+			{
+				"buffer_size": 2894,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"un",
+				"Set Syntax: Unity JavaScript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Disable Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"lua",
+				"SublimeREPL: Lua"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"buil",
+				"Build: Build"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"build",
+				"Build: Build"
+			],
+			[
+				"run",
+				"Build: Run sketch fullscreen"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jesse/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/jesse/Dev/Unity/Oz/Assets/MoveCamToSeat.js",
+		"/Users/jesse/Dev/Unity/Oz/Assets/getBearing.js",
+		"/Users/jesse/Dev/Unity/Oz/Assets/Plugins/socketCtrl.cs",
+		"/Users/jesse/Dev/Unity/Oz/Assets/Scripts/MoveWithCompass.cs",
+		"/Users/jesse/Dev/Unity/Oz/Assets/RemoteCamToTex.cs",
+		"/Users/jesse/Dev/Unity/Oz/Assets/Scripts/gyroCamMod.js",
+		"/Users/jesse/Dev/Unity/Oz/Assets/Scripts/3D_Text_Shader",
+		"/Users/jesse/Dev/Unity/Oz/Assets/Scripts/old/gyroCam.js",
+		"/Users/jesse/Dev/Unity/Oz/Assets/Scripts/gyroCam.js",
+		"/Users/jesse/Dev/Unity/Oz/Assets/gyroCam2.cs",
+		"/Users/jesse/Dev/Unity/Oz/.gitignore",
+		"/Users/jesse/Dev/Unity/Oz/Assets/accelMover.js",
+		"/Users/jesse/Dev/Unity/Oz/Assets/PlayMovie.js",
+		"/Users/jesse/Google Drive/Work/Builders/Oz/ozNodeServer/socketServe.js",
+		"/Users/jesse/Dev/Unity/Oz/Assets/moveSync.js",
+		"/Users/jesse/Dev/Unity/Oz/Assets/socketCtrl.cs",
+		"/Users/jesse/Dev/Unity/Oz/Assets/poppyControl.js",
+		"/Users/jesse/Dev/Unity/Oz/Assets/GUIControl.js",
+		"/Users/jesse/Dev/openFrameworks-Git/addons/ofxAE/tool/exportUtil.jsxinc",
+		"/Users/jesse/Dev/openFrameworks-Git/addons/ofxAE/tool/compExport.jsx",
+		"/Users/jesse/Dev/openFrameworks-Git/apps/myApps/aeTest/bin/data/aep/nest_basic.json",
+		"/Users/jesse/Dev/openFrameworks-Git/apps/myApps/aeTest/bin/data/aep/Comp_1.json",
+		"/Users/jesse/Downloads/Polyethylene/mod/media/overlay/game/onUpdate.lua",
+		"/Users/jesse/Library/Caches/Cleanup At Startup/Transmit/415ED188-AC08-412D-9395-7B1C468447BC/.htaccess",
+		"/Users/jesse/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/Users/jesse/Dev/threeSketches/helloThree/helloThree.js",
+		"/Users/jesse/Dev/threeSketches/helloThree/CSS3DRenderer.js",
+		"/Users/jesse/Dev/threeSketches/helloThree/processing.min.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"100",
+			"clients"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Plugins/socketCtrl.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2894,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1425,
+								1425
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 747.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 146.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "ozUnity.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"*REPL* [lua]"
+			],
+			[
+				"cons",
+				"Package Control Messages"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

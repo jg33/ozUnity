@@ -8,7 +8,7 @@ using WebSocketSharp;
 public class socketCtrl : MonoBehaviour {
 	public String hostIp = "192.168.1.69";
 
-	WebSocket client = new WebSocket("ws://192.168.1.66:14949");
+	WebSocket client = new WebSocket("ws://127.0.0.1:14949");
 
 
 	public String currentScene = "0";
@@ -53,6 +53,12 @@ public class socketCtrl : MonoBehaviour {
 				}
 				
 
+			} else if (message[0] == "/vibrate"){
+				if(SystemInfo.deviceType == DeviceType.Handheld){
+					Handheld.Vibrate();
+				} else {
+					Debug.Log("Would've vibrated on heldheld.");
+				}
 			}
 
 		};
