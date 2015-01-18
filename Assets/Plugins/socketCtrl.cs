@@ -104,7 +104,7 @@ public class socketCtrl : MonoBehaviour {
 
 
 		if(sendDeviceID){
-			client.Send("/deviceID "+ SystemInfo.deviceUniqueIdentifier);
+			client.Send("/clientInfo/deviceID "+ SystemInfo.deviceUniqueIdentifier);
 			sendDeviceID=false;
 		}
 
