@@ -18,10 +18,10 @@ public class socketCtrl : MonoBehaviour {
 	int disconnectedCounter = 0;
 	int retryEvery = 500;
 	bool isConnected = false;
-
+	public String  myId;
 	bool readyToChangeScene = false;
 	bool readyToSyncTime = false;
-
+	bool getMessage = false;
 	float startTime;
 	public float localTime;
 
@@ -65,10 +65,23 @@ public class socketCtrl : MonoBehaviour {
 
 			} else if (message[0] == "/vibrate"){
 				if(SystemInfo.deviceType == DeviceType.Handheld){
+
+					#if UNITY_ANDROID || UNITY_IPHONE
 					Handheld.Vibrate();
+					#endif
+
+
 				} else {
 					Debug.Log("Would've vibrated on heldheld.");
 				}
+			}else if (message[0] == "/yourID"){
+				//client will get its id from the server
+				// and send it back later
+				myId = message[1];
+
+			}else if (message[0]=="/sendMyMsg"){
+				//client can get message from server
+				getMessage=true;
 			}
 
 		};
@@ -76,6 +89,7 @@ public class socketCtrl : MonoBehaviour {
 		client.OnOpen += (sender, e) => {
 			Debug.Log ("opened");
 			isConnected = true;
+			sendDeviceID=true;
 			disconnectedCounter =0;
 		};
 
@@ -104,15 +118,23 @@ public class socketCtrl : MonoBehaviour {
 
 
 		if(sendDeviceID){
-			client.Send("/clientInfo/deviceID "+ SystemInfo.deviceUniqueIdentifier);
+			//client.Send("/clientInfo/deviceID "+ SystemInfo.deviceUniqueIdentifier);
+			//on connectioin, client will just send its id back
+			client.Send("/myID "+ myId);
 			sendDeviceID=false;
 		}
+		if (getMessage) {
+			// when get a message from the server, it will send back with its unique id
+			client.Send("/got "+ myId);
+			getMessage=false;
 
+		}
 		if (!isConnected && disconnectedCounter > retryEvery) {
 			Debug.Log("Attempting Retry");
 			client.Connect();
 
 		} else if (!isConnected) {
+			client.Send("/close "+ myId);
 			disconnectedCounter++;
 		} 
 
