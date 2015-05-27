@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"messag",
+				"message	[class]"
+			],
+			[
 				"deviceT",
 				"deviceType	SystemInfo.*"
 			],
@@ -179,14 +183,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Plugins/socketCtrl.cs",
-			"settings":
-			{
-				"buffer_size": 2894,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -276,10 +272,13 @@
 	},
 	"file_history":
 	[
-		"/Users/jesse/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/jesse/Desktop/improv-rgb.ino",
 		"/Users/jesse/Dev/Unity/Oz/Assets/MoveCamToSeat.js",
-		"/Users/jesse/Dev/Unity/Oz/Assets/getBearing.js",
+		"/Users/jesse/Dev/Unity/Oz/Assets/montclairMeasurements.json",
 		"/Users/jesse/Dev/Unity/Oz/Assets/Plugins/socketCtrl.cs",
+		"/Users/jesse/Dev/openFrameworks/apps/OzMachine/ozNodeServer/socketServe.js",
+		"/Users/jesse/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/jesse/Dev/Unity/Oz/Assets/getBearing.js",
 		"/Users/jesse/Dev/Unity/Oz/Assets/Scripts/MoveWithCompass.cs",
 		"/Users/jesse/Dev/Unity/Oz/Assets/RemoteCamToTex.cs",
 		"/Users/jesse/Dev/Unity/Oz/Assets/Scripts/gyroCamMod.js",
@@ -322,6 +321,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"append",
 			"100",
 			"clients"
 		],
@@ -341,38 +341,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Plugins/socketCtrl.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2894,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1425,
-								1425
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 747.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

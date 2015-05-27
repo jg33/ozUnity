@@ -14,7 +14,7 @@ public void Start(){
     camfeed.Play();
 
     GameObject bgimg = GameObject.Find("BGPlane");
-    bgimg.renderer.material.SetTexture("_MainTex",camfeed);
+    bgimg.GetComponent<Renderer>().material.SetTexture("_MainTex",camfeed);
   
 	}
 }

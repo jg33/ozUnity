@@ -5,7 +5,7 @@ using UnityEngine;
 	void Start() {}
 	void OnPreRender()
 	{
-		if(camera.clearFlags == CameraClearFlags.Skybox)
-			GL.ClearWithSkybox(true, camera);
+		if(GetComponent<Camera>().clearFlags == CameraClearFlags.Skybox)
+			GL.ClearWithSkybox(true, GetComponent<Camera>());
 	}
 }
