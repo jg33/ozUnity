@@ -343,21 +343,21 @@ namespace MSP_Input {
 		//// NEW STUFF ////
 
 		public void resetGyro(){
-    	Quaternion invertedOrientation;
-    	invertedOrientation = Quaternion.Inverse(transform.localRotation);
-    	var invertedEulers = invertedOrientation.eulerAngles;
-    	invertedOrientation = Quaternion.Euler(transform.localRotation.eulerAngles.z, invertedEulers.y, transform.localRotation.eulerAngles.z   );
-    	transform.parent.localRotation = invertedOrientation;
-    }
+    		Quaternion invertedOrientation;
+    		invertedOrientation = Quaternion.Inverse(transform.localRotation);
+    		var invertedEulers = invertedOrientation.eulerAngles;
+    		invertedOrientation = Quaternion.Euler(transform.localRotation.eulerAngles.z, invertedEulers.y, transform.localRotation.eulerAngles.z   );
+    		transform.parent.localRotation = invertedOrientation;
+   		 }
 
-    public void orientTo(float target){
+   		 public void orientTo(float target){
     	
 
-    	Vector3 gravity = Input.gyro.gravity.normalized;
-        Vector3 flatNorth = Input.compass.rawVector - Vector3.Dot(gravity, Input.compass.rawVector) * gravity;
-    	//transform.parent.localRotation.SetLookRotation(stageOrientation-initialHeading,gravity) ; 
+    		Vector3 gravity = Input.gyro.gravity.normalized;
+       		 Vector3 flatNorth = Input.compass.rawVector - Vector3.Dot(gravity, Input.compass.rawVector) * gravity;
+    		//transform.parent.localRotation.SetLookRotation(stageOrientation-initialHeading,gravity) ; 
 
-    }
+    	}
 
 	}
 

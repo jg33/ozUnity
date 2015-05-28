@@ -15,14 +15,21 @@ function Start () {
 }
 
 function Update () {
-	//if (cameraCam == 0){
+	//if (cameraCam.transform.localPosition.x != 1000){
 		cameraCam = GameObject.Find("TextureBufferCamera");
+		cameraCam.transform.localPosition.x = 1000; //hide camera mirroring cam
 	//}
 	
-	cameraCam.transform.localPosition.x = 1000; //hide camera mirroring cam
+	//check difference to AR Camera
+	if(Vector3.Distance(targetPosition.localPosition, ARCam.transform.localPosition) > 1){
+		updateTarget();
+	}
 	
 	
 	smoothToTarget(targetPosition, smoothing);
+	
+	
+	
 }
 
 function smoothToTarget(target:Transform, smooth:float){
