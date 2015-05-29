@@ -15,6 +15,10 @@ var sceneArray: List.<GameObject> ;
 private var canvasObject:GameObject;
 var timeoutCounter: int;
 
+function Awake(){
+	DontDestroyOnLoad (this);
+	}
+
 function Start () {
 	Network.Connect (connectionIP, portNumber);
 	
@@ -74,13 +78,14 @@ function OnFailedToConnect(error: NetworkConnectionError){
 function setActiveScene(newScene:String){
 	var i=parseInt(newScene);
 	if(i>=0){
-		canvasObject.GetComponent(Animation).Play("UIFadeOut");
-		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length);
-		canvasObject.SetActive(false);
-		canvasObject = sceneArray[i];
-		Debug.Log(sceneArray[i]);
-		canvasObject.SetActive(true);
-		canvasObject.GetComponent(Animation).Play("UIFadeIn");
+		Application.LoadLevel(i);
+		//canvasObject.GetComponent(Animation).Play("UIFadeOut");
+		//yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length);
+		//canvasObject.SetActive(false);
+		//canvasObject = sceneArray[i];
+		//Debug.Log(sceneArray[i]);
+		//canvasObject.SetActive(true);
+		//canvasObject.GetComponent(Animation).Play("UIFadeIn");
 	} else if (i<0){
 		canvasObject.SetActive(false);
 
