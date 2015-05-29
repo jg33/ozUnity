@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="NetgearBox" size="1.100000 0.809416" />
     <ImageTarget name="Public_Flyer" size="1.000000 0.476917" />
   </Tracking>
 </QCARConfig>

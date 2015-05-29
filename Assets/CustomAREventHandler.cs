@@ -83,7 +83,7 @@ namespace Vuforia
 				component.enabled = true;
 			}
 
-			if (mTrackableBehaviour.TrackableName == "Public_Flyer"){
+			if (mTrackableBehaviour.TrackableName == "NetgearBox"){
 
 				Debug.Log("tracking calibration");
 				GameObject cam = GameObject.Find("Camera Container");

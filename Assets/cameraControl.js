@@ -4,9 +4,11 @@
 var smoothing: float = 0.1;
 
 
-@HideInInspector var cameraCam: GameObject;
-@HideInInspector var targetPosition: Transform;
-@HideInInspector var ARCam: GameObject;
+private var cameraCam: GameObject;
+private var targetPosition: Transform;
+private var ARCam: GameObject;
+
+private var projMatrix: Matrix4x4;
 
 function Start () {
 	ARCam = GameObject.Find("ARCamera");
@@ -15,10 +17,10 @@ function Start () {
 }
 
 function Update () {
-	//if (cameraCam.transform.localPosition.x != 1000){
+	if (GameObject.Find("TextureBufferCamera")){
 		cameraCam = GameObject.Find("TextureBufferCamera");
 		cameraCam.transform.localPosition.x = 1000; //hide camera mirroring cam
-	//}
+	}
 	
 	//check difference to AR Camera
 	if(Vector3.Distance(targetPosition.localPosition, ARCam.transform.localPosition) > 1){
@@ -42,7 +44,12 @@ function updateTarget(){
 	targetPosition.localPosition = ARCam.transform.localPosition;
 	targetPosition.localRotation = ARCam.transform.localRotation;
 
-
+	var cam:Camera = ARCam.GetComponentsInChildren(Camera)[0];
+	projMatrix = cam.get_projectionMatrix();
+	
+	cam = this.GetComponentsInChildren(Camera)[0];
+	cam.set_projectionMatrix(projMatrix);
+	
 	//also zero out gyro control
 	GameObject.Find("Camera").SendMessage("resetGyro");
 }

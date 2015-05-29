@@ -19,11 +19,14 @@ namespace Vuforia
     public class VideoBackgroundBehaviour : VideoBackgroundAbstractBehaviour
     {
 
+		/*
 		public new void OnPostRender(){
 			//Preventing Errors from the de-nesting of the AR camera
 
 
 
 		}
+		*/
+
     }
 }
