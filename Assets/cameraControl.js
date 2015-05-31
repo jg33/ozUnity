@@ -24,9 +24,12 @@ function Update () {
 	
 	//check difference to AR Camera
 	if(Vector3.Distance(targetPosition.localPosition, ARCam.transform.localPosition) > 1){
-		updateTarget();
+		//updateTarget();
 	}
 	
+	if(Input.GetButton("Fire1")) {
+        updateTarget();
+   }
 	
 	smoothToTarget(targetPosition, smoothing);
 	
