@@ -7,7 +7,12 @@ public class cueSystem : MonoBehaviour{
 	public void Update(){
 		if (Network.isServer && Input.GetKeyDown (KeyCode.Space)) {
 			cueNumber += 1;
+
 		}
+			if (Network.isServer && Input.GetKeyDown (KeyCode.PageDown)){
+				cueNumber -=1;
+			}
+		
 	}
 
 	public void GUI(){
