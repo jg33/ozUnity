@@ -50,6 +50,8 @@ function updateTarget(){
 	var cam:Camera = ARCam.GetComponentsInChildren(Camera)[0];
 	projMatrix = cam.get_projectionMatrix();
 	
+	GameObject.Find("BackgroundPlane").transform.localScale = GameObject.Find("Virtual BackgroundPlane").transform.localScale;
+	GameObject.Find("Virtual BackgroundPlane").GetComponent.<Renderer>().enabled = false;
 	
 	cam = this.GetComponentsInChildren(Camera)[0];
 	cam.set_projectionMatrix(projMatrix);
