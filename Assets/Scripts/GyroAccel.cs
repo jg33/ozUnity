@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 
+
+
 namespace MSP_Input {
 
 	public class GyroAccel : MonoBehaviour {
@@ -35,6 +37,12 @@ namespace MSP_Input {
 		static private float _heading;
 		static private float _pitch;
 		static private float _roll;
+
+
+		/// ADDITIONAL
+		private Quaternion targetRotation;
+		private float resetSmoothing = 0.1f;
+
 
 		//================================================================================
 
@@ -88,6 +96,11 @@ namespace MSP_Input {
 			_pitchOffset = pitchOffset;
 			//
 			transform.localRotation = GetRotation();
+
+
+			/// ADDITIONAL
+			updateGyroReset(); 
+
 		}
 
 		//================================================================================
@@ -348,7 +361,18 @@ namespace MSP_Input {
     		var invertedEulers = invertedOrientation.eulerAngles;
     		invertedOrientation = Quaternion.Euler(transform.localRotation.eulerAngles.z, invertedEulers.y, transform.localRotation.eulerAngles.z   );
     		transform.parent.localRotation = invertedOrientation;
+
+
+
+
+
    		 }
+
+		public void updateGyroReset(){
+			this.gameObject.transform.localRotation = Quaternion.Lerp(transform.parent.localRotation, targetRotation, resetSmoothing);
+
+
+		}
 
    		 public void orientTo(float target){
     	
@@ -358,6 +382,8 @@ namespace MSP_Input {
     		//transform.parent.localRotation.SetLookRotation(stageOrientation-initialHeading,gravity) ; 
 
     	}
+
+
 
 	}
 
