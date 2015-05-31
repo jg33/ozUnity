@@ -50,9 +50,11 @@ function updateTarget(){
 	var cam:Camera = ARCam.GetComponentsInChildren(Camera)[0];
 	projMatrix = cam.get_projectionMatrix();
 	
+	
 	cam = this.GetComponentsInChildren(Camera)[0];
 	cam.set_projectionMatrix(projMatrix);
 	
 	//also zero out gyro control
 	GameObject.Find("Camera").SendMessage("resetGyro");
+	
 }

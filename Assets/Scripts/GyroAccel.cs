@@ -41,7 +41,7 @@ namespace MSP_Input {
 
 		/// ADDITIONAL
 		private Quaternion targetRotation;
-		private float resetSmoothing = 0.1f;
+		public float resetSmoothing = 0.1f;
 
 
 		//================================================================================
