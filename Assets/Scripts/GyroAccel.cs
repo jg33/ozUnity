@@ -99,7 +99,7 @@ namespace MSP_Input {
 
 
 			/// ADDITIONAL
-			updateGyroReset(); 
+			//updateGyroReset(); 
 
 		}
 
@@ -359,7 +359,7 @@ namespace MSP_Input {
     		Quaternion invertedOrientation;
     		invertedOrientation = Quaternion.Inverse(transform.localRotation);
     		var invertedEulers = invertedOrientation.eulerAngles;
-    		invertedOrientation = Quaternion.Euler(transform.localRotation.eulerAngles.z, invertedEulers.y, transform.localRotation.eulerAngles.z   );
+    		invertedOrientation = Quaternion.Euler(invertedEulers.x, invertedEulers.y, invertedEulers.z   );
     		transform.parent.localRotation = invertedOrientation;
 
 

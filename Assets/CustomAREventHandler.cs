@@ -83,7 +83,7 @@ namespace Vuforia
 				component.enabled = true;
 			}
 
-			if (mTrackableBehaviour.TrackableName == "NetgearBox"){
+			if (mTrackableBehaviour.TrackableName == "Bush"){
 
 				Debug.Log("tracking calibration");
 				GameObject cam = GameObject.Find("Camera Container");
