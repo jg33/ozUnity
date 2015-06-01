@@ -42,6 +42,19 @@ namespace MSP_Input {
 		/// ADDITIONAL
 		private Quaternion targetRotation;
 		public float resetSmoothing = 0.1f;
+		public bool fuseSensors = true;
+
+		public float[] gyroReading;
+		public float[] accReading;
+		public Quaternion rotatoQuat;
+		private float gyroHeading;
+
+		private float ACCELEROMETER_SENSITIVITY =  8192.0f;
+		private float GYROSCOPE_SENSITIVITY = 65.536f;
+		private float M_PI = 3.14159265359f;
+		
+		private float dt = 0.01f;				// 10 ms sample rate!  
+
 
 
 		//================================================================================
@@ -66,6 +79,11 @@ namespace MSP_Input {
 			_pitchOffsetMaximum = pitchOffsetMaximum;
 			_gyroHeadingAmplifier = gyroHeadingAmplifier;
 			_gyroPitchAmplifier = gyroPitchAmplifier;
+
+
+			gyroReading = new float[4];
+			accReading = new float[4];
+
 		}
 
 		//================================================================================
@@ -82,20 +100,43 @@ namespace MSP_Input {
 			//
 			CheckHeadingAndPitchBoundaries();
 			//
-			if (!forceAccelerometer) {
+
+
+
+			if(fuseSensors){
 				UpdateGyroscopeOrientation();
-			} else {
 				UpdateAccelerometerOrientation ();
+				UpdateFusedSensors();
+
+				_heading = heading;
+				_pitch = pitch;
+				_roll = roll;
+				_headingOffset = headingOffset;
+				_pitchOffset = pitchOffset;
+				_rotation = rotation;
+
+
+			} else {
+
+				if (!forceAccelerometer) {
+					UpdateGyroscopeOrientation();
+				} else {
+					UpdateAccelerometerOrientation ();
+				}
+
+				//
+				_rotation = rotation;
+				_heading = heading;
+				_pitch = pitch;
+				_roll = roll;
+				_headingOffset = headingOffset;
+				_pitchOffset = pitchOffset;
+				//
+				transform.localRotation = GetRotation();
+
 			}
-			//
-			_rotation = rotation;
-			_heading = heading;
-			_pitch = pitch;
-			_roll = roll;
-			_headingOffset = headingOffset;
-			_pitchOffset = pitchOffset;
-			//
-			transform.localRotation = GetRotation();
+
+			Debug.Log(heading+" "+pitch+" "+roll);
 
 
 			/// ADDITIONAL
@@ -150,7 +191,6 @@ namespace MSP_Input {
 			gyroQuat = extra_heading * gyroQuat;
 			// Smooth gyro quaternion
 			float smoothFactor = (smoothingTime > Time.deltaTime) ? Time.deltaTime / smoothingTime : 1f;
-			rotation = Quaternion.Slerp(rotation, gyroQuat, smoothFactor);
 			// Compute heading, pitch, roll
 			Vector3 rf = rotation * Vector3.forward;
 			Vector3 prf = Vector3.Cross(Vector3.up,Vector3.Cross(rf,Vector3.up));
@@ -159,9 +199,26 @@ namespace MSP_Input {
 			                                                       new Keyframe(-85, smoothFactor, 0f, 0f),
 			                                                       new Keyframe(85f, smoothFactor, 0f, 0f),
 			                                                       new Keyframe(90f,0f,0f,0f));
-			heading = Mathf.LerpAngle(heading,newHeading,headingSmoothCurve.Evaluate(pitch));
-			pitch = Mathf.LerpAngle(pitch,devicePitch+devicePitchAdjustmentCurve.Evaluate(devicePitch),smoothFactor);
-			roll = Mathf.LerpAngle(roll,deviceRoll,smoothFactor);
+			if(fuseSensors){
+				gyroReading[0] = gyroQuat.x;
+				gyroReading[1] = gyroQuat.y;
+				gyroReading[2] = gyroQuat.z;
+				gyroReading[3] = gyroQuat.w;
+
+				rotation = Quaternion.Slerp(rotation, gyroQuat, smoothFactor);
+
+				heading = Mathf.LerpAngle(heading,newHeading,headingSmoothCurve.Evaluate(pitch));
+				pitch = Mathf.LerpAngle(pitch,devicePitch+devicePitchAdjustmentCurve.Evaluate(devicePitch),smoothFactor);
+				Debug.Log("heading: "+ heading);
+
+			} else{
+
+				rotation = Quaternion.Slerp(rotation, gyroQuat, smoothFactor);
+
+				heading = Mathf.LerpAngle(heading,newHeading,headingSmoothCurve.Evaluate(pitch));
+				pitch = Mathf.LerpAngle(pitch,devicePitch+devicePitchAdjustmentCurve.Evaluate(devicePitch),smoothFactor);
+				roll = Mathf.LerpAngle(roll,deviceRoll,smoothFactor);
+			}
 		}
 		
 		//================================================================================
@@ -176,11 +233,27 @@ namespace MSP_Input {
 			accelQuat = GetQuaternionFromHeadingPitchRoll(headingOffset, devicePitch+devicePitchAdjustmentCurve.Evaluate(devicePitch), deviceRoll);
 			// Smooth gyro quaternion
 			float smoothFactor = (smoothingTime > Time.deltaTime) ? Time.deltaTime / smoothingTime : 1f;
-			rotation = Quaternion.Slerp(rotation, accelQuat, smoothFactor);
 			// Compute heading, pitch, roll
-			heading = Mathf.LerpAngle(heading,headingOffset,smoothFactor);
-			pitch = Mathf.LerpAngle(pitch,devicePitch+devicePitchAdjustmentCurve.Evaluate(devicePitch),smoothFactor);
-			roll = Mathf.LerpAngle(roll,deviceRoll,smoothFactor);
+
+			if(fuseSensors){
+				accelQuat = GetQuaternionFromHeadingPitchRoll(heading, devicePitch+devicePitchAdjustmentCurve.Evaluate(devicePitch), deviceRoll);
+
+				accReading[0] = accelQuat.x;
+				accReading[1] = accelQuat.y;
+				accReading[2] = accelQuat.z;
+				accReading[3] = accelQuat.w;
+			} else{
+
+				rotation = Quaternion.Slerp(rotation, accelQuat, smoothFactor);
+
+
+				heading = Mathf.LerpAngle(heading,headingOffset,smoothFactor);
+				pitch = Mathf.LerpAngle(pitch,devicePitch+devicePitchAdjustmentCurve.Evaluate(devicePitch),smoothFactor);
+				roll = Mathf.LerpAngle(roll,deviceRoll,smoothFactor);
+			}
+
+
+
 		}
 
 		//================================================================================
@@ -362,10 +435,6 @@ namespace MSP_Input {
     		invertedOrientation = Quaternion.Euler(invertedEulers.x, invertedEulers.y, invertedEulers.z   );
     		transform.parent.localRotation = invertedOrientation;
 
-
-
-
-
    		 }
 
 		public void updateGyroReset(){
@@ -383,6 +452,31 @@ namespace MSP_Input {
 
     	}
 
+		public void UpdateFusedSensors(){
+			ComplementaryFilter(accReading, gyroReading);
+
+			transform.localRotation = rotatoQuat;
+
+		}
+
+		public void ComplementaryFilter(float[] accData, float[] gyroData){
+
+			dt = Time.deltaTime;
+			//Debug.Log(dt);
+
+			/*
+			rotatoQuat.x = gyroData[0];
+			rotatoQuat.y = gyroData[1];
+			rotatoQuat.z = gyroData[2];
+			rotatoQuat.w = gyroData[3];
+			*/
+
+			rotatoQuat.x  = (0.98f * (rotatoQuat.x + accData[0] * dt) ) + (0.02f  * accData[0] );
+			rotatoQuat.y  = (0.98f * (rotatoQuat.y + accData[1] * dt) ) + (0.02f  * accData[1] ) ;
+			rotatoQuat.z  = (0.98f * (rotatoQuat.z + accData[2] * dt) ) + (0.02f  * accData[2] );
+			rotatoQuat.w  = (0.98f * (rotatoQuat.w + accData[3] * dt) ) + (0.02f  * accData[3] );
+
+		} 
 
 
 	}

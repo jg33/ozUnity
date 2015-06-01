@@ -92,3 +92,29 @@ function setActiveScene(newScene:String){
 	}
 
 }
+
+@RPC function playMovie(clipName:String){
+	if(clipName == "randomRainbow"){
+		Debug.Log("played rainbow");
+	
+	}
+
+
+}
+
+@RPC function stopMovie(){
+
+
+
+}
+
+@RPC function playAudio(clipName:String){
+	
+
+}
+
+@RPC function stopAudio(){
+	
+
+}
+
