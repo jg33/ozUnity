@@ -4030,7 +4030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67decd01da9e4df5a9e75cc2f41fa50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectionIP: 192.168.1.132
+  connectionIP: 10.0.0.8
   portNumber: 16261
   timeout: 300
   cueComponent: {fileID: 1284723655}
@@ -4063,6 +4063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cueNumber: 0
+  tempEventTriggers: 0
 --- !u!4 &1284723656
 Transform:
   m_ObjectHideFlags: 0

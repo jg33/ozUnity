@@ -10,6 +10,8 @@ public var scenes:GameObject;
 var numScenes:int = 3;
 public var currentCue:int=0;
 
+private var currentEventCue:int = 0;
+
 @HideInInspector
 var sceneArray: List.<GameObject> ;
 private var canvasObject:GameObject;
@@ -43,7 +45,34 @@ function Update () {
 			currentCue = cueComponent.cueNumber;
 			setActiveScene(currentCue.ToString());
 		
+		}  
+		
+		if (cueComponent.tempEventTriggers != currentEventCue){
+			Debug.Log("event trigger!");
+			currentEventCue = cueComponent.tempEventTriggers;
+			switch( currentEventCue ){
+				case 1:
+				cueComponent.playMovie("randomRainbow");
+					Debug.Log("rainbow!");
+
+				break;
+				
+				case 2:
+				cueComponent.playAudio("noPlace");
+					Debug.Log("no place!");
+
+				break;
+				
+				case 3:
+				cueComponent.vibrate();
+					Debug.Log("buzz!");
+				break;
+				
+				default:
+				break;
+			}
 		}
+		
 		
 	} else if(timeoutCounter> timeout){
 		

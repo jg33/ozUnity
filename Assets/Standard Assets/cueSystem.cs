@@ -3,16 +3,30 @@ using System.Collections;
 
 public class cueSystem : MonoBehaviour{
 	public int cueNumber = 0;
+	public int tempEventTriggers = 0;
+
 
 	public void Update(){
-		if (Network.isServer && Input.GetKeyDown (KeyCode.Space)) {
-			cueNumber += 1;
 
-		}
-			if (Network.isServer && Input.GetKeyDown (KeyCode.PageDown)){
-				cueNumber -=1;
+		if (Network.isServer){
+			if (Input.GetKeyDown (KeyCode.Space)) {
+				cueNumber += 1;
+
+			} else if (Input.GetKeyDown (KeyCode.PageDown)){
+				cueNumber -= 1;
+
+			} else if (Input.GetKeyDown(KeyCode.Alpha1)){
+				tempEventTriggers = 1;
+
+			} else if (Input.GetKeyDown(KeyCode.Alpha2)){
+				tempEventTriggers = 2;
+				
+			} else if (Input.GetKeyDown(KeyCode.Alpha3)){
+				tempEventTriggers = 3;
+			} else if (Input.GetKeyDown(KeyCode.Alpha0)){
+				tempEventTriggers = 0;
 			}
-		
+		}	
 	}
 
 	public void GUI(){
@@ -23,16 +37,18 @@ public class cueSystem : MonoBehaviour{
 	{
 		if (stream.isWriting) {
 			stream.Serialize (ref cueNumber);
+			stream.Serialize (ref tempEventTriggers);
 		} else {
 			stream.Serialize (ref cueNumber);
+			stream.Serialize (ref tempEventTriggers);
 		}
 	}
 
-	[RPC] void vibrate(){
+	[RPC] public void vibrate(){
 		Handheld.Vibrate();
 	}
 	
-	[RPC] void playMovie(string clipName){
+	[RPC] public void playMovie(string clipName){
 
 		if(Network.isClient){
 
@@ -49,13 +65,13 @@ public class cueSystem : MonoBehaviour{
 		}
 	}
 	
-	[RPC] void  stopMovie(){
+	[RPC] public void  stopMovie(){
 		//GameObject.Find("IOSVideoPlayer").SendMessage(
 		
 		
 	}
 	
-	[RPC] void  playAudio(string clipName){
+	[RPC] public void  playAudio(string clipName){
 		if(Network.isClient){
 			AudioSource source = (AudioSource)GameObject.Find("Main Camera").GetComponent<AudioSource>();
 
@@ -68,8 +84,8 @@ public class cueSystem : MonoBehaviour{
 		
 	}
 	
-	[RPC] void stopAudio(){
-		
+	[RPC] public void stopAudio(){
+
 		
 	}
 
