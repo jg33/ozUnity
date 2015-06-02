@@ -33,6 +33,23 @@ function Start () {
 function Update () {
 	
 	currentCue = cueComponent.cueNumber;
+	
+	var net:NetworkView = this.gameObject.GetComponent.<NetworkView>();
+	if(Input.GetKey('r')){
+		
+		net.RPC("playMovie", RPCMode.All, "randomRainbow");
+
+	
+	} else if(Input.GetKey('t')){
+		net.RPC("stopMovie", RPCMode.All, "");
+	
+
+	
+	} else if(Input.GetKey('n')){
+		net.RPC("playAudio", RPCMode.All, "noPlace");
+
+	
+	} 
 
 }
 

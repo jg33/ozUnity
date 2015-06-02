@@ -27,4 +27,45 @@ public class cueSystem : MonoBehaviour{
 			stream.Serialize (ref cueNumber);
 		}
 	}
+
+
+	
+	[RPC] void playMovie(string clipName){
+
+		if(Network.isClient){
+
+			if(clipName == "randomRainbow"){
+				Debug.Log("played rainbow");
+			
+			}
+		
+		}
+	}
+	
+	[RPC] void  stopMovie(){
+		
+		
+		
+	}
+	
+	[RPC] void  playAudio(string clipName){
+		if(Network.isClient){
+			AudioSource source = (AudioSource)GameObject.Find("Main Camera").GetComponent<AudioSource>();
+
+			if(clipName == "noPlace"){
+				//AudioClip clip = AudioClip.Create
+				source.Play();
+			}
+
+		}
+		
+	}
+	
+	[RPC] void stopAudio(){
+		
+		
+	}
+
+
+
 }
