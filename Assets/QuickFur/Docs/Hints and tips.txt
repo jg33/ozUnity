@@ -1,0 +1,55 @@
+	---------------------------------
+	|	QUICKFUR SHADERS	|
+	|	   by Hoeloe		|
+	|        HINTS AND TIPS		|
+	---------------------------------
+
+-Use the "materials" array to create a second material using a standard shader for
+the base layer.
+
+-The wind and gravity fields should only be used with small values - larger values
+will produce undesirable artefacts.
+
+-Note that the wind effects will not be visible unless the game is running. They
+are also independent of Wind Zones placed in the scene, which have no effect on
+the shader.
+
+-As a rough performance guide for these shaders, the number of shells, or "steps"
+is roughly equal in performance to drawing the object that many times, so the
+10-step shaders are about as expensive as drawing 10 objects, while the 40-step
+shaders are about as expensive as drawing 40 objects.
+
+-The 10-step shaders are approximately half as computationally expensive as the 
+20-step ones, but artefacts become obvious at short distances, try using these
+if you prioritise performance, or for long-distance objects. Similarly, the
+unlit shaders are also less expensive (as they don't use per-layer lighting),
+so use those if you prioritise performance.
+
+-The 40-step shaders are very expensive. For most uses, the 20-step shaders will 
+serve, but the 40-step ones are useful for objects very close to the screen, and
+for objects with longer hairs.
+
+-When using the Unlit shaders, you can use the Brightness, Thickness and Occlusion 
+sliders to blend to the base layer, giving an illusion of lighting.
+
+-Creating a convincing fur map can be as simple as generating noise. Feel free to use
+the pre-generated noise from the fur map in the demo project.
+
+-Fur maps read the hair positions from the alpha channel. Promenant hairs will be very
+visible on the map, while faint hairs will have low alpha. To create gaps in the fur map,
+simply clear the pixels in that area.
+
+-Longer hairs make the object look furrier, but be aware that longer hairs cause more
+shell artefacts to appear.
+
+-Fur Occlusion increases the shadows between the hairs. Use this when dealing with
+thicker hairs to make the fur more visible.
+
+-Use the Gravity and Wind vectors in small amounts. They can stretch the hairs and produce
+severe shell artefacts.
+
+-If you are covering an entire object in fur, consider using the tiling settings on the fur
+map to create finer hairs.
+
+-The fur shaders work best on objects with smooth normals. The fur extrudes in the direction
+of the vertex normals, so smoother objects will have fewer discontinuities.
