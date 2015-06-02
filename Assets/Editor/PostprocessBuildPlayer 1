@@ -1,0 +1,16 @@
+#!/usr/bin/python
+
+import shutil, errno ,dircache, os , sys ,syslog
+
+from xcodelinker import XcodeProject
+
+sorce = os.getcwd()+'/Assets/Editor/IOSVideoPlayer'
+
+project = XcodeProject.Load(sys.argv[1]+'/Unity-iPhone.xcodeproj/project.pbxproj')
+#project = XcodeProject.Load(os.getcwd()+'/Newmovie/test/Unity-iPhone.xcodeproj/project.pbxproj')
+
+project.add_folder(sorce, excludes=["^.*\.DS_Store$"])
+
+project.add_file_if_doesnt_exist('System/Library/Frameworks/MediaPlayer.framework', tree='SDKROOT')
+
+project.saveFormat3_2()

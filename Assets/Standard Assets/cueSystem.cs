@@ -28,7 +28,9 @@ public class cueSystem : MonoBehaviour{
 		}
 	}
 
-
+	[RPC] void vibrate(){
+		Handheld.Vibrate();
+	}
 	
 	[RPC] void playMovie(string clipName){
 
@@ -36,6 +38,11 @@ public class cueSystem : MonoBehaviour{
 
 			if(clipName == "randomRainbow"){
 				Debug.Log("played rainbow");
+				//if(DeviceType.Handheld){
+					//GameObject.Find("IOSVideoPlayer").SendMessage("ShouldPauseUnity", false);
+					//GameObject.Find("IOSVideoPlayer").SendMessage("PlayVideo" , "Teaser_Final" );
+					Handheld.PlayFullScreenMovie("Teaser_Final");
+				//}
 			
 			}
 		
@@ -43,7 +50,7 @@ public class cueSystem : MonoBehaviour{
 	}
 	
 	[RPC] void  stopMovie(){
-		
+		//GameObject.Find("IOSVideoPlayer").SendMessage(
 		
 		
 	}
