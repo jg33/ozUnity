@@ -13,7 +13,7 @@ var sceneArray: List.<GameObject> ;
 private var canvasObject:GameObject;
 
 function Start () {
-	Network.InitializeServer(4,portNumber,true);
+	Network.InitializeServer(500,portNumber,true);
 	Debug.Log("Initializing Server");
 	
 	scenes.SetActive(true);

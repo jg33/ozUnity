@@ -22,6 +22,7 @@ function Awake(){
 	}
 
 function Start () {
+	Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	Network.Connect (connectionIP, portNumber);
 	
 	scenes.SetActive(true);
