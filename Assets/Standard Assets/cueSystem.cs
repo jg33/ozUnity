@@ -45,7 +45,7 @@ public class cueSystem : MonoBehaviour{
 	}
 
 	[RPC] public void vibrate(){
-		Handheld.Vibrate();
+		//Handheld.Vibrate();
 	}
 	
 	[RPC] public void playMovie(string clipName){
@@ -57,7 +57,7 @@ public class cueSystem : MonoBehaviour{
 				//if(DeviceType.Handheld){
 					//GameObject.Find("IOSVideoPlayer").SendMessage("ShouldPauseUnity", false);
 					//GameObject.Find("IOSVideoPlayer").SendMessage("PlayVideo" , "Teaser_Final" );
-					Handheld.PlayFullScreenMovie("Teaser_Final");
+					//Handheld.PlayFullScreenMovie("Teaser_Final");
 				//}
 			
 			}

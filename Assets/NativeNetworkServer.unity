@@ -2545,6 +2545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cueNumber: 0
+  tempEventTriggers: 0
 --- !u!4 &785902203
 Transform:
   m_ObjectHideFlags: 0
