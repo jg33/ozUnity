@@ -97,18 +97,10 @@ function Update () {
 
 						break;
 					}
-					break; 
+					break;
 					
-				break;
-				}
-				
-				
-					
-					
-				
-				
-				
-			switch( currentEventCue ){
+					 default:
+					 switch( currentEventCue ){
 				case 1:
 				cueComponent.playMovie("randomRainbow");
 					Debug.Log("rainbow!");
@@ -128,6 +120,16 @@ function Update () {
 				
 				default:
 				break;
+					  
+					
+				}
+				
+				
+					
+					
+				
+				
+			
 			}
 		}
 		
