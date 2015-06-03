@@ -19,3 +19,5 @@ EditorBuildSettings:
     path: Assets/Flowers.unity
   - enabled: 1
     path: Assets/NetworkMediaClientTest.unity
+  - enabled: 1
+    path: Assets/cyclone.unity
