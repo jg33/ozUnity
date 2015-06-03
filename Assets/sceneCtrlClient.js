@@ -17,6 +17,10 @@ var sceneArray: List.<GameObject> ;
 private var canvasObject:GameObject;
 var timeoutCounter: int;
 
+public var Trashcan : GameObject;
+public var FunkyCube : GameObject;
+
+
 function Awake(){
 	DontDestroyOnLoad (this);
 	}
@@ -50,7 +54,60 @@ function Update () {
 		
 		if (cueComponent.tempEventTriggers != currentEventCue){
 			Debug.Log("event trigger!");
-			currentEventCue = cueComponent.tempEventTriggers;
+			currentEventCue = cueComponent.tempEventTriggers;				
+				switch(currentCue){
+				
+					case 1:
+					
+					switch( currentEventCue ){
+						case 1:
+						//Trashcan : GameObject;
+						//Trashcan.GetComponent.<Animation>().CrossFade("anim1", 0.2F);
+						//Trashcan.GetComponent.<Animation>().Play("anim1");
+						Trashcan.GetComponent.<Animator>().SetTrigger("Anim1");
+																	Debug.Log("ugh");
+
+						//FunkyCube.GetComponent.<Animator>().SetTrigger("Anim1_1");
+
+						break;
+					
+						case 2:
+						//Trashcan.GetComponent.<Animation>().CrossFade("anim2", 0.2F);
+						//Trashcan.GetComponent.<Animation>().Play("anim2");
+						Trashcan.GetComponent.<Animator>().SetTrigger("Anim2");
+						//FunkyCube.GetComponent.<Animator>().SetTrigger("Anim2_1");
+
+						break;
+						
+					}
+					break;
+					
+					case 2:
+					
+					switch( currentEventCue ){
+						case 1:
+						FunkyCube.GetComponent.<Animator>().SetTrigger("Anim1_1");
+											Debug.Log("ImNumba1");
+
+						break;
+					
+						case 2:
+						FunkyCube.GetComponent.<Animator>().SetTrigger("Anim2_1");
+							Debug.Log("ImNumba2");
+
+						break;
+					}
+					break; 
+					
+				break;
+				}
+				
+				
+					
+					
+				
+				
+				
 			switch( currentEventCue ){
 				case 1:
 				cueComponent.playMovie("randomRainbow");
