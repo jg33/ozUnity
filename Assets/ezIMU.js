@@ -7,43 +7,63 @@ private var M_PI:float = 3.14159265359;
  
 private var dt:float = 0.01;				// 10 ms sample rate!    
  
-
+public var heading:float;
 public var pitch:float;
 public var roll:float;
 
-function Start () {
+public var _gyrData:Vector3;	
+public var _accData:Vector3;
+public var _compData:Vector3;
 
+public var gravity:Vector3;
+
+public var currentRotation:Vector3;
+
+
+function Start () {
+	Input.gyro.enabled = true;
 }
 
 function Update () {
-	var _gyrData:float[] = [0f,0f,0f];
-	var _accData:float[] = [0f,0f,0f];
 
-	if (Input.isGyroAvailable){
-		var rawGyro:Vector3 = Input.gyro.rotationRateUnbiased;
-
-		_gyrData[0] = rawGyro.x;
-		_gyrData[1] = rawGyro.y;
-		_gyrData[2] = -rawGyro.z;
-		
-		//transform.localRotation.x = gyrData[0];
-		//transform.localRotation.y = gyrData[1];
-		//transform.localRotation.z = gyrData[2];
-	}
-	var rawAcc:Vector3 = Input.acceleration;
-	_accData[0] = rawAcc.x;
-	_accData[1] = rawAcc.y;
-	_accData[2] = rawAcc.z;
-
+	_gyrData= Input.gyro.rotationRateUnbiased;
+	gravity= Vector3.Lerp(gravity, Input.acceleration,0.1);
+	_accData =  Vector3.Lerp(_accData, Input.acceleration,0.75) - gravity;
+	_compData = Input.compass.rawVector;
 	
-	ComplementaryFilter(_accData,_gyrData);
+	ComplementaryFilter(_accData,_gyrData, _compData);
 	
+	heading += currentRotation.x;
+	pitch += currentRotation.y;
+	roll += currentRotation.z;
+	
+	transform.localRotation = GetQuaternionFromHeadingPitchRoll(heading, pitch, roll);
+	
+	/*
 	transform.localRotation.x = pitch;
 	transform.localRotation.y = roll;
 	transform.localRotation.z = _gyrData[2];
+	*/
 }
 
+public function ComplementaryFilter(accData:Vector3 , gyroData:Vector3, compassData:Vector3){
 
+			dt = Time.deltaTime;
+			//Debug.Log(dt);
+
+			currentRotation.x  = ( 0.8f * gyroData.x  ) + ( 0.2f  * accData.x );
+			currentRotation.y  = ( 0.8f * gyroData.y  ) + ( 0.2f  * accData.y );
+			currentRotation.z  = ( 0.8f * gyroData.z  ) + ( 0.2f  * accData.z );
+
+		}
+
+
+public function GetQuaternionFromHeadingPitchRoll( inputHeading:float,  inputPitch:float,  inputRoll:float) {
+			var returnQuat:Quaternion = Quaternion.Euler(0f,inputHeading,0f) * Quaternion.Euler(inputPitch,0f,0f) * Quaternion.Euler(0f,0f,inputRoll);
+			return returnQuat;
+		}
+
+/*
 function ComplementaryFilter(accData:float[], gyrData:float[]){
     var pitchAcc:float;
     var rollAcc:float;               
@@ -66,4 +86,5 @@ function ComplementaryFilter(accData:float[], gyrData:float[]){
         roll = roll * 0.98 + rollAcc * 0.02;
     }
 } 
+*/
 

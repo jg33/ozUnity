@@ -17,3 +17,5 @@ EditorBuildSettings:
     path: Assets/NativeNetworkServer.unity
   - enabled: 0
     path: Assets/Flowers.unity
+  - enabled: 0
+    path: Assets/NetworkMediaClientTest.unity
