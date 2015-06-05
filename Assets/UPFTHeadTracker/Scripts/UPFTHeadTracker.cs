@@ -8,6 +8,8 @@ public class UPFTHeadTracker : MonoBehaviour {
 #region static readonly variable
 
 	#if UNITY_EDITOR
+	private static readonly Quaternion CORRECT_ROTATION_X = Quaternion.Euler(90, 0, 0);
+
 	#elif UNITY_ANDROID
 	private static readonly Vector3 INIT_FORWARD_VECTOR = Vector3.forward;
 	#elif UNITY_IPHONE
@@ -64,7 +66,9 @@ public class UPFTHeadTracker : MonoBehaviour {
 	#endif
 
 	#if UNITY_EDITOR
-	#elif UNITY_ANDROID || UNITY_IPHONE
+	private Quaternion correctRotationY;
+	#elif UNITY_ANDROID
+	#elif UNITY_IPHONE
 	private Quaternion correctRotationY;
 	#endif
 
@@ -208,9 +212,8 @@ public class UPFTHeadTracker : MonoBehaviour {
 
 	private Quaternion UpdateTracking() {
 
-		#if UNITY_EDITOR
-		return Quaternion.identity;
-		#elif UNITY_ANDROID
+
+		#if UNITY_ANDROID
 		if (_plugin != null) {
 			float[] q = _plugin.Call<float[]>("getQuaternion");
 			return correctRotationY *  new Quaternion(q[0], q[1], q[2], q[3]);
@@ -223,6 +226,8 @@ public class UPFTHeadTracker : MonoBehaviour {
 		Quaternion qq = new Quaternion(-q.x, -q.z, -q.y, q.w);
 		return correctRotationY * qq * CORRECT_ROTATION_X;
 		#endif 
+
+		return Quaternion.identity;
 	}
 
 	// カメラモード設定処理.
