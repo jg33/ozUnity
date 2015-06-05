@@ -45,7 +45,7 @@ function Update () {
 	
     } else if ( Vector3.Distance(targetPositionArray[targetPositionArray.length-1],ARCam.transform.localPosition) >= 0.01 &&
     	Vector3.Distance(targetPositionArray[targetPositionArray.length-1],ARCam.transform.localPosition) <= 1 &&
-    	Quaternion.Angle(targetRotationArray[targetRotationArray.length-1], ARCam.transform.localRotation) <= 2
+    	Quaternion.Angle(targetRotationArray[targetRotationArray.length-1], ARCam.transform.localRotation) <= 5
     	){ 
     	updateTarget();
     	isTracking = true;
