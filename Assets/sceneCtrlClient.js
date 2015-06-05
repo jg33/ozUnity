@@ -6,9 +6,10 @@ private var connected:boolean = false;
 var timeout: int = 300;
 
 public var cueComponent:cueSystem;
-public var scenes:GameObject;
+//public var scenes:GameObject;
 var numScenes:int = 3;
 public var currentCue:int=0;
+private var prevCue:int =0;
 
 private var currentEventCue:int = 0;
 
@@ -32,16 +33,9 @@ function Start () {
 	Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	Network.Connect (connectionIP, portNumber);
 	
-	scenes.SetActive(true);
-
-	for (var i = 0; i  < numScenes+1 ; i++) {
-		sceneArray.Add(GameObject.Find("Scene"+i)) ;
-		if(sceneArray[i] != null){
-			sceneArray[i].SetActive(false);
-		}
-	};
-
-	canvasObject = sceneArray[0];
+	GameObject.Find("Scenes").SetActive(true);
+	var sceneListComp: sceneList = GameObject.Find("Scenes").GetComponent.<sceneList>();
+	
 	
 
 }
@@ -59,10 +53,11 @@ function Update () {
 		}
 
 		if (cueComponent.cueNumber != currentCue){
+			prevCue = currentCue;
 			currentCue = cueComponent.cueNumber;
 			setActiveScene(currentCue.ToString());
 		
-		}  
+		} 
 		
 		if (cueComponent.tempEventTriggers != currentEventCue){
 			Debug.Log("event trigger!");
@@ -187,14 +182,20 @@ function OnFailedToConnect(error: NetworkConnectionError){
 
 function setActiveScene(newScene:String){
 	var i=parseInt(newScene);
+	
+	sceneArray = GameObject.Find("Scenes").GetComponent.<sceneList>().sceneArray;
+	
 	if(i>=0){
+		canvasObject = sceneArray[prevCue];
 		canvasObject.GetComponent(Animation).Play("UIFadeOut");
 		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length);
 		canvasObject.SetActive(false);
+		
 		canvasObject = sceneArray[i];
 		Debug.Log(sceneArray[i]);
 		canvasObject.SetActive(true);
 		canvasObject.GetComponent(Animation).Play("UIFadeIn");
+		
 	} else if (i<0){
 		canvasObject.SetActive(false);
 

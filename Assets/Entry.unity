@@ -192,7 +192,6 @@ MonoBehaviour:
   portNumber: 16261
   timeout: 300
   cueComponent: {fileID: 1120223039}
-  scenes: {fileID: 0}
   numScenes: 12
   currentCue: 0
   sceneArray: []
