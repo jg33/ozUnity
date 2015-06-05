@@ -8,6 +8,8 @@ public class UPFTHeadTracker : MonoBehaviour {
 #region static readonly variable
 
 	#if UNITY_EDITOR
+	private static readonly Quaternion CORRECT_ROTATION_X = Quaternion.Euler(90, 0, 0);
+
 	#elif UNITY_ANDROID
 	private static readonly Vector3 INIT_FORWARD_VECTOR = Vector3.forward;
 	#elif UNITY_IPHONE
@@ -64,7 +66,9 @@ public class UPFTHeadTracker : MonoBehaviour {
 	#endif
 
 	#if UNITY_EDITOR
-	#elif UNITY_ANDROID || UNITY_IPHONE
+	private Quaternion correctRotationY;
+	#elif UNITY_ANDROID
+	#elif UNITY_IPHONE
 	private Quaternion correctRotationY;
 	#endif
 
