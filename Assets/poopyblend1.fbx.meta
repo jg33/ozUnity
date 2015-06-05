@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: ea557867d8d7e41aab01bf05b8a1c29d
+timeCreated: 1433522556
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: group1
+    100002: group2
+    100004: pCube1
+    100006: pCube1 1
+    100008: pCube10
+    100010: pCube11
+    100012: pCube12
+    100014: pCube13
+    100016: pCube14
+    100018: pCube2
+    100020: pCube2 1
+    100022: pCube3
+    100024: pCube3 1
+    100026: pCube4
+    100028: pCube4 1
+    100030: pCube5
+    100032: pCube5 1
+    100034: pCube6
+    100036: pCube7
+    100038: pCube8
+    100040: pCube8 1
+    100042: pCube9
+    100044: pCylinder1
+    100046: pCylinder1 1
+    100048: pCylinder2
+    100050: petals:imagePlane1
+    100052: petals:pCube1
+    100054: petals:pCube2
+    100056: petals:transform1
+    100058: petals:transform2
+    100060: petals:transform3
+    100062: petals:transform4
+    100064: petals:transform5
+    100066: petals:transform6
+    100068: petals:transform7
+    100070: petals:transform8
+    100072: petals:transform9
+    100074: //RootNode
+    100076: Poppy_Full
+    100078: Poppy_Full1
+    100080: pSphere1
+    100082: pSphere1 1
+    100084: pSphere2
+    100086: transform1
+    100088: transform10
+    100090: transform11
+    100092: transform12
+    100094: transform13
+    100096: transform14
+    100098: transform15
+    100100: transform16
+    100102: transform17
+    100104: transform18
+    100106: transform2
+    100108: transform3
+    100110: transform4
+    100112: transform5
+    100114: transform6
+    100116: transform7
+    100118: transform8
+    100120: transform9
+    400000: group1
+    400002: group2
+    400004: pCube1
+    400006: pCube1 1
+    400008: pCube10
+    400010: pCube11
+    400012: pCube12
+    400014: pCube13
+    400016: pCube14
+    400018: pCube2
+    400020: pCube2 1
+    400022: pCube3
+    400024: pCube3 1
+    400026: pCube4
+    400028: pCube4 1
+    400030: pCube5
+    400032: pCube5 1
+    400034: pCube6
+    400036: pCube7
+    400038: pCube8
+    400040: pCube8 1
+    400042: pCube9
+    400044: pCylinder1
+    400046: pCylinder1 1
+    400048: pCylinder2
+    400050: petals:imagePlane1
+    400052: petals:pCube1
+    400054: petals:pCube2
+    400056: petals:transform1
+    400058: petals:transform2
+    400060: petals:transform3
+    400062: petals:transform4
+    400064: petals:transform5
+    400066: petals:transform6
+    400068: petals:transform7
+    400070: petals:transform8
+    400072: petals:transform9
+    400074: //RootNode
+    400076: Poppy_Full
+    400078: Poppy_Full1
+    400080: pSphere1
+    400082: pSphere1 1
+    400084: pSphere2
+    400086: transform1
+    400088: transform10
+    400090: transform11
+    400092: transform12
+    400094: transform13
+    400096: transform14
+    400098: transform15
+    400100: transform16
+    400102: transform17
+    400104: transform18
+    400106: transform2
+    400108: transform3
+    400110: transform4
+    400112: transform5
+    400114: transform6
+    400116: transform7
+    400118: transform8
+    400120: transform9
+    4300000: pCube8
+    9500000: //RootNode
+    13700000: pCube8
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
