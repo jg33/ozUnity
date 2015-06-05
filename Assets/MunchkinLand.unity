@@ -100,11 +100,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b615202487511462397dbd6bc0b524b8, type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< HEAD
-      value: 1.85469019
-=======
       value: 26.2900009
->>>>>>> 3361e7165241e86431892ebfd449adb5b2e7c956
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b615202487511462397dbd6bc0b524b8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -352,15 +348,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Tilt Point 3
   customName: 
-<<<<<<< HEAD
-  fullName: New Camera Path Tilt Point 3
-  _percent: .75
-  _animationPercentage: .746427298
-=======
-  fullName: New Camera Path Tilt Point 2
+fullName: New Camera Path Tilt Point 2
   _percent: .666666687
   _animationPercentage: .674382567
->>>>>>> 3361e7165241e86431892ebfd449adb5b2e7c956
   point: {fileID: 377642241}
   index: 3
   cpointA: {fileID: 0}
@@ -383,15 +373,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: FOV Point 3
   customName: 
-<<<<<<< HEAD
-  fullName: New Camera Path FOV Point 3
-  _percent: .75
-  _animationPercentage: .746427298
-=======
   fullName: New Camera Path FOV Point 2
   _percent: .666666687
   _animationPercentage: .674382567
->>>>>>> 3361e7165241e86431892ebfd449adb5b2e7c956
   point: {fileID: 377642241}
   index: 3
   cpointA: {fileID: 0}
@@ -415,15 +399,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Orientation Point 3
   customName: 
-<<<<<<< HEAD
-  fullName: New Camera Path Orientation Point 3
-  _percent: .75
-  _animationPercentage: .746427298
-=======
   fullName: New Camera Path Orientation Point 2
   _percent: .666666687
   _animationPercentage: .674382567
->>>>>>> 3361e7165241e86431892ebfd449adb5b2e7c956
   point: {fileID: 377642241}
   index: 3
   cpointA: {fileID: 0}
@@ -447,15 +425,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Tilt Point 2
   customName: 
-<<<<<<< HEAD
-  fullName: New Camera Path Tilt Point 2
-  _percent: .5
-  _animationPercentage: .49836123
-=======
   fullName: New Camera Path Tilt Point 1
   _percent: .333333343
   _animationPercentage: .34442997
->>>>>>> 3361e7165241e86431892ebfd449adb5b2e7c956
   point: {fileID: 377642242}
   index: 2
   cpointA: {fileID: 0}
@@ -478,15 +450,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: FOV Point 2
   customName: 
-<<<<<<< HEAD
-  fullName: New Camera Path FOV Point 2
-  _percent: .5
-  _animationPercentage: .49836123
-=======
-  fullName: New Camera Path FOV Point 1
+ fullName: New Camera Path FOV Point 1
   _percent: .333333343
   _animationPercentage: .34442997
->>>>>>> 3361e7165241e86431892ebfd449adb5b2e7c956
   point: {fileID: 377642242}
   index: 2
   cpointA: {fileID: 0}
@@ -510,15 +476,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Orientation Point 2
   customName: 
-<<<<<<< HEAD
-  fullName: New Camera Path Orientation Point 2
-  _percent: .5
-  _animationPercentage: .49836123
-=======
   fullName: New Camera Path Orientation Point 1
   _percent: .333333343
   _animationPercentage: .34442997
->>>>>>> 3361e7165241e86431892ebfd449adb5b2e7c956
   point: {fileID: 377642242}
   index: 2
   cpointA: {fileID: 0}
@@ -550,11 +510,7 @@ MonoBehaviour:
   cpointA: {fileID: 0}
   cpointB: {fileID: 0}
   curvePercentage: 0
-<<<<<<< HEAD
-  worldPosition: {x: -10.9129715, y: 18.150816, z: -3.53116226}
-=======
-  worldPosition: {x: -10.9129715, y: 26.4820061, z: 4.79058266}
->>>>>>> 3361e7165241e86431892ebfd449adb5b2e7c956
+   worldPosition: {x: -10.9129715, y: 26.4820061, z: 4.79058266}
   lockPoint: 0
   tilt: 0
 --- !u!114 &377642238
@@ -579,11 +535,7 @@ MonoBehaviour:
   cpointA: {fileID: 0}
   cpointB: {fileID: 0}
   curvePercentage: 0
-<<<<<<< HEAD
-  worldPosition: {x: -10.9129715, y: 18.150816, z: -3.53116226}
-=======
   worldPosition: {x: -10.9129715, y: 26.4820061, z: 4.79058266}
->>>>>>> 3361e7165241e86431892ebfd449adb5b2e7c956
   lockPoint: 0
   FOV: 51
   Size: 5
@@ -609,11 +561,7 @@ MonoBehaviour:
   cpointA: {fileID: 0}
   cpointB: {fileID: 0}
   curvePercentage: 0
-<<<<<<< HEAD
-  worldPosition: {x: -10.9129715, y: 18.150816, z: -3.53116226}
-=======
   worldPosition: {x: -10.9129715, y: 26.4820061, z: 4.79058266}
->>>>>>> 3361e7165241e86431892ebfd449adb5b2e7c956
   lockPoint: 0
   rotation: {x: 0, y: 1, z: 0, w: 0}
   lookAt: {fileID: 0}
@@ -658,15 +606,9 @@ MonoBehaviour:
   _forwardControlPoint: {x: -7.4615345, y: -1.35980844, z: -1.63884544}
   _backwardControlPoint: {x: 0, y: 0, z: 0}
   _pathDirection: {x: 0, y: 0, z: 1}
-<<<<<<< HEAD
-  index: 3
-  percentage: .75
-  normalisedPercentage: .746427298
-=======
   index: 2
   percentage: .666666687
   normalisedPercentage: .674382567
->>>>>>> 3361e7165241e86431892ebfd449adb5b2e7c956
 --- !u!114 &377642242
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -686,15 +628,9 @@ MonoBehaviour:
   _forwardControlPoint: {x: 5.32001543, y: -1.65119553, z: -.305391312}
   _backwardControlPoint: {x: 0, y: 0, z: 0}
   _pathDirection: {x: 0, y: 0, z: 1}
-<<<<<<< HEAD
-  index: 2
-  percentage: .5
-  normalisedPercentage: .49836123
-=======
   index: 1
   percentage: .333333343
   normalisedPercentage: .34442997
->>>>>>> 3361e7165241e86431892ebfd449adb5b2e7c956
 --- !u!114 &377642243
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -709,11 +645,7 @@ MonoBehaviour:
   givenName: Point 0
   customName: 
   fullName: New Camera Path Point 0
-<<<<<<< HEAD
-  _position: {x: -10.9129715, y: 17.2808151, z: -3.53116226}
-=======
   _position: {x: -10.9129715, y: 25.6120052, z: 4.79058266}
->>>>>>> 3361e7165241e86431892ebfd449adb5b2e7c956
   _splitControlPoints: 0
   _forwardControlPoint: {x: 2.72178268, y: -1.97764111, z: 2.38094187}
   _backwardControlPoint: {x: 0, y: 0, z: 0}
@@ -6872,11 +6804,7 @@ MonoBehaviour:
   cpointA: {fileID: 0}
   cpointB: {fileID: 0}
   curvePercentage: 0
-<<<<<<< HEAD
-  worldPosition: {x: -10.9129715, y: 18.150816, z: -3.53116226}
-=======
   worldPosition: {x: -10.9129715, y: 26.4820061, z: 4.79058266}
->>>>>>> 3361e7165241e86431892ebfd449adb5b2e7c956
   lockPoint: 0
   time: 0
   introStartEasePercentage: .100000001
@@ -6922,54 +6850,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e6c05f3b0fd5784183b0fa05af74041, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  positionModes: 1
-  givenName: Delay Point 1
-  customName: 
-  fullName: New Camera Path Delay Point 1
-  _percent: 1
-  _animationPercentage: 1
-  point: {fileID: 377642240}
-  index: 1
-  cpointA: {fileID: 0}
-  cpointB: {fileID: 0}
-  curvePercentage: 1
-  worldPosition: {x: -.413984299, y: 1.85469019, z: -.518676758}
-  lockPoint: 0
-  time: 10
-  introStartEasePercentage: .100000001
-  introCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  outroEndEasePercentage: .100000001
-  outroCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-=======
   version: 3.41000009
   _points:
   - {fileID: 377642243}
@@ -12338,7 +12218,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
->>>>>>> 3361e7165241e86431892ebfd449adb5b2e7c956
 --- !u!1 &485081863
 GameObject:
   m_ObjectHideFlags: 0
