@@ -18,10 +18,6 @@ var sceneArray: List.<GameObject> ;
 private var canvasObject:GameObject;
 var timeoutCounter: int;
 
-public var Trashcan : GameObject;
-public var FunkyCube : GameObject;
-public var NewCameraPath : GameObject;
-
 private var forcePassive: boolean;
 
 function Awake(){
@@ -69,14 +65,14 @@ function Update () {
 					switch( currentEventCue ){
 						case 1:
 	
-						Trashcan.GetComponent.<Animator>().SetTrigger("Anim1");
+						GameObject.Find("TrashCan").GetComponent.<Animator>().SetTrigger("Anim1");
 						Debug.Log("ugh");
 
 						break;
 					
 						case 2:
 						
-						Trashcan.GetComponent.<Animator>().SetTrigger("Anim2");
+						GameObject.Find("TrashCan").GetComponent.<Animator>().SetTrigger("Anim2");
 
 						break;
 						
@@ -89,13 +85,13 @@ function Update () {
 					switch( currentEventCue ){
 						case 1:
 						
-						FunkyCube.GetComponent.<Animator>().SetTrigger("Anim1_1");
+						GameObject.Find("FunkyCube").GetComponent.<Animator>().SetTrigger("Anim1_1");
 						Debug.Log("ImNumba1");
 
 						break;
 					
 						case 2:
-						FunkyCube.GetComponent.<Animator>().SetTrigger("Anim2_1");
+						GameObject.Find("FunkyCube").GetComponent.<Animator>().SetTrigger("Anim2_1");
 						Debug.Log("ImNumba2");
 
 						break;
@@ -106,7 +102,7 @@ function Update () {
 					
 					switch( currentEventCue ){
 						case 1:
-						NewCameraPath.GetComponent.<Animator>().SetTrigger("Anim1_11");
+						GameObject.Find("GlindaPath").GetComponent.<Animator>().SetTrigger("Anim1_11");
 						Debug.Log("ImNumba5");
 
 						break;
