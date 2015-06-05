@@ -155,7 +155,7 @@ MonoBehaviour:
   _cameraPath: {fileID: 349995590}
   playOnStart: 1
   animationObject: {fileID: 1174262814}
-  animationMode: 4
+  animationMode: 0
   orientationMode: 8
   fixedOrientaion: {x: 0, y: 0, z: 1}
   fixedPosition: {x: 0, y: 0, z: 0}
