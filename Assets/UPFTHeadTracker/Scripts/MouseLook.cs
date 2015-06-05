@@ -15,8 +15,8 @@ using System.Collections;
 /// - Add a MouseLook script to the camera.
 ///   -> Set the mouse look to use LookY. (You want the camera to tilt up and down like a head. The character already turns.)
 [AddComponentMenu("Camera-Control/Mouse Look")]
-public class MouseLook : MonoBehaviour
-{
+public class MouseLook : MonoBehaviour {
+
 	public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
 	public RotationAxes axes = RotationAxes.MouseXAndY;
 	public float sensitivityX = 15F;
@@ -29,14 +29,13 @@ public class MouseLook : MonoBehaviour
 	public float maximumY = 60F;
 
 	float rotationY = 0F;
-	
-	bool disabled = false;
-	void Update()
+	bool platform_on = false;
+
+
+	void Update ()
 	{
-		if (Input.GetKeyDown(KeyCode.Escape))
-			disabled = !disabled;
-		if (disabled)
-			return;
+		if (!platform_on) return;
+
 		if (axes == RotationAxes.MouseXAndY)
 		{
 			float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivityX;
@@ -47,7 +46,9 @@ public class MouseLook : MonoBehaviour
 			transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
 		}
 		else if (axes == RotationAxes.MouseX)
+		{
 			transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX, 0);
+		}
 		else
 		{
 			rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
@@ -57,8 +58,10 @@ public class MouseLook : MonoBehaviour
 		}
 	}
 	
-	void Start()
+	void Start ()
 	{
+		platform_on = (Application.platform != RuntimePlatform.Android && Application.platform != RuntimePlatform.IPhonePlayer);
+
 		// Make the rigid body not change rotation
 		if (GetComponent<Rigidbody>())
 			GetComponent<Rigidbody>().freezeRotation = true;

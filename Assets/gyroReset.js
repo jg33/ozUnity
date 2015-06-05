@@ -10,7 +10,7 @@ function Update () {
 
 public function resetGyro(){
     		var  invertedOrientation:Quaternion;
-    		invertedOrientation = Quaternion.Inverse(transform.localRotation);
+    		invertedOrientation = Quaternion.Inverse(GameObject.Find("UPFTHeadTracker").transform.localRotation);
     		var invertedEulers = invertedOrientation.eulerAngles;
     		invertedOrientation = Quaternion.Euler(invertedEulers.x, invertedEulers.y, invertedEulers.z   );
     		transform.localRotation = invertedOrientation;

@@ -57,6 +57,6 @@ function updateTarget(){
 	cam.set_projectionMatrix(projMatrix);
 	
 	//also zero out gyro control
-	GameObject.Find("Camera").SendMessage("resetGyro");
+	GameObject.Find("GyroResetter").SendMessage("resetGyro");
 	
 }
