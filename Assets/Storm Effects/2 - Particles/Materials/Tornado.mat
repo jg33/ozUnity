@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Tornado
-  m_Shader: {fileID: 4800000, guid: f9183931e0df04dc5829968e2f5742d8, type: 3}
+  m_Shader: {fileID: 203, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -18,7 +18,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: f186d9c134b254927b93bc7051cbe45a, type: 3}
+          m_Texture: {fileID: 2800000, guid: f5b04d8cdaef94b7fb5e92b4aa313e70, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
