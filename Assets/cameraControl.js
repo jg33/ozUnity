@@ -43,9 +43,9 @@ function Update () {
     	isTracking = true;
     	Debug.Log("intial tracking....");
 	
-    } else if ( Vector3.Distance(targetPositionArray[targetPositionArray.length-1],ARCam.transform.localPosition) >= 0.01 &&
-    	Vector3.Distance(targetPositionArray[targetPositionArray.length-1],ARCam.transform.localPosition) <= 1 &&
-    	Quaternion.Angle(targetRotationArray[targetRotationArray.length-1], ARCam.transform.localRotation) <= 5
+    } else if ( Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= 0.01 &&
+    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= 2 &&
+    	Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= 10
     	){ 
     	updateTarget();
     	isTracking = true;
