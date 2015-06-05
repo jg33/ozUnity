@@ -8,12 +8,17 @@ private var cameraCam: GameObject;
 private var targetPosition: Transform;
 private var ARCam: GameObject;
 
+private var targetPositionArray: Array;
+private var targetRotationArray: Array;
+
 private var projMatrix: Matrix4x4;
 
 function Start () {
 	ARCam = GameObject.Find("ARCamera");
 	targetPosition = this.transform.GetChild(0);
 
+	targetPositionArray = new Array();
+	targetRotationArray = new Array();
 }
 
 function Update () {
@@ -22,14 +27,15 @@ function Update () {
 		cameraCam.transform.localPosition.x = 1000; //hide camera mirroring cam
 	}
 	
-	//check difference to AR Camera
-	if(Vector3.Distance(targetPosition.localPosition, ARCam.transform.localPosition) > 1){
-		//updateTarget();
-	}
-	
-	if(Input.GetButton("Fire1")) {
-        updateTarget();
-   }
+	//Calculate when to track
+	if (targetPositionArray.length == 0){
+		updateTarget();
+
+	} else if ( targetPositionArray.length > 0 &&
+		 Vector3.Distance(targetPositionArray[targetPositionArray.length-1],ARCam.transform.localPosition) > 0.01
+		 ){
+    	updateTarget();
+    }
 	
 	smoothToTarget(targetPosition, smoothing);
 	
@@ -44,8 +50,30 @@ function smoothToTarget(target:Transform, smooth:float){
 }
 
 function updateTarget(){
+
+	targetPositionArray.Push(ARCam.transform.localPosition);
+	targetRotationArray.Push(ARCam.transform.localRotation);
+	
+	while(targetPositionArray.length > 40){
+		targetPositionArray.RemoveAt(0);
+	}
+	
+	while(targetRotationArray.length > 40){
+		targetRotationArray.RemoveAt(0);
+	}
+
+
+	for(i in targetPositionArray){
+		targetPosition.localPosition = Vector3.Lerp(targetPosition.localPosition,i,0.02);
+	}
+	for(i in targetRotationArray){
+		targetPosition.localRotation = Quaternion.Lerp(targetPosition.localRotation,i,0.02);
+	}
+
+	/*
 	targetPosition.localPosition = ARCam.transform.localPosition;
 	targetPosition.localRotation = ARCam.transform.localRotation;
+	*/
 
 	var cam:Camera = ARCam.GetComponentsInChildren(Camera)[0];
 	projMatrix = cam.get_projectionMatrix();
