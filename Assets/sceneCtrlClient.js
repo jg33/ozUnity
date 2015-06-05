@@ -6,9 +6,10 @@ private var connected:boolean = false;
 var timeout: int = 300;
 
 public var cueComponent:cueSystem;
-public var scenes:GameObject;
+//public var scenes:GameObject;
 var numScenes:int = 3;
 public var currentCue:int=0;
+private var prevCue:int =0;
 
 private var currentEventCue:int = 0;
 
@@ -21,39 +22,42 @@ public var Trashcan : GameObject;
 public var FunkyCube : GameObject;
 public var NewCameraPath : GameObject;
 
-
-
+private var forcePassive: boolean;
 
 function Awake(){
 	DontDestroyOnLoad (this);
-	}
+}
+
 
 function Start () {
 	Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	Network.Connect (connectionIP, portNumber);
 	
-	scenes.SetActive(true);
-
-	for (var i = 0; i  < numScenes+1 ; i++) {
-		sceneArray.Add(GameObject.Find("Scene"+i)) ;
-		if(sceneArray[i] != null){
-			sceneArray[i].SetActive(false);
-		}
-	};
-
-	canvasObject = sceneArray[0];
+	GameObject.Find("Scenes").SetActive(true);
+	var sceneListComp: sceneList = GameObject.Find("Scenes").GetComponent.<sceneList>();
+	
 	
 
 }
 
 function Update () {
 	if (connected){
+		forcePassive = cueComponent.forcePassive;
 	
+		if (Application.loadedLevel != 2 && !forcePassive){
+			Application.LoadLevel(2);
+			Debug.Log("Connected! Loading Active Mode!");
+		
+		} if (forcePassive){
+			Application.LoadLevel(1);
+		}
+
 		if (cueComponent.cueNumber != currentCue){
+			prevCue = currentCue;
 			currentCue = cueComponent.cueNumber;
 			setActiveScene(currentCue.ToString());
 		
-		}  
+		} 
 		
 		if (cueComponent.tempEventTriggers != currentEventCue){
 			Debug.Log("event trigger!");
@@ -66,7 +70,7 @@ function Update () {
 						case 1:
 	
 						Trashcan.GetComponent.<Animator>().SetTrigger("Anim1");
-																	Debug.Log("ugh");
+						Debug.Log("ugh");
 
 						break;
 					
@@ -86,13 +90,13 @@ function Update () {
 						case 1:
 						
 						FunkyCube.GetComponent.<Animator>().SetTrigger("Anim1_1");
-											Debug.Log("ImNumba1");
+						Debug.Log("ImNumba1");
 
 						break;
 					
 						case 2:
 						FunkyCube.GetComponent.<Animator>().SetTrigger("Anim2_1");
-							Debug.Log("ImNumba2");
+						Debug.Log("ImNumba2");
 
 						break;
 					}
@@ -103,59 +107,61 @@ function Update () {
 					switch( currentEventCue ){
 						case 1:
 						NewCameraPath.GetComponent.<Animator>().SetTrigger("Anim1_11");
-											Debug.Log("ImNumba5");
+						Debug.Log("ImNumba5");
 
 						break;
 					}
 					break;
 					
-					 default:
-					 switch( currentEventCue ){
-				case 1:
-				cueComponent.playMovie("randomRainbow");
-					Debug.Log("rainbow!");
+					default:
+						switch( currentEventCue ){
+						case 1:
+						cueComponent.playMovie("randomRainbow");
+						Debug.Log("rainbow!");
 
-				break;
+						break;
 				
-				case 2:
-				cueComponent.playAudio("noPlace");
-					Debug.Log("no place!");
+						case 2:
+						cueComponent.playAudio("noPlace");
+						Debug.Log("no place!");
 
-				break;
+						break;
 				
-				case 3:
-				cueComponent.vibrate();
-					Debug.Log("buzz!");
-				break;
+						case 3:
+						cueComponent.vibrate();
+						Debug.Log("buzz!");
+						break;
 				
-				default:
-				break;
+						default:
+						break;
 					  
 					
-				}
-				
-				
-					
-					
-				
-				
+					}
 			
-			}
+				}
 		}
 		
 		
-	} else if(timeoutCounter> timeout){
-		
-		Network.Connect (connectionIP, portNumber);
-		Debug.Log("Not Connected! "+ Network.peerType );
-		timeoutCounter =0;
+	} else{ //not connected
+	
+		if (Application.loadedLevel != 1 ){
+			Application.LoadLevel(1);
+			Debug.Log("Disconnected! Loading Passive Mode! :'(");
 
-		
-	} else if (timeoutCounter <= timeout){
-		timeoutCounter++;
-	}
+		}
+	
+	
+		if(timeoutCounter> timeout){
+			Network.Connect (connectionIP, portNumber);
+			Debug.Log("Not Connected! "+ Network.peerType );
+			timeoutCounter =0;
+ 			
+ 		} else if (timeoutCounter <= timeout){
+			timeoutCounter++;
+		} 
 	
 
+	}
 }
 
 
@@ -176,15 +182,20 @@ function OnFailedToConnect(error: NetworkConnectionError){
 
 function setActiveScene(newScene:String){
 	var i=parseInt(newScene);
+	
+	sceneArray = GameObject.Find("Scenes").GetComponent.<sceneList>().sceneArray;
+	
 	if(i>=0){
-		//Application.LoadLevel(i);
+		canvasObject = sceneArray[prevCue];
 		canvasObject.GetComponent(Animation).Play("UIFadeOut");
 		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length);
 		canvasObject.SetActive(false);
+		
 		canvasObject = sceneArray[i];
 		Debug.Log(sceneArray[i]);
 		canvasObject.SetActive(true);
 		canvasObject.GetComponent(Animation).Play("UIFadeIn");
+		
 	} else if (i<0){
 		canvasObject.SetActive(false);
 
