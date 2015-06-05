@@ -83,12 +83,9 @@ namespace Vuforia
 				component.enabled = true;
 			}
 
-			if (mTrackableBehaviour.TrackableName == "Bush"){
-
-				Debug.Log("tracking calibration");
-				GameObject cam = GameObject.Find("Camera Container");
-				cam.SendMessage("updateTarget");
-
+			if (mTrackableBehaviour.TrackableName == "MGM_LogoCalibration9x12"){
+				GameObject camCtl = GameObject.Find ("Camera Container");
+				camCtl.SendMessage("updateTarget");
 			}
 
 
@@ -97,8 +94,15 @@ namespace Vuforia
 		}
 		
 		
-		private void OnTrackingLost()
-		{
+		private void OnTrackingLost() {
+
+			if (mTrackableBehaviour.TrackableName == "MGM_LogoCalibration9x12"){
+				GameObject camCtl = GameObject.Find ("Camera Container");
+				camCtl.SendMessage("lostTarget");
+			}
+
+
+
 			Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
 			Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 			

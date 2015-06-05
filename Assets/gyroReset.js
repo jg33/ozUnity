@@ -1,10 +1,15 @@
 ﻿#pragma strict
 
-function Start () {
+var targetRotation: Quaternion;
 
+
+function Start () {
+	targetRotation = Quaternion.identity;
 }
 
 function Update () {
+
+	transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation,0.04  );
 
 }
 
@@ -13,6 +18,6 @@ public function resetGyro(){
     		invertedOrientation = Quaternion.Inverse(GameObject.Find("UPFTHeadTracker").transform.localRotation);
     		var invertedEulers = invertedOrientation.eulerAngles;
     		invertedOrientation = Quaternion.Euler(invertedEulers.x, invertedEulers.y, invertedEulers.z   );
-    		transform.localRotation = invertedOrientation;
+    		targetRotation = invertedOrientation;
 
    		 }
