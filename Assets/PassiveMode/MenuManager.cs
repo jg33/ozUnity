@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEditor;
+//using UnityEditor;
 
 public class MenuManager : MonoBehaviour {
 
 	public Menu CurrentMenu;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 
 		ShowMenu (CurrentMenu);
 	

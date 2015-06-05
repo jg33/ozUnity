@@ -48,7 +48,7 @@ function Update () {
 			Application.LoadLevel(2);
 			Debug.Log("Connected! Loading Active Mode!");
 		
-		} if (forcePassive){
+		} if (forcePassive && Application.loadedLevel != 1){
 			Application.LoadLevel(1);
 		}
 
