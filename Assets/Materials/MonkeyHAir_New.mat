@@ -141,15 +141,15 @@ Material:
       data:
         first:
           name: _Length
-        second: .101999998
+        second: .243000001
       data:
         first:
           name: _WindSpeed
-        second: 1
+        second: .100000001
       data:
         first:
           name: _Density
-        second: .279000014
+        second: .268999994
       data:
         first:
           name: _Brightness
@@ -178,4 +178,4 @@ Material:
       data:
         first:
           name: _Gravity
-        second: {r: 0, g: -.200000003, b: 0, a: 0}
+        second: {r: 0, g: 0, b: 0, a: 0}
