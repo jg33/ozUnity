@@ -40,11 +40,11 @@ function Update () {
 	if (connected){
 		forcePassive = cueComponent.forcePassive;
 		
-		if(currentCue !=0){
+		if(currentCue !=0 && Application.loadedLevel == 2){
 			//GameObject.Find("Look Up").active =  true;
 		
 		} else{
-			//GameObject.Find("Look Up").active =  true;
+			//GameObject.Find("Look Up").active =  false;
 
 		}
 	
