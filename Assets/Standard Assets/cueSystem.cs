@@ -11,10 +11,10 @@ public class cueSystem : MonoBehaviour{
 	public void Update(){
 
 		if (Network.isServer){
-			if (Input.GetKeyDown (KeyCode.Space)) {
+			if (Input.GetKeyDown (KeyCode.Space)   || Input.GetKeyDown (KeyCode.UpArrow) ) {
 				cueNumber += 1;
 
-			} else if (Input.GetKeyDown (KeyCode.PageDown)){
+			} else if (Input.GetKeyDown (KeyCode.DownArrow) || Input.GetKeyDown (KeyCode.PageDown) ){
 				cueNumber -= 1;
 
 			} else if (Input.GetKeyDown(KeyCode.Alpha1)){
@@ -82,7 +82,7 @@ public class cueSystem : MonoBehaviour{
 	
 	[RPC] public void  playAudio(string clipName){
 		if(Network.isClient){
-			AudioSource source = (AudioSource)GameObject.Find("Main Camera").GetComponent<AudioSource>();
+			AudioSource source = (AudioSource)GameObject.Find("Camera").GetComponent<AudioSource>();
 
 			if(clipName == "noPlace"){
 				//AudioClip clip = AudioClip.Create
