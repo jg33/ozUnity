@@ -39,6 +39,14 @@ function Start () {
 function Update () {
 	if (connected){
 		forcePassive = cueComponent.forcePassive;
+		
+		if(currentCue !=0){
+			//GameObject.Find("Look Up").active =  true;
+		
+		} else{
+			//GameObject.Find("Look Up").active =  true;
+
+		}
 	
 		if (Application.loadedLevel != 2 && !forcePassive){
 			Application.LoadLevel(2);
@@ -52,6 +60,10 @@ function Update () {
 			prevCue = currentCue;
 			currentCue = cueComponent.cueNumber;
 			setActiveScene(currentCue.ToString());
+		
+			#if UNITY_IPHONE
+			if (currentCue != 0 ) Handheld.Vibrate();
+			#endif
 		
 		} 
 		

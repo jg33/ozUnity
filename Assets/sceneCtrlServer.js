@@ -61,6 +61,7 @@ function OnGUI()
 	{
 		GUILayout.Label ("Connections: " + Network.connections.Length.ToString());
 		GUILayout.Label ("Current Scene: " +  currentCue);
+		GUILayout.Label ("Force Passive Mode: " +  cueComponent.forcePassive);
 
 		
 	}
