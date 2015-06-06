@@ -56,7 +56,7 @@ function Update () {
 			Application.LoadLevel(1);
 		}
 
-		if (cueComponent.cueNumber != currentCue){
+		if (cueComponent.cueNumber != currentCue && Application.loadedLevel == 2){
 			prevCue = currentCue;
 			currentCue = cueComponent.cueNumber;
 			setActiveScene(currentCue.ToString());
