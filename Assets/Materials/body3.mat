@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: body3
-  m_Shader: {fileID: 4800000, guid: 7f6b682895946554eb8420cdfc59abd5, type: 3}
+  m_Shader: {fileID: 4800000, guid: f367fe6c638991d4195eb61ee04abc8c, type: 3}
   m_ShaderKeywords: _NORMALMAP
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -148,11 +148,11 @@ Material:
       data:
         first:
           name: _RimPower
-        second: .5
+        second: 1.04999995
       data:
         first:
           name: _Length
-        second: .0120000001
+        second: .0175999999
       data:
         first:
           name: _WindSpeed
@@ -160,11 +160,11 @@ Material:
       data:
         first:
           name: _Density
-        second: .0549999997
+        second: .36500001
       data:
         first:
           name: _Brightness
-        second: .446999997
+        second: 1.06299996
     m_Colors:
       data:
         first:

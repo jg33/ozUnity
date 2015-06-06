@@ -118,6 +118,12 @@ function Update () {
 						Debug.Log("ImNumba5");
 
 						break;
+						
+						case 2:
+						GameObject.Find("Camera").GetComponent.<Animator>().SetTrigger("Anim1_M");
+						Debug.Log("ImNumba5");
+
+						break;
 					}
 					break;
 					
