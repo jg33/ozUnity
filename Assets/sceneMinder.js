@@ -1,9 +1,11 @@
 ﻿#pragma strict
 
 var poppyScene: GameObject;
+var tornadoScene: GameObject;
+var camObj: GameObject;
 
 private var mindPoppies: boolean = false;
-
+private var mindSepia: boolean = false;
 
 
 function Start () {
@@ -11,7 +13,13 @@ function Start () {
 }
 
 function Update () {
+	///SEPIA TONING
+	if(tornadoScene.active){
+		
+	
+	}
 
+	///CLEAR POPPIES
 	if(poppyScene.active){
 		mindPoppies = true;
 	}
