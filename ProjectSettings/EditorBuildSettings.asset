@@ -13,5 +13,3 @@ EditorBuildSettings:
     path: Assets/NativeNetworkClient.unity
   - enabled: 0
     path: Assets/NativeNetworkServer.unity
-  - enabled: 0
-    path: Assets/coins.unity
