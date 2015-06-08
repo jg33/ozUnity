@@ -76,7 +76,8 @@ function Update () {
 					
 					switch( currentEventCue ){
 						case 1:
-	
+
+			            //textFieldString = GUI.TextField (new Rect (500, 500, 500, 500), textFieldString, 25);
 						GameObject.Find("TrashCan").GetComponent.<Animator>().SetTrigger("Anim1");
 						Debug.Log("ugh");
 
