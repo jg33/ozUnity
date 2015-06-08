@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class cueSystem : MonoBehaviour{
+	//public string textFieldString = "DummyText";
+
+
 	public int cueNumber = 0;
 	public int tempEventTriggers = 0;
 
@@ -35,6 +38,8 @@ public class cueSystem : MonoBehaviour{
 
 	public void GUI(){
 		GUILayout.Label (cueNumber.ToString ());
+		//textFieldString = GUI.TextField (new Rect (500, 500, 500, 500), textFieldString, 25);
+
 	}
 
 	private void OnSerializeNetworkView (BitStream stream, NetworkMessageInfo info){
@@ -42,11 +47,14 @@ public class cueSystem : MonoBehaviour{
 			stream.Serialize (ref cueNumber);
 			stream.Serialize (ref tempEventTriggers);
 			stream.Serialize (ref forcePassive);
+			//stream.Serialize (ref textFieldString);
 
 		} else {
 			stream.Serialize (ref cueNumber);
 			stream.Serialize (ref tempEventTriggers);
 			stream.Serialize (ref forcePassive);
+			//stream.Serialize (ref textFieldString);
+
 
 		}
 	}
