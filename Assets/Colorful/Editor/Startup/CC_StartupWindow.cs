@@ -63,7 +63,7 @@ public class CC_StartupWindow : EditorWindow
 		FindAssets();
 
 		// First line in the changelog is the version string
-		string version = ((TextAsset)Resources.LoadAssetAtPath(pathChangelog, typeof(TextAsset))).text.Split('\n')[0];
+		string version = ((TextAsset)AssetDatabase.LoadAssetAtPath(pathChangelog, typeof(TextAsset))).text.Split('\n')[0];
 
 		if (forceOpen || EditorPrefs.GetString(identifier) != version)
 		{
@@ -85,15 +85,15 @@ public class CC_StartupWindow : EditorWindow
 		FindAssets();
 		
 		string versionColor = EditorGUIUtility.isProSkin ? "#ffffffee" : "#000000ee";
-		changelogText = ((TextAsset)Resources.LoadAssetAtPath(pathChangelog, typeof(TextAsset))).text;
+		changelogText = ((TextAsset)AssetDatabase.LoadAssetAtPath(pathChangelog, typeof(TextAsset))).text;
 		changelogText = Regex.Replace(changelogText, @"^[0-9].*", "<color=" + versionColor + "><size=13><b>Version $0</b></size></color>", RegexOptions.Multiline);
 		changelogText = Regex.Replace(changelogText, @"^-.*", "  $0", RegexOptions.Multiline);
 
-		headerPic = (Texture2D)Resources.LoadAssetAtPath(pathImages + "header.jpg", typeof(Texture2D));
-		iconTypogenic = (Texture2D)Resources.LoadAssetAtPath(pathImages + "icon-typogenic.png", typeof(Texture2D));
-		iconColorful = (Texture2D)Resources.LoadAssetAtPath(pathImages + "icon-colorful.png", typeof(Texture2D));
-		iconChromatica = (Texture2D)Resources.LoadAssetAtPath(pathImages + "icon-chromatica.png", typeof(Texture2D));
-		iconSSAOPro = (Texture2D)Resources.LoadAssetAtPath(pathImages + "icon-ssaopro.png", typeof(Texture2D));
+		headerPic = (Texture2D)AssetDatabase.LoadAssetAtPath(pathImages + "header.jpg", typeof(Texture2D));
+		iconTypogenic = (Texture2D)AssetDatabase.LoadAssetAtPath(pathImages + "icon-typogenic.png", typeof(Texture2D));
+		iconColorful = (Texture2D)AssetDatabase.LoadAssetAtPath(pathImages + "icon-colorful.png", typeof(Texture2D));
+		iconChromatica = (Texture2D)AssetDatabase.LoadAssetAtPath(pathImages + "icon-chromatica.png", typeof(Texture2D));
+		iconSSAOPro = (Texture2D)AssetDatabase.LoadAssetAtPath(pathImages + "icon-ssaopro.png", typeof(Texture2D));
 	}
 
 	void OnGUI()
