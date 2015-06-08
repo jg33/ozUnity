@@ -9,6 +9,7 @@ public class UPFTHeadTracker : MonoBehaviour {
 
 	#if UNITY_EDITOR
 	private static readonly Quaternion CORRECT_ROTATION_X = Quaternion.Euler(90, 0, 0);
+	private static readonly Vector3 INIT_FORWARD_VECTOR = Vector3.forward;
 
 	#elif UNITY_ANDROID
 	private static readonly Vector3 INIT_FORWARD_VECTOR = Vector3.forward;
@@ -18,6 +19,7 @@ public class UPFTHeadTracker : MonoBehaviour {
 	#endif
 
 	#if UNITY_EDITOR
+	private static readonly Vector3 EXPECT_INIT_FORWARD_VECTOR = Vector3.forward;
 	#elif UNITY_ANDROID || UNITY_IPHONE
 	private static readonly Vector3 EXPECT_INIT_FORWARD_VECTOR = Vector3.forward;
 	#endif
@@ -61,6 +63,9 @@ public class UPFTHeadTracker : MonoBehaviour {
 	private UPFTBaseCameraManager[] _cameraManagers = null;
 
 	#if UNITY_EDITOR
+
+	private static AndroidJavaObject _plugin = null;
+
 	#elif UNITY_ANDROID
 	private static AndroidJavaObject _plugin = null;
 	#endif
@@ -68,6 +73,7 @@ public class UPFTHeadTracker : MonoBehaviour {
 	#if UNITY_EDITOR
 	private Quaternion correctRotationY;
 	#elif UNITY_ANDROID
+	private Quaternion correctRotationY;
 	#elif UNITY_IPHONE
 	private Quaternion correctRotationY;
 	#endif
@@ -79,6 +85,14 @@ public class UPFTHeadTracker : MonoBehaviour {
 	void Awake()
 	{
 		#if UNITY_EDITOR
+
+		_plugin = new AndroidJavaObject("com.upft.vr.cardboardbridge.CardboardBridge");
+		if (_plugin != null) {
+			_plugin.Call("init");
+		}
+		
+		correctRotationY = Quaternion.identity;
+
 		#elif UNITY_ANDROID
 		_plugin = new AndroidJavaObject("com.upft.vr.cardboardbridge.CardboardBridge");
 		if (_plugin != null) {
@@ -107,6 +121,9 @@ public class UPFTHeadTracker : MonoBehaviour {
 	void Update () {
 
 		#if UNITY_EDITOR
+
+		transform.localRotation = UpdateTracking();
+
 		#elif UNITY_ANDROID || UNITY_IPHONE
 		transform.localRotation = UpdateTracking();
 		#endif 
@@ -153,6 +170,10 @@ public class UPFTHeadTracker : MonoBehaviour {
 	public void ResetOrientation() {
 
 		#if UNITY_EDITOR
+
+		Vector3 f = transform.forward;
+		correctRotationY = Quaternion.FromToRotation(new Vector3(f.x, 0, f.z).normalized, INIT_FORWARD_VECTOR) * correctRotationY;
+
 		#elif UNITY_ANDROID
 		Vector3 f = transform.forward;
 		correctRotationY = Quaternion.FromToRotation(new Vector3(f.x, 0, f.z).normalized, INIT_FORWARD_VECTOR) * correctRotationY;
@@ -170,6 +191,11 @@ public class UPFTHeadTracker : MonoBehaviour {
 	private void StartTracking() {
 
 		#if UNITY_EDITOR
+
+		if (_plugin != null) {
+			_plugin.Call("startTracking");
+		}
+
 		#elif UNITY_ANDROID
 		if (_plugin != null) {
 			_plugin.Call("startTracking");
@@ -181,6 +207,11 @@ public class UPFTHeadTracker : MonoBehaviour {
 
 	private void StopTracking() {
 		#if UNITY_EDITOR
+
+		if (_plugin != null) {
+			_plugin.Call("stopTracking");
+		}
+
 		#elif UNITY_ANDROID
 		if (_plugin != null) {
 			_plugin.Call("stopTracking");
@@ -192,6 +223,14 @@ public class UPFTHeadTracker : MonoBehaviour {
 
 	private void PauseTracking() {
 		#if UNITY_EDITOR
+
+		if (_plugin != null) {
+			_plugin.Call("stopTracking");
+		}
+		Vector3 f = transform.forward;
+		correctRotationY = Quaternion.FromToRotation(INIT_FORWARD_VECTOR, new Vector3(f.x, 0, f.z).normalized);
+
+
 		#elif UNITY_ANDROID
 		if (_plugin != null) {
 			_plugin.Call("stopTracking");
@@ -203,6 +242,9 @@ public class UPFTHeadTracker : MonoBehaviour {
 
 	private void RestartTracking() {
 		#if UNITY_EDITOR
+		if (_plugin != null) {
+			_plugin.Call("startTracking");
+		}
 		#elif UNITY_ANDROID
 		if (_plugin != null) {
 			_plugin.Call("startTracking");
