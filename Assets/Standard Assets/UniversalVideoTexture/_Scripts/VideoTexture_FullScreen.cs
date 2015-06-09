@@ -470,7 +470,7 @@ public class VideoTexture_FullScreen : MonoBehaviour
 			clipAudio.clip = thisClip;
 			Sync();
 		}
-		currentLoop = 0;
+		loopNumber = 0;
 
 	}
 }
