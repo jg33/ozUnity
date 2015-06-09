@@ -83,7 +83,8 @@ function Update () {
 					
 					switch( currentEventCue ){
 						case 1:
-	
+
+			            //textFieldString = GUI.TextField (new Rect (500, 500, 500, 500), textFieldString, 25);
 						GameObject.Find("TrashCan").GetComponent.<Animator>().SetTrigger("Anim1");
 						Debug.Log("ugh");
 
@@ -245,16 +246,16 @@ function setActiveScene(newScene:String){
 	sceneArray = GameObject.Find("Scenes").GetComponent.<sceneList>().sceneArray;
 	
 	if(i>=0){
-		canvasObject = sceneArray[prevCue];
-		canvasObject.GetComponent(Animation).Play("UIFadeOut");
-		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length);
-		canvasObject.SetActive(false);
-		
 		canvasObject = sceneArray[i];
+		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length);
 		Debug.Log(sceneArray[i]);
 		canvasObject.SetActive(true);
 		canvasObject.GetComponent(Animation).Play("UIFadeIn");
 		
+		canvasObject = sceneArray[prevCue];
+		canvasObject.GetComponent(Animation).Play("UIFadeOut");
+		canvasObject.SetActive(false);
+	
 	} else if (i<0){
 		canvasObject.SetActive(false);
 
