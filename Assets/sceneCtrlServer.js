@@ -7,6 +7,7 @@ public var cueComponent:cueSystem;
 public var scenes:GameObject;
 var numScenes:int = 3;
 public var currentCue:int=0;
+public var currentEvent: int = 0;
 
 @HideInInspector
 var sceneArray: List.<GameObject> ;
@@ -39,21 +40,28 @@ function Update () {
 	currentCue = cueComponent.cueNumber;
 	
 	var net:NetworkView = this.gameObject.GetComponent.<NetworkView>();
-	if(Input.GetKey('r')){
-		
-		net.RPC("playMovie", RPCMode.All, "randomRainbow");
+	
+	if(currentEvent != cueComponent.tempEventTriggers  ){
+		currentEvent = cueComponent.tempEventTriggers ;
+		switch( currentEvent ){
+						case 1:
+						cueComponent.playMovie("MoeTest");
+						Debug.Log("MoeTest!");
 
-	
-	} else if(Input.GetKey('t')){
-		net.RPC("stopMovie", RPCMode.All, "");
-	
+						break;
+				
+						case 2:
+						cueComponent.playMovie("kazoo");
+						Debug.Log("kazoo!");
 
-	
-	} else if(Input.GetKey('n')){
-		net.RPC("playAudio", RPCMode.All, "noPlace");
-
-	
-	} 
+						break;
+						
+						
+						default:
+						break;
+						}
+						
+	}
 
 }
 
