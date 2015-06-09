@@ -7,6 +7,7 @@ public class androidObbManager : MonoBehaviour {
 	void Start () {
 		#if UNITY_ANDOID
 		StartCoroutine(ExtractObbDatasets());
+		AddOSSpecificExternalDatasetSearchDirs ();
 		#endif
 	}
 
