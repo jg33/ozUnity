@@ -196,6 +196,8 @@ function Update () {
 		if(cueComponent.moviePosition != moviePosition && camObj != null){
 			moviePosition = cueComponent.moviePosition;
 			camObj.SendMessage("syncToPosition", moviePosition, SendMessageOptions.DontRequireReceiver);	
+			
+			Debug.Log("sync to: " + moviePosition);
 		} else if (camObj == null){
 			camObj = GameObject.Find("Camera");
 

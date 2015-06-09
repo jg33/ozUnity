@@ -21767,6 +21767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cueNumber: 0
   tempEventTriggers: 0
+  moviePosition: 0
   forcePassive: 0
 --- !u!4 &246532208
 Transform:
@@ -23366,12 +23367,12 @@ GameObject:
   - 92: {fileID: 325657125}
   - 124: {fileID: 325657124}
   - 114: {fileID: 325657123}
-  - 114: {fileID: 325657122}
   - 114: {fileID: 325657127}
   - 82: {fileID: 325657126}
   - 114: {fileID: 325657128}
   - 95: {fileID: 325657129}
   - 114: {fileID: 325657130}
+  - 114: {fileID: 325657131}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -23425,30 +23426,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
---- !u!114 &325657122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 325657119}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd7c7095db90745c99848cbd8b47b2d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceAccelerometer: 0
-  smoothingTime: .100000001
-  headingOffset: 0
-  pitchOffset: 0
-  pitchOffsetMinimum: -70
-  pitchOffsetMaximum: 70
-  gyroHeadingAmplifier: 1
-  gyroPitchAmplifier: 1
-  resetSmoothing: .100000001
-  fuseSensors: 0
-  gyroReading: []
-  accReading: []
-  rotatoQuat: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &325657123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23489,7 +23466,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cdd7debecce9d4f2f8b16ecefe60ec51, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -23620,6 +23597,45 @@ MonoBehaviour:
   lookupTexture: {fileID: 2800000, guid: cb854b0a14b9eea4f8e9d47004dcb242, type: 3}
   amount: 1
   filter: 7
+--- !u!114 &325657131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 325657119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80d5af3ef78d0f43a28fd161983fb67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPS: 24
+  firstFrame: 0
+  lastFrame: 300
+  FileName: 0
+  digitsFormat: 0000
+  digitsLocation: 1
+  aspectRatio: 1.77999997
+  playMode: 0
+  pingpongStartsWithReverse: 0
+  numberOfLoops: 1
+  lowMemoryMode: 1
+  ctiTexture: {fileID: 0}
+  backgroundTexture: {fileID: 0}
+  scrollBarTexture: {fileID: 0}
+  scrollBarLength: 250
+  scrollBarHeight: 50
+  scrollBarOffset: 50
+  timecodeSize: 16
+  hideBackground: 1
+  showScrollBar: 0
+  showTimecode: 0
+  enableTogglePlay: 0
+  enableAudio: 1
+  forceAudioSync: 1
+  autoPlay: 0
+  autoHideWhenDone: 1
+  autoLoadLevelWhenDone: 0
+  LevelToLoad: 
 --- !u!4 &331818151
 Transform:
   m_ObjectHideFlags: 0
@@ -34974,7 +34990,7 @@ WindZone:
   m_WindTurbulence: .349999994
   m_WindPulseMagnitude: 5
   m_WindPulseFrequency: 3
---- !u!43 &814267278
+--- !u!43 &839116535
 Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -44295,8 +44311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poppyScene: {fileID: 190583772}
-  tornadoScene: {fileID: 149970812}
-  camObj: {fileID: 0}
+  camObj: {fileID: 325657119}
 --- !u!1 &1156982618
 GameObject:
   m_ObjectHideFlags: 0
@@ -55937,7 +55952,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1759747524}
-  m_Mesh: {fileID: 814267278}
+  m_Mesh: {fileID: 839116535}
 --- !u!114 &1759747527
 MonoBehaviour:
   m_ObjectHideFlags: 0
