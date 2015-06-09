@@ -17,7 +17,7 @@ function Update () {
 		
 	}
 	
-	if(Input.GetKeyDown(KeyCode.M)){
+	if(Input.GetKeyDown(KeyCode.M)){ // rando tester
 		SendMessage("gotoPosition", Random.Range(0,1000)/1000f) ;
 	}
 	
