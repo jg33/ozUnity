@@ -11,6 +11,7 @@ var numScenes:int = 3;
 public var currentCue:int=0;
 private var prevCue:int =0;
 
+private var moviePosition:float = 0f;
 private var currentEventCue:int = 0;
 
 @HideInInspector
@@ -19,6 +20,8 @@ private var canvasObject:GameObject;
 var timeoutCounter: int;
 
 private var forcePassive: boolean;
+private var camObj: GameObject;
+
 
 function Awake(){
 	DontDestroyOnLoad (this);
@@ -29,8 +32,8 @@ function Start () {
 	Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	Network.Connect (connectionIP, portNumber);
 	
-	GameObject.Find("Scenes").SetActive(true);
-	var sceneListComp: sceneList = GameObject.Find("Scenes").GetComponent.<sceneList>();
+	//GameObject.Find("Scenes").SetActive(true);
+	//var sceneListComp: sceneList = GameObject.Find("Scenes").GetComponent.<sceneList>();
 	
 	
 
@@ -38,6 +41,8 @@ function Start () {
 
 function Update () {
 	if (connected){
+		
+		
 		forcePassive = cueComponent.forcePassive;
 		
 		if(currentCue !=0 && Application.loadedLevel == 2){
@@ -51,6 +56,8 @@ function Update () {
 		if (Application.loadedLevel != 2 && !forcePassive){
 			Application.LoadLevel(2);
 			Debug.Log("Connected! Loading Active Mode!");
+			
+			camObj = GameObject.Find("Camera");
 		
 		} if (forcePassive && Application.loadedLevel != 1){
 			Application.LoadLevel(1);
@@ -152,20 +159,27 @@ function Update () {
 					default:
 						switch( currentEventCue ){
 						case 1:
-						cueComponent.playMovie("randomRainbow");
-						Debug.Log("rainbow!");
+						cueComponent.playMovie("cypher");
+						Debug.Log("cypher!");
 
 						break;
 				
 						case 2:
-						cueComponent.playAudio("noPlace");
-						Debug.Log("no place!");
+						cueComponent.playMovie("kazoo");
+						Debug.Log("kazoo!");
 
 						break;
 				
 						case 3:
-						cueComponent.vibrate();
-						Debug.Log("buzz!");
+						cueComponent.stopMovie();
+
+						break;
+						
+						case 4:
+						
+						cueComponent.playAudio("noPlace");
+						Debug.Log("no place!");
+
 						break;
 				
 						default:
@@ -175,6 +189,15 @@ function Update () {
 					}
 			
 				}
+		}
+		
+		
+		if(cueComponent.moviePosition != moviePosition && camObj != null){
+			moviePosition = cueComponent.moviePosition;
+			camObj.SendMessage("syncToPosition", moviePosition, SendMessageOptions.DontRequireReceiver);	
+		} else if (camObj == null){
+			camObj = GameObject.Find("Camera");
+
 		}
 		
 		

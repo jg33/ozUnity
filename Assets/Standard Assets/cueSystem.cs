@@ -4,6 +4,7 @@ using System.Collections;
 public class cueSystem : MonoBehaviour{
 	public int cueNumber = 0;
 	public int tempEventTriggers = 0;
+	public float moviePosition = 0;
 
 	public bool forcePassive = false;
 
@@ -18,16 +19,42 @@ public class cueSystem : MonoBehaviour{
 				cueNumber -= 1;
 
 			} else if (Input.GetKeyDown(KeyCode.Alpha1)){
-				tempEventTriggers = 1;
-
+				cueNumber = 1;
 			} else if (Input.GetKeyDown(KeyCode.Alpha2)){
-				tempEventTriggers = 2;
-				
+				cueNumber = 2;
 			} else if (Input.GetKeyDown(KeyCode.Alpha3)){
-				tempEventTriggers = 3;
+				cueNumber = 3;
+			} else if (Input.GetKeyDown(KeyCode.Alpha4)){
+				cueNumber = 4;
+			} else if (Input.GetKeyDown(KeyCode.Alpha5)){
+				cueNumber = 5;
+			} else if (Input.GetKeyDown(KeyCode.Alpha6)){
+				cueNumber = 6;
+			} else if (Input.GetKeyDown(KeyCode.Alpha7)){
+				cueNumber = 7;
+			} else if (Input.GetKeyDown(KeyCode.Alpha8)){
+				cueNumber = 8;
+			} else if (Input.GetKeyDown(KeyCode.Alpha9)){
+				cueNumber = 9;
 			} else if (Input.GetKeyDown(KeyCode.Alpha0)){
+				cueNumber = 0;
+			} else if (Input.GetKeyDown(KeyCode.Q)){
+				tempEventTriggers = 1;
+			} else if (Input.GetKeyDown(KeyCode.W)){
+				tempEventTriggers = 2;
+			} else if (Input.GetKeyDown(KeyCode.E)){
+				tempEventTriggers = 3;
+			} else if (Input.GetKeyDown(KeyCode.R)){
+				tempEventTriggers = 4;
+			} else if (Input.GetKeyDown(KeyCode.T)){
+				tempEventTriggers = 5;
+			} else if (Input.GetKeyDown(KeyCode.Y)){
+				tempEventTriggers = 6;
+			} else if (Input.GetKeyDown(KeyCode.Tab)){
 				tempEventTriggers = 0;
-			} else if (Input.GetKeyDown(KeyCode.P)){
+			}
+
+			else if (Input.GetKeyDown(KeyCode.P)){
 				forcePassive = !forcePassive;
 			}
 		}	
@@ -42,11 +69,13 @@ public class cueSystem : MonoBehaviour{
 			stream.Serialize (ref cueNumber);
 			stream.Serialize (ref tempEventTriggers);
 			stream.Serialize (ref forcePassive);
+			stream.Serialize (ref moviePosition);
 
 		} else {
 			stream.Serialize (ref cueNumber);
 			stream.Serialize (ref tempEventTriggers);
 			stream.Serialize (ref forcePassive);
+			stream.Serialize (ref moviePosition);
 
 		}
 	}
@@ -58,25 +87,57 @@ public class cueSystem : MonoBehaviour{
 	}
 	
 	[RPC] public void playMovie(string clipName){
+		GameObject cam = GameObject.Find ("Camera");
 
-		if(Network.isClient){
+		if(Network.isClient && cam.GetComponent<Camera>() ){
 
 			if(clipName == "randomRainbow"){
-				Debug.Log("played rainbow");
-					int rando = Random.Range(1,10);
-					string videoString = string.Format("Video/rainbow_{0:00}.mp4", rando );
+				Debug.Log("randomRainbow");
+				int rando = Random.Range(1,10);
+				string videoString = string.Format("Video/rainbow_{0:00}.mp4", rando );
 					#if UNITY_IPHONE
 					Handheld.PlayFullScreenMovie(videoString);
 					#endif
 			
+			} else if(clipName == "cypher"){
+				cam.SendMessage("loadMovie", "cypher", SendMessageOptions.DontRequireReceiver);
+				cam.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
+				cam.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
+				Debug.Log("cypher");
+
+			} else if(clipName == "kazoo"){
+				cam.SendMessage("loadMovie", "rainbow04_", SendMessageOptions.DontRequireReceiver);
+				cam.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
+				cam.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
+				Debug.Log("kazooooooo");
+
 			}
+
+
 		
+		} else if (Network.isServer){
+
+			GameObject video = GameObject.Find ("Video");
+
+			if(clipName == "cypher"){
+				video.SendMessage("loadMovie", "cypher", SendMessageOptions.DontRequireReceiver);
+				video.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
+				video.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
+				Debug.Log("cypher");
+				
+			} else if(clipName == "kazoo"){
+				video.SendMessage("loadMovie", "rainbow04_", SendMessageOptions.DontRequireReceiver);
+				video.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
+				video.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
+			}
+
 		}
 	}
 	
 	[RPC] public void  stopMovie(){
-		//GameObject.Find("IOSVideoPlayer").SendMessage(
-		
+		GameObject.Find ("Camera").SendMessage("Stop");
+
+
 		
 	}
 	
@@ -85,7 +146,7 @@ public class cueSystem : MonoBehaviour{
 			AudioSource source = (AudioSource)GameObject.Find("Camera").GetComponent<AudioSource>();
 
 			if(clipName == "noPlace"){
-				//AudioClip clip = AudioClip.Create
+				AudioClip clip = Resources.Load ("no_place_like_home2") as AudioClip;
 				source.Play();
 			}
 

@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
 var poppyScene: GameObject;
-var tornadoScene: GameObject;
+//var tornadoScene: GameObject;
 var camObj: GameObject;
 
 private var mindPoppies: boolean = false;
@@ -14,10 +14,15 @@ function Start () {
 
 function Update () {
 	///SEPIA TONING
-	if(tornadoScene.active){
+	/*
+	if(tornadoScene.active && camObj.GetComponent(Renderer) == 1){
+		//enable sepia
+	
+	} else if(!tornadoScene.active && camObj.GetComponent(Renderer)  == 1 ){
+		// disable filter
 		
 	
-	}
+	}*/
 
 	///CLEAR POPPIES
 	if(poppyScene.active){
@@ -37,5 +42,7 @@ function Update () {
 		mindPoppies = false;
 	
 	}
+	
+
 
 }
