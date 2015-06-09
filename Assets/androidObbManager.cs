@@ -3,26 +3,37 @@ using System.Collections;
 using System.IO;
 
 public class androidObbManager : MonoBehaviour {
-
-	// Use this for initialization
+	
 	void Start () {
-		#if UNITY_ANDROID
-		string uriOfDatasetInObb = Application.streamingAssetsPath + "/QCAR/3LD_OzWrkShop5.xml"; 
-		var xmlLoc = new WWW(uriOfDatasetInObb); 
-		
-		uriOfDatasetInObb = Application.streamingAssetsPath + "/QCAR/3LD_OzWrkShop5.dat"; // do the same same for .dat file too
-		var datLoc = new WWW(uriOfDatasetInObb); 
-		
-		
-		File.WriteAllBytes( Application.persistentDataPath + "/QCAR/3LD_OzWrkShop5.xml", xmlLoc.bytes );
-		File.WriteAllBytes( Application.persistentDataPath + "/QCAR/3LD_OzWrkShop5.dat", datLoc.bytes );
+		#if UNITY_ANDOID
+		StartCoroutine(ExtractObbDatasets());
 		#endif
 	}
-	
 
-	
-	// Update is called once per frame
-	void Update () {
-	
+	private IEnumerator ExtractObbDatasets () {
+		string[] filesInOBB = {"3LD_OzWrkShop5.dat", "3LD_OzWrkShop5.xml"};
+		foreach (var filename in filesInOBB) {
+			string uri = "file://" + Application.streamingAssetsPath + "/QCAR/" + filename;
+			
+			string outputFilePath = Application.persistentDataPath + "/QCAR/" + filename;
+			if(!Directory.Exists(Path.GetDirectoryName(outputFilePath)))
+				Directory.CreateDirectory(Path.GetDirectoryName(outputFilePath));
+			
+			var www = new WWW(uri);
+			yield return www;
+			
+			Save(www, outputFilePath);
+			yield return new WaitForEndOfFrame();
+		}
+	}
+	private void Save(WWW www, string outputPath) {
+		File.WriteAllBytes(outputPath, www.bytes);
+		
+		// Verify that the File has been actually stored
+		if(File.Exists(outputPath))
+			Debug.Log("File successfully saved at: " + outputPath);
+		else
+			Debug.Log("Failure!! - File does not exist at: " + outputPath);
+		Application.LoadLevel("SceneMenu1");
 	}
 }
