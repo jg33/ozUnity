@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: MonkeyHAir_New
-  m_Shader: {fileID: 4800000, guid: 9d2f07928498c5f4884afb83a09d917e, type: 3}
+  m_Shader: {fileID: 4800000, guid: f377f5bcf3b1a244fbb6eb1d4b73447c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -141,7 +141,7 @@ Material:
       data:
         first:
           name: _Length
-        second: .243000001
+        second: .200000003
       data:
         first:
           name: _WindSpeed
@@ -149,7 +149,7 @@ Material:
       data:
         first:
           name: _Density
-        second: .268999994
+        second: 1.12199998
       data:
         first:
           name: _Brightness
