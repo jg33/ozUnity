@@ -160,8 +160,8 @@ function Update () {
 					default:
 						switch( currentEventCue ){
 						case 1:
-						cueComponent.playMovie("cypher");
-						Debug.Log("cypher!");
+						cueComponent.playMovie("MoeTest");
+						Debug.Log("MoeTest!");
 
 						break;
 				

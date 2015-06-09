@@ -99,11 +99,11 @@ public class cueSystem : MonoBehaviour{
 					Handheld.PlayFullScreenMovie(videoString);
 					#endif
 			
-			} else if(clipName == "cypher"){
-				cam.SendMessage("loadMovie", "cypher", SendMessageOptions.DontRequireReceiver);
+			} else if(clipName == "MoeTest"){
+				cam.SendMessage("loadMovie", "MoeOzTest", SendMessageOptions.DontRequireReceiver);
 				cam.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
 				cam.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
-				Debug.Log("cypher");
+				Debug.Log("MoeTest");
 
 			} else if(clipName == "kazoo"){
 				cam.SendMessage("loadMovie", "rainbow04_", SendMessageOptions.DontRequireReceiver);

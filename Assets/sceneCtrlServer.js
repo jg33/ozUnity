@@ -45,8 +45,8 @@ function Update () {
 		currentEvent = cueComponent.tempEventTriggers ;
 		switch( currentEvent ){
 						case 1:
-						cueComponent.playMovie("cypher");
-						Debug.Log("cypher!");
+						cueComponent.playMovie("MoeTest");
+						Debug.Log("MoeTest!");
 
 						break;
 				
