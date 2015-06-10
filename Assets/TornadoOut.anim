@@ -17,187 +17,125 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: {x: 4.86000013, y: 13.1000004, z: 12.6000004}
-        inSlope: {x: .007999992, y: 9.71999931, z: 0}
-        outSlope: {x: .007999992, y: 9.71999931, z: 0}
+        value: {x: 8.30000019, y: 9.69999981, z: 25.6000004}
+        inSlope: {x: -1.41891885, y: 1.74324334, z: .932432115}
+        outSlope: {x: -1.41891885, y: 1.74324334, z: .932432115}
         tangentMode: 0
-      - time: 5
-        value: {x: 4.9000001, y: 61.7000008, z: 12.6000004}
-        inSlope: {x: .007999992, y: 9.71999931, z: 0}
-        outSlope: {x: .007999992, y: 9.71999931, z: 0}
+      - time: 2.4666667
+        value: {x: 4.80000019, y: 14, z: 27.8999996}
+        inSlope: {x: -1.07432437, y: 5.14864874, z: .719594419}
+        outSlope: {x: -1.07432437, y: 5.14864874, z: .719594419}
         tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    path: TornadoGroup/Tornado
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: {x: 0, y: 0, z: 40.7999992}
-        inSlope: {x: 0, y: -0, z: -1.77999997}
-        outSlope: {x: 0, y: -0, z: -1.77999997}
-        tangentMode: 0
-      - time: 5
-        value: {x: 0, y: -0, z: 31.8999996}
-        inSlope: {x: 0, y: -0, z: -1.77999997}
-        outSlope: {x: 0, y: -0, z: -1.77999997}
+      - time: 7.4000001
+        value: {x: 1.20000005, y: 56.2000008, z: 30.3999996}
+        inSlope: {x: -.729729772, y: 8.55405426, z: .506756723}
+        outSlope: {x: -.729729772, y: 8.55405426, z: .506756723}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-    path: TornadoGroup/Tornado/CloudSwirl
+    path: 
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
         value: {x: 0, y: -3, z: 3}
-        inSlope: {x: 0, y: 0, z: -10.1599998}
-        outSlope: {x: 0, y: 0, z: -10.1599998}
+        inSlope: {x: 0, y: 0, z: -1.37837839}
+        outSlope: {x: 0, y: 0, z: -1.37837839}
         tangentMode: 0
-      - time: 5
-        value: {x: 0, y: -3, z: -47.7999992}
-        inSlope: {x: 0, y: 0, z: -10.1599998}
-        outSlope: {x: 0, y: 0, z: -10.1599998}
+      - time: 2.4666667
+        value: {x: 0, y: -3, z: -.400000006}
+        inSlope: {x: 0, y: 0, z: -5.01689148}
+        outSlope: {x: 0, y: 0, z: -5.01689148}
+        tangentMode: 0
+      - time: 7.4000001
+        value: {x: 0, y: -3, z: -43.0999985}
+        inSlope: {x: 0, y: 0, z: -8.65540504}
+        outSlope: {x: 0, y: 0, z: -8.65540504}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-    path: TornadoGroup/Tornado/DebrisCloud
+    path: DebrisCloud
   m_ScaleCurves: []
   m_FloatCurves:
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 10
-        inSlope: 0
-        outSlope: 0
+        value: 7.82000017
+        inSlope: -1.05675673
+        outSlope: -1.05675673
         tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: EmissionModule.rate.scalar
-    path: TornadoGroup/Tornado
-    classID: 198
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: -.200000003
-        inSlope: .12777777
-        outSlope: .12777777
-        tangentMode: 10
-      - time: 3.5999999
-        value: .25999999
-        inSlope: .12777777
-        outSlope: .12777777
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: InitialModule.gravityModifier
-    path: TornadoGroup/Tornado
-    classID: 198
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 10
-        inSlope: -2
-        outSlope: -2
-        tangentMode: 10
-      - time: 5
+      - time: 7.4000001
         value: 0
-        inSlope: -2
-        outSlope: -2
+        inSlope: -1.05675673
+        outSlope: -1.05675673
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: InitialModule.startSize.scalar
-    path: TornadoGroup/Tornado
+    path: 
     classID: 198
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
+        value: 10
+        inSlope: -1.35135138
+        outSlope: -1.35135138
+        tangentMode: 10
+      - time: 7.4000001
         value: 0
-        inSlope: 0
-        outSlope: 0
+        inSlope: -1.35135138
+        outSlope: -1.35135138
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: ShapeModule.angle
-    path: TornadoGroup/Tornado
+    attribute: InitialModule.startSize.scalar
+    path: CloudSwirl
     classID: 198
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_IsActive
-    path: TornadoGroup/Tornado/CloudSwirl
-    classID: 1
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
         value: 5
-        inSlope: -1.79640722
-        outSlope: -1.79640722
-        tangentMode: 10
-      - time: 2.7833333
-        value: 0
-        inSlope: -.898203611
-        outSlope: -.898203611
-        tangentMode: 10
-      - time: 5
-        value: 0
         inSlope: 0
         outSlope: 0
+        tangentMode: 10
+      - time: 2.4666667
+        value: 5
+        inSlope: -.506756723
+        outSlope: -.506756723
+        tangentMode: 10
+      - time: 7.4000001
+        value: 0
+        inSlope: -1.01351345
+        outSlope: -1.01351345
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: EmissionModule.rate.scalar
-    path: TornadoGroup/Tornado/DebrisCloud
+    path: DebrisCloud
     classID: 198
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_IsActive
-    path: TornadoGroup/Tornado/Debris
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 12
-        inSlope: -2.4000001
-        outSlope: -2.4000001
+        value: 10
+        inSlope: 3.7986486
+        outSlope: 3.7986486
         tangentMode: 10
-      - time: 5
-        value: 0
-        inSlope: -2.4000001
-        outSlope: -2.4000001
+      - time: 7.4000001
+        value: 38.1100006
+        inSlope: 3.7986486
+        outSlope: 3.7986486
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: EmissionModule.rate.scalar
-    path: TornadoGroup/Tornado/Debris
+    path: 
     classID: 198
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -208,68 +146,38 @@ AnimationClip:
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
     genericBindings:
-    - path: 791021395
+    - path: 0
       attribute: 1
       script: {fileID: 0}
       classID: 4
       customType: 0
       isPPtrCurve: 0
-    - path: 3500852256
+    - path: 2069486
       attribute: 1
       script: {fileID: 0}
       classID: 4
       customType: 0
       isPPtrCurve: 0
-    - path: 121439102
-      attribute: 1
-      script: {fileID: 0}
-      classID: 4
-      customType: 0
-      isPPtrCurve: 0
-    - path: 791021395
-      attribute: 1210821651
-      script: {fileID: 0}
-      classID: 198
-      customType: 0
-      isPPtrCurve: 0
-    - path: 791021395
+    - path: 0
       attribute: 3638086055
       script: {fileID: 0}
       classID: 198
       customType: 0
       isPPtrCurve: 0
-    - path: 3500852256
-      attribute: 2086281974
+    - path: 2684243236
+      attribute: 3638086055
       script: {fileID: 0}
-      classID: 1
+      classID: 198
       customType: 0
       isPPtrCurve: 0
-    - path: 121439102
+    - path: 2069486
       attribute: 2181258151
       script: {fileID: 0}
       classID: 198
       customType: 0
       isPPtrCurve: 0
-    - path: 1661203404
-      attribute: 2086281974
-      script: {fileID: 0}
-      classID: 1
-      customType: 0
-      isPPtrCurve: 0
-    - path: 1661203404
+    - path: 0
       attribute: 2181258151
-      script: {fileID: 0}
-      classID: 198
-      customType: 0
-      isPPtrCurve: 0
-    - path: 791021395
-      attribute: 2181258151
-      script: {fileID: 0}
-      classID: 198
-      customType: 0
-      isPPtrCurve: 0
-    - path: 791021395
-      attribute: 844232431
       script: {fileID: 0}
       classID: 198
       customType: 0
@@ -278,7 +186,7 @@ AnimationClip:
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: 5
+    m_StopTime: 7.4000001
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -297,109 +205,110 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 4.86000013
-        inSlope: .007999992
-        outSlope: .007999992
+        value: 8.30000019
+        inSlope: -1.41891885
+        outSlope: -1.41891885
         tangentMode: 10
-      - time: 5
-        value: 4.9000001
-        inSlope: .007999992
-        outSlope: .007999992
+      - time: 2.4666667
+        value: 4.80000019
+        inSlope: -1.07432437
+        outSlope: -1.07432437
+        tangentMode: 10
+      - time: 7.4000001
+        value: 1.20000005
+        inSlope: -.729729772
+        outSlope: -.729729772
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalPosition.x
-    path: TornadoGroup/Tornado
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 13.1000004
-        inSlope: 9.71999931
-        outSlope: 9.71999931
+        value: 9.69999981
+        inSlope: 1.74324334
+        outSlope: 1.74324334
         tangentMode: 10
-      - time: 5
-        value: 61.7000008
-        inSlope: 9.71999931
-        outSlope: 9.71999931
+      - time: 2.4666667
+        value: 14
+        inSlope: 5.14864874
+        outSlope: 5.14864874
+        tangentMode: 10
+      - time: 7.4000001
+        value: 56.2000008
+        inSlope: 8.55405426
+        outSlope: 8.55405426
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalPosition.y
-    path: TornadoGroup/Tornado
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 12.6000004
-        inSlope: 0
-        outSlope: 0
+        value: 25.6000004
+        inSlope: .932432115
+        outSlope: .932432115
         tangentMode: 10
-      - time: 5
-        value: 12.6000004
-        inSlope: 0
-        outSlope: 0
+      - time: 2.4666667
+        value: 27.8999996
+        inSlope: .719594419
+        outSlope: .719594419
+        tangentMode: 10
+      - time: 7.4000001
+        value: 30.3999996
+        inSlope: .506756723
+        outSlope: .506756723
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalPosition.z
-    path: TornadoGroup/Tornado
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 10
-        inSlope: 0
-        outSlope: 0
+        value: 7.82000017
+        inSlope: -1.05675673
+        outSlope: -1.05675673
         tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: EmissionModule.rate.scalar
-    path: TornadoGroup/Tornado
-    classID: 198
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: -.200000003
-        inSlope: .12777777
-        outSlope: .12777777
-        tangentMode: 10
-      - time: 3.5999999
-        value: .25999999
-        inSlope: .12777777
-        outSlope: .12777777
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: InitialModule.gravityModifier
-    path: TornadoGroup/Tornado
-    classID: 198
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 10
-        inSlope: -2
-        outSlope: -2
-        tangentMode: 10
-      - time: 5
+      - time: 7.4000001
         value: 0
-        inSlope: -2
-        outSlope: -2
+        inSlope: -1.05675673
+        outSlope: -1.05675673
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: InitialModule.startSize.scalar
-    path: TornadoGroup/Tornado
+    path: 
+    classID: 198
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 10
+        inSlope: -1.35135138
+        outSlope: -1.35135138
+        tangentMode: 10
+      - time: 7.4000001
+        value: 0
+        inSlope: -1.35135138
+        outSlope: -1.35135138
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: InitialModule.startSize.scalar
+    path: CloudSwirl
     classID: 198
     script: {fileID: 0}
   - curve:
@@ -410,21 +319,12 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: ShapeModule.angle
-    path: TornadoGroup/Tornado
-    classID: 198
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
+      - time: 2.4666667
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 5
+      - time: 7.4000001
         value: 0
         inSlope: 0
         outSlope: 0
@@ -432,78 +332,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalPosition.x
-    path: TornadoGroup/Tornado/CloudSwirl
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: -0
-        outSlope: -0
-        tangentMode: 10
-      - time: 5
-        value: -0
-        inSlope: -0
-        outSlope: -0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_LocalPosition.y
-    path: TornadoGroup/Tornado/CloudSwirl
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 40.7999992
-        inSlope: -1.77999997
-        outSlope: -1.77999997
-        tangentMode: 10
-      - time: 5
-        value: 31.8999996
-        inSlope: -1.77999997
-        outSlope: -1.77999997
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_LocalPosition.z
-    path: TornadoGroup/Tornado/CloudSwirl
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_IsActive
-    path: TornadoGroup/Tornado/CloudSwirl
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_LocalPosition.x
-    path: TornadoGroup/Tornado/DebrisCloud
+    path: DebrisCloud
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -514,7 +343,12 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 5
+      - time: 2.4666667
+        value: -3
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 7.4000001
         value: -3
         inSlope: 0
         outSlope: 0
@@ -522,7 +356,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalPosition.y
-    path: TornadoGroup/Tornado/DebrisCloud
+    path: DebrisCloud
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -530,18 +364,23 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 3
-        inSlope: -10.1599998
-        outSlope: -10.1599998
+        inSlope: -1.37837839
+        outSlope: -1.37837839
         tangentMode: 10
-      - time: 5
-        value: -47.7999992
-        inSlope: -10.1599998
-        outSlope: -10.1599998
+      - time: 2.4666667
+        value: -.400000006
+        inSlope: -5.01689148
+        outSlope: -5.01689148
+        tangentMode: 10
+      - time: 7.4000001
+        value: -43.0999985
+        inSlope: -8.65540504
+        outSlope: -8.65540504
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalPosition.z
-    path: TornadoGroup/Tornado/DebrisCloud
+    path: DebrisCloud
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -549,60 +388,46 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 5
-        inSlope: -1.79640722
-        outSlope: -1.79640722
-        tangentMode: 10
-      - time: 2.7833333
-        value: 0
-        inSlope: -.898203611
-        outSlope: -.898203611
-        tangentMode: 10
-      - time: 5
-        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 10
+      - time: 2.4666667
+        value: 5
+        inSlope: -.506756723
+        outSlope: -.506756723
+        tangentMode: 10
+      - time: 7.4000001
+        value: 0
+        inSlope: -1.01351345
+        outSlope: -1.01351345
+        tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: EmissionModule.rate.scalar
-    path: TornadoGroup/Tornado/DebrisCloud
+    path: DebrisCloud
     classID: 198
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_IsActive
-    path: TornadoGroup/Tornado/Debris
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 12
-        inSlope: -2.4000001
-        outSlope: -2.4000001
+        value: 10
+        inSlope: 3.7986486
+        outSlope: 3.7986486
         tangentMode: 10
-      - time: 5
-        value: 0
-        inSlope: -2.4000001
-        outSlope: -2.4000001
+      - time: 7.4000001
+        value: 38.1100006
+        inSlope: 3.7986486
+        outSlope: 3.7986486
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: EmissionModule.rate.scalar
-    path: TornadoGroup/Tornado/Debris
+    path: 
     classID: 198
     script: {fileID: 0}
   m_EulerEditorCurves: []
-  m_HasGenericRootTransform: 0
+  m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_Events: []
