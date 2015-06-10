@@ -15,14 +15,18 @@ function Start () {
 function Update () {
 	///SEPIA TONING
 	
-	if(tornadoScene.active && camObj.GetComponent(Renderer) == 1){
+	if(tornadoScene.active && camObj.GetComponent(Renderer) == 1 && mindSepia){
 		//enable sepia
-		//camObj.GetComponent(CC_Vintage).amount=1 ;
+		//camObj.GetComponent("CC_Vintage").range= 1;
+		//camObj.GetComponent("CC_Hue Focus").amount=1 ;
+		mindSepia = false;
 	
 	} else if(!tornadoScene.active && camObj.GetComponent(Renderer)  == 1 ){
 		// disable filter
-		//camObj.GetComponent(CC_Vintage).amount=0;
-	
+		//camObj.GetComponent("CC_Vintage").amount=0;
+		//camObj.GetComponent("CC_Hue Focus").range= 111;
+
+		mindSepia = true;
 	}
 
 	///CLEAR POPPIES

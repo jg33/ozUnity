@@ -9,7 +9,7 @@ public var cueComponent:cueSystem;
 //public var scenes:GameObject;
 var numScenes:int = 3;
 public var currentCue:int=0;
-private var prevCue:int =0;
+@HideInInspector public var prevCue:int =0;
 
 private var moviePosition:float = 0f;
 private var currentEventCue:int = 0;
@@ -102,8 +102,6 @@ function Update () {
 			
 				switch(currentCue){
 					case 1:
-						var msg2:GameObject = GameObject.Find("Message");
-						var msgTxt2: UI.Text = msg.GetComponent(UI.Text);
 						switch( currentEventCue ){
 							case 1:
 							cueComponent.playMovie("MoeTest");
@@ -115,19 +113,19 @@ function Update () {
 							break;
 						
 							case 3:
-							msgTxt2.text = "The case for bimetalism.";
+							camObj = GameObject.Find("Camera");
+							var clip :AudioClip= Resources.Load("Audience_Applause_1");
+							camObj.GetComponent(AudioSource).clip = clip;
+							camObj.GetComponent(AudioSource).Play();
 							break;
 						
 							case 4:
-							msgTxt2.text = "You dirty dancing hams!";
 							break;
 						
 							case 5:
-							msgTxt2.text = "Silver slippers";
 							break;
 						
 							case 6:
-							msgTxt.text = "Friends of Dorothy";
 							break;
 						
 							default:
