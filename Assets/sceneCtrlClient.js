@@ -31,7 +31,7 @@ function Awake(){
 function Start () {
 
 	#if UNITY_IPHONE
-	//iOS.NotificationServices.RegisterForNotifications(iOS.NotificationType.Alert);
+	iOS.NotificationServices.RegisterForNotifications(iOS.NotificationType.Alert);
 	#endif
 	Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	Network.Connect (connectionIP, portNumber);
@@ -84,28 +84,9 @@ function Update () {
 			Debug.Log("event trigger!");
 			currentEventCue = cueComponent.tempEventTriggers;				
 				switch(currentCue){
-				
-					case 1:
 					
-					switch( currentEventCue ){
-						case 1:
-
-			            //textFieldString = GUI.TextField (new Rect (500, 500, 500, 500), textFieldString, 25);
-						GameObject.Find("TrashCan").GetComponent.<Animator>().SetTrigger("Anim1");
-						Debug.Log("ugh");
-
-						break;
-					
-						case 2:
-						
-						GameObject.Find("TrashCan").GetComponent.<Animator>().SetTrigger("Anim2");
-
-						break;
-						
-					}
-					
-					break;
-					
+					//Removed Sassy Cylinder. Sorry.
+										
 					case 2:
 					
 					switch( currentEventCue ){
@@ -129,14 +110,15 @@ function Update () {
 					switch( currentEventCue ){
 						case 1:
 						///ALERT
-					
-					/*
 						Debug.Log("ALERT!!!");
-						var tornadoAlert: iOS.LocalNotification = iOS.LocalNotification();
+						#if UNITY_IPHONE
+						var tornadoAlert: iOS.LocalNotification = new iOS.LocalNotification();
+						tornadoAlert.alertAction = "Butts.";
 						tornadoAlert.alertBody = "ALERT: FLASH FLOOD WARNING IN YOUR AREA";
 						tornadoAlert.soundName = "cbs_alert_us";
-						iOS.NotificationServices.PresentLocalNotificationNow(tornadoAlert);
-						*/
+						tornadoAlert.fireDate = Date.Now.AddSeconds(2);
+						iOS.NotificationServices.ScheduleLocalNotification(tornadoAlert);
+						#endif
 						
 						break;
 						
