@@ -82,10 +82,49 @@ function Update () {
 		
 		if (cueComponent.tempEventTriggers != currentEventCue){
 			Debug.Log("event trigger!");
-			currentEventCue = cueComponent.tempEventTriggers;				
+			currentEventCue = cueComponent.tempEventTriggers;
+			
+			var msg:GameObject = GameObject.Find("Message");
+			var msgTxt: UI.Text = msg.GetComponent(UI.Text);				
 				switch(currentCue){
 					
 					//Removed Sassy Cylinder. Sorry.
+					
+					
+					case 1:
+					switch( currentEventCue ){
+						
+						case 1:
+
+							cueComponent.playMovie("MoeTest");
+							Debug.Log("MoeTest!");
+						break;
+						
+						case 2:
+							cueComponent.stopMovie();
+						break;
+						
+						case 3:
+							msgTxt.text = "You dirty dancing hams!";
+						break;
+						
+						case 4:
+							msgTxt.text = "You dirty dancing hams!";
+						break;
+						
+						case 5:
+							msgTxt.text = "You dirty dancing hams!";
+						break;
+						
+						case 6:
+							msgTxt.text = "You dirty dancing hams!";
+						break;
+						
+						
+						
+					}
+					
+					break;
 										
 					case 2:
 					
