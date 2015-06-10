@@ -158,15 +158,20 @@ function Update () {
 						break;
 						
 						case 2:
-						///TORNADO IN
+						//TORNADO ComeIn
+						GameObject.Find("Tornado").GetComponent.<Animator>().SetTrigger("TornadoTrigger1");
+						
 						break;
 						
 						case 3:
-						///TORNADO GROW
+						///TORNADO Move To Loop2
+						GameObject.Find("Tornado").GetComponent.<Animator>().SetTrigger("TornadoTrigger2");
 						break;
 						
 						case 4:
 						///TORNADO OUT
+						GameObject.Find("Tornado").GetComponent.<Animator>().SetTrigger("TornadoTrigger3");
+
 						break;
 						
 						default:
