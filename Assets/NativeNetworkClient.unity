@@ -21883,7 +21883,7 @@ MonoBehaviour:
   mImageTargetType: 0
 --- !u!21 &255532108
 Material:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -21892,6 +21892,7 @@ Material:
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -23430,6 +23431,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!114 &325657123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23553,6 +23555,10 @@ MonoBehaviour:
   MaxVelocity: 10
   workerThreads: 0
   DebugMode: 0
+  m_motionRT: {fileID: 0}
+  m_combinedRT: {fileID: 0}
+  m_blurRT: {fileID: 0}
+  m_dummyTex: {fileID: 0}
 --- !u!114 &325657128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26402,6 +26408,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!1001 &712612476
 Prefab:
   m_ObjectHideFlags: 0
@@ -26629,6 +26636,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!1 &747145918
 GameObject:
   m_ObjectHideFlags: 0
@@ -37280,6 +37288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poppyScene: {fileID: 190583772}
+  tornadoScene: {fileID: 149970812}
   camObj: {fileID: 325657119}
 --- !u!1 &1156982618
 GameObject:
@@ -40569,6 +40578,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!1 &1495683603
 GameObject:
   m_ObjectHideFlags: 0
@@ -40588,7 +40598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1495683604
 RectTransform:
   m_ObjectHideFlags: 0
@@ -40766,7 +40776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!111 &1517123483
 Animation:
   m_ObjectHideFlags: 0
@@ -50554,7 +50564,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_Enabled
@@ -66335,7 +66345,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1969150907
 RectTransform:
   m_ObjectHideFlags: 0
@@ -72601,6 +72611,21 @@ MonoBehaviour:
   showScenePreview: 1
   animatedObjectStartPosition: {x: 0, y: 0, z: 0}
   animatedObjectStartRotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1984277797 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100004, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
+  m_PrefabInternal: {fileID: 1775655438}
+--- !u!114 &1984277799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984277797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e50ada36f4595405b9accbd3300c72bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2004293961
 GameObject:
   m_ObjectHideFlags: 0

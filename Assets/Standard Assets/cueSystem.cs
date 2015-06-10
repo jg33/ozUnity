@@ -5,9 +5,16 @@ public class cueSystem : MonoBehaviour{
 	public int cueNumber = 0;
 	public int tempEventTriggers = 0;
 	public float moviePosition = 0;
-
+	public int textSelection = 0;
+	
 	public bool forcePassive = false;
 
+	NetworkView nv;
+
+	public void Start(){
+
+		nv = this.GetComponent<NetworkView>();
+	}
 
 	public void Update(){
 
@@ -56,6 +63,10 @@ public class cueSystem : MonoBehaviour{
 
 			else if (Input.GetKeyDown(KeyCode.P)){
 				forcePassive = !forcePassive;
+			} else if( Input.GetKeyDown(KeyCode.A) ){
+
+				nv.RPC("vibrate", RPCMode.All);
+
 			}
 		}	
 	}
@@ -70,12 +81,14 @@ public class cueSystem : MonoBehaviour{
 			stream.Serialize (ref tempEventTriggers);
 			stream.Serialize (ref forcePassive);
 			stream.Serialize (ref moviePosition);
+			stream.Serialize (ref textSelection);
 
 		} else {
 			stream.Serialize (ref cueNumber);
 			stream.Serialize (ref tempEventTriggers);
 			stream.Serialize (ref forcePassive);
 			stream.Serialize (ref moviePosition);
+			stream.Serialize (ref textSelection);
 
 		}
 	}
@@ -163,6 +176,8 @@ public class cueSystem : MonoBehaviour{
 		
 	}
 
-
+	public void selectText( int i){
+		textSelection = i;
+	}
 
 }

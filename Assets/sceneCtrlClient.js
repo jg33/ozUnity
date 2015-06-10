@@ -9,7 +9,7 @@ public var cueComponent:cueSystem;
 //public var scenes:GameObject;
 var numScenes:int = 3;
 public var currentCue:int=0;
-private var prevCue:int =0;
+@HideInInspector public var prevCue:int =0;
 
 private var moviePosition:float = 0f;
 private var currentEventCue:int = 0;
@@ -22,6 +22,8 @@ var timeoutCounter: int;
 private var forcePassive: boolean;
 private var camObj: GameObject;
 
+private var messageText:String[] = new String[10];
+private var currentTextSelection: int = 0;
 
 function Awake(){
 	DontDestroyOnLoad (this);
@@ -39,6 +41,13 @@ function Start () {
 	//GameObject.Find("Scenes").SetActive(true);
 	//var sceneListComp: sceneList = GameObject.Find("Scenes").GetComponent.<sceneList>();
 	
+	messageText[1]= "Hello";
+	messageText[2]= "Silver Slippers";
+	messageText[3]= "The Case for Bimetalism";
+	messageText[4]= "Friends of Dorothy...";
+	messageText[5]= "Another Thing...";
+	messageText[6]= "Hello";
+	messageText[7]= "Hello";
 	
 
 }
@@ -80,15 +89,19 @@ function Update () {
 		
 		} 
 		
+		if (cueComponent.textSelection != currentTextSelection){
+			var msg:GameObject = GameObject.Find("Message");
+			var msgTxt: UI.Text = msg.GetComponent(UI.Text);
+			currentTextSelection = cueComponent.textSelection;
+			msgTxt.text = messageText[currentTextSelection];
+		}
+		
 		if (cueComponent.tempEventTriggers != currentEventCue){
 			Debug.Log("event trigger!");
 			currentEventCue = cueComponent.tempEventTriggers;
 			
-			
 				switch(currentCue){
 					case 1:
-						var msg:GameObject = GameObject.Find("Message");
-						var msgTxt: UI.Text = msg.GetComponent(UI.Text);
 						switch( currentEventCue ){
 							case 1:
 							cueComponent.playMovie("MoeTest");
@@ -100,19 +113,19 @@ function Update () {
 							break;
 						
 							case 3:
-							msgTxt.text = "The case for bimetalism.";
+							camObj = GameObject.Find("Camera");
+							var clip :AudioClip= Resources.Load("Audience_Applause_1");
+							camObj.GetComponent(AudioSource).clip = clip;
+							camObj.GetComponent(AudioSource).Play();
 							break;
 						
 							case 4:
-							msgTxt.text = "You dirty dancing hams!";
 							break;
 						
 							case 5:
-							msgTxt.text = "Silver slippers";
 							break;
 						
 							case 6:
-							msgTxt.text = "Friends of Dorothy";
 							break;
 						
 							default:
@@ -372,5 +385,6 @@ function setActiveScene(newScene:String){
 	}
 
 }
+
 
 
