@@ -202,6 +202,14 @@ function Update () {
 						Debug.Log("no place!");
 
 						break;
+						
+						case 5:
+						
+						cueComponent.playMovie("randomRainbow");
+						Debug.Log("no place!");
+
+						break;
+				
 				
 						default:
 						break;
