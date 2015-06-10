@@ -105,7 +105,7 @@ function Update () {
 						break;
 						
 						case 3:
-							msgTxt.text = "You dirty dancing hams!";
+							msgTxt.text = "The case for bimetalism.";
 						break;
 						
 						case 4:
@@ -113,11 +113,11 @@ function Update () {
 						break;
 						
 						case 5:
-							msgTxt.text = "You dirty dancing hams!";
+							msgTxt.text = "Silver slippers";
 						break;
 						
 						case 6:
-							msgTxt.text = "You dirty dancing hams!";
+							msgTxt.text = "Friends of Dorothy";
 						break;
 						
 						
@@ -247,10 +247,6 @@ function Update () {
 						cueComponent.playMovie("randomRainbow");
 						Debug.Log("no place!");
 
-						break;
-				
-				
-						default:
 						break;
 					  
 					
