@@ -7097,7 +7097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPS: 24
   firstFrame: 0
-  lastFrame: 300
+  lastFrame: 1981
   FileName: 00
   digitsFormat: 0000
   digitsLocation: 1

@@ -29,6 +29,10 @@ function Awake(){
 
 
 function Start () {
+
+	#if UNITY_IPHONE
+	iOS.NotificationServices.RegisterForNotifications(iOS.NotificationType.Alert);
+	#endif
 	Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	Network.Connect (connectionIP, portNumber);
 	
@@ -61,6 +65,8 @@ function Update () {
 		
 		} if (forcePassive && Application.loadedLevel != 1){
 			Application.LoadLevel(1);
+			
+			
 		}
 
 		if (cueComponent.cueNumber != currentCue && Application.loadedLevel == 2){
@@ -76,33 +82,49 @@ function Update () {
 		
 		if (cueComponent.tempEventTriggers != currentEventCue){
 			Debug.Log("event trigger!");
-			currentEventCue = cueComponent.tempEventTriggers;				
+			currentEventCue = cueComponent.tempEventTriggers;
+			
+			
 				switch(currentCue){
-				
 					case 1:
-					
-					switch( currentEventCue ){
-						case 1:
-
-			            //textFieldString = GUI.TextField (new Rect (500, 500, 500, 500), textFieldString, 25);
-						GameObject.Find("TrashCan").GetComponent.<Animator>().SetTrigger("Anim1");
-						Debug.Log("ugh");
-
-						break;
-					
-						case 2:
+						var msg:GameObject = GameObject.Find("Message");
+						var msgTxt: UI.Text = msg.GetComponent(UI.Text);
+						switch( currentEventCue ){
+							case 1:
+							cueComponent.playMovie("MoeTest");
+							Debug.Log("MoeTest!");
+							break;
 						
-						GameObject.Find("TrashCan").GetComponent.<Animator>().SetTrigger("Anim2");
-
-						break;
+							case 2:
+							cueComponent.stopMovie();
+							break;
 						
-					}
-					
+							case 3:
+							msgTxt.text = "The case for bimetalism.";
+							break;
+						
+							case 4:
+							msgTxt.text = "You dirty dancing hams!";
+							break;
+						
+							case 5:
+							msgTxt.text = "Silver slippers";
+							break;
+						
+							case 6:
+							msgTxt.text = "Friends of Dorothy";
+							break;
+						
+							default:
+						
+							break;
+						}					
+							
+									
 					break;
 					
 					case 2:
-					
-					switch( currentEventCue ){
+						switch( currentEventCue ){
 						case 1:
 						
 						GameObject.Find("FunkyCube").GetComponent.<Animator>().SetTrigger("Anim1_1");
@@ -117,6 +139,43 @@ function Update () {
 						break;
 					}
 					break;
+					
+					case 4: //'Nado
+					
+					switch( currentEventCue ){
+						case 1:
+						///ALERT
+						Debug.Log("ALERT!!!");
+						#if UNITY_IPHONE
+						var tornadoAlert: iOS.LocalNotification = new iOS.LocalNotification();
+						tornadoAlert.alertAction = "Butts.";
+						tornadoAlert.alertBody = "ALERT: FLASH FLOOD WARNING IN YOUR AREA";
+						tornadoAlert.soundName = "cbs_alert_us";
+						tornadoAlert.fireDate = Date.Now.AddSeconds(2);
+						iOS.NotificationServices.ScheduleLocalNotification(tornadoAlert);
+						#endif
+						
+						break;
+						
+						case 2:
+						///TORNADO IN
+						break;
+						
+						case 3:
+						///TORNADO GROW
+						break;
+						
+						case 4:
+						///TORNADO OUT
+						break;
+						
+						default:
+						
+						break;
+						
+					}
+					break;
+					
 					
 					case 5:
 					
@@ -157,6 +216,43 @@ function Update () {
 					}
 					break;
 					
+					case 0:
+						switch( currentEventCue ){
+						case 1:
+						cueComponent.playMovie("MoeTest");
+						Debug.Log("MoeTest!");
+
+						break;
+				
+						case 2:
+						cueComponent.playMovie("kazoo");
+						Debug.Log("kazoo!");
+
+						break;
+				
+						case 3:
+						cueComponent.stopMovie();
+
+						break;
+						
+						case 4:
+						
+						cueComponent.playAudio("noPlace");
+						Debug.Log("no place!");
+
+						break;
+						
+						case 5:
+						
+						cueComponent.playMovie("randomRainbow");
+						Debug.Log("no place!");
+
+						break;
+					  
+					
+					}
+					break;
+					
 					default:
 						switch( currentEventCue ){
 						case 1:
@@ -182,8 +278,15 @@ function Update () {
 						Debug.Log("no place!");
 
 						break;
-				
-						default:
+						
+						case 5:
+						
+						cueComponent.playMovie("randomRainbow");
+						Debug.Log("no place!");
+
+						break;
+						
+						default: 
 						break;
 					  
 					
@@ -197,7 +300,7 @@ function Update () {
 			moviePosition = cueComponent.moviePosition;
 			camObj.SendMessage("syncToPosition", moviePosition, SendMessageOptions.DontRequireReceiver);	
 			
-			Debug.Log("sync to: " + moviePosition);
+			//Debug.Log("sync to: " + moviePosition);
 		} else if (camObj == null){
 			camObj = GameObject.Find("Camera");
 

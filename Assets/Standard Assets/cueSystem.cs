@@ -113,17 +113,16 @@ public class cueSystem : MonoBehaviour{
 
 			}
 
-
 		
 		} else if (Network.isServer){
 
 			GameObject video = GameObject.Find ("Video");
 
-			if(clipName == "cypher"){
-				video.SendMessage("loadMovie", "cypher", SendMessageOptions.DontRequireReceiver);
+			if(clipName == "MoeTest"){
+				video.SendMessage("loadMovie", "MoeOzTest", SendMessageOptions.DontRequireReceiver);
 				video.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
 				video.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
-				Debug.Log("cypher");
+				Debug.Log("moeTest");
 				
 			} else if(clipName == "kazoo"){
 				video.SendMessage("loadMovie", "rainbow04_", SendMessageOptions.DontRequireReceiver);
@@ -135,8 +134,13 @@ public class cueSystem : MonoBehaviour{
 	}
 	
 	[RPC] public void  stopMovie(){
-		GameObject.Find ("Camera").SendMessage("Stop");
 
+		if (Network.isClient){
+			GameObject.Find ("Camera").SendMessage("Stop");
+
+		}else if (Network.isServer){
+			GameObject.Find ("Video").SendMessage("Stop");
+		}
 
 		
 	}
