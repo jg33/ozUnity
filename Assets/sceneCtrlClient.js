@@ -22,6 +22,8 @@ var timeoutCounter: int;
 private var forcePassive: boolean;
 private var camObj: GameObject;
 
+private var messageText:String[] = new String[10];
+private var currentTextSelection: int = 0;
 
 function Awake(){
 	DontDestroyOnLoad (this);
@@ -39,6 +41,13 @@ function Start () {
 	//GameObject.Find("Scenes").SetActive(true);
 	//var sceneListComp: sceneList = GameObject.Find("Scenes").GetComponent.<sceneList>();
 	
+	messageText[1]= "Hello";
+	messageText[2]= "Silver Slippers";
+	messageText[3]= "The Case for Bimetalism";
+	messageText[4]= "Friends of Dorothy...";
+	messageText[5]= "Another Thing...";
+	messageText[6]= "Hello";
+	messageText[7]= "Hello";
 	
 
 }
@@ -80,14 +89,21 @@ function Update () {
 		
 		} 
 		
+		if (cueComponent.textSelection != currentTextSelection){
+			var msg:GameObject = GameObject.Find("Message");
+			var msgTxt: UI.Text = msg.GetComponent(UI.Text);
+			currentTextSelection = cueComponent.textSelection;
+			msgTxt.text = messageText[currentTextSelection];
+		}
+		
 		if (cueComponent.tempEventTriggers != currentEventCue){
 			Debug.Log("event trigger!");
 			currentEventCue = cueComponent.tempEventTriggers;
 			
 				switch(currentCue){
 					case 1:
-						var msg:GameObject = GameObject.Find("Message");
-						var msgTxt: UI.Text = msg.GetComponent(UI.Text);
+						var msg2:GameObject = GameObject.Find("Message");
+						var msgTxt2: UI.Text = msg.GetComponent(UI.Text);
 						switch( currentEventCue ){
 							case 1:
 							cueComponent.playMovie("MoeTest");
@@ -99,15 +115,15 @@ function Update () {
 							break;
 						
 							case 3:
-							msgTxt.text = "The case for bimetalism.";
+							msgTxt2.text = "The case for bimetalism.";
 							break;
 						
 							case 4:
-							msgTxt.text = "You dirty dancing hams!";
+							msgTxt2.text = "You dirty dancing hams!";
 							break;
 						
 							case 5:
-							msgTxt.text = "Silver slippers";
+							msgTxt2.text = "Silver slippers";
 							break;
 						
 							case 6:
@@ -366,5 +382,6 @@ function setActiveScene(newScene:String){
 	}
 
 }
+
 
 
