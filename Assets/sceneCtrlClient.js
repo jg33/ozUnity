@@ -29,6 +29,10 @@ function Awake(){
 
 
 function Start () {
+
+	#if UNITY_IPHONE
+	//iOS.NotificationServices.RegisterForNotifications(iOS.NotificationType.Alert);
+	#endif
 	Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	Network.Connect (connectionIP, portNumber);
 	
@@ -61,6 +65,8 @@ function Update () {
 		
 		} if (forcePassive && Application.loadedLevel != 1){
 			Application.LoadLevel(1);
+			
+			
 		}
 
 		if (cueComponent.cueNumber != currentCue && Application.loadedLevel == 2){
@@ -117,6 +123,38 @@ function Update () {
 						break;
 					}
 					break;
+					
+					case 4: //'Nado
+					
+					switch( currentEventCue ){
+						case 1:
+						///ALERT
+					
+					/*
+						Debug.Log("ALERT!!!");
+						var tornadoAlert: iOS.LocalNotification = iOS.LocalNotification();
+						tornadoAlert.alertBody = "ALERT: FLASH FLOOD WARNING IN YOUR AREA";
+						tornadoAlert.soundName = "cbs_alert_us";
+						iOS.NotificationServices.PresentLocalNotificationNow(tornadoAlert);
+						*/
+						
+						break;
+						
+						case 2:
+						///TORNADO IN
+						break;
+						
+						case 3:
+						///TORNADO GROW
+						break;
+						
+						case 4:
+						///TORNADO OUT
+						break;
+						
+					}
+					break;
+					
 					
 					case 5:
 					

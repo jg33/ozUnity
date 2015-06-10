@@ -113,7 +113,6 @@ public class cueSystem : MonoBehaviour{
 
 			}
 
-
 		
 		} else if (Network.isServer){
 
@@ -135,8 +134,13 @@ public class cueSystem : MonoBehaviour{
 	}
 	
 	[RPC] public void  stopMovie(){
-		GameObject.Find ("Camera").SendMessage("Stop");
 
+		if (Network.isClient){
+			GameObject.Find ("Camera").SendMessage("Stop");
+
+		}else if (Network.isServer){
+			GameObject.Find ("Video").SendMessage("Stop");
+		}
 
 		
 	}
