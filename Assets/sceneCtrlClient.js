@@ -204,7 +204,7 @@ function Update () {
 					switch( currentEventCue ){
 						case 1:
 						
-						var go:GameObject = Instantiate (Resources.Load ("pp1")) as GameObject; 
+						var go:GameObject = Instantiate (Resources.Load ("pp")) as GameObject; 
 						go.transform.parent = GameObject.Find("Scene9").transform;
 						Debug.Log("poppyClump1");
 
@@ -212,7 +212,7 @@ function Update () {
 					
 						case 2:
 						
-						var go2:GameObject  = Instantiate (Resources.Load ("pp1")) as GameObject; 
+						var go2:GameObject  = Instantiate (Resources.Load ("pp")) as GameObject; 
 						go2.transform.parent = GameObject.Find("Scene9").transform;
 						Debug.Log("poppyClump2");
 						
