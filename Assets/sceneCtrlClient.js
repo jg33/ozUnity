@@ -84,51 +84,47 @@ function Update () {
 			Debug.Log("event trigger!");
 			currentEventCue = cueComponent.tempEventTriggers;
 			
-			var msg:GameObject = GameObject.Find("Message");
-			var msgTxt: UI.Text = msg.GetComponent(UI.Text);				
+			
 				switch(currentCue){
-					
-					//Removed Sassy Cylinder. Sorry.
-					
-					
 					case 1:
-					switch( currentEventCue ){
-						
-						case 1:
-
+						var msg:GameObject = GameObject.Find("Message");
+						var msgTxt: UI.Text = msg.GetComponent(UI.Text);
+						switch( currentEventCue ){
+							case 1:
 							cueComponent.playMovie("MoeTest");
 							Debug.Log("MoeTest!");
-						break;
+							break;
 						
-						case 2:
+							case 2:
 							cueComponent.stopMovie();
-						break;
+							break;
 						
-						case 3:
+							case 3:
 							msgTxt.text = "The case for bimetalism.";
-						break;
+							break;
 						
-						case 4:
+							case 4:
 							msgTxt.text = "You dirty dancing hams!";
-						break;
+							break;
 						
-						case 5:
+							case 5:
 							msgTxt.text = "Silver slippers";
-						break;
+							break;
 						
-						case 6:
+							case 6:
 							msgTxt.text = "Friends of Dorothy";
-						break;
+							break;
 						
+							default:
 						
-						
-					}
-					
+							break;
+						}					
+							
+									
 					break;
-										
-					case 2:
 					
-					switch( currentEventCue ){
+					case 2:
+						switch( currentEventCue ){
 						case 1:
 						
 						GameObject.Find("FunkyCube").GetComponent.<Animator>().SetTrigger("Anim1_1");
@@ -171,6 +167,10 @@ function Update () {
 						
 						case 4:
 						///TORNADO OUT
+						break;
+						
+						default:
+						
 						break;
 						
 					}
@@ -216,7 +216,7 @@ function Update () {
 					}
 					break;
 					
-					default:
+					case 0:
 						switch( currentEventCue ){
 						case 1:
 						cueComponent.playMovie("MoeTest");
@@ -251,6 +251,46 @@ function Update () {
 					  
 					
 					}
+					break;
+					
+					default:
+						switch( currentEventCue ){
+						case 1:
+						cueComponent.playMovie("MoeTest");
+						Debug.Log("MoeTest!");
+
+						break;
+				
+						case 2:
+						cueComponent.playMovie("kazoo");
+						Debug.Log("kazoo!");
+
+						break;
+				
+						case 3:
+						cueComponent.stopMovie();
+
+						break;
+						
+						case 4:
+						
+						cueComponent.playAudio("noPlace");
+						Debug.Log("no place!");
+
+						break;
+						
+						case 5:
+						
+						cueComponent.playMovie("randomRainbow");
+						Debug.Log("no place!");
+
+						break;
+						
+						default: 
+						break;
+					  
+					
+					}
 			
 				}
 		}
@@ -260,7 +300,7 @@ function Update () {
 			moviePosition = cueComponent.moviePosition;
 			camObj.SendMessage("syncToPosition", moviePosition, SendMessageOptions.DontRequireReceiver);	
 			
-			Debug.Log("sync to: " + moviePosition);
+			//Debug.Log("sync to: " + moviePosition);
 		} else if (camObj == null){
 			camObj = GameObject.Find("Camera");
 
