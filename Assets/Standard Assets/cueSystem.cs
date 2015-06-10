@@ -8,6 +8,12 @@ public class cueSystem : MonoBehaviour{
 
 	public bool forcePassive = false;
 
+	NetworkView nv;
+
+	public void Start(){
+
+		nv = this.GetComponent<NetworkView>();
+	}
 
 	public void Update(){
 
@@ -56,6 +62,10 @@ public class cueSystem : MonoBehaviour{
 
 			else if (Input.GetKeyDown(KeyCode.P)){
 				forcePassive = !forcePassive;
+			} else if( Input.GetKeyDown(KeyCode.A) ){
+
+				nv.RPC("vibrate", RPCMode.All);
+
 			}
 		}	
 	}

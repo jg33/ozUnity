@@ -84,7 +84,6 @@ function Update () {
 			Debug.Log("event trigger!");
 			currentEventCue = cueComponent.tempEventTriggers;
 			
-			
 				switch(currentCue){
 					case 1:
 						var msg:GameObject = GameObject.Find("Message");
