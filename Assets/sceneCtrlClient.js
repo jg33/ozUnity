@@ -63,12 +63,19 @@ function Update () {
 		}
 	
 		if (Application.loadedLevel != 2 && !forcePassive){
+			//GameObject.Destroy(GameObject.Find("Camera Container"));
+			//yield WaitForSeconds(1);
+			GameObject.Find("Camera Container").SendMessage("setTightTracking", false);
 			Application.LoadLevel(2);
 			Debug.Log("Connected! Loading Active Mode!");
 			
 			camObj = GameObject.Find("Camera");
 		
 		} if (forcePassive && Application.loadedLevel != 1){
+			//GameObject.Destroy(GameObject.Find("Camera Container"));
+			//yield WaitForSeconds(1);
+			GameObject.Find("Camera Container").SendMessage("setTightTracking", true);
+
 			Application.LoadLevel(1);
 			
 			
@@ -350,8 +357,13 @@ function Update () {
 	} else{ //not connected
 	
 		if (Application.loadedLevel != 1 ){
-			Application.LoadLevel(1);
+			
+			//GameObject.Destroy(GameObject.Find("Camera Container"));
+			//yield WaitForSeconds(1);
 			Debug.Log("Disconnected! Loading Passive Mode! :'(");
+			GameObject.Find("Camera Container").SendMessage("setTightTracking", true);
+			Application.LoadLevel(1);
+			
 
 		}
 	
@@ -433,9 +445,6 @@ function setupText(){
 	messageText[7]= "In economics, bimetallism is a monetary standard in which the value of the monetary unit is defined as equivalent both[1] to a certain quantity of gold and to a certain quantity of silver; such a system establishes a fixed rate of exchange between the two metals. The defining characteristics of bimetallism are[2] Both gold and silver money are legal tender in unlimited amounts. The government will convert both gold and silver into legal tender coins at a fixed rate for individuals in unlimited quantities. This is called free coinage because the quantity is unlimited, even if a fee is charged.The combination of these conditions distinguishes bimetallism from a limping standard, where both gold and silver are legal tender but only one is freely coined (example: France, Germany, or the United States after 1873), or trade money where both metals are freely coined but only one is legal tender and the other is trade money (example: most of the coinage of western Europe from the 1200s to 1700s.) Economists also distinguish legal bimetallism, where the law guarantees these conditions, and de facto bimetallism where both gold and silver coins actually circulate at a fixed rate.";
 	messageText[8]= "There's only one way to succeed in this business. Step on those guys. Gouge their eyes out. Trample on them. Kick them in the balls. You'll be a smash.";
 	messageText[9]= "Scratch an itch";
-	messageText[10]= "Which";
-	messageText[11]= "Golden Snitch";
-	messageText[12]= "Scratch an itch";
 
 }
 
