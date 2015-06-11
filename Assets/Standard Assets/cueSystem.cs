@@ -107,7 +107,7 @@ public class cueSystem : MonoBehaviour{
 			if(clipName == "randomRainbow"){
 				Debug.Log("randomRainbow");
 				int rando = Random.Range(1,10);
-				string videoString = string.Format("Video/rainbow_{0:00}.mp4", rando );
+				string videoString = string.Format("Video/rainbow_{0:00}.mov", rando );
 					#if UNITY_IPHONE
 					Handheld.PlayFullScreenMovie(videoString);
 					#endif
