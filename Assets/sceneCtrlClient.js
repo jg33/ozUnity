@@ -104,7 +104,7 @@ function Update () {
 			currentEventCue = cueComponent.tempEventTriggers;
 			
 				switch(currentCue){
-					case 1:
+					case 1: //Intermediate Scene
 						switch( currentEventCue ){
 							case 1:
 							cueComponent.playMovie("MoeTest");
@@ -139,7 +139,7 @@ function Update () {
 									
 					break;
 					
-					case 2:
+					case 2: //CubeTest?
 						switch( currentEventCue ){
 						case 1:
 						
@@ -198,7 +198,7 @@ function Update () {
 					break;
 					
 					
-					case 5:
+					case 5: //MUNCHKINLAND!
 					
 					switch( currentEventCue ){
 						case 1:
@@ -213,7 +213,28 @@ function Update () {
 					}
 					break;
 					
-					case 9:
+					
+					case 8: //MONKEYS!
+					
+					switch( currentEventCue ){
+						case 1:
+						
+						/// Monkeys fly forwards
+
+						break;
+					
+						case 2:
+						
+						/// monkeys fly away
+						
+						break;
+
+					}
+					break;
+					
+					
+					
+					case 9: //POPPIES!
 					
 					switch( currentEventCue ){
 						case 1:
