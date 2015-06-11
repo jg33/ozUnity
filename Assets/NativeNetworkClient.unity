@@ -14024,6 +14024,108 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!1 &181414511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 181414512}
+  - 222: {fileID: 181414516}
+  - 114: {fileID: 181414515}
+  - 114: {fileID: 181414514}
+  - 114: {fileID: 181414513}
+  m_Layer: 0
+  m_Name: Text Scrollbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &181414512
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181414511}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1254171508}
+  m_Father: {fileID: 1694134507}
+  m_RootOrder: 1
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: -20}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &181414513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181414511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1200242548, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 0
+--- !u!114 &181414514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181414511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &181414515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181414511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1367256648, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 1254171508}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 1
+  m_Elasticity: .100000001
+  m_Inertia: 1
+  m_DecelerationRate: .135000005
+  m_ScrollSensitivity: 1
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!222 &181414516
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181414511}
 --- !u!1 &190583772
 GameObject:
   m_ObjectHideFlags: 0
@@ -21212,14 +21314,13 @@ GameObject:
   - 224: {fileID: 206929236}
   - 222: {fileID: 206929238}
   - 114: {fileID: 206929237}
-  - 114: {fileID: 206929239}
   m_Layer: 5
   m_Name: Message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &206929236
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21228,14 +21329,14 @@ RectTransform:
   m_GameObject: {fileID: 206929235}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .322207689, y: .322207659, z: .32220763}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1694134507}
-  m_RootOrder: 1
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 42.0999985, y: 18}
-  m_SizeDelta: {x: 982, y: 792}
+  m_RootOrder: 2
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: .904998779, y: 64.9049988}
+  m_SizeDelta: {x: -29.5900002, y: -82.1100006}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &206929237
 MonoBehaviour:
@@ -21252,35 +21353,24 @@ MonoBehaviour:
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: 539a4ce7f75934ca5893a7c8040d9b53, type: 3}
-    m_FontSize: 169
+    m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_BestFit: 1
+    m_MinSize: 1
+    m_MaxSize: 210
     m_Alignment: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Transition Card
+    m_LineSpacing: .400000006
+  m_Text: 'The most expensive movie ever made today is, Pirates of the Caribbean:
+    On Stranger Tides'
 --- !u!222 &206929238
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 206929235}
---- !u!114 &206929239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 206929235}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5290563181f844de9ac8e4d65288109d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UpdatedText: {fileID: 206929237}
 --- !u!1001 &227689002
 Prefab:
   m_ObjectHideFlags: 0
@@ -21773,6 +21863,7 @@ MonoBehaviour:
   cueNumber: 0
   tempEventTriggers: 0
   moviePosition: 0
+  textSelection: 0
   forcePassive: 0
 --- !u!4 &246532208
 Transform:
@@ -21815,6 +21906,7 @@ MonoBehaviour:
   cueComponent: {fileID: 246532207}
   numScenes: 12
   currentCue: 0
+  prevCue: 0
   sceneArray: []
   timeoutCounter: 0
 --- !u!1 &249890172
@@ -21883,7 +21975,7 @@ MonoBehaviour:
   mImageTargetType: 0
 --- !u!21 &255532108
 Material:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -21892,6 +21984,7 @@ Material:
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -23430,6 +23523,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!114 &325657123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23553,6 +23647,10 @@ MonoBehaviour:
   MaxVelocity: 10
   workerThreads: 0
   DebugMode: 0
+  m_motionRT: {fileID: 0}
+  m_combinedRT: {fileID: 0}
+  m_blurRT: {fileID: 0}
+  m_dummyTex: {fileID: 0}
 --- !u!114 &325657128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26402,6 +26500,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!1001 &712612476
 Prefab:
   m_ObjectHideFlags: 0
@@ -26536,6 +26635,134 @@ Transform:
   - {fileID: 341176709}
   m_Father: {fileID: 309304845}
   m_RootOrder: 1
+--- !u!43 &714982362
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: .5, y: 0, z: .285648108}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 000001000200020001000300
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 11
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 000000bf00000000784092be000000000000803f000000000000000000000000000000bf000000007840923e000000000000803f00000000000000000000803f0000003f00000000784092be000000000000803f000000000000803f000000000000003f000000007840923e000000000000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: .5, y: 0, z: .285648108}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
 --- !u!1 &745447083
 GameObject:
   m_ObjectHideFlags: 0
@@ -26629,6 +26856,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!1 &747145918
 GameObject:
   m_ObjectHideFlags: 0
@@ -36620,7 +36848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1070209063
 Transform:
   m_ObjectHideFlags: 0
@@ -37280,6 +37508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poppyScene: {fileID: 190583772}
+  tornadoScene: {fileID: 149970812}
   camObj: {fileID: 325657119}
 --- !u!1 &1156982618
 GameObject:
@@ -38603,134 +38832,6 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!43 &1201765642
-Mesh:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  serializedVersion: 8
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 6
-    topology: 0
-    firstVertex: 0
-    vertexCount: 4
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: .5, y: 0, z: .285648108}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexBuffer: 000001000200020001000300
-  m_Skin: []
-  m_VertexData:
-    m_CurrentChannels: 11
-    m_VertexCount: 4
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 128
-    _typelessdata: 000000bf00000000784092be000000000000803f000000000000000000000000000000bf000000007840923e000000000000803f00000000000000000000803f0000003f00000000784092be000000000000803f000000000000803f000000000000003f000000007840923e000000000000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: .5, y: 0, z: .285648108}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshOptimized: 0
 --- !u!1 &1208666149
 GameObject:
   m_ObjectHideFlags: 0
@@ -38831,6 +38932,72 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1221300843}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1254171507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1254171508}
+  - 222: {fileID: 1254171510}
+  - 114: {fileID: 1254171509}
+  m_Layer: 0
+  m_Name: Message
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1254171508
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1254171507}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 181414512}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: .899993896}
+  m_SizeDelta: {x: 0, y: 1.79998779}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1254171509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1254171507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: edd5370e7a140417a9aaf1494e2973ec, type: 3}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 24
+    m_MaxSize: 260
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1254171510
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1254171507}
 --- !u!1 &1272786349
 GameObject:
   m_ObjectHideFlags: 0
@@ -40251,10 +40418,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400184, guid: 4881a6c250f134fd496a3a56999cc04d, type: 3}
   m_PrefabInternal: {fileID: 1393960567}
---- !u!4 &1393960621 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1393960567}
 --- !u!1001 &1469621380
 Prefab:
   m_ObjectHideFlags: 0
@@ -40533,10 +40696,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400184, guid: 4881a6c250f134fd496a3a56999cc04d, type: 3}
   m_PrefabInternal: {fileID: 1469621380}
---- !u!4 &1469621434 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1469621380}
 --- !u!1 &1477378399
 GameObject:
   m_ObjectHideFlags: 0
@@ -40565,7 +40724,7 @@ RectTransform:
   m_LocalScale: {x: .322207689, y: .322207659, z: .32220763}
   m_Children: []
   m_Father: {fileID: 1694134507}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 249, y: 15}
@@ -40705,6 +40864,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!1 &1495683603
 GameObject:
   m_ObjectHideFlags: 0
@@ -48798,6 +48958,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1958573496}
+  - {fileID: 181414512}
   - {fileID: 206929236}
   - {fileID: 1477378400}
   - {fileID: 2039726735}
@@ -49107,7 +49268,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1759747524}
-  m_Mesh: {fileID: 1201765642}
+  m_Mesh: {fileID: 714982362}
 --- !u!114 &1759747527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49186,7 +49347,7 @@ RectTransform:
   m_LocalScale: {x: 3.12594676, y: 3.12594748, z: 3.12594748}
   m_Children: []
   m_Father: {fileID: 1694134507}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 6, y: 20}
@@ -50662,7 +50823,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400008, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: mKeepARCameraAlive
@@ -50690,11 +50851,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
@@ -51905,7 +52066,7 @@ MonoBehaviour:
   _points:
   - {fileID: 1815096991}
   - {fileID: 1815096990}
-  cameraPath: {fileID: 1815097022}
+  cameraPath: {fileID: 114590166}
   MINIMUM_EASE_VALUE: .00999999978
   _introPoint: {fileID: 1815096991}
   _outroPoint: {fileID: 1815096990}
@@ -51924,7 +52085,7 @@ MonoBehaviour:
   positionModes: 2
   givenName: Delay Point 1
   customName: End Point
-  fullName: MonkeyFlight_2 Delay Point 1
+  fullName: FlyingMonkey_test1 Delay Point 1
   _percent: 1
   _animationPercentage: 1
   point: {fileID: 0}
@@ -51932,7 +52093,7 @@ MonoBehaviour:
   cpointA: {fileID: 0}
   cpointB: {fileID: 0}
   curvePercentage: 0
-  worldPosition: {x: .73686409, y: 7.92390442, z: 16.5722752}
+  worldPosition: {x: 5.66248655, y: 11.2084694, z: -23.1982231}
   lockPoint: 0
   time: 0
   introStartEasePercentage: .100000001
@@ -51981,7 +52142,7 @@ MonoBehaviour:
   positionModes: 2
   givenName: Delay Point 0
   customName: Start Point
-  fullName: MonkeyFlight_2 Delay Point 0
+  fullName: FlyingMonkey_test1 Delay Point 0
   _percent: 0
   _animationPercentage: 0
   point: {fileID: 0}
@@ -52036,7 +52197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _points: []
-  cameraPath: {fileID: 1815097022}
+  cameraPath: {fileID: 114590166}
 --- !u!114 &1815096993
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -52049,7 +52210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _points: []
-  cameraPath: {fileID: 1815097022}
+  cameraPath: {fileID: 114590166}
   interpolation: 2
   _enabled: 0
 --- !u!114 &1815096994
@@ -52069,7 +52230,7 @@ MonoBehaviour:
   - {fileID: 1815096997}
   - {fileID: 1815096996}
   - {fileID: 1815096995}
-  cameraPath: {fileID: 1815097022}
+  cameraPath: {fileID: 114590166}
   interpolation: 2
   listEnabled: 1
   autoSensitivity: 1
@@ -52087,9 +52248,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Tilt Point 4
   customName: 
-  fullName: MonkeyFlight_2 Tilt Point 4
-  _percent: .800000012
-  _animationPercentage: .794520736
+  fullName: FlyingMonkey_test1 Tilt Point 4
+  _percent: 1
+  _animationPercentage: 1
   point: {fileID: 1815097012}
   index: 4
   cpointA: {fileID: 0}
@@ -52112,9 +52273,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Tilt Point 3
   customName: 
-  fullName: MonkeyFlight_2 Tilt Point 3
-  _percent: .600000024
-  _animationPercentage: .592066467
+  fullName: FlyingMonkey_test1 Tilt Point 3
+  _percent: .75
+  _animationPercentage: .742826521
   point: {fileID: 1815097013}
   index: 3
   cpointA: {fileID: 0}
@@ -52137,9 +52298,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Tilt Point 2
   customName: 
-  fullName: MonkeyFlight_2 Tilt Point 2
-  _percent: .400000006
-  _animationPercentage: .392931014
+  fullName: FlyingMonkey_test1 Tilt Point 2
+  _percent: .5
+  _animationPercentage: .494821817
   point: {fileID: 1815097014}
   index: 2
   cpointA: {fileID: 0}
@@ -52162,9 +52323,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Tilt Point 1
   customName: 
-  fullName: MonkeyFlight_2 Tilt Point 1
-  _percent: .200000003
-  _animationPercentage: .197009519
+  fullName: FlyingMonkey_test1 Tilt Point 1
+  _percent: .25
+  _animationPercentage: .248905763
   point: {fileID: 1815097015}
   index: 1
   cpointA: {fileID: 0}
@@ -52187,7 +52348,7 @@ MonoBehaviour:
   positionModes: 1
   givenName: Tilt Point 0
   customName: 
-  fullName: MonkeyFlight_2 Tilt Point 0
+  fullName: FlyingMonkey_test1 Tilt Point 0
   _percent: 0
   _animationPercentage: 0
   point: {fileID: 1815097016}
@@ -52215,7 +52376,7 @@ MonoBehaviour:
   - {fileID: 1815097003}
   - {fileID: 1815097002}
   - {fileID: 1815097001}
-  cameraPath: {fileID: 1815097022}
+  cameraPath: {fileID: 114590166}
   interpolation: 2
   listEnabled: 0
 --- !u!114 &1815097001
@@ -52232,9 +52393,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: FOV Point 4
   customName: 
-  fullName: MonkeyFlight_2 FOV Point 4
-  _percent: .800000012
-  _animationPercentage: .794520736
+  fullName: FlyingMonkey_test1 FOV Point 4
+  _percent: 1
+  _animationPercentage: 1
   point: {fileID: 1815097012}
   index: 4
   cpointA: {fileID: 0}
@@ -52258,9 +52419,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: FOV Point 3
   customName: 
-  fullName: MonkeyFlight_2 FOV Point 3
-  _percent: .600000024
-  _animationPercentage: .592066467
+  fullName: FlyingMonkey_test1 FOV Point 3
+  _percent: .75
+  _animationPercentage: .742826521
   point: {fileID: 1815097013}
   index: 3
   cpointA: {fileID: 0}
@@ -52284,9 +52445,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: FOV Point 2
   customName: 
-  fullName: MonkeyFlight_2 FOV Point 2
-  _percent: .400000006
-  _animationPercentage: .392931014
+  fullName: FlyingMonkey_test1 FOV Point 2
+  _percent: .5
+  _animationPercentage: .494821817
   point: {fileID: 1815097014}
   index: 2
   cpointA: {fileID: 0}
@@ -52310,9 +52471,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: FOV Point 1
   customName: 
-  fullName: MonkeyFlight_2 FOV Point 1
-  _percent: .200000003
-  _animationPercentage: .197009519
+  fullName: FlyingMonkey_test1 FOV Point 1
+  _percent: .25
+  _animationPercentage: .248905763
   point: {fileID: 1815097015}
   index: 1
   cpointA: {fileID: 0}
@@ -52336,7 +52497,7 @@ MonoBehaviour:
   positionModes: 1
   givenName: FOV Point 0
   customName: 
-  fullName: MonkeyFlight_2 FOV Point 0
+  fullName: FlyingMonkey_test1 FOV Point 0
   _percent: 0
   _animationPercentage: 0
   point: {fileID: 1815097016}
@@ -52365,7 +52526,7 @@ MonoBehaviour:
   - {fileID: 1815097009}
   - {fileID: 1815097008}
   - {fileID: 1815097007}
-  cameraPath: {fileID: 1815097022}
+  cameraPath: {fileID: 114590166}
   interpolation: 4
 --- !u!114 &1815097007
 MonoBehaviour:
@@ -52381,9 +52542,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Orientation Point 4
   customName: 
-  fullName: MonkeyFlight_2 Orientation Point 4
-  _percent: .800000012
-  _animationPercentage: .794520736
+  fullName: FlyingMonkey_test1 Orientation Point 4
+  _percent: 1
+  _animationPercentage: 1
   point: {fileID: 1815097012}
   index: 4
   cpointA: {fileID: 0}
@@ -52407,9 +52568,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Orientation Point 3
   customName: 
-  fullName: MonkeyFlight_2 Orientation Point 3
-  _percent: .600000024
-  _animationPercentage: .592066467
+  fullName: FlyingMonkey_test1 Orientation Point 3
+  _percent: .75
+  _animationPercentage: .742826521
   point: {fileID: 1815097013}
   index: 3
   cpointA: {fileID: 0}
@@ -52433,9 +52594,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Orientation Point 2
   customName: 
-  fullName: MonkeyFlight_2 Orientation Point 2
-  _percent: .400000006
-  _animationPercentage: .392931014
+  fullName: FlyingMonkey_test1 Orientation Point 2
+  _percent: .5
+  _animationPercentage: .494821817
   point: {fileID: 1815097014}
   index: 2
   cpointA: {fileID: 0}
@@ -52459,9 +52620,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Orientation Point 1
   customName: 
-  fullName: MonkeyFlight_2 Orientation Point 1
-  _percent: .200000003
-  _animationPercentage: .197009519
+  fullName: FlyingMonkey_test1 Orientation Point 1
+  _percent: .25
+  _animationPercentage: .248905763
   point: {fileID: 1815097015}
   index: 1
   cpointA: {fileID: 0}
@@ -52485,7 +52646,7 @@ MonoBehaviour:
   positionModes: 1
   givenName: Orientation Point 0
   customName: 
-  fullName: MonkeyFlight_2 Orientation Point 0
+  fullName: FlyingMonkey_test1 Orientation Point 0
   _percent: 0
   _animationPercentage: 0
   point: {fileID: 1815097016}
@@ -52510,15 +52671,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   givenName: Point 4
   customName: 
-  fullName: FlyingMonkey_test1 Point 4
+  fullName: MonkeyFlight_2 Point 4
   _position: {x: 5.66248655, y: 11.2084694, z: -23.1982231}
   _splitControlPoints: 0
   _forwardControlPoint: {x: -20, y: 0, z: -18.0799599}
   _backwardControlPoint: {x: 0, y: 0, z: 0}
   _pathDirection: {x: 0, y: 0, z: 1}
   index: 4
-  percentage: 1
-  normalisedPercentage: 1
+  percentage: .800000012
+  normalisedPercentage: .794520736
 --- !u!114 &1815097013
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -52532,15 +52693,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   givenName: Point 3
   customName: 
-  fullName: FlyingMonkey_test1 Point 3
+  fullName: MonkeyFlight_2 Point 3
   _position: {x: -6.19744968, y: 11.5414333, z: 9.88250065}
   _splitControlPoints: 0
   _forwardControlPoint: {x: -13.5538816, y: 0, z: 0}
   _backwardControlPoint: {x: 0, y: 0, z: 0}
   _pathDirection: {x: 0, y: 0, z: 1}
   index: 3
-  percentage: .75
-  normalisedPercentage: .742826521
+  percentage: .600000024
+  normalisedPercentage: .592066467
 --- !u!114 &1815097014
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -52554,15 +52715,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   givenName: Point 2
   customName: 
-  fullName: FlyingMonkey_test1 Point 2
+  fullName: MonkeyFlight_2 Point 2
   _position: {x: 4.93219185, y: 1.78282738, z: 4.63012505}
   _splitControlPoints: 0
   _forwardControlPoint: {x: -.331577301, y: 0, z: 2.91120625}
   _backwardControlPoint: {x: 0, y: 0, z: 0}
   _pathDirection: {x: 0, y: 0, z: 1}
   index: 2
-  percentage: .5
-  normalisedPercentage: .494821817
+  percentage: .400000006
+  normalisedPercentage: .392931014
 --- !u!114 &1815097015
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -52576,15 +52737,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   givenName: Point 1
   customName: 
-  fullName: FlyingMonkey_test1 Point 1
+  fullName: MonkeyFlight_2 Point 1
   _position: {x: 3.68805981, y: 11.3569279, z: -11.087883}
   _splitControlPoints: 0
   _forwardControlPoint: {x: 11.0708046, y: 0, z: 0}
   _backwardControlPoint: {x: 0, y: 0, z: 0}
   _pathDirection: {x: 0, y: 0, z: 1}
   index: 1
-  percentage: .25
-  normalisedPercentage: .248905763
+  percentage: .200000003
+  normalisedPercentage: .197009519
 --- !u!114 &1815097016
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -52598,7 +52759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   givenName: Point 0
   customName: 
-  fullName: FlyingMonkey_test1 Point 0
+  fullName: MonkeyFlight_2 Point 0
   _position: {x: .73686409, y: 7.92390442, z: 16.5722752}
   _splitControlPoints: 0
   _forwardControlPoint: {x: 16.1408997, y: 0, z: 0}
@@ -59233,7 +59394,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.24000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1393960621}
+  - {fileID: 1393960568}
   m_Father: {fileID: 2059922610}
   m_RootOrder: 3
 --- !u!114 &1844686358
@@ -72609,6 +72770,21 @@ MonoBehaviour:
   showScenePreview: 1
   animatedObjectStartPosition: {x: 0, y: 0, z: 0}
   animatedObjectStartRotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1984277797 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100004, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
+  m_PrefabInternal: {fileID: 1775655438}
+--- !u!114 &1984277799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984277797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e50ada36f4595405b9accbd3300c72bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2004293961
 GameObject:
   m_ObjectHideFlags: 0
@@ -72708,7 +72884,7 @@ Transform:
   m_LocalScale: {x: 353.113403, y: 353.113434, z: 353.113403}
   m_Children: []
   m_Father: {fileID: 1694134507}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!23 &2039726736
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -72961,7 +73137,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1469621434}
+  - {fileID: 1469621381}
   - {fileID: 1590470427}
   - {fileID: 990638922}
   - {fileID: 1844686357}

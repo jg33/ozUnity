@@ -9,7 +9,7 @@ public var cueComponent:cueSystem;
 //public var scenes:GameObject;
 var numScenes:int = 3;
 public var currentCue:int=0;
-private var prevCue:int =0;
+@HideInInspector public var prevCue:int =0;
 
 private var moviePosition:float = 0f;
 private var currentEventCue:int = 0;
@@ -22,6 +22,8 @@ var timeoutCounter: int;
 private var forcePassive: boolean;
 private var camObj: GameObject;
 
+private var messageText:String[] = new String[10];
+private var currentTextSelection: int = 0;
 
 function Awake(){
 	DontDestroyOnLoad (this);
@@ -39,6 +41,9 @@ function Start () {
 	//GameObject.Find("Scenes").SetActive(true);
 	//var sceneListComp: sceneList = GameObject.Find("Scenes").GetComponent.<sceneList>();
 	
+	
+	setupText();
+
 	
 
 }
@@ -80,15 +85,26 @@ function Update () {
 		
 		} 
 		
+		if (cueComponent.textSelection != currentTextSelection){
+			var msg:GameObject = GameObject.Find("Message");
+			var msgTxt: UI.Text = msg.GetComponent(UI.Text);
+			currentTextSelection = cueComponent.textSelection;
+			msgTxt.text = messageText[currentTextSelection];
+			if (messageText[currentTextSelection].Length>140){
+				//msg.transform.GetComponent(RectTransform).anchorMin = Vector2(0,-400);
+				//msg.transform.GetComponent(RectTransform).anchorMax = Vector2(0,800);
+			} else {
+				//msg.transform.GetComponent(RectTransform).anchorMin = Vector2(0,-150);
+				//msg.transform.GetComponent(RectTransform).anchorMax = Vector2(0,300);
+			}
+		}
+		
 		if (cueComponent.tempEventTriggers != currentEventCue){
 			Debug.Log("event trigger!");
 			currentEventCue = cueComponent.tempEventTriggers;
 			
-			
 				switch(currentCue){
-					case 1:
-						var msg:GameObject = GameObject.Find("Message");
-						var msgTxt: UI.Text = msg.GetComponent(UI.Text);
+					case 1: //Intermediate Scene
 						switch( currentEventCue ){
 							case 1:
 							cueComponent.playMovie("MoeTest");
@@ -100,19 +116,19 @@ function Update () {
 							break;
 						
 							case 3:
-							msgTxt.text = "The case for bimetalism.";
+							camObj = GameObject.Find("Camera");
+							var clip :AudioClip= Resources.Load("Audience_Applause_1");
+							camObj.GetComponent(AudioSource).clip = clip;
+							camObj.GetComponent(AudioSource).Play();
 							break;
 						
 							case 4:
-							msgTxt.text = "You dirty dancing hams!";
 							break;
 						
 							case 5:
-							msgTxt.text = "Silver slippers";
 							break;
 						
 							case 6:
-							msgTxt.text = "Friends of Dorothy";
 							break;
 						
 							default:
@@ -123,7 +139,7 @@ function Update () {
 									
 					break;
 					
-					case 2:
+					case 2: //CubeTest?
 						switch( currentEventCue ){
 						case 1:
 						
@@ -182,29 +198,48 @@ function Update () {
 					break;
 					
 					
-					case 5:
+					case 5: //MUNCHKINLAND!
 					
 					switch( currentEventCue ){
 						case 1:
 						GameObject.Find("GlindaPath").GetComponent.<Animator>().SetTrigger("Anim1_11");
-						Debug.Log("ImNumba5");
 
 						break;
 						
 						case 2:
 						GameObject.Find("Camera").GetComponent.<Animator>().SetTrigger("Anim1_M");
-						Debug.Log("ImNumba5");
 
 						break;
 					}
 					break;
 					
-					case 9:
+					
+					case 8: //MONKEYS!
 					
 					switch( currentEventCue ){
 						case 1:
 						
-						var go:GameObject = Instantiate (Resources.Load ("pp1")) as GameObject; 
+						/// Monkeys fly forwards
+
+						break;
+					
+						case 2:
+						
+						/// monkeys fly away
+						
+						break;
+
+					}
+					break;
+					
+					
+					
+					case 9: //POPPIES!
+					
+					switch( currentEventCue ){
+						case 1:
+						
+						var go:GameObject = Instantiate (Resources.Load ("pp")) as GameObject; 
 						go.transform.parent = GameObject.Find("Scene9").transform;
 						Debug.Log("poppyClump1");
 
@@ -212,7 +247,7 @@ function Update () {
 					
 						case 2:
 						
-						var go2:GameObject  = Instantiate (Resources.Load ("pp1")) as GameObject; 
+						var go2:GameObject  = Instantiate (Resources.Load ("pp")) as GameObject; 
 						go2.transform.parent = GameObject.Find("Scene9").transform;
 						Debug.Log("poppyClump2");
 						
@@ -355,21 +390,52 @@ function setActiveScene(newScene:String){
 	
 	sceneArray = GameObject.Find("Scenes").GetComponent.<sceneList>().sceneArray;
 	
-	if(i>=0){
+	if(i == 1){
 		canvasObject = sceneArray[i];
 		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length);
 		Debug.Log(sceneArray[i]);
 		canvasObject.SetActive(true);
 		canvasObject.GetComponent(Animation).Play("UIFadeIn");
-		
+	
 		canvasObject = sceneArray[prevCue];
 		canvasObject.GetComponent(Animation).Play("UIFadeOut");
 		canvasObject.SetActive(false);
+		
+	} else if(i>1){
+		canvasObject = sceneArray[i];
+		Debug.Log(sceneArray[i]);
+		canvasObject.SetActive(true);
+		
+		canvasObject = sceneArray[prevCue];
+		canvasObject.GetComponent(Animation).Play("UIFadeOut");
+		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length);
+		canvasObject.SetActive(false);
+	
+		
 	
 	} else if (i<0){
 		canvasObject.SetActive(false);
 
 	}
+
+}
+
+
+function setupText(){
+
+	messageText[0]= "There's only one way to succeed in this business. Step on those guys. Gouge their eyes out. Trample on them. Kick them in the balls. You'll be a smash.";
+	messageText[1]= "I want to make beautiful pictures about beautiful people.";
+	messageText[2]= "The most expensive movie ever made today is 'Pirates of the Caribbean: On Stranger Tides' ";
+	messageText[3]= "'Ding Dong' reached number 2 in the UK Singles Chart following the death of Margaret Thatcher on 8 April 2013.";
+	messageText[4]= "Which";
+	messageText[5]= "Golden Snitch";
+	messageText[6]= "Scratch an itch";
+	messageText[7]= "In economics, bimetallism is a monetary standard in which the value of the monetary unit is defined as equivalent both[1] to a certain quantity of gold and to a certain quantity of silver; such a system establishes a fixed rate of exchange between the two metals. The defining characteristics of bimetallism are[2] Both gold and silver money are legal tender in unlimited amounts. The government will convert both gold and silver into legal tender coins at a fixed rate for individuals in unlimited quantities. This is called free coinage because the quantity is unlimited, even if a fee is charged.The combination of these conditions distinguishes bimetallism from a limping standard, where both gold and silver are legal tender but only one is freely coined (example: France, Germany, or the United States after 1873), or trade money where both metals are freely coined but only one is legal tender and the other is trade money (example: most of the coinage of western Europe from the 1200s to 1700s.) Economists also distinguish legal bimetallism, where the law guarantees these conditions, and de facto bimetallism where both gold and silver coins actually circulate at a fixed rate.";
+	messageText[8]= "There's only one way to succeed in this business. Step on those guys. Gouge their eyes out. Trample on them. Kick them in the balls. You'll be a smash.";
+	messageText[9]= "Scratch an itch";
+	messageText[10]= "Which";
+	messageText[11]= "Golden Snitch";
+	messageText[12]= "Scratch an itch";
 
 }
 
