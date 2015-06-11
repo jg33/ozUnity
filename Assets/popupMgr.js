@@ -7,15 +7,15 @@ var generalListStyle            : GUIStyle  = new GUIStyle();
  
 //dropdown menu content
 var listColours : GUIContent[]; listColours = new GUIContent[25];
-listColours[0]  = new GUIContent("Hello.");
-listColours[1]  = new GUIContent("Silver Slippers");
-listColours[2]  = new GUIContent("The case for bimetalism");
-listColours[3]  = new GUIContent("Friends of Dorothy...");
-listColours[4]  = new GUIContent("Purple");
-listColours[5]  = new GUIContent("Another Thing");
-listColours[6]  = new GUIContent("Another Thing");
-listColours[7]  = new GUIContent("Another Thing");
-listColours[8]  = new GUIContent("Another Thing");
+listColours[0]  = new GUIContent("Succeed in business.");
+listColours[1]  = new GUIContent("beautiful pictures");
+listColours[2]  = new GUIContent("Pirates of the Caribbean");
+listColours[3]  = new GUIContent("Ding Dong");
+listColours[4]  = new GUIContent("Which");
+listColours[5]  = new GUIContent("Golden Snitch");
+listColours[6]  = new GUIContent("Itch");
+listColours[7]  = new GUIContent("Wiki");
+listColours[8]  = new GUIContent("Succeed in business.");
 listColours[9]  = new GUIContent("Another Thing");
 listColours[10]  = new GUIContent("Another Thing");
 listColours[11]  = new GUIContent("Another Thing"); 
@@ -74,7 +74,7 @@ function List(position : Rect, expandList : boolean, listEntry : int, defaultLis
 function OnGUI()
 {
     GUI.Label(Rect(600,10, 100, 20), listColours[listEntrySelected].text);
-    List(Rect(200, 10, 100, 20), showList, listEntry, GUIContent(listColours[listEntrySelected].text), listColours, "button", "box", generalListStyle);
+    List(Rect(200, 10, 200, 20), showList, listEntry, GUIContent(listColours[listEntrySelected].text), listColours, "button", "box", generalListStyle);
 }
 
 function Update(){

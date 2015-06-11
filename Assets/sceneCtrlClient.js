@@ -41,13 +41,9 @@ function Start () {
 	//GameObject.Find("Scenes").SetActive(true);
 	//var sceneListComp: sceneList = GameObject.Find("Scenes").GetComponent.<sceneList>();
 	
-	messageText[1]= "Hello";
-	messageText[2]= "Silver Slippers";
-	messageText[3]= "The Case for Bimetalism";
-	messageText[4]= "Friends of Dorothy...";
-	messageText[5]= "Another Thing...";
-	messageText[6]= "Hello";
-	messageText[7]= "Hello";
+	
+	setupText();
+
 	
 
 }
@@ -94,6 +90,13 @@ function Update () {
 			var msgTxt: UI.Text = msg.GetComponent(UI.Text);
 			currentTextSelection = cueComponent.textSelection;
 			msgTxt.text = messageText[currentTextSelection];
+			if (messageText[currentTextSelection].Length>140){
+				//msg.transform.GetComponent(RectTransform).anchorMin = Vector2(0,-400);
+				//msg.transform.GetComponent(RectTransform).anchorMax = Vector2(0,800);
+			} else {
+				//msg.transform.GetComponent(RectTransform).anchorMin = Vector2(0,-150);
+				//msg.transform.GetComponent(RectTransform).anchorMax = Vector2(0,300);
+			}
 		}
 		
 		if (cueComponent.tempEventTriggers != currentEventCue){
@@ -386,5 +389,23 @@ function setActiveScene(newScene:String){
 
 }
 
+
+function setupText(){
+
+	messageText[0]= "There's only one way to succeed in this business. Step on those guys. Gouge their eyes out. Trample on them. Kick them in the balls. You'll be a smash.";
+	messageText[1]= "I want to make beautiful pictures about beautiful people.";
+	messageText[2]= "The most expensive movie ever made today is 'Pirates of the Caribbean: On Stranger Tides' ";
+	messageText[3]= "'Ding Dong' reached number 2 in the UK Singles Chart following the death of Margaret Thatcher on 8 April 2013.";
+	messageText[4]= "Which";
+	messageText[5]= "Golden Snitch";
+	messageText[6]= "Scratch an itch";
+	messageText[7]= "In economics, bimetallism is a monetary standard in which the value of the monetary unit is defined as equivalent both[1] to a certain quantity of gold and to a certain quantity of silver; such a system establishes a fixed rate of exchange between the two metals. The defining characteristics of bimetallism are[2] Both gold and silver money are legal tender in unlimited amounts. The government will convert both gold and silver into legal tender coins at a fixed rate for individuals in unlimited quantities. This is called free coinage because the quantity is unlimited, even if a fee is charged.The combination of these conditions distinguishes bimetallism from a limping standard, where both gold and silver are legal tender but only one is freely coined (example: France, Germany, or the United States after 1873), or trade money where both metals are freely coined but only one is legal tender and the other is trade money (example: most of the coinage of western Europe from the 1200s to 1700s.) Economists also distinguish legal bimetallism, where the law guarantees these conditions, and de facto bimetallism where both gold and silver coins actually circulate at a fixed rate.";
+	messageText[8]= "There's only one way to succeed in this business. Step on those guys. Gouge their eyes out. Trample on them. Kick them in the balls. You'll be a smash.";
+	messageText[9]= "Scratch an itch";
+	messageText[10]= "Which";
+	messageText[11]= "Golden Snitch";
+	messageText[12]= "Scratch an itch";
+
+}
 
 

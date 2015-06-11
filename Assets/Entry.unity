@@ -129,12 +129,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67decd01da9e4df5a9e75cc2f41fa50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectionIP: 10.0.0.2
+  connectionIP: 192.168.1.5
   portNumber: 16261
   timeout: 300
   cueComponent: {fileID: 1120223039}
   numScenes: 12
   currentCue: 0
+  prevCue: 0
   sceneArray: []
   timeoutCounter: 0
 --- !u!148 &1120223038
@@ -163,6 +164,7 @@ MonoBehaviour:
   cueNumber: 0
   tempEventTriggers: 0
   moviePosition: 0
+  textSelection: 0
   forcePassive: 0
 --- !u!4 &1120223040
 Transform:
