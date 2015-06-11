@@ -369,16 +369,28 @@ function setActiveScene(newScene:String){
 	
 	sceneArray = GameObject.Find("Scenes").GetComponent.<sceneList>().sceneArray;
 	
-	if(i>=0){
+	if(i == 1){
 		canvasObject = sceneArray[i];
 		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length);
 		Debug.Log(sceneArray[i]);
 		canvasObject.SetActive(true);
 		canvasObject.GetComponent(Animation).Play("UIFadeIn");
-		
+	
 		canvasObject = sceneArray[prevCue];
 		canvasObject.GetComponent(Animation).Play("UIFadeOut");
 		canvasObject.SetActive(false);
+		
+	} else if(i>1){
+		canvasObject = sceneArray[i];
+		Debug.Log(sceneArray[i]);
+		canvasObject.SetActive(true);
+		
+		canvasObject = sceneArray[prevCue];
+		canvasObject.GetComponent(Animation).Play("UIFadeOut");
+		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length);
+		canvasObject.SetActive(false);
+	
+		
 	
 	} else if (i<0){
 		canvasObject.SetActive(false);
