@@ -246,7 +246,7 @@ function Update () {
 					switch( currentEventCue ){
 						case 1:
 						
-						var go:GameObject = Instantiate (Resources.Load ("pp")) as GameObject; 
+						var go:GameObject = Instantiate (Resources.Load ("PoppAYE")) as GameObject; 
 						go.transform.parent = GameObject.Find("Scene9").transform;
 						Debug.Log("poppyClump1");
 
@@ -254,10 +254,18 @@ function Update () {
 					
 						case 2:
 						
-						var go2:GameObject  = Instantiate (Resources.Load ("pp")) as GameObject; 
+						var go2:GameObject  = Instantiate (Resources.Load ("PoppAYE")) as GameObject; 
 						go2.transform.parent = GameObject.Find("Scene9").transform;
 						Debug.Log("poppyClump2");
 						
+						break;
+						
+						case 3:
+						
+						var animList = GameObject.Find("Scene9").GetComponentsInChildren.<Animator>();
+						for ( a in animList){
+						a.SetTrigger("PoppyGetGone");
+						}
 						break;
 
 					}
