@@ -17,10 +17,13 @@ private var projMatrix: Matrix4x4;
 
 private var isTracking: boolean;
 
+public var tightTracking:boolean;
+
 function Start () {
 	ARCam = GameObject.Find("ARCamera");
+	
 	targetPosition = this.transform.GetChild(0);
-
+	
 	targetPositionArray = new Array();
 	targetRotationArray = new Array();
 	targetGyroCorrectionArray = new Array();
@@ -32,8 +35,14 @@ function Update () {
 		cameraCam.transform.localPosition.x = 1000; //hide camera mirroring cam
 	}
 	
-	//Calculate when to track
 	
+	if(tightTracking){
+		this.gameObject.transform.localPosition = ARCam.transform.localPosition;
+		this.gameObject.transform.localRotation = ARCam.transform.localRotation;
+	
+	} else {
+	
+	//Calculate when to track
 	if (targetPositionArray.length == 0){
 		//updateTarget();
 		//isTracking = true;
@@ -69,7 +78,8 @@ function Update () {
 			updateTarget();
 			
 	}
-;
+	
+	}
 	
 }
 
@@ -141,6 +151,9 @@ public function lostTarget(){
 
 }
 
+public function setTightTracking(b:boolean){
+	tightTracking = b;
 
+}
 
 
