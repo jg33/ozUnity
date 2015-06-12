@@ -2,14 +2,19 @@
 
 var targetRotation: Quaternion;
 
+var tightTracking: boolean;
+
 
 function Start () {
 	targetRotation = Quaternion.identity;
 }
 
 function Update () {
-
-	transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation,0.04  );
+	if(tightTracking){
+		transform.localRotation = targetRotation;
+	} else{
+		transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation,0.04  );
+	}
 
 }
 
@@ -21,3 +26,8 @@ public function resetGyro(){
     		targetRotation = invertedOrientation;
 
    		 }
+   		 
+public function setTightTracking(t:boolean){
+
+	tightTracking = t;
+}

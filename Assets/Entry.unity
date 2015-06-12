@@ -143,6 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smoothing: .100000001
   tightTracking: 1
+  gyroResetter: {fileID: 1638352695}
 --- !u!1 &333248819
 GameObject:
   m_ObjectHideFlags: 0

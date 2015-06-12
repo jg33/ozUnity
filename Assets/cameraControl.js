@@ -19,6 +19,8 @@ private var isTracking: boolean;
 
 public var tightTracking:boolean;
 
+public var gyroResetter:GameObject;
+
 function Start () {
 	ARCam = GameObject.Find("ARCamera");
 	
@@ -48,45 +50,49 @@ function Update () {
 	
 		cam = this.GetComponentsInChildren(Camera)[0];
 		cam.set_projectionMatrix(projMatrix);
+		
+		gyroResetter.SendMessage("setTightTracking",true);
+		gyroResetter.SendMessage("resetGyro");
 	
 	} else {
 	
-	//Calculate when to track
-	if (targetPositionArray.length == 0){
-		//updateTarget();
-		//isTracking = true;
+		//Calculate when to track
+		if (targetPositionArray.length == 0){
+			//updateTarget();
+			//isTracking = true;
 
-	} else if ( targetPositionArray.length > 0 && targetPositionArray.length < 20){ //initial calibration
-    	updateTarget();
-    	isTracking = true;
-    	Debug.Log("intial tracking....");
-	
-    } else if ( Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= 0.01 &&
-    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= 4 &&
-    	Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= 20
-    	){ 
-    	updateTarget();
-    	isTracking = true;
-    	Debug.Log("tracking.... Dist: " + Vector3.Distance(targetPositionArray[targetPositionArray.length-1],ARCam.transform.localPosition) );
+		} else if ( targetPositionArray.length > 0 && targetPositionArray.length < 20){ //initial calibration
+	    	updateTarget();
+	    	isTracking = true;
+	    	Debug.Log("intial tracking....");
+		
+	    } else if ( Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= 0.01 &&
+	    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= 4 &&
+	    	Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= 20
+	    	){ 
+	    	updateTarget();
+	    	isTracking = true;
+	    	Debug.Log("tracking.... Dist: " + Vector3.Distance(targetPositionArray[targetPositionArray.length-1],ARCam.transform.localPosition) );
 
-    } else {
-    	isTracking = false;
-    }
-    
-    if(isTracking && Time.frameCount%10 == 0 ){
-    	GameObject.Find("GyroResetter").SendMessage("resetGyro");
-    	Debug.Log("Gyro Reset!");
-    };
-	
-	smoothToTarget(targetPosition, smoothing);
-	
-	if(Input.GetButton("Fire1") ){
-	
-			targetPositionArray.Clear();
-			targetRotationArray.Clear();
-			updateTarget();
-			
-	}
+	    } else {
+	    	isTracking = false;
+	    }
+	    
+	    if(isTracking && Time.frameCount%10 == 0 ){
+	    	gyroResetter.SendMessage("setTightTracking",false);
+	    	GameObject.Find("GyroResetter").SendMessage("resetGyro");
+	    	Debug.Log("Gyro Reset!");
+	    };
+		
+		smoothToTarget(targetPosition, smoothing);
+		
+		if(Input.GetButton("Fire1") ){
+		
+				targetPositionArray.Clear();
+				targetRotationArray.Clear();
+				updateTarget();
+				
+		}
 	
 	}
 	
