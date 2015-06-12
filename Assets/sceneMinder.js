@@ -46,7 +46,7 @@ function Update () {
 		for( var poppy:Renderer in renderers){
 			Debug.Log(poppy.gameObject.name);
 
-			if(!poppy.gameObject.GetComponent(ParticleSystem )){
+			if(!poppy.gameObject.GetComponent(ParticleSystem)){
 				poppy.enabled = false;
 				Debug.Log("Disabled Poppy Renderer");
 			
