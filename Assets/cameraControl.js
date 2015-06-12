@@ -39,6 +39,15 @@ function Update () {
 	if(tightTracking){
 		this.gameObject.transform.localPosition = ARCam.transform.localPosition;
 		this.gameObject.transform.localRotation = ARCam.transform.localRotation;
+		
+		var cam:Camera = ARCam.GetComponentsInChildren(Camera)[0];
+		projMatrix = cam.get_projectionMatrix();
+	
+		GameObject.Find("BackgroundPlane").transform.localScale = GameObject.Find("Virtual BackgroundPlane").transform.localScale;
+		GameObject.Find("Virtual BackgroundPlane").GetComponent.<Renderer>().enabled = false;
+	
+		cam = this.GetComponentsInChildren(Camera)[0];
+		cam.set_projectionMatrix(projMatrix);
 	
 	} else {
 	
@@ -53,8 +62,8 @@ function Update () {
     	Debug.Log("intial tracking....");
 	
     } else if ( Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= 0.01 &&
-    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= 2 &&
-    	Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= 10
+    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= 4 &&
+    	Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= 20
     	){ 
     	updateTarget();
     	isTracking = true;
@@ -127,6 +136,7 @@ function updateTarget(){
 	projMatrix = cam.get_projectionMatrix();
 	
 	GameObject.Find("BackgroundPlane").transform.localScale = GameObject.Find("Virtual BackgroundPlane").transform.localScale;
+	//GameObject.Find("BackgroundPlane").transform.localScale = Vector3(2368,1,1435);
 	GameObject.Find("Virtual BackgroundPlane").GetComponent.<Renderer>().enabled = false;
 	
 	cam = this.GetComponentsInChildren(Camera)[0];

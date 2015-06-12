@@ -66,6 +66,8 @@ function Update () {
 			//GameObject.Destroy(GameObject.Find("Camera Container"));
 			//yield WaitForSeconds(1);
 			GameObject.Find("Camera Container").SendMessage("setTightTracking", false);
+			GameObject.Find("Look Up").GetComponent(Renderer).enabled = true;
+
 			Application.LoadLevel(2);
 			Debug.Log("Connected! Loading Active Mode!");
 			
@@ -74,7 +76,9 @@ function Update () {
 		} if (forcePassive && Application.loadedLevel != 1){
 			//GameObject.Destroy(GameObject.Find("Camera Container"));
 			//yield WaitForSeconds(1);
-			GameObject.Find("Camera Container").SendMessage("setTightTracking", true);
+			GameObject.Find("Camera Container").SendMessage("setTightTracking", true);			
+			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
+
 
 			Application.LoadLevel(1);
 			
@@ -133,6 +137,8 @@ function Update () {
 							break;
 						
 							case 5:
+							cueComponent.playMovie("randomRainbow");
+							Debug.Log("rainbone!");
 							break;
 						
 							case 6:
@@ -300,7 +306,7 @@ function Update () {
 						case 5:
 						
 						cueComponent.playMovie("randomRainbow");
-						Debug.Log("no place!");
+						Debug.Log("rainbone!");
 
 						break;
 					  
@@ -370,6 +376,7 @@ function Update () {
 			//yield WaitForSeconds(1);
 			Debug.Log("Disconnected! Loading Passive Mode! :'(");
 			GameObject.Find("Camera Container").SendMessage("setTightTracking", true);
+			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
 			Application.LoadLevel(1);
 			
 
