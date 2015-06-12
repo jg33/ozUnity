@@ -519,7 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67decd01da9e4df5a9e75cc2f41fa50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectionIP: 10.0.0.2
+  connectionIP: 10.0.0.5
   portNumber: 16261
   timeout: 300
   cueComponent: {fileID: 1120223039}
@@ -630,9 +630,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPS: 24
   firstFrame: 0
-  lastFrame: 1981
+  lastFrame: 149
   FileName: 0
-  digitsFormat: 0000
+  digitsFormat: 000
   digitsLocation: 1
   aspectRatio: 1.77999997
   playMode: 0
@@ -989,6 +989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  tightTracking: 0
 --- !u!1001 &1825287120
 Prefab:
   m_ObjectHideFlags: 0

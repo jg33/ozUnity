@@ -473,4 +473,21 @@ public class VideoTexture_FullScreen : MonoBehaviour
 		loopNumber = 0;
 
 	}
+
+	public void setNumLoops(int n){
+
+
+		numberOfLoops = n;
+
+	}
+
+	public void setLooping(bool loop){
+
+		if (loop = true){
+			playMode = UVT_PlayMode.Loop;
+		} else {
+			playMode = UVT_PlayMode.Once;
+		}
+
+	}
 }

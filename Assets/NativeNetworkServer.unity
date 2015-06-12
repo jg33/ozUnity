@@ -7211,13 +7211,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPS: 24
   firstFrame: 0
-  lastFrame: 1981
+  lastFrame: 148
   FileName: 00
-  digitsFormat: 0000
+  digitsFormat: 000
   digitsLocation: 1
-  playMode: 0
+  playMode: 1
   pingpongStartsWithReverse: 0
-  numberOfLoops: 1
+  numberOfLoops: 5
   textureType: 0
   lowMemoryMode: 1
   scrollBar: {fileID: 109679850}
