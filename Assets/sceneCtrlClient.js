@@ -118,8 +118,8 @@ function Update () {
 					case 1: //Intermediate Scene
 						switch( currentEventCue ){
 							case 1:
-							cueComponent.playMovie("MoeTest");
-							Debug.Log("MoeTest!");
+							cueComponent.playMovie("NoPlaceLikeMoe");
+							Debug.Log("NoPlace!");
 							break;
 						
 							case 2:

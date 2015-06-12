@@ -124,6 +124,12 @@ public class cueSystem : MonoBehaviour{
 				cam.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
 				Debug.Log("kazooooooo");
 
+			} else if(clipName == "NoPlaceLikeMoe"){
+				cam.SendMessage("loadMovie", "NoPlaceLikeMoe", SendMessageOptions.DontRequireReceiver);
+				cam.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
+				cam.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
+				Debug.Log("NoPlaceLikeMoe");
+				
 			}
 
 		
