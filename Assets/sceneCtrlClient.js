@@ -273,6 +273,12 @@ function Update () {
 						a.SetTrigger("PoppyGetGone");
 						}
 						break;
+						
+						case 4:
+						
+						GameObject.Find("PoppyFeild").GetComponent.<Animator>().SetTrigger("PoppySnowGO");
+						
+						break;
 
 					}
 					break;
