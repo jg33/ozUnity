@@ -31,10 +31,6 @@ function Start () {
 
 }
 
-
-
-	
-
 function Update () {
 	
 	currentCue = cueComponent.cueNumber;

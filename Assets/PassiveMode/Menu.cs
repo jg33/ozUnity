@@ -9,9 +9,11 @@ public class Menu : MonoBehaviour {
 	private CanvasGroup _canvasGroup;
 
 	public bool IsOpen
-	{
+	{	
+
 		get {return _animator.GetBool ("IsOpen"); }
-		set { _animator.SetBool ("IsOpen", value);}
+		set { _animator = GetComponent<Animator>();
+			_animator.SetBool ("IsOpen", value);}
 	}
 
 

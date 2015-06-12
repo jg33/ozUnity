@@ -44,8 +44,13 @@ function Update () {
 		Debug.Log("Length "+renderers.Length);
 		
 		for( var poppy:Renderer in renderers){
-			poppy.enabled = false;
-			Debug.Log("Disabled Poppy Renderer");
+			Debug.Log(poppy.gameObject.name);
+
+			if(!poppy.gameObject.GetComponent(ParticleSystem)){
+				poppy.enabled = false;
+				Debug.Log("Disabled Poppy Renderer");
+			
+			} 
 
 		}
 		mindPoppies = false;
