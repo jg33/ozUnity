@@ -295,10 +295,12 @@ function Update () {
 							break;
 						
 							case 3:
+							/*
 							camObj = GameObject.Find("Camera");
 							var clip :AudioClip= Resources.Load("Audience_Applause_1");
 							camObj.GetComponent(AudioSource).clip = clip;
 							camObj.GetComponent(AudioSource).Play();
+							*/
 							break;
 						
 							case 4:
