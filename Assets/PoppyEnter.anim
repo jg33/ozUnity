@@ -323,6 +323,166 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: Fp_6
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 20.4333324
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 1.08257365, y: 1.08257365, z: 1.08257365}
+        outSlope: {x: 1.08257365, y: 1.08257365, z: 1.08257365}
+        tangentMode: 0
+      - time: 22.9500008
+        value: {x: 2.72447872, y: 2.72447872, z: 2.72447872}
+        inSlope: {x: 1.08257365, y: 1.08257365, z: 1.08257365}
+        outSlope: {x: 1.08257365, y: 1.08257365, z: 1.08257365}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: GP_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 22.583334
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 1.02167976, y: 1.02167976, z: 1.02167976}
+        outSlope: {x: 1.02167976, y: 1.02167976, z: 1.02167976}
+        tangentMode: 0
+      - time: 25.25
+        value: {x: 2.72447872, y: 2.72447872, z: 2.72447872}
+        inSlope: {x: 1.02167976, y: 1.02167976, z: 1.02167976}
+        outSlope: {x: 1.02167976, y: 1.02167976, z: 1.02167976}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: GP_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 24.25
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 1.05463672, y: 1.05463672, z: 1.05463672}
+        outSlope: {x: 1.05463672, y: 1.05463672, z: 1.05463672}
+        tangentMode: 0
+      - time: 26.833334
+        value: {x: 2.72447872, y: 2.72447872, z: 2.72447872}
+        inSlope: {x: 1.05463672, y: 1.05463672, z: 1.05463672}
+        outSlope: {x: 1.05463672, y: 1.05463672, z: 1.05463672}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: GP_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 26.2000008
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: .903142214, y: .903142214, z: .903142214}
+        outSlope: {x: .903142214, y: .903142214, z: .903142214}
+        tangentMode: 0
+      - time: 29.2166672
+        value: {x: 2.72447872, y: 2.72447872, z: 2.72447872}
+        inSlope: {x: .903142214, y: .903142214, z: .903142214}
+        outSlope: {x: .903142214, y: .903142214, z: .903142214}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: GP_4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 28.2166672
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 1.02810538, y: 1.02810538, z: 1.02810538}
+        outSlope: {x: 1.02810538, y: 1.02810538, z: 1.02810538}
+        tangentMode: 0
+      - time: 30.8666668
+        value: {x: 2.72447872, y: 2.72447872, z: 2.72447872}
+        inSlope: {x: 1.02810538, y: 1.02810538, z: 1.02810538}
+        outSlope: {x: 1.02810538, y: 1.02810538, z: 1.02810538}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: GP_5
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 29.8500004
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: .934107184, y: .934107184, z: .934107184}
+        outSlope: {x: .934107184, y: .934107184, z: .934107184}
+        tangentMode: 0
+      - time: 32.7666664
+        value: {x: 2.72447872, y: 2.72447872, z: 2.72447872}
+        inSlope: {x: .934107184, y: .934107184, z: .934107184}
+        outSlope: {x: .934107184, y: .934107184, z: .934107184}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: GP_6
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 31.6166668
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 1.04787624, y: 1.04787624, z: 1.04787624}
+        outSlope: {x: 1.04787624, y: 1.04787624, z: 1.04787624}
+        tangentMode: 0
+      - time: 34.2166672
+        value: {x: 2.72447872, y: 2.72447872, z: 2.72447872}
+        inSlope: {x: 1.04787624, y: 1.04787624, z: 1.04787624}
+        outSlope: {x: 1.04787624, y: 1.04787624, z: 1.04787624}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: GP_7
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 33.4166679
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: .996760428, y: .996760428, z: .996760428}
+        outSlope: {x: .996760428, y: .996760428, z: .996760428}
+        tangentMode: 0
+      - time: 36.1500015
+        value: {x: 2.72447872, y: 2.72447872, z: 2.72447872}
+        inSlope: {x: .996760428, y: .996760428, z: .996760428}
+        outSlope: {x: .996760428, y: .996760428, z: .996760428}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: GP_8
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 34.8666649
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: .990719557, y: .990719557, z: .990719557}
+        outSlope: {x: .990719557, y: .990719557, z: .990719557}
+        tangentMode: 0
+      - time: 37.6166649
+        value: {x: 2.72447872, y: 2.72447872, z: 2.72447872}
+        inSlope: {x: .990719557, y: .990719557, z: .990719557}
+        outSlope: {x: .990719557, y: .990719557, z: .990719557}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: GP_9
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 36.0166664
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: .864913464, y: .864913464, z: .864913464}
+        outSlope: {x: .864913464, y: .864913464, z: .864913464}
+        tangentMode: 0
+      - time: 39.1666679
+        value: {x: 2.72447872, y: 2.72447872, z: 2.72447872}
+        inSlope: {x: .864913464, y: .864913464, z: .864913464}
+        outSlope: {x: .864913464, y: .864913464, z: .864913464}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: GP_9.5
   m_FloatCurves:
   - curve:
       serializedVersion: 2
@@ -1151,6 +1311,441 @@ AnimationClip:
     path: Fp_6/Fp_6
     classID: 137
     script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 20.4333324
+        value: 0
+        inSlope: 11.0497227
+        outSlope: 11.0497227
+        tangentMode: 10
+      - time: 29.4833336
+        value: 100
+        inSlope: 11.0497227
+        outSlope: 11.0497227
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_1/GP_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 20.3833332
+        value: 0
+        inSlope: 11.4942522
+        outSlope: 11.4942522
+        tangentMode: 10
+      - time: 24.7333336
+        value: 50
+        inSlope: 1.53659964
+        outSlope: 1.53659964
+        tangentMode: 10
+      - time: 29.4833336
+        value: 10
+        inSlope: -8.42105293
+        outSlope: -8.42105293
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_1/GP_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 22.5666676
+        value: 0
+        inSlope: 10.4895134
+        outSlope: 10.4895134
+        tangentMode: 10
+      - time: 32.0999985
+        value: 100
+        inSlope: 10.4895134
+        outSlope: 10.4895134
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_2/GP_2
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 22.5666676
+        value: 0
+        inSlope: 10.4895115
+        outSlope: 10.4895115
+        tangentMode: 10
+      - time: 27.333334
+        value: 50
+        inSlope: .32881546
+        outSlope: .32881546
+        tangentMode: 10
+      - time: 32.0999985
+        value: 3.13472366
+        inSlope: -4.91594028
+        outSlope: -4.91594028
+        tangentMode: 10
+      - time: 32.1166649
+        value: 3.13472366
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_2/GP_2
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 24.2999992
+        value: 0
+        inSlope: 9.40438747
+        outSlope: 9.40438747
+        tangentMode: 10
+      - time: 34.9333344
+        value: 100
+        inSlope: 9.40438747
+        outSlope: 9.40438747
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_3/GP_3
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 24.2999992
+        value: 0
+        inSlope: 11.5384598
+        outSlope: 11.5384598
+        tangentMode: 10
+      - time: 29.5
+        value: 60
+        inSlope: 1.16800356
+        outSlope: 1.16800356
+        tangentMode: 10
+      - time: 34.9333344
+        value: 10
+        inSlope: -9.20245266
+        outSlope: -9.20245266
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_3/GP_3
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 26.1166668
+        value: 0
+        inSlope: 9.3603754
+        outSlope: 9.3603754
+        tangentMode: 10
+      - time: 36.7999992
+        value: 100
+        inSlope: 9.3603754
+        outSlope: 9.3603754
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_4/GP_4
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 26.1166668
+        value: 0
+        inSlope: 9.25926018
+        outSlope: 9.25926018
+        tangentMode: 10
+      - time: 31.5166664
+        value: 50
+        inSlope: .844140768
+        outSlope: .844140768
+        tangentMode: 10
+      - time: 36.7999992
+        value: 10
+        inSlope: -7.57097864
+        outSlope: -7.57097864
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_4/GP_4
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 28.2166672
+        value: 0
+        inSlope: 9.43396378
+        outSlope: 9.43396378
+        tangentMode: 10
+      - time: 38.8166656
+        value: 100
+        inSlope: 9.43396378
+        outSlope: 9.43396378
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_5/GP_5
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 28.2166672
+        value: 0
+        inSlope: 19.0476189
+        outSlope: 19.0476189
+        tangentMode: 10
+      - time: 33.4666672
+        value: 100
+        inSlope: .27147007
+        outSlope: .27147007
+        tangentMode: 10
+      - time: 38.8166656
+        value: 1
+        inSlope: -18.5046787
+        outSlope: -18.5046787
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_5/GP_5
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 29.916666
+        value: 0
+        inSlope: 9.3603754
+        outSlope: 9.3603754
+        tangentMode: 10
+      - time: 40.5999985
+        value: 100
+        inSlope: 9.3603754
+        outSlope: 9.3603754
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_6/GP_6
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 29.916666
+        value: 0
+        inSlope: 9.1185379
+        outSlope: 9.1185379
+        tangentMode: 10
+      - time: 35.4000015
+        value: 50
+        inSlope: .713112831
+        outSlope: .713112831
+        tangentMode: 10
+      - time: 40.5999985
+        value: 10
+        inSlope: -7.69231224
+        outSlope: -7.69231224
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_6/GP_6
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 31.5333328
+        value: 0
+        inSlope: 9.50871658
+        outSlope: 9.50871658
+        tangentMode: 10
+      - time: 42.0499992
+        value: 100
+        inSlope: 9.50871658
+        outSlope: 9.50871658
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_7/GP_7
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 31.5333328
+        value: 0
+        inSlope: 9.11854076
+        outSlope: 9.11854076
+        tangentMode: 10
+      - time: 37.0166664
+        value: 50
+        inSlope: .585760117
+        outSlope: .585760117
+        tangentMode: 10
+      - time: 42.0499992
+        value: 10
+        inSlope: -7.94702053
+        outSlope: -7.94702053
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_7/GP_7
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 33.3833351
+        value: 0
+        inSlope: 9.50871658
+        outSlope: 9.50871658
+        tangentMode: 10
+      - time: 43.9000015
+        value: 100
+        inSlope: 9.50871658
+        outSlope: 9.50871658
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_8/GP_8
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 33.3833351
+        value: 0
+        inSlope: 19.0476189
+        outSlope: 19.0476189
+        tangentMode: 10
+      - time: 38.6333351
+        value: 100
+        inSlope: .979505539
+        outSlope: .979505539
+        tangentMode: 10
+      - time: 43.9000015
+        value: 10
+        inSlope: -17.0886078
+        outSlope: -17.0886078
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_8/GP_8
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 34.9333344
+        value: 0
+        inSlope: 10.1694927
+        outSlope: 10.1694927
+        tangentMode: 10
+      - time: 44.7666664
+        value: 100
+        inSlope: 10.1694927
+        outSlope: 10.1694927
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_9/GP_9
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 34.9333344
+        value: 0
+        inSlope: 19.4805279
+        outSlope: 19.4805279
+        tangentMode: 10
+      - time: 40.0666656
+        value: 100
+        inSlope: .165797234
+        outSlope: .165797234
+        tangentMode: 10
+      - time: 44.7666664
+        value: 10
+        inSlope: -19.1489334
+        outSlope: -19.1489334
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_9/GP_9
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 36.7333336
+        value: 0
+        inSlope: 9.6930542
+        outSlope: 9.6930542
+        tangentMode: 10
+      - time: 47.0499992
+        value: 100
+        inSlope: 9.6930542
+        outSlope: 9.6930542
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_9.5/GP_9.5
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 36.7333336
+        value: 0
+        inSlope: 8.90207958
+        outSlope: 8.90207958
+        tangentMode: 10
+      - time: 42.3499985
+        value: 50
+        inSlope: .195721149
+        outSlope: .195721149
+        tangentMode: 10
+      - time: 47.0499992
+        value: 10
+        inSlope: -8.51063728
+        outSlope: -8.51063728
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_9.5/GP_9.5
+    classID: 137
+    script: {fileID: 0}
   m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
@@ -1273,6 +1868,66 @@ AnimationClip:
       classID: 4
       customType: 0
       isPPtrCurve: 0
+    - path: 667340937
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3201270067
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3385373093
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1470899206
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 548082832
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3114419498
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3466950076
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1578788909
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 689789115
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2129418328
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
     - path: 4290828507
       attribute: 1834416500
       script: {fileID: 0}
@@ -1496,6 +2151,126 @@ AnimationClip:
       customType: 20
       isPPtrCurve: 0
     - path: 3152642363
+      attribute: 2297008191
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 1450472368
+      attribute: 1834416500
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 1450472368
+      attribute: 2297008191
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 1240027300
+      attribute: 1834416500
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 1240027300
+      attribute: 2297008191
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 4122129303
+      attribute: 1834416500
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 4122129303
+      attribute: 2297008191
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 1993545356
+      attribute: 1834416500
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 1993545356
+      attribute: 2297008191
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 3397973439
+      attribute: 1834416500
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 3397973439
+      attribute: 2297008191
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 3574978219
+      attribute: 1834416500
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 3574978219
+      attribute: 2297008191
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 1766733208
+      attribute: 1834416500
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 1766733208
+      attribute: 2297008191
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 145201884
+      attribute: 1834416500
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 145201884
+      attribute: 2297008191
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 3036445167
+      attribute: 1834416500
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 3036445167
+      attribute: 2297008191
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 4254384075
+      attribute: 1834416500
+      script: {fileID: 0}
+      classID: 137
+      customType: 20
+      isPPtrCurve: 0
+    - path: 4254384075
       attribute: 2297008191
       script: {fileID: 0}
       classID: 137
@@ -1505,7 +2280,7 @@ AnimationClip:
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: 34.9333344
+    m_StopTime: 47.0499992
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -3428,6 +4203,1011 @@ AnimationClip:
       m_PostInfinity: 2
     attribute: m_LocalScale.z
     path: Fp_6
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 20.4333324
+        value: 0
+        inSlope: 11.0497227
+        outSlope: 11.0497227
+        tangentMode: 10
+      - time: 29.4833336
+        value: 100
+        inSlope: 11.0497227
+        outSlope: 11.0497227
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_1/GP_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 20.3833332
+        value: 0
+        inSlope: 11.4942522
+        outSlope: 11.4942522
+        tangentMode: 10
+      - time: 24.7333336
+        value: 50
+        inSlope: 1.53659964
+        outSlope: 1.53659964
+        tangentMode: 10
+      - time: 29.4833336
+        value: 10
+        inSlope: -8.42105293
+        outSlope: -8.42105293
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_1/GP_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 20.4333324
+        value: 0
+        inSlope: 1.08257365
+        outSlope: 1.08257365
+        tangentMode: 10
+      - time: 22.9500008
+        value: 2.72447872
+        inSlope: 1.08257365
+        outSlope: 1.08257365
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: GP_1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 20.4333324
+        value: 0
+        inSlope: 1.08257365
+        outSlope: 1.08257365
+        tangentMode: 10
+      - time: 22.9500008
+        value: 2.72447872
+        inSlope: 1.08257365
+        outSlope: 1.08257365
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: GP_1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 20.4333324
+        value: 0
+        inSlope: 1.08257365
+        outSlope: 1.08257365
+        tangentMode: 10
+      - time: 22.9500008
+        value: 2.72447872
+        inSlope: 1.08257365
+        outSlope: 1.08257365
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: GP_1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 22.5666676
+        value: 0
+        inSlope: 10.4895134
+        outSlope: 10.4895134
+        tangentMode: 10
+      - time: 32.0999985
+        value: 100
+        inSlope: 10.4895134
+        outSlope: 10.4895134
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_2/GP_2
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 22.5666676
+        value: 0
+        inSlope: 10.4895115
+        outSlope: 10.4895115
+        tangentMode: 10
+      - time: 27.333334
+        value: 50
+        inSlope: .32881546
+        outSlope: .32881546
+        tangentMode: 10
+      - time: 32.0999985
+        value: 3.13472366
+        inSlope: -4.91594028
+        outSlope: -4.91594028
+        tangentMode: 10
+      - time: 32.1166649
+        value: 3.13472366
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_2/GP_2
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 22.583334
+        value: 0
+        inSlope: 1.02167976
+        outSlope: 1.02167976
+        tangentMode: 10
+      - time: 25.25
+        value: 2.72447872
+        inSlope: 1.02167976
+        outSlope: 1.02167976
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: GP_2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 22.583334
+        value: 0
+        inSlope: 1.02167976
+        outSlope: 1.02167976
+        tangentMode: 10
+      - time: 25.25
+        value: 2.72447872
+        inSlope: 1.02167976
+        outSlope: 1.02167976
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: GP_2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 22.583334
+        value: 0
+        inSlope: 1.02167976
+        outSlope: 1.02167976
+        tangentMode: 10
+      - time: 25.25
+        value: 2.72447872
+        inSlope: 1.02167976
+        outSlope: 1.02167976
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: GP_2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 24.2999992
+        value: 0
+        inSlope: 9.40438747
+        outSlope: 9.40438747
+        tangentMode: 10
+      - time: 34.9333344
+        value: 100
+        inSlope: 9.40438747
+        outSlope: 9.40438747
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_3/GP_3
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 24.2999992
+        value: 0
+        inSlope: 11.5384598
+        outSlope: 11.5384598
+        tangentMode: 10
+      - time: 29.5
+        value: 60
+        inSlope: 1.16800356
+        outSlope: 1.16800356
+        tangentMode: 10
+      - time: 34.9333344
+        value: 10
+        inSlope: -9.20245266
+        outSlope: -9.20245266
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_3/GP_3
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 24.25
+        value: 0
+        inSlope: 1.05463672
+        outSlope: 1.05463672
+        tangentMode: 10
+      - time: 26.833334
+        value: 2.72447872
+        inSlope: 1.05463672
+        outSlope: 1.05463672
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: GP_3
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 24.25
+        value: 0
+        inSlope: 1.05463672
+        outSlope: 1.05463672
+        tangentMode: 10
+      - time: 26.833334
+        value: 2.72447872
+        inSlope: 1.05463672
+        outSlope: 1.05463672
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: GP_3
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 24.25
+        value: 0
+        inSlope: 1.05463672
+        outSlope: 1.05463672
+        tangentMode: 10
+      - time: 26.833334
+        value: 2.72447872
+        inSlope: 1.05463672
+        outSlope: 1.05463672
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: GP_3
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 26.1166668
+        value: 0
+        inSlope: 9.3603754
+        outSlope: 9.3603754
+        tangentMode: 10
+      - time: 36.7999992
+        value: 100
+        inSlope: 9.3603754
+        outSlope: 9.3603754
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_4/GP_4
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 26.1166668
+        value: 0
+        inSlope: 9.25926018
+        outSlope: 9.25926018
+        tangentMode: 10
+      - time: 31.5166664
+        value: 50
+        inSlope: .844140768
+        outSlope: .844140768
+        tangentMode: 10
+      - time: 36.7999992
+        value: 10
+        inSlope: -7.57097864
+        outSlope: -7.57097864
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_4/GP_4
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 26.2000008
+        value: 0
+        inSlope: .903142214
+        outSlope: .903142214
+        tangentMode: 10
+      - time: 29.2166672
+        value: 2.72447872
+        inSlope: .903142214
+        outSlope: .903142214
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: GP_4
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 26.2000008
+        value: 0
+        inSlope: .903142214
+        outSlope: .903142214
+        tangentMode: 10
+      - time: 29.2166672
+        value: 2.72447872
+        inSlope: .903142214
+        outSlope: .903142214
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: GP_4
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 26.2000008
+        value: 0
+        inSlope: .903142214
+        outSlope: .903142214
+        tangentMode: 10
+      - time: 29.2166672
+        value: 2.72447872
+        inSlope: .903142214
+        outSlope: .903142214
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: GP_4
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 28.2166672
+        value: 0
+        inSlope: 9.43396378
+        outSlope: 9.43396378
+        tangentMode: 10
+      - time: 38.8166656
+        value: 100
+        inSlope: 9.43396378
+        outSlope: 9.43396378
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_5/GP_5
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 28.2166672
+        value: 0
+        inSlope: 19.0476189
+        outSlope: 19.0476189
+        tangentMode: 10
+      - time: 33.4666672
+        value: 100
+        inSlope: .27147007
+        outSlope: .27147007
+        tangentMode: 10
+      - time: 38.8166656
+        value: 1
+        inSlope: -18.5046787
+        outSlope: -18.5046787
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_5/GP_5
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 28.2166672
+        value: 0
+        inSlope: 1.02810538
+        outSlope: 1.02810538
+        tangentMode: 10
+      - time: 30.8666668
+        value: 2.72447872
+        inSlope: 1.02810538
+        outSlope: 1.02810538
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: GP_5
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 28.2166672
+        value: 0
+        inSlope: 1.02810538
+        outSlope: 1.02810538
+        tangentMode: 10
+      - time: 30.8666668
+        value: 2.72447872
+        inSlope: 1.02810538
+        outSlope: 1.02810538
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: GP_5
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 28.2166672
+        value: 0
+        inSlope: 1.02810538
+        outSlope: 1.02810538
+        tangentMode: 10
+      - time: 30.8666668
+        value: 2.72447872
+        inSlope: 1.02810538
+        outSlope: 1.02810538
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: GP_5
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 29.916666
+        value: 0
+        inSlope: 9.3603754
+        outSlope: 9.3603754
+        tangentMode: 10
+      - time: 40.5999985
+        value: 100
+        inSlope: 9.3603754
+        outSlope: 9.3603754
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_6/GP_6
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 29.916666
+        value: 0
+        inSlope: 9.1185379
+        outSlope: 9.1185379
+        tangentMode: 10
+      - time: 35.4000015
+        value: 50
+        inSlope: .713112831
+        outSlope: .713112831
+        tangentMode: 10
+      - time: 40.5999985
+        value: 10
+        inSlope: -7.69231224
+        outSlope: -7.69231224
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_6/GP_6
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 29.8500004
+        value: 0
+        inSlope: .934107184
+        outSlope: .934107184
+        tangentMode: 10
+      - time: 32.7666664
+        value: 2.72447872
+        inSlope: .934107184
+        outSlope: .934107184
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: GP_6
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 29.8500004
+        value: 0
+        inSlope: .934107184
+        outSlope: .934107184
+        tangentMode: 10
+      - time: 32.7666664
+        value: 2.72447872
+        inSlope: .934107184
+        outSlope: .934107184
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: GP_6
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 29.8500004
+        value: 0
+        inSlope: .934107184
+        outSlope: .934107184
+        tangentMode: 10
+      - time: 32.7666664
+        value: 2.72447872
+        inSlope: .934107184
+        outSlope: .934107184
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: GP_6
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 31.5333328
+        value: 0
+        inSlope: 9.50871658
+        outSlope: 9.50871658
+        tangentMode: 10
+      - time: 42.0499992
+        value: 100
+        inSlope: 9.50871658
+        outSlope: 9.50871658
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_7/GP_7
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 31.5333328
+        value: 0
+        inSlope: 9.11854076
+        outSlope: 9.11854076
+        tangentMode: 10
+      - time: 37.0166664
+        value: 50
+        inSlope: .585760117
+        outSlope: .585760117
+        tangentMode: 10
+      - time: 42.0499992
+        value: 10
+        inSlope: -7.94702053
+        outSlope: -7.94702053
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_7/GP_7
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 31.6166668
+        value: 0
+        inSlope: 1.04787624
+        outSlope: 1.04787624
+        tangentMode: 10
+      - time: 34.2166672
+        value: 2.72447872
+        inSlope: 1.04787624
+        outSlope: 1.04787624
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: GP_7
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 31.6166668
+        value: 0
+        inSlope: 1.04787624
+        outSlope: 1.04787624
+        tangentMode: 10
+      - time: 34.2166672
+        value: 2.72447872
+        inSlope: 1.04787624
+        outSlope: 1.04787624
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: GP_7
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 31.6166668
+        value: 0
+        inSlope: 1.04787624
+        outSlope: 1.04787624
+        tangentMode: 10
+      - time: 34.2166672
+        value: 2.72447872
+        inSlope: 1.04787624
+        outSlope: 1.04787624
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: GP_7
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 33.3833351
+        value: 0
+        inSlope: 9.50871658
+        outSlope: 9.50871658
+        tangentMode: 10
+      - time: 43.9000015
+        value: 100
+        inSlope: 9.50871658
+        outSlope: 9.50871658
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_8/GP_8
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 33.3833351
+        value: 0
+        inSlope: 19.0476189
+        outSlope: 19.0476189
+        tangentMode: 10
+      - time: 38.6333351
+        value: 100
+        inSlope: .979505539
+        outSlope: .979505539
+        tangentMode: 10
+      - time: 43.9000015
+        value: 10
+        inSlope: -17.0886078
+        outSlope: -17.0886078
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_8/GP_8
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 33.4166679
+        value: 0
+        inSlope: .996760428
+        outSlope: .996760428
+        tangentMode: 10
+      - time: 36.1500015
+        value: 2.72447872
+        inSlope: .996760428
+        outSlope: .996760428
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: GP_8
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 33.4166679
+        value: 0
+        inSlope: .996760428
+        outSlope: .996760428
+        tangentMode: 10
+      - time: 36.1500015
+        value: 2.72447872
+        inSlope: .996760428
+        outSlope: .996760428
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: GP_8
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 33.4166679
+        value: 0
+        inSlope: .996760428
+        outSlope: .996760428
+        tangentMode: 10
+      - time: 36.1500015
+        value: 2.72447872
+        inSlope: .996760428
+        outSlope: .996760428
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: GP_8
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 34.9333344
+        value: 0
+        inSlope: 10.1694927
+        outSlope: 10.1694927
+        tangentMode: 10
+      - time: 44.7666664
+        value: 100
+        inSlope: 10.1694927
+        outSlope: 10.1694927
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_9/GP_9
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 34.9333344
+        value: 0
+        inSlope: 19.4805279
+        outSlope: 19.4805279
+        tangentMode: 10
+      - time: 40.0666656
+        value: 100
+        inSlope: .165797234
+        outSlope: .165797234
+        tangentMode: 10
+      - time: 44.7666664
+        value: 10
+        inSlope: -19.1489334
+        outSlope: -19.1489334
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_9/GP_9
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 34.8666649
+        value: 0
+        inSlope: .990719557
+        outSlope: .990719557
+        tangentMode: 10
+      - time: 37.6166649
+        value: 2.72447872
+        inSlope: .990719557
+        outSlope: .990719557
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: GP_9
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 34.8666649
+        value: 0
+        inSlope: .990719557
+        outSlope: .990719557
+        tangentMode: 10
+      - time: 37.6166649
+        value: 2.72447872
+        inSlope: .990719557
+        outSlope: .990719557
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: GP_9
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 34.8666649
+        value: 0
+        inSlope: .990719557
+        outSlope: .990719557
+        tangentMode: 10
+      - time: 37.6166649
+        value: 2.72447872
+        inSlope: .990719557
+        outSlope: .990719557
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: GP_9
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 36.7333336
+        value: 0
+        inSlope: 9.6930542
+        outSlope: 9.6930542
+        tangentMode: 10
+      - time: 47.0499992
+        value: 100
+        inSlope: 9.6930542
+        outSlope: 9.6930542
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.pCube1
+    path: GP_9.5/GP_9.5
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 36.7333336
+        value: 0
+        inSlope: 8.90207958
+        outSlope: 8.90207958
+        tangentMode: 10
+      - time: 42.3499985
+        value: 50
+        inSlope: .195721149
+        outSlope: .195721149
+        tangentMode: 10
+      - time: 47.0499992
+        value: 10
+        inSlope: -8.51063728
+        outSlope: -8.51063728
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: blendShape.blendShape1.Poppy_Full1_pCube1
+    path: GP_9.5/GP_9.5
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 36.0166664
+        value: 0
+        inSlope: .864913464
+        outSlope: .864913464
+        tangentMode: 10
+      - time: 39.1666679
+        value: 2.72447872
+        inSlope: .864913464
+        outSlope: .864913464
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: GP_9.5
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 36.0166664
+        value: 0
+        inSlope: .864913464
+        outSlope: .864913464
+        tangentMode: 10
+      - time: 39.1666679
+        value: 2.72447872
+        inSlope: .864913464
+        outSlope: .864913464
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: GP_9.5
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 36.0166664
+        value: 0
+        inSlope: .864913464
+        outSlope: .864913464
+        tangentMode: 10
+      - time: 39.1666679
+        value: 2.72447872
+        inSlope: .864913464
+        outSlope: .864913464
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: GP_9.5
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []

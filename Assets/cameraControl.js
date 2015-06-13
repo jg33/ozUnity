@@ -57,7 +57,7 @@ function Update () {
 	} else {
 	
 		//Calculate when to track
-		if (targetPositionArray.length == 0){
+		if (targetPositionArray.length == 0  ){
 			//updateTarget();
 			//isTracking = true;
 
@@ -67,8 +67,8 @@ function Update () {
 	    	Debug.Log("intial tracking....");
 		
 	    } else if ( Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= 0.01 &&
-	    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= 4 &&
-	    	Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= 20
+	    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= 1 &&
+	    	Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= 1
 	    	){ 
 	    	updateTarget();
 	    	isTracking = true;
@@ -78,7 +78,7 @@ function Update () {
 	    	isTracking = false;
 	    }
 	    
-	    if(isTracking && Time.frameCount%10 == 0 ){
+	    if(isTracking && Time.frameCount%1 == 0 ){
 	    	gyroResetter.SendMessage("setTightTracking",false);
 	    	GameObject.Find("GyroResetter").SendMessage("resetGyro");
 	    	Debug.Log("Gyro Reset!");
