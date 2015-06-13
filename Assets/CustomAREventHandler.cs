@@ -86,6 +86,7 @@ namespace Vuforia
 			if (mTrackableBehaviour.TrackableName == "Oz_TopTarget_inverted"){
 				GameObject camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("updateTarget");
+				camCtl.SendMessage("setFoundTarget",true);
 			}
 
 

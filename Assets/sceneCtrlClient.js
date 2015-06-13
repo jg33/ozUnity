@@ -96,7 +96,7 @@ function Update () {
 		
 		} 
 		
-		if (cueComponent.textSelection != currentTextSelection){
+		if (cueComponent.textSelection != currentTextSelection && Application.loadedLevel == 2){
 			var msg:GameObject = GameObject.Find("Message");
 			var msgTxt: UI.Text = msg.GetComponent(UI.Text);
 			currentTextSelection = cueComponent.textSelection;
@@ -130,7 +130,7 @@ function Update () {
 							camObj = GameObject.Find("Camera");
 							var clip :AudioClip= Resources.Load("Audience_Applause_1");
 							camObj.GetComponent(AudioSource).clip = clip;
-							camObj.GetComponent(AudioSource).Play();
+							//camObj.GetComponent(AudioSource).Play(); - Commented out for 3LD
 							break;
 						
 							case 4:
@@ -295,10 +295,12 @@ function Update () {
 							break;
 						
 							case 3:
+							/*
 							camObj = GameObject.Find("Camera");
 							var clip :AudioClip= Resources.Load("Audience_Applause_1");
 							camObj.GetComponent(AudioSource).clip = clip;
 							camObj.GetComponent(AudioSource).Play();
+							*/
 							break;
 						
 							case 4:
