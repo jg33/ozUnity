@@ -20,6 +20,7 @@ private var isTracking: boolean;
 public var tightTracking:boolean;
 
 public var gyroResetter:GameObject;
+public var foundTarget:boolean;
 
 function Start () {
 	ARCam = GameObject.Find("ARCamera");
@@ -86,7 +87,7 @@ function Update () {
 		
 		smoothToTarget(targetPosition, smoothing);
 		
-		if(Input.GetButton("Fire1") ){
+		if(Input.GetButton("Fire1") && foundTarget ){
 		
 				targetPositionArray.Clear();
 				targetRotationArray.Clear();
@@ -172,4 +173,11 @@ public function setTightTracking(b:boolean){
 
 }
 
+public function resetTracking(){
+	targetPositionArray.Clear();
+	targetRotationArray.Clear();
+}
 
+public function setFoundTarget(b:boolean){
+	foundTarget = b;
+}

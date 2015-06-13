@@ -96,7 +96,7 @@ function Update () {
 		
 		} 
 		
-		if (cueComponent.textSelection != currentTextSelection){
+		if (cueComponent.textSelection != currentTextSelection && Application.loadedLevel == 2){
 			var msg:GameObject = GameObject.Find("Message");
 			var msgTxt: UI.Text = msg.GetComponent(UI.Text);
 			currentTextSelection = cueComponent.textSelection;
@@ -130,7 +130,7 @@ function Update () {
 							camObj = GameObject.Find("Camera");
 							var clip :AudioClip= Resources.Load("Audience_Applause_1");
 							camObj.GetComponent(AudioSource).clip = clip;
-							camObj.GetComponent(AudioSource).Play();
+							//camObj.GetComponent(AudioSource).Play(); - Commented out for 3LD
 							break;
 						
 							case 4:
@@ -458,7 +458,7 @@ function setupText(){
 
 	messageText[0]= "There's only one way to succeed in this business. Step on those guys. Gouge their eyes out. Trample on them. Kick them in the balls. You'll be a smash.";
 	messageText[1]= "App ready... Please wait.";
-	messageText[2]= "The most expensive movie ever made today is 'Pirates of the Caribbean: On Stranger Tides' ";
+	messageText[2]= " ";
 	messageText[3]= "'Ding Dong' reached number 2 in the UK Singles Chart following the death of Margaret Thatcher on 8 April 2013.";
 	messageText[4]= "Which";
 	messageText[5]= "Golden Snitch";
