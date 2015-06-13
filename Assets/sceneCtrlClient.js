@@ -246,19 +246,19 @@ function Update () {
 					switch( currentEventCue ){
 						case 1:
 						
-						var go:GameObject = Instantiate (Resources.Load ("PoppAYE")) as GameObject; 
+						var go:GameObject = Instantiate (Resources.Load ("PoppE_Improved")) as GameObject; 
 						go.transform.parent = GameObject.Find("Scene9").transform;
 						Debug.Log("poppyClump1");
 
 						break;
 					
-						case 2:
+						//case 2:
 						
-						var go2:GameObject  = Instantiate (Resources.Load ("PoppAYE")) as GameObject; 
-						go2.transform.parent = GameObject.Find("Scene9").transform;
-						Debug.Log("poppyClump2");
+						//var go2:GameObject  = Instantiate (Resources.Load ("PoppAYE")) as GameObject; 
+						//go2.transform.parent = GameObject.Find("Scene9").transform;
+						//Debug.Log("poppyClump2");
 						
-						break;
+						//break;
 						
 						case 3:
 						
