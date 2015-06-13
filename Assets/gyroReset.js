@@ -5,11 +5,19 @@ var targetRotation: Quaternion;
 var tightTracking: boolean;
 
 
+function Awake(){
+	Input.gyro.enabled = true;
+}
+
 function Start () {
 	targetRotation = Quaternion.identity;
+	//targetRotation.SetFromToRotation(Input.gyro.gravity, Vector3(0,0,0));
+	resetGyro();
 }
 
 function Update () {
+
+
 	if(tightTracking){
 		transform.localRotation = targetRotation;
 	} else{
