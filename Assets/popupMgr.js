@@ -8,7 +8,7 @@ var generalListStyle            : GUIStyle  = new GUIStyle();
 //dropdown menu content
 var listColours : GUIContent[]; listColours = new GUIContent[25];
 listColours[0]  = new GUIContent("Succeed in business.");
-listColours[1]  = new GUIContent("beautiful pictures");
+listColours[1]  = new GUIContent("App ready...");
 listColours[2]  = new GUIContent("Pirates of the Caribbean");
 listColours[3]  = new GUIContent("Ding Dong");
 listColours[4]  = new GUIContent("Which");

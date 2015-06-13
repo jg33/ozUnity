@@ -91,7 +91,7 @@ function Update () {
 			setActiveScene(currentCue.ToString());
 		
 			#if UNITY_IPHONE
-			if (currentCue != 0 ) Handheld.Vibrate();
+			if (currentCue != 0 &&  currentCue != 1) Handheld.Vibrate();
 			#endif
 		
 		} 
@@ -285,39 +285,37 @@ function Update () {
 					
 					case 0:
 						switch( currentEventCue ){
-						case 1:
-						cueComponent.playMovie("MoeTest");
-						Debug.Log("MoeTest!");
-
-						break;
-				
-						case 2:
-						cueComponent.playMovie("kazoo");
-						Debug.Log("kazoo!");
-
-						break;
-				
-						case 3:
-						cueComponent.stopMovie();
-
-						break;
+							case 1:
+							cueComponent.playMovie("NoPlaceLikeMoe");
+							Debug.Log("NoPlace!");
+							break;
 						
-						case 4:
+							case 2:
+							cueComponent.stopMovie();
+							break;
 						
-						cueComponent.playAudio("noPlace");
-						Debug.Log("no place!");
-
-						break;
+							case 3:
+							camObj = GameObject.Find("Camera");
+							var clip :AudioClip= Resources.Load("Audience_Applause_1");
+							camObj.GetComponent(AudioSource).clip = clip;
+							camObj.GetComponent(AudioSource).Play();
+							break;
 						
-						case 5:
+							case 4:
+							break;
 						
-						cueComponent.playMovie("randomRainbow");
-						Debug.Log("rainbone!");
-
-						break;
-					  
-					
-					}
+							case 5:
+							cueComponent.playMovie("randomRainbow");
+							Debug.Log("rainbone!");
+							break;
+						
+							case 6:
+							break;
+						
+							default:
+						
+							break;
+						}		
 					break;
 					
 					default:
@@ -457,7 +455,7 @@ function setActiveScene(newScene:String){
 function setupText(){
 
 	messageText[0]= "There's only one way to succeed in this business. Step on those guys. Gouge their eyes out. Trample on them. Kick them in the balls. You'll be a smash.";
-	messageText[1]= "I want to make beautiful pictures about beautiful people.";
+	messageText[1]= "App ready... Please wait.";
 	messageText[2]= "The most expensive movie ever made today is 'Pirates of the Caribbean: On Stranger Tides' ";
 	messageText[3]= "'Ding Dong' reached number 2 in the UK Singles Chart following the death of Margaret Thatcher on 8 April 2013.";
 	messageText[4]= "Which";

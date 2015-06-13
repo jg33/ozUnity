@@ -11,13 +11,13 @@ function Awake(){
 
 function Start () {
 	targetRotation = Quaternion.identity;
-	//targetRotation.SetFromToRotation(Input.gyro.gravity, Vector3(0,0,0));
-	resetGyro();
+	targetRotation.SetFromToRotation(Input.gyro.gravity, Vector3(0,0,0));
+	//resetGyro();
 }
 
 function Update () {
 
-
+	Debug.Log("grav: "+Input.gyro.gravity);
 	if(tightTracking){
 		transform.localRotation = targetRotation;
 	} else{
