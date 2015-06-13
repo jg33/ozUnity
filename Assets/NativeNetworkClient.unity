@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  tightTracking: 0
 --- !u!1 &70176863
 GameObject:
   m_ObjectHideFlags: 0
@@ -44723,6 +44724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smoothing: .100000001
   tightTracking: 0
+  gyroResetter: {fileID: 0}
 --- !u!1 &1340927726
 GameObject:
   m_ObjectHideFlags: 0
@@ -46045,6 +46047,10 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400184, guid: 4881a6c250f134fd496a3a56999cc04d, type: 3}
   m_PrefabInternal: {fileID: 1393960567}
+--- !u!4 &1393960621 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1393960567}
 --- !u!1001 &1469621380
 Prefab:
   m_ObjectHideFlags: 0
@@ -46322,6 +46328,10 @@ Transform:
 --- !u!4 &1469621433 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400184, guid: 4881a6c250f134fd496a3a56999cc04d, type: 3}
+  m_PrefabInternal: {fileID: 1469621380}
+--- !u!4 &1469621434 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 1469621380}
 --- !u!1 &1477378399
 GameObject:
@@ -62555,7 +62565,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.24000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1393960568}
+  - {fileID: 1393960621}
   m_Father: {fileID: 2059922610}
   m_RootOrder: 3
 --- !u!114 &1844686358
@@ -75188,7 +75198,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1469621381}
+  - {fileID: 1469621434}
   - {fileID: 1590470427}
   - {fileID: 990638922}
   - {fileID: 1844686357}
