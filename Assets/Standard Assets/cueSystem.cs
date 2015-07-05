@@ -6,7 +6,12 @@ public class cueSystem : MonoBehaviour{
 	public int tempEventTriggers = 0;
 	public float moviePosition = 0;
 	public int textSelection = 0;
-	
+
+	public int tornadoState;
+	public int poppyState;
+	public int munchkinState;
+	public int monkeyState;
+
 	public bool forcePassive = false;
 
 	NetworkView nv;
@@ -59,6 +64,8 @@ public class cueSystem : MonoBehaviour{
 				tempEventTriggers = 6;
 			} else if (Input.GetKeyDown(KeyCode.Tab)){
 				tempEventTriggers = 0;
+			} else if (Input.GetKeyDown(KeyCode.M)){
+			
 			}
 
 			else if (Input.GetKeyDown(KeyCode.P)){

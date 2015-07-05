@@ -2771,6 +2771,10 @@ MonoBehaviour:
   tempEventTriggers: 0
   moviePosition: 0
   textSelection: 0
+  tornadoState: 0
+  poppyState: 0
+  munchkinState: 0
+  monkeyState: 0
   forcePassive: 0
 --- !u!4 &785902203
 Transform:
