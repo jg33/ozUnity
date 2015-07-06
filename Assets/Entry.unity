@@ -144,6 +144,7 @@ MonoBehaviour:
   smoothing: .100000001
   tightTracking: 1
   gyroResetter: {fileID: 1638352695}
+  foundTarget: 0
 --- !u!1 &333248819
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67decd01da9e4df5a9e75cc2f41fa50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectionIP: 10.0.0.2
+  connectionIP: 192.168.1.7
   portNumber: 16261
   timeout: 300
   cueComponent: {fileID: 1120223039}
@@ -555,6 +556,10 @@ MonoBehaviour:
   tempEventTriggers: 0
   moviePosition: 0
   textSelection: 0
+  tornadoState: 0
+  poppyState: 0
+  munchkinState: 0
+  monkeyState: 0
   forcePassive: 0
 --- !u!4 &1120223040
 Transform:

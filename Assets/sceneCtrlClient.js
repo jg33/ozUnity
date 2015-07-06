@@ -25,6 +25,9 @@ private var camObj: GameObject;
 private var messageText:String[] = new String[10];
 private var currentTextSelection: int = 0;
 
+// one-shot events that fire on cue or never //
+enum TriggeredEvents{ MOE_VIDEO, RANDOM_RAINBOW, TORNADO_ALERT, APPLAUSE, AWW, NO_PLACE };
+
 function Awake(){
 	DontDestroyOnLoad (this);
 }
@@ -453,6 +456,21 @@ function setActiveScene(newScene:String){
 
 }
 
+
+function handleEvent(state:TriggeredEvents){
+	switch (state){
+		case (TriggeredEvents.APPLAUSE):
+		
+		break;
+		
+		
+		default:
+		Debug.Log("unknown state: "+ state);
+		break;
+
+	}
+
+}
 
 function setupText(){
 
