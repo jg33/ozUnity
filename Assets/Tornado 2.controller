@@ -13,19 +13,25 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: TornadoTrigger2
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: TornadoTrigger3
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
+  - m_Name: state
+    m_Type: 3
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -46,9 +52,9 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: TornadoTrigger3
-    m_EventTreshold: 0
+  - m_ConditionMode: 3
+    m_ConditionEvent: state
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 110251912}
   m_Solo: 0
@@ -112,9 +118,9 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: TornadoTrigger2
-    m_EventTreshold: 0
+  - m_ConditionMode: 3
+    m_ConditionEvent: state
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 110279938}
   m_Solo: 0
@@ -136,8 +142,8 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: TornadoTrigger1
+  - m_ConditionMode: 3
+    m_ConditionEvent: state
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 110263670}
@@ -309,7 +315,7 @@ AnimatorStateMachine:
     m_Position: {x: 300, y: -204, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110263670}
-    m_Position: {x: 408, y: -60, z: 0}
+    m_Position: {x: 408, y: -72, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110205944}
     m_Position: {x: 408, y: 0, z: 0}

@@ -89,6 +89,13 @@ public class cueSystem : MonoBehaviour{
 			stream.Serialize (ref forcePassive);
 			stream.Serialize (ref moviePosition);
 			stream.Serialize (ref textSelection);
+			stream.Serialize (ref tornadoState);
+			stream.Serialize (ref munchkinState);
+			stream.Serialize (ref poppyState);
+			stream.Serialize (ref monkeyState);
+
+
+
 
 		} else {
 			stream.Serialize (ref cueNumber);
@@ -96,6 +103,10 @@ public class cueSystem : MonoBehaviour{
 			stream.Serialize (ref forcePassive);
 			stream.Serialize (ref moviePosition);
 			stream.Serialize (ref textSelection);
+			stream.Serialize (ref tornadoState);
+			stream.Serialize (ref munchkinState);
+			stream.Serialize (ref poppyState);
+			stream.Serialize (ref monkeyState);
 
 		}
 	}
@@ -210,6 +221,22 @@ public class cueSystem : MonoBehaviour{
 
 	public void selectText( int i){
 		textSelection = i;
+	}
+
+	public void setTornadoState(float i){
+		tornadoState = (int)i;
+	}
+
+	public void setPoppyState(float i){
+		poppyState = (int) i;
+	}
+
+	public void setMunchkinState(float i){
+		munchkinState = (int) i;
+	}
+
+	public void setMonkeyState(float i){
+		monkeyState = (int) i;
 	}
 
 }
