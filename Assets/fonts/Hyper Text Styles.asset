@@ -44,7 +44,7 @@ MonoBehaviour:
     m_ColorTintMode: 1
     m_ColorTweenMode: 0
   m_DefaultTextColor: {r: 1, g: 1, b: 1, a: 1}
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: fffda87a1f1054f64a179f46a8e45c03, type: 3}
   m_FontSize: 54
   m_InheritedStyles: []
   m_LineSpacing: 1
