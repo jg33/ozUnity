@@ -1,0 +1,211 @@
+Change List:
+
+1.4.1:
+    - Fixed bug causing incorrect link hitbox for links spanning multiple lines
+      with a single character on the second line.
+    - Library updates.
+1.4.0:
+    - Added missing method HyperText.GetTagKeywordCollections().
+    - Added Get/SetQuadKeywordCollections() to HyperText and HyperTextProcessor
+      so you can now substitute quads in for text (e.g., emoticons).
+    - Added ability to match punctuation in keywords.
+    - Added method signatures for IList getters that perform no/fewer
+      allocations:
+        - HyperText.GetLinkHitboxes()
+        - HyperText.GetLinkKeywordCollections()
+        - HyperTextProcessor.GetCustomTags()
+        - HyperTextProcessor.GetLinkKeywordCollections()
+        - HyperTextProcessor.GetLinks()
+        - HyperTextProcessor.GetQuads()
+        - HyperTextProcessor.GetTagKeywordCollections()
+        - HyperTextStyles.GetCascadedCustomTextStyles()
+        - HyperTextStyles.GetCascadedLinkStyles()
+        - HyperTextStyles.GetCascadedQuadStyles()
+        - HyperTextStyles.GetCustomTextStyles()
+        - HyperTextStyles.GetLinkStyles()
+        - HyperTextStyles.GetInheritedStyles()
+        - HyperTextStyles.GetQuadStyles()
+    - Changed method signatures for IList setters to take any IEnumerable<T>
+      and perform no allocations unless needed to grow lists:
+        - HyperText.SetLinkKeywordCollections()
+        - HyperText.SetTagKeywordCollections()
+        - HyperTextProcessor.SetLinkKeywordCollections()
+        - HyperTextProcessor.SetTagKeywordCollections()
+        - HyperTextStyles.SetLinkStyles()
+        - HyperTextStyles.SetCustomTextStyles()
+        - HyperTextStyles.SetInheritedStyles()
+        - HyperTextStyles.SetQuadStyles()
+    - Made some old method signatures that performed allocations obsolete.
+    - Added InputTextSource property to HyperText. If assigned, the OutputText
+      property of this object will be rendered on the HyperText instance.
+    - Added LocalizableText asset type to demonstrate use of
+      HyperText.InputTextSource. You can access it from Assets -> Create ->
+      Candlelight -> Localizable Text.
+    - Added default styles serializable property to HyperText. If you select
+      HyperText.cs, you can set a value here that will be assigned to any new
+      HyperText instance when it is first created.
+    - Fixed bug causing inherited quad styles to render at the wrong size if
+      the parent style sheet used a different font size.
+    - Library updates.
+1.3.2:
+    - Plug-in now supports WinRT and Windows Phone platforms.
+    - Library updates.
+1.3.1:
+    - Fixed bug causing run-time error on AOT platforms.
+    - Fixed bug causing styles with a size scalar to display at incorrect sizes
+      on scaled cavnases in Unity 4.6.5 and 5.1.0.
+    - Fixed possible exception in styles editor when adding inherited styles.
+    - Library updates.
+1.3.0:
+    - Fixed bugs in rendering non-square quads caused by 1.2.2. Behavior now
+      matches that of UnityEngine.UI.Image in Simple mode with preserveAspect.
+      You may have to reconfigure any quads that contained empty space.
+    - Fixed text not appearing in Unity 4.6.5.
+    - Fixed undo/redo of text changes not rebuilding geometry.
+    - Fixed exception in editor when setting size scale of custom styles.
+    - Assigning a Font to HyperText now overrides the Font assigned on its
+      style sheet. You may have to remove references to default fonts (e.g.,
+      Arial) on existing HyperText objects to recover old appearances.
+    - Added properties to override default font face, color, and line spacing on
+      HyperText.
+    - HyperText styles can now inherit from one another! If a custom style is
+      defined on a parent style, it can be overridden on a child style by
+      redefining it. If a style sheet has several parents, the sheets at the end
+      of the list have the highest priority.
+    - Library updates.
+    - Updated Known Issues in Readme.txt.
+1.2.3:
+    - Fixed a bug causing red and blue channels to swap for tinted quads in DX9.
+    - Cleaned up prefab in example scene.
+1.2.2:
+    - Fixed a bug causing non-square, non-packed quad sprites to render at the
+      wrong aspect ratio.
+    - AreLinksEnabled property is now Interactable to better match with Unity's
+      style.
+    - HyperText now properly inherits interactable state from CanvasGroups.
+    - Significantly improved performance of HyperTextStyles inspector with large
+      style sheets.
+    - Fixed possible crash from unhandled null exception in Unity when multiple
+      HyperTextStyles objects were selected in the editor.
+1.2.1:
+    - Fixed bug causing styles with a height offset to only apply correct offset
+      to first instance of tag.
+    - Improved inspector when not in wide mode.
+    - All inspector buttons now support keyboard navigation.
+    - Library updates.
+1.2.0:
+    - Styles setter no longer triggers if the reference is the same.
+    - Fixed bugs causing changes in font texture to garble text on other objects
+      using the same font.
+    - Fixed bug causing possible memory overflow while using IVertexModifiers
+      when no font was assigned.
+    - Moved all files into Plugins directory to reduce compile times and allow
+      compatibility with languages other than C#.
+    - Library updates.
+1.1.30:
+    - Fixed bug with multiline tagged text not being processed.
+1.1.29:
+    - Fixed bug causing memory overflow in some situations where HyperText was
+      in a layout.
+    - Changed version numbering scheme.
+1.28:
+    - HyperText.HyperlinkEvents will now pass the class name in the LinkInfo
+      argument even when no style is actually defined for the specified class.
+1.27:
+    - Fixed bug that could cause geometry to render at the wrong size when
+      using the rect transform tool in the editor with certain canvas
+      configurations.
+    - Library updates.
+1.26:
+    - Fixed bug returning incorrect preferred height/width for layout.
+1.25:
+    - Fixed bug causing AOT compiler to fail (micro mscorlib stripping level
+      still fails, but will be addressed in next update).
+1.24:
+    - Unify project layout and asset IDs across asset store products.
+1.23:
+    - Fixed bug causing font size to infinitely shrink when toggling links on
+      and off under a scaled canvas.
+    - Fixed bug causing font to sometimes render the incorrect size for one
+      frame when scaling the canvas.
+1.22:
+    - Remove top-level menu for editor library function.
+1.21:
+    - Library updates for 5.0b17 compatibility.
+1.20:
+    - Fixed inspector bug causing exceptions to be thrown in corner cases when
+      adding new custom styles.
+1.19:
+    - Changed HyperTextStyles inspector to improve performance when many styles
+      are defined.
+    - Fixed MissingReferenceException caused when editing HyperTextStyles after
+      deleting a HyperText object that was referencing them.
+    - Library updates.
+1.18:
+    - Changed how masking is applied to quads, which now allows quads with the
+      same Packing ID to batch across HyperText instances.
+    - Minor updates to sample assets.
+    - Library updates.
+1.17:
+    - Horizontal and vertical overflow settings are now respected.
+    - Fixed some possible error messages in builds when styles are deserialized.
+    - 4.6.1f1 is minimum version.
+1.16:
+    - Fixed exceptions when adding new styles.
+1.15:
+    - Fixed bug with class assignment for auto-detected keywords.
+    - Cleared warnings about setting parents when using quads.
+    - Upgraded remaining example prefabs.
+1.14:
+    - Upgraded example scene to account for changes in canvas scaling system.
+    - 4.6.0f3 is minimum version.
+1.13:
+    - Prevent text from disappearing at certain Canvas scale factors.
+    - Library updates.
+    - 4.6.0f1 is minimum version.
+1.12:
+    - Library updates.
+1.11:
+    - Factored text processing functionality into HyperTextProcessor class. You
+      can now use this class to extract indices for links and quads, as well as
+      to apply custom tag styles to text, in order to use hyper text in other
+      places outside the HyperText component.
+    - Fixed bug preventing links from returning to hover state after a press.
+    - Fixed bug causing custom tags' vertical offset to be ignored when using
+      non-dynamic fonts.
+    - Fixed bug preventing some nested tags' scale values from multiplying.
+    - Library updates.
+1.10:
+    - Library updates.
+    - Added tags to assets to improve asset store searchability.
+1.09:
+    - Library updates.
+1.08:
+    - In line with 4.6.0b21 UI.Text component, support scaling non-dynamic fonts
+      via font size property. Set font size to zero to disable.
+    - Fixed bug with HyperTextStyles inspector that prevented link base color
+      from being overridden.
+    - Library updates.
+    - 4.6.0b21 is minimum version.
+1.07:
+    - Fixed bug that could cause text to scale incorrectly when styles were
+      edited.
+1.06:
+    - Fixed bug with link hitboxes not scaling with scaled canvases.
+1.05:
+    - Fixed bug with clipping and scaling of text in scaled canvases.
+    - 4.6.0b20 is minimum version.
+1.04:
+    - Added line spacing to styles.
+    - 4.6.0b19 is minimum version.
+1.03:
+    - Library updates to enhance inspector.
+1.02:
+    - Textures in example folder are no longer compressed, so they won't slow
+      down platform changes.
+    - Updated documentation.
+1.01:
+    - Compatibility update for 4.6.0b18.
+    - Library updates to enhance inspector.
+1.0:
+    - HyperText was released to the world!

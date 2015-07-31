@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac2b6ab4dd444dbbab600921238ffba, type: 3}
+  m_Name: Fantasy Text
+  m_EditorClassIdentifier: 
+  m_CustomTextStyles:
+  - m_Tag: sub
+    m_TextStyle:
+      m_SizeScalar: .5
+      m_FontStyle: 0
+      m_ShouldReplaceColor: 0
+      m_ReplacementColor: {r: 1, g: .99997437, b: .999991298, a: 1}
+    m_VerticalOffset: -.100000001
+  - m_Tag: sup
+    m_TextStyle:
+      m_SizeScalar: .5
+      m_FontStyle: 0
+      m_ShouldReplaceColor: 0
+      m_ReplacementColor: {r: 1, g: .99997437, b: .999991298, a: 1}
+    m_VerticalOffset: .600000024
+  - m_Tag: bonus
+    m_TextStyle:
+      m_SizeScalar: 1
+      m_FontStyle: 1
+      m_ShouldReplaceColor: 1
+      m_ReplacementColor: {r: .707281172, g: 1, b: .303704798, a: 1}
+    m_VerticalOffset: 0
+  m_DefaultFontStyle: 0
+  m_DefaultLinkStyle:
+    m_VerticalOffset: 0
+    m_TextStyle:
+      m_SizeScalar: 1
+      m_FontStyle: 0
+      m_ShouldReplaceColor: 0
+      m_ReplacementColor: {r: 1, g: 1, b: 1, a: 1}
+    m_Colors:
+      m_NormalColor: {r: .100000001, g: .5, b: 1, a: 1}
+      m_HighlightedColor: {r: .129999995, g: .75999999, b: 1, a: 1}
+      m_PressedColor: {r: .0799999982, g: .319999993, b: .629999995, a: 1}
+      m_DisabledColor: {r: .449999988, g: .540000021, b: .639999986, a: 1}
+      m_ColorMultiplier: 1
+      m_FadeDuration: .100000001
+    m_ColorTintMode: 1
+    m_ColorTweenMode: 0
+  m_DefaultTextColor: {r: .196999997, g: .196999997, b: .196999997, a: 1}
+  m_Font: {fileID: 12800000, guid: 06cf73d72b1a140848605265ed1af742, type: 3}
+  m_FontSize: 24
+  m_InheritedStyles: []
+  m_LineSpacing: 1
+  m_LinkStyles:
+  - m_ClassName: items_rare
+    m_Style:
+      m_VerticalOffset: 0
+      m_TextStyle:
+        m_SizeScalar: 1
+        m_FontStyle: 0
+        m_ShouldReplaceColor: 0
+        m_ReplacementColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Colors:
+        m_NormalColor: {r: .753973246, g: 0, b: .54819268, a: 1}
+        m_HighlightedColor: {r: .916830599, g: .456583053, b: .812917113, a: 1}
+        m_PressedColor: {r: .547831357, g: 0, b: .663810432, a: 1}
+        m_DisabledColor: {r: .449999988, g: .540000021, b: .639999986, a: 1}
+        m_ColorMultiplier: 1
+        m_FadeDuration: .100000001
+      m_ColorTintMode: 1
+      m_ColorTweenMode: 0
+  - m_ClassName: items_common
+    m_Style:
+      m_VerticalOffset: 0
+      m_TextStyle:
+        m_SizeScalar: 1
+        m_FontStyle: 0
+        m_ShouldReplaceColor: 0
+        m_ReplacementColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Colors:
+        m_NormalColor: {r: .0658222139, g: .51602751, b: .876768351, a: 1}
+        m_HighlightedColor: {r: .470187396, g: .789993703, b: .986402631, a: 1}
+        m_PressedColor: {r: .042933166, g: .324922353, b: .550510168, a: 1}
+        m_DisabledColor: {r: .449999988, g: .540000021, b: .639999986, a: 1}
+        m_ColorMultiplier: 1
+        m_FadeDuration: .100000001
+      m_ColorTintMode: 1
+      m_ColorTweenMode: 0
+  - m_ClassName: people
+    m_Style:
+      m_VerticalOffset: 0
+      m_TextStyle:
+        m_SizeScalar: 1
+        m_FontStyle: 0
+        m_ShouldReplaceColor: 0
+        m_ReplacementColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Colors:
+        m_NormalColor: {r: .567402601, g: 0, b: .998546064, a: 1}
+        m_HighlightedColor: {r: .874942958, g: .316220075, b: .999087036, a: 1}
+        m_PressedColor: {r: .279562503, g: 0, b: .906024635, a: 1}
+        m_DisabledColor: {r: .449999988, g: .540000021, b: .639999986, a: 1}
+        m_ColorMultiplier: 1
+        m_FadeDuration: .100000001
+      m_ColorTintMode: 1
+      m_ColorTweenMode: 0
+  m_QuadStyles:
+  - m_LinkClassName: 
+    m_LinkId: 
+    m_ClassName: atk
+    m_ShouldRespectColorization: 1
+    m_SizeScalar: 1
+    m_Sprite: {fileID: 21300000, guid: 34f3aba3f69884417912bda304bf14c1, type: 3}
+    m_VerticalOffset: -.100000001
+  - m_LinkClassName: 
+    m_LinkId: 
+    m_ClassName: def
+    m_ShouldRespectColorization: 1
+    m_SizeScalar: 1
+    m_Sprite: {fileID: 21300000, guid: 654569941e85f44a6904c40228d69269, type: 3}
+    m_VerticalOffset: -.100000001
+  - m_LinkClassName: 
+    m_LinkId: 
+    m_ClassName: fire
+    m_ShouldRespectColorization: 1
+    m_SizeScalar: 1
+    m_Sprite: {fileID: 21300000, guid: d76c9ee404bff4d78b5dba57ae556217, type: 3}
+    m_VerticalOffset: -.100000001
+  - m_LinkClassName: 
+    m_LinkId: 
+    m_ClassName: ice
+    m_ShouldRespectColorization: 1
+    m_SizeScalar: 1
+    m_Sprite: {fileID: 21300000, guid: fbe92d1c16a4a472caba7f6291c75b9b, type: 3}
+    m_VerticalOffset: -.100000001
+  - m_LinkClassName: 
+    m_LinkId: 
+    m_ClassName: lit
+    m_ShouldRespectColorization: 1
+    m_SizeScalar: 1
+    m_Sprite: {fileID: 21300000, guid: b2196b0c44a294eaa87522755ad6399d, type: 3}
+    m_VerticalOffset: -.100000001
+  m_ShouldOverrideInheritedDefaultFontStyle: 0
+  m_ShouldOverrideInheritedDefaultLinkStyle: 0
+  m_ShouldOverrideInheritedDefaultTextColor: 0
+  m_ShouldOverrideInheritedFontSize: 0
+  m_ShouldOverrideInheritedLineSpacing: 0

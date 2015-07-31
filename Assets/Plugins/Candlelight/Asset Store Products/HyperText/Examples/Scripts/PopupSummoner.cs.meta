@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 4cb6df90b0b13443daeb84ae4bfb43d8
+labels:
+- Gui
+- Text
+- HyperText
+- Styles
+- Ui
+- Links
+- Dialogue
+- Editor
+- Localization
+- Language
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - m_PopupPrefab: {fileID: 11400004, guid: 66cd955dfdc564929833304a472acaf6, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
