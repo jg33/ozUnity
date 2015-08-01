@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fbaeb884f4b245ebaf20801424ef792, type: 3}
+  m_Name: fantasy people
+  m_EditorClassIdentifier: 
+  m_CaseMatchMode: 1
+  m_WordPrioritization: 1
+  m_Entries:
+  - m_Definition: Our future.
+    m_MainForm:
+      m_PartOfSpeech: 0
+      m_Word: children
+    m_OtherForms: []
+  - m_Definition: A fearsome, but nonspecific beast that teases children.
+    m_MainForm:
+      m_PartOfSpeech: 0
+      m_Word: deadly archosaur
+    m_OtherForms: []

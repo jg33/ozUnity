@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 18dabe199dca4465eb0d2fcb835d88fa
+labels:
+- Gui
+- Text
+- HyperText
+- Styles
+- Ui
+- Links
+- Dialogue
+- Editor
+- Localization
+- Language
+TextScriptImporter:
+  userData: 
