@@ -328,7 +328,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: startDelay
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 19900002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_RenderMode
@@ -424,19 +424,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d97d9b97b404488684956db8572cc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &290447190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 290447179}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a3c54b044d9b443081f1b5c0b768adb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonImage: {fileID: 0}
-  buttonImage2: {fileID: 0}
 --- !u!4 &341845629 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
@@ -756,7 +743,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: startDelay
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 19900002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_RenderMode
