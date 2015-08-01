@@ -14,4 +14,4 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/NativeNetworkServer.unity
   - enabled: 0
-    path: Assets/monkeyAnimatedTexture.unity
+    path: Assets/Poppies_V2/Poppy_V2.unity
