@@ -23210,7 +23210,7 @@ MonoBehaviour:
   mPreviousScale: {x: 3.65759993, y: 3.65759993, z: 3.65759993}
   mPreserveChildSize: 0
   mInitializedInEditor: 1
-  mDataSetPath: QCAR/3LD_OzWrkShop6.xml
+  mDataSetPath: QCAR/ozUnity.xml
   mExtendedTracking: 0
   mInitializeSmartTerrain: 0
   mReconstructionToInitialize: {fileID: 0}
@@ -26224,134 +26224,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 4355482099f294b019b2ef8a90590edb, type: 3}
   m_PrefabInternal: {fileID: 341176708}
---- !u!43 &400821748
-Mesh:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  serializedVersion: 8
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 6
-    topology: 0
-    firstVertex: 0
-    vertexCount: 4
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: .5, y: 0, z: .285648108}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexBuffer: 000001000200020001000300
-  m_Skin: []
-  m_VertexData:
-    m_CurrentChannels: 11
-    m_VertexCount: 4
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 128
-    _typelessdata: 000000bf00000000784092be000000000000803f000000000000000000000000000000bf000000007840923e000000000000803f00000000000000000000803f0000003f00000000784092be000000000000803f000000000000803f000000000000003f000000007840923e000000000000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: .5, y: 0, z: .285648108}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshOptimized: 0
 --- !u!1001 &409299695
 Prefab:
   m_ObjectHideFlags: 0
@@ -31833,6 +31705,162 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
+--- !u!43 &882085170
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: .5, y: 0, z: .285648108}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 000001000200020001000300
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 11
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 000000bf00000000784092be000000000000803f000000000000000000000000000000bf000000007840923e000000000000803f00000000000000000000803f0000003f00000000784092be000000000000803f000000000000803f000000000000003f000000007840923e000000000000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: .5, y: 0, z: .285648108}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!21 &903050552
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Oz_TopTarget_inverted_scaledMaterial
+  m_Shader: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: cf3c11d129a64d88bf56e395bc5b7df3, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats: {}
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .820895553, g: .820895553, b: .820895553, a: 1}
 --- !u!1 &903057771
 GameObject:
   m_ObjectHideFlags: 0
@@ -53811,7 +53839,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1759747524}
-  m_Mesh: {fileID: 400821748}
+  m_Mesh: {fileID: 882085170}
 --- !u!114 &1759747527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53835,7 +53863,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 30b97d537113d0441889f1559f555128, type: 2}
+  - {fileID: 903050552}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -54000,7 +54028,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: VuforiaLicenseKey
-      value: Ac7RQDH/////AAAAAWCCdXl2PE+ohy7ayayoo/5vvVVik7a/u2qKKGWtXVBsJt0sqhBwBTOxfoNZFxHWNCUg7+Zy0QZFGUn7yWk/cA8lYm0x2psdaRaKHJJx2DGzpSCMEgZViFHlOPH/fK6X4cuxEG2gmN16Z5TzSZ9wwycG+BpXz+sggFEx0b4Vp8wcOxOaAdDkwEJIv7awmdIhmFwWW6ebUt9HeWoeJt0lhnu+gZajA5yrVF8ZN2Y9X1VgACsU/aPzRgAna7k7fOEdvpe4HmbGwZgxgjMvBRW0ROYYkNhTnVvX/8t24ZsEuuAG8JrjiPxwZC/ghGxCyFyI+mjYQBKCx8raGr/Xdex908dBjQHfo8MqVJ9qRL3i/Oy2
+      value: AZaUmxH/////AAAAAUf4FVal/07WgWvyCavSkbENjjvNtP3QjBk4CeBntgFbWsnXmpodIjqfWBhB6/sGdovtNfcuybfRnh8tPliyr1+8oLKGw4W/Q2y1zAmFDvlOAjOYKuPadSMq59IhWvNQBxOaJ/IaBP3X6GlKhN4EiPAj6rJ1yBjxSxwpJAUkq7DzHHgrPDtvY+5kNug644vtH4KmSnT69Sg3f67O7iK3L4NPbj+B3qVMHqvc+N+o2fd7V8UGNKsjlm3jVYPqm31blFET0eow81EZ5AvOc5bD1HRFCMRAdz4/YL+1ZEFRbzRvIiHTuw6MBXmsoBCMWS6hPFFdV2bClmRnoFTuzyYrwWfH36l4E5EDnpKuTztVDg+r
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_Enabled
@@ -54008,11 +54036,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: mDataSetsToLoad.Array.data[0]
-      value: 3LD_OzWrkShop5
+      value: ozUnity
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: mDataSetsToActivate.Array.data[0]
-      value: 3LD_OzWrkShop5
+      value: ozUnity
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_Name
@@ -55267,7 +55295,7 @@ MonoBehaviour:
   _points:
   - {fileID: 1815096991}
   - {fileID: 1815096990}
-  cameraPath: {fileID: 1815097022}
+  cameraPath: {fileID: 114590166}
   MINIMUM_EASE_VALUE: .00999999978
   _introPoint: {fileID: 1815096991}
   _outroPoint: {fileID: 1815096990}
@@ -55286,7 +55314,7 @@ MonoBehaviour:
   positionModes: 2
   givenName: Delay Point 1
   customName: End Point
-  fullName: MonkeyFlight_2 Delay Point 1
+  fullName: FlyingMonkey_test1 Delay Point 1
   _percent: 1
   _animationPercentage: 1
   point: {fileID: 0}
@@ -55294,7 +55322,7 @@ MonoBehaviour:
   cpointA: {fileID: 0}
   cpointB: {fileID: 0}
   curvePercentage: 0
-  worldPosition: {x: .73686409, y: 7.92390442, z: 16.5722752}
+  worldPosition: {x: 5.66248655, y: 11.2084694, z: -23.1982231}
   lockPoint: 0
   time: 0
   introStartEasePercentage: .100000001
@@ -55343,7 +55371,7 @@ MonoBehaviour:
   positionModes: 2
   givenName: Delay Point 0
   customName: Start Point
-  fullName: MonkeyFlight_2 Delay Point 0
+  fullName: FlyingMonkey_test1 Delay Point 0
   _percent: 0
   _animationPercentage: 0
   point: {fileID: 0}
@@ -55398,7 +55426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _points: []
-  cameraPath: {fileID: 1815097022}
+  cameraPath: {fileID: 114590166}
 --- !u!114 &1815096993
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -55411,7 +55439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _points: []
-  cameraPath: {fileID: 1815097022}
+  cameraPath: {fileID: 114590166}
   interpolation: 2
   _enabled: 0
 --- !u!114 &1815096994
@@ -55431,7 +55459,7 @@ MonoBehaviour:
   - {fileID: 1815096997}
   - {fileID: 1815096996}
   - {fileID: 1815096995}
-  cameraPath: {fileID: 1815097022}
+  cameraPath: {fileID: 114590166}
   interpolation: 2
   listEnabled: 1
   autoSensitivity: 1
@@ -55449,9 +55477,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Tilt Point 4
   customName: 
-  fullName: MonkeyFlight_2 Tilt Point 4
-  _percent: .800000012
-  _animationPercentage: .794520736
+  fullName: FlyingMonkey_test1 Tilt Point 4
+  _percent: 1
+  _animationPercentage: 1
   point: {fileID: 1815097012}
   index: 4
   cpointA: {fileID: 0}
@@ -55474,9 +55502,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Tilt Point 3
   customName: 
-  fullName: MonkeyFlight_2 Tilt Point 3
-  _percent: .600000024
-  _animationPercentage: .592066467
+  fullName: FlyingMonkey_test1 Tilt Point 3
+  _percent: .75
+  _animationPercentage: .742826521
   point: {fileID: 1815097013}
   index: 3
   cpointA: {fileID: 0}
@@ -55499,9 +55527,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Tilt Point 2
   customName: 
-  fullName: MonkeyFlight_2 Tilt Point 2
-  _percent: .400000006
-  _animationPercentage: .392931014
+  fullName: FlyingMonkey_test1 Tilt Point 2
+  _percent: .5
+  _animationPercentage: .494821817
   point: {fileID: 1815097014}
   index: 2
   cpointA: {fileID: 0}
@@ -55524,9 +55552,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Tilt Point 1
   customName: 
-  fullName: MonkeyFlight_2 Tilt Point 1
-  _percent: .200000003
-  _animationPercentage: .197009519
+  fullName: FlyingMonkey_test1 Tilt Point 1
+  _percent: .25
+  _animationPercentage: .248905763
   point: {fileID: 1815097015}
   index: 1
   cpointA: {fileID: 0}
@@ -55549,7 +55577,7 @@ MonoBehaviour:
   positionModes: 1
   givenName: Tilt Point 0
   customName: 
-  fullName: MonkeyFlight_2 Tilt Point 0
+  fullName: FlyingMonkey_test1 Tilt Point 0
   _percent: 0
   _animationPercentage: 0
   point: {fileID: 1815097016}
@@ -55577,7 +55605,7 @@ MonoBehaviour:
   - {fileID: 1815097003}
   - {fileID: 1815097002}
   - {fileID: 1815097001}
-  cameraPath: {fileID: 1815097022}
+  cameraPath: {fileID: 114590166}
   interpolation: 2
   listEnabled: 0
 --- !u!114 &1815097001
@@ -55594,9 +55622,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: FOV Point 4
   customName: 
-  fullName: MonkeyFlight_2 FOV Point 4
-  _percent: .800000012
-  _animationPercentage: .794520736
+  fullName: FlyingMonkey_test1 FOV Point 4
+  _percent: 1
+  _animationPercentage: 1
   point: {fileID: 1815097012}
   index: 4
   cpointA: {fileID: 0}
@@ -55620,9 +55648,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: FOV Point 3
   customName: 
-  fullName: MonkeyFlight_2 FOV Point 3
-  _percent: .600000024
-  _animationPercentage: .592066467
+  fullName: FlyingMonkey_test1 FOV Point 3
+  _percent: .75
+  _animationPercentage: .742826521
   point: {fileID: 1815097013}
   index: 3
   cpointA: {fileID: 0}
@@ -55646,9 +55674,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: FOV Point 2
   customName: 
-  fullName: MonkeyFlight_2 FOV Point 2
-  _percent: .400000006
-  _animationPercentage: .392931014
+  fullName: FlyingMonkey_test1 FOV Point 2
+  _percent: .5
+  _animationPercentage: .494821817
   point: {fileID: 1815097014}
   index: 2
   cpointA: {fileID: 0}
@@ -55672,9 +55700,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: FOV Point 1
   customName: 
-  fullName: MonkeyFlight_2 FOV Point 1
-  _percent: .200000003
-  _animationPercentage: .197009519
+  fullName: FlyingMonkey_test1 FOV Point 1
+  _percent: .25
+  _animationPercentage: .248905763
   point: {fileID: 1815097015}
   index: 1
   cpointA: {fileID: 0}
@@ -55698,7 +55726,7 @@ MonoBehaviour:
   positionModes: 1
   givenName: FOV Point 0
   customName: 
-  fullName: MonkeyFlight_2 FOV Point 0
+  fullName: FlyingMonkey_test1 FOV Point 0
   _percent: 0
   _animationPercentage: 0
   point: {fileID: 1815097016}
@@ -55727,7 +55755,7 @@ MonoBehaviour:
   - {fileID: 1815097009}
   - {fileID: 1815097008}
   - {fileID: 1815097007}
-  cameraPath: {fileID: 1815097022}
+  cameraPath: {fileID: 114590166}
   interpolation: 4
 --- !u!114 &1815097007
 MonoBehaviour:
@@ -55743,9 +55771,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Orientation Point 4
   customName: 
-  fullName: MonkeyFlight_2 Orientation Point 4
-  _percent: .800000012
-  _animationPercentage: .794520736
+  fullName: FlyingMonkey_test1 Orientation Point 4
+  _percent: 1
+  _animationPercentage: 1
   point: {fileID: 1815097012}
   index: 4
   cpointA: {fileID: 0}
@@ -55769,9 +55797,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Orientation Point 3
   customName: 
-  fullName: MonkeyFlight_2 Orientation Point 3
-  _percent: .600000024
-  _animationPercentage: .592066467
+  fullName: FlyingMonkey_test1 Orientation Point 3
+  _percent: .75
+  _animationPercentage: .742826521
   point: {fileID: 1815097013}
   index: 3
   cpointA: {fileID: 0}
@@ -55795,9 +55823,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Orientation Point 2
   customName: 
-  fullName: MonkeyFlight_2 Orientation Point 2
-  _percent: .400000006
-  _animationPercentage: .392931014
+  fullName: FlyingMonkey_test1 Orientation Point 2
+  _percent: .5
+  _animationPercentage: .494821817
   point: {fileID: 1815097014}
   index: 2
   cpointA: {fileID: 0}
@@ -55821,9 +55849,9 @@ MonoBehaviour:
   positionModes: 1
   givenName: Orientation Point 1
   customName: 
-  fullName: MonkeyFlight_2 Orientation Point 1
-  _percent: .200000003
-  _animationPercentage: .197009519
+  fullName: FlyingMonkey_test1 Orientation Point 1
+  _percent: .25
+  _animationPercentage: .248905763
   point: {fileID: 1815097015}
   index: 1
   cpointA: {fileID: 0}
@@ -55847,7 +55875,7 @@ MonoBehaviour:
   positionModes: 1
   givenName: Orientation Point 0
   customName: 
-  fullName: MonkeyFlight_2 Orientation Point 0
+  fullName: FlyingMonkey_test1 Orientation Point 0
   _percent: 0
   _animationPercentage: 0
   point: {fileID: 1815097016}
@@ -55872,15 +55900,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   givenName: Point 4
   customName: 
-  fullName: FlyingMonkey_test1 Point 4
+  fullName: MonkeyFlight_2 Point 4
   _position: {x: 5.66248655, y: 11.2084694, z: -23.1982231}
   _splitControlPoints: 0
   _forwardControlPoint: {x: -20, y: 0, z: -18.0799599}
   _backwardControlPoint: {x: 0, y: 0, z: 0}
   _pathDirection: {x: 0, y: 0, z: 1}
   index: 4
-  percentage: 1
-  normalisedPercentage: 1
+  percentage: .800000012
+  normalisedPercentage: .794520736
 --- !u!114 &1815097013
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -55894,15 +55922,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   givenName: Point 3
   customName: 
-  fullName: FlyingMonkey_test1 Point 3
+  fullName: MonkeyFlight_2 Point 3
   _position: {x: -6.19744968, y: 11.5414333, z: 9.88250065}
   _splitControlPoints: 0
   _forwardControlPoint: {x: -13.5538816, y: 0, z: 0}
   _backwardControlPoint: {x: 0, y: 0, z: 0}
   _pathDirection: {x: 0, y: 0, z: 1}
   index: 3
-  percentage: .75
-  normalisedPercentage: .742826521
+  percentage: .600000024
+  normalisedPercentage: .592066467
 --- !u!114 &1815097014
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -55916,15 +55944,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   givenName: Point 2
   customName: 
-  fullName: FlyingMonkey_test1 Point 2
+  fullName: MonkeyFlight_2 Point 2
   _position: {x: 4.93219185, y: 1.78282738, z: 4.63012505}
   _splitControlPoints: 0
   _forwardControlPoint: {x: -.331577301, y: 0, z: 2.91120625}
   _backwardControlPoint: {x: 0, y: 0, z: 0}
   _pathDirection: {x: 0, y: 0, z: 1}
   index: 2
-  percentage: .5
-  normalisedPercentage: .494821817
+  percentage: .400000006
+  normalisedPercentage: .392931014
 --- !u!114 &1815097015
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -55938,15 +55966,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   givenName: Point 1
   customName: 
-  fullName: FlyingMonkey_test1 Point 1
+  fullName: MonkeyFlight_2 Point 1
   _position: {x: 3.68805981, y: 11.3569279, z: -11.087883}
   _splitControlPoints: 0
   _forwardControlPoint: {x: 11.0708046, y: 0, z: 0}
   _backwardControlPoint: {x: 0, y: 0, z: 0}
   _pathDirection: {x: 0, y: 0, z: 1}
   index: 1
-  percentage: .25
-  normalisedPercentage: .248905763
+  percentage: .200000003
+  normalisedPercentage: .197009519
 --- !u!114 &1815097016
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -55960,7 +55988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   givenName: Point 0
   customName: 
-  fullName: FlyingMonkey_test1 Point 0
+  fullName: MonkeyFlight_2 Point 0
   _position: {x: .73686409, y: 7.92390442, z: 16.5722752}
   _splitControlPoints: 0
   _forwardControlPoint: {x: 16.1408997, y: 0, z: 0}

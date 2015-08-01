@@ -520,7 +520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67decd01da9e4df5a9e75cc2f41fa50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectionIP: localhost
+  connectionIP: 10.0.1.24
   portNumber: 16261
   timeout: 300
   cueComponent: {fileID: 1120223039}
@@ -1004,11 +1004,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11400002, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: mDataSetsToLoad.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: mDataSetsToActivate.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1048,7 +1048,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: VuforiaLicenseKey
-      value: Ac7RQDH/////AAAAAWCCdXl2PE+ohy7ayayoo/5vvVVik7a/u2qKKGWtXVBsJt0sqhBwBTOxfoNZFxHWNCUg7+Zy0QZFGUn7yWk/cA8lYm0x2psdaRaKHJJx2DGzpSCMEgZViFHlOPH/fK6X4cuxEG2gmN16Z5TzSZ9wwycG+BpXz+sggFEx0b4Vp8wcOxOaAdDkwEJIv7awmdIhmFwWW6ebUt9HeWoeJt0lhnu+gZajA5yrVF8ZN2Y9X1VgACsU/aPzRgAna7k7fOEdvpe4HmbGwZgxgjMvBRW0ROYYkNhTnVvX/8t24ZsEuuAG8JrjiPxwZC/ghGxCyFyI+mjYQBKCx8raGr/Xdex908dBjQHfo8MqVJ9qRL3i/Oy2
+      value: AZaUmxH/////AAAAAUf4FVal/07WgWvyCavSkbENjjvNtP3QjBk4CeBntgFbWsnXmpodIjqfWBhB6/sGdovtNfcuybfRnh8tPliyr1+8oLKGw4W/Q2y1zAmFDvlOAjOYKuPadSMq59IhWvNQBxOaJ/IaBP3X6GlKhN4EiPAj6rJ1yBjxSxwpJAUkq7DzHHgrPDtvY+5kNug644vtH4KmSnT69Sg3f67O7iK3L4NPbj+B3qVMHqvc+N+o2fd7V8UGNKsjlm3jVYPqm31blFET0eow81EZ5AvOc5bD1HRFCMRAdz4/YL+1ZEFRbzRvIiHTuw6MBXmsoBCMWS6hPFFdV2bClmRnoFTuzyYrwWfH36l4E5EDnpKuTztVDg+r
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_Enabled
@@ -1056,11 +1056,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: mDataSetsToLoad.Array.data[0]
-      value: 3LD_OzWrkShop6
+      value: ozUnity
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: mDataSetsToActivate.Array.data[0]
-      value: 3LD_OzWrkShop6
+      value: ozUnity
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_Name
@@ -1088,11 +1088,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: mDataSetsToLoad.Array.data[1]
-      value: 3LD_OzWorkshop
+      value: 3LD_OzWrkShop6
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: mDataSetsToActivate.Array.data[1]
-      value: 3LD_OzWrkShop4
+      value: 3LD_OzWrkShop6
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_Enabled

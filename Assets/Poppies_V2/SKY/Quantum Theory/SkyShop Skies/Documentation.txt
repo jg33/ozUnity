@@ -1,0 +1,17 @@
+SkyShop Sky Bundle
+------------------
+by Quantum Theory Entertainment
+http://www.qt-ent.com
+
+Intended for use in Marmoset Skyshop for Unity
+http://www.marmoset.co/skyshop/
+
+Instructions for using Panoramas in Skyshop:
+http://www.marmoset.co/skyshop/learn
+
+
+This package includes 10 4096x2048 spherical panoramas of various locations in TIF format. The locations were picked to give a variety of interesting lighting conditions that could exist in common video game environments. The lighting generated from these panoramas are guaranteed to add life and mood to your projects.
+
+Need help? Have questions? Email support@quantumtheoryentertainment.com with your Skyshop Skies invoice number and I'll help as best I can.
+
+Be sure to check Quantum Theory's other Asset Store packages at https://www.assetstore.unity3d.com/#/publisher/1122

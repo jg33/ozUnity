@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Oz_TopTarget_inverted" size="3.657600 2.089573" />
+    <ImageTarget name="monkeytarget" size="100.000000 133.333328" />
+    <ImageTarget name="greenglasses2" size="100.000000 133.333328" />
+    <ImageTarget name="poppytarget" size="100.000000 133.333328" />
+    <ImageTarget name="greenglasses" size="100.000000 100.000000" />
+  </Tracking>
+</QCARConfig>
