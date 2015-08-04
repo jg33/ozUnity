@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: d3429b8ff6bed47e4bd239039a625ae1
+timeCreated: 1438470373
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: B1
+    100002: B10
+    100004: B2
+    100006: B3
+    100008: B4
+    100010: B5
+    100012: B6
+    100014: B7
+    100016: B8
+    100018: B9
+    100020: curve1
+    100022: F1
+    100024: F10
+    100026: F11
+    100028: F2
+    100030: F3
+    100032: F4
+    100034: F5
+    100036: F6
+    100038: F7
+    100040: F8
+    100042: F9
+    100044: //RootNode
+    100046: Flowers
+    100048: joint10
+    100050: joint11
+    100052: joint12
+    100054: joint13
+    100056: joint14
+    100058: joint15
+    100060: joint16
+    100062: joint17
+    100064: joint18
+    100066: joint19
+    100068: joint2
+    100070: joint20
+    100072: joint21
+    100074: joint22
+    100076: joint23
+    100078: joint25
+    100080: joint26
+    100082: joint28
+    100084: joint29
+    100086: joint3
+    100088: joint31
+    100090: joint4
+    100092: joint42
+    100094: joint44
+    100096: joint45
+    100098: joint47
+    100100: joint48
+    100102: joint5
+    100104: joint50
+    100106: joint51
+    100108: joint53
+    100110: joint54
+    100112: joint55
+    100114: joint57
+    100116: joint58
+    100118: joint6
+    100120: joint60
+    100122: joint62
+    100124: joint62 1
+    100126: joint62 10
+    100128: joint62 2
+    100130: joint62 3
+    100132: joint62 4
+    100134: joint62 5
+    100136: joint62 6
+    100138: joint62 7
+    100140: joint62 8
+    100142: joint62 9
+    100144: joint7
+    100146: joint8
+    100148: joint9
+    100150: Stem
+    100152: StemRoot
+    400000: B1
+    400002: B10
+    400004: B2
+    400006: B3
+    400008: B4
+    400010: B5
+    400012: B6
+    400014: B7
+    400016: B8
+    400018: B9
+    400020: curve1
+    400022: F1
+    400024: F10
+    400026: F11
+    400028: F2
+    400030: F3
+    400032: F4
+    400034: F5
+    400036: F6
+    400038: F7
+    400040: F8
+    400042: F9
+    400044: //RootNode
+    400046: Flowers
+    400048: joint10
+    400050: joint11
+    400052: joint12
+    400054: joint13
+    400056: joint14
+    400058: joint15
+    400060: joint16
+    400062: joint17
+    400064: joint18
+    400066: joint19
+    400068: joint2
+    400070: joint20
+    400072: joint21
+    400074: joint22
+    400076: joint23
+    400078: joint25
+    400080: joint26
+    400082: joint28
+    400084: joint29
+    400086: joint3
+    400088: joint31
+    400090: joint4
+    400092: joint42
+    400094: joint44
+    400096: joint45
+    400098: joint47
+    400100: joint48
+    400102: joint5
+    400104: joint50
+    400106: joint51
+    400108: joint53
+    400110: joint54
+    400112: joint55
+    400114: joint57
+    400116: joint58
+    400118: joint6
+    400120: joint60
+    400122: joint62
+    400124: joint62 1
+    400126: joint62 10
+    400128: joint62 2
+    400130: joint62 3
+    400132: joint62 4
+    400134: joint62 5
+    400136: joint62 6
+    400138: joint62 7
+    400140: joint62 8
+    400142: joint62 9
+    400144: joint7
+    400146: joint8
+    400148: joint9
+    400150: Stem
+    400152: StemRoot
+    4300000: Stem
+    4300002: Flowers
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Flowers
+    13700002: Stem
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 90
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

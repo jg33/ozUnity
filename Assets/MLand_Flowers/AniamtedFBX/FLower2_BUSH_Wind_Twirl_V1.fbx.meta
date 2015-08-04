@@ -1,0 +1,257 @@
+fileFormatVersion: 2
+guid: 0f111e0d94f024744b6a65b8060f3be1
+timeCreated: 1438470369
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Bud
+    100002: cluster5Handle
+    100004: cluster6Handle
+    100006: Flower1_Lower
+    100008: //RootNode
+    100010: Flower_1_Upper
+    100012: Flower_Top
+    100014: FlowerBottom
+    100016: group3
+    100018: group6
+    100020: joint10
+    100022: joint11
+    100024: joint12
+    100026: joint13
+    100028: joint14
+    100030: joint15
+    100032: joint16
+    100034: joint17
+    100036: joint19
+    100038: joint2
+    100040: joint20
+    100042: joint21
+    100044: joint22
+    100046: joint23
+    100048: joint24
+    100050: joint25
+    100052: joint26
+    100054: joint27
+    100056: joint28
+    100058: joint3
+    100060: joint30
+    100062: joint30 1
+    100064: joint30 2
+    100066: joint30 3
+    100068: joint30 4
+    100070: joint30 5
+    100072: joint30 6
+    100074: joint30 7
+    100076: joint30 8
+    100078: joint30 9
+    100080: joint31
+    100082: joint31 1
+    100084: joint31 2
+    100086: joint31 3
+    100088: joint31 4
+    100090: joint31 5
+    100092: joint31 6
+    100094: joint31 7
+    100096: joint31 8
+    100098: joint31 9
+    100100: joint33
+    100102: joint33 1
+    100104: joint34
+    100106: joint34 1
+    100108: joint35
+    100110: joint35 1
+    100112: joint36
+    100114: joint36 1
+    100116: joint37
+    100118: joint37 1
+    100120: joint38
+    100122: joint38 1
+    100124: joint39
+    100126: joint39 1
+    100128: joint4
+    100130: joint40
+    100132: joint40 1
+    100134: joint5
+    100136: joint6
+    100138: joint7
+    100140: joint9
+    100142: L1
+    100144: L10
+    100146: L2
+    100148: L3
+    100150: L4
+    100152: L5
+    100154: L6
+    100156: L7
+    100158: L8
+    100160: L9
+    100162: LEaves
+    100164: Stem
+    100166: StemRoot
+    100168: VeinL_CONT_Root
+    100170: VeinR_CONT_Root
+    100172: Vine_L
+    100174: Vine_R
+    400000: Bud
+    400002: cluster5Handle
+    400004: cluster6Handle
+    400006: Flower1_Lower
+    400008: //RootNode
+    400010: Flower_1_Upper
+    400012: Flower_Top
+    400014: FlowerBottom
+    400016: group3
+    400018: group6
+    400020: joint10
+    400022: joint11
+    400024: joint12
+    400026: joint13
+    400028: joint14
+    400030: joint15
+    400032: joint16
+    400034: joint17
+    400036: joint19
+    400038: joint2
+    400040: joint20
+    400042: joint21
+    400044: joint22
+    400046: joint23
+    400048: joint24
+    400050: joint25
+    400052: joint26
+    400054: joint27
+    400056: joint28
+    400058: joint3
+    400060: joint30
+    400062: joint30 1
+    400064: joint30 2
+    400066: joint30 3
+    400068: joint30 4
+    400070: joint30 5
+    400072: joint30 6
+    400074: joint30 7
+    400076: joint30 8
+    400078: joint30 9
+    400080: joint31
+    400082: joint31 1
+    400084: joint31 2
+    400086: joint31 3
+    400088: joint31 4
+    400090: joint31 5
+    400092: joint31 6
+    400094: joint31 7
+    400096: joint31 8
+    400098: joint31 9
+    400100: joint33
+    400102: joint33 1
+    400104: joint34
+    400106: joint34 1
+    400108: joint35
+    400110: joint35 1
+    400112: joint36
+    400114: joint36 1
+    400116: joint37
+    400118: joint37 1
+    400120: joint38
+    400122: joint38 1
+    400124: joint39
+    400126: joint39 1
+    400128: joint4
+    400130: joint40
+    400132: joint40 1
+    400134: joint5
+    400136: joint6
+    400138: joint7
+    400140: joint9
+    400142: L1
+    400144: L10
+    400146: L2
+    400148: L3
+    400150: L4
+    400152: L5
+    400154: L6
+    400156: L7
+    400158: L8
+    400160: L9
+    400162: LEaves
+    400164: Stem
+    400166: StemRoot
+    400168: VeinL_CONT_Root
+    400170: VeinR_CONT_Root
+    400172: Vine_L
+    400174: Vine_R
+    4300000: Stem
+    4300002: Bud
+    4300004: Flower_Top
+    4300006: FlowerBottom
+    4300008: LEaves
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Bud
+    13700002: Flower_Top
+    13700004: FlowerBottom
+    13700006: LEaves
+    13700008: Stem
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
