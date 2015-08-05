@@ -305,7 +305,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: .5}
   m_AnchorMax: {x: 1, y: .5}
-  m_AnchoredPosition: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 1, y: 1166}
   m_SizeDelta: {x: 1943, y: 4469.7002}
   m_Pivot: {x: .5, y: 1}
 --- !u!114 &60042685
@@ -11462,7 +11462,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: <a name="darkSide">The Dark Side of Oz:</a> The Pink Floyd mashup
+  m_Text: "<a name=\"darkSide\">The Dark Side of Oz:</a> \nThe Pink Floyd mashup"
   m_DefaultStyles: {fileID: 0}
   m_QuadRenderersPool: []
   m_Interactable: 1
@@ -11507,11 +11507,11 @@ MonoBehaviour:
   m_ShouldOverrideStylesLineSpacing: 0
   m_TextProcessor:
     m_LinkKeywordCollections: []
-    m_InputText: <a name="darkSide">The Dark Side of Oz:</a> The Pink Floyd mashup
+    m_InputText: "<a name=\"darkSide\">The Dark Side of Oz:</a> \nThe Pink Floyd mashup"
     m_InputTextSourceObject: {fileID: 0}
     m_IsDynamicFontDesired: 1
     m_IsRichTextDesired: 1
-    m_OutputText: <b>The Dark Side of Oz:</b> The Pink Floyd mashup
+    m_OutputText: "<b>The Dark Side of Oz:</b> \nThe Pink Floyd mashup"
     m_QuadKeywordCollections: []
     m_ReferenceFontSize: 54
     m_ShouldOverrideStylesFontSize: 0
@@ -11697,8 +11697,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: <a name="moreGay">Oz Needs More Gay:</a> A commentary by Youtube personality
-    Rentasmo
+  m_Text: "<a name=\"moreGay\">Oz Needs More Gay:</a> \nA commentary by Youtube personality
+    Rentasmo"
   m_DefaultStyles: {fileID: 0}
   m_QuadRenderersPool: []
   m_Interactable: 1
@@ -11743,12 +11743,13 @@ MonoBehaviour:
   m_ShouldOverrideStylesLineSpacing: 0
   m_TextProcessor:
     m_LinkKeywordCollections: []
-    m_InputText: <a name="moreGay">Oz Needs More Gay:</a> A commentary by Youtube
-      personality Rentasmo
+    m_InputText: "<a name=\"moreGay\">Oz Needs More Gay:</a> \nA commentary by Youtube
+      personality Rentasmo"
     m_InputTextSourceObject: {fileID: 0}
     m_IsDynamicFontDesired: 1
     m_IsRichTextDesired: 1
-    m_OutputText: <b>Oz Needs More Gay:</b> A commentary by Youtube personality Rentasmo
+    m_OutputText: "<b>Oz Needs More Gay:</b> \nA commentary by Youtube personality
+      Rentasmo"
     m_QuadKeywordCollections: []
     m_ReferenceFontSize: 54
     m_ShouldOverrideStylesFontSize: 0
