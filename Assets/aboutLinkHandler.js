@@ -20,20 +20,20 @@ public function openURL(name:String){
 		break;
 		
 		case "wallace":
-		Application.OpenURL("https://www.youtube.com/watch?v=1ooksv_sx4y");
+		Application.OpenURL("https://www.youtube.com/watch?v=1ooKsv_SX4Y");
 		break;		
 		
 		case "historical":
-		Application.OpenURL("https://www.youtube.com/watch?v=rwmksw4sftm");
+		Application.OpenURL("https://www.youtube.com/watch?v=rwmKSw4sftM");
 		break;
 		
 		case "moreGay":
-		Application.OpenURL("https://www.youtube.com/watch?v=n7cfkk0rov8");
+		Application.OpenURL("https://www.youtube.com/watch?v=N7CfKk0rov8");
 		break;
 		
 
 		case "darkSide":
-		Application.OpenURL("https://www.youtube.com/watch?v=mdz2cnl1vum");
+		Application.OpenURL("https://www.youtube.com/watch?v=MDz2cNL1vuM");
 		break;
 		
 		case "mcDirections":
