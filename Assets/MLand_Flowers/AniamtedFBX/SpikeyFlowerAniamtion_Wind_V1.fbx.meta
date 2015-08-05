@@ -1,0 +1,886 @@
+fileFormatVersion: 2
+guid: fddf573d684ff43e881a2ebc9705d410
+timeCreated: 1438470374
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: cluster13Handle
+    100002: cluster14Handle
+    100004: cluster15Handle
+    100006: cluster16Handle
+    100008: cluster17Handle
+    100010: cluster18Handle
+    100012: cluster19Handle
+    100014: cluster20Handle
+    100016: cluster21Handle
+    100018: cluster22Handle
+    100020: cluster23Handle
+    100022: cluster24Handle
+    100024: cluster25Handle
+    100026: cluster26Handle
+    100028: cluster27Handle
+    100030: cluster28Handle
+    100032: cluster29Handle
+    100034: cluster30Handle
+    100036: cluster31Handle
+    100038: cluster32Handle
+    100040: curve1
+    100042: curve3
+    100044: curve5
+    100046: group12
+    100048: group13
+    100050: group14
+    100052: group15
+    100054: group16
+    100056: group17
+    100058: group18
+    100060: group19
+    100062: group20
+    100064: group21
+    100066: group22
+    100068: group23
+    100070: group24
+    100072: group25
+    100074: group26
+    100076: group27
+    100078: group28
+    100080: group29
+    100082: group30
+    100084: group31
+    100086: joint10
+    100088: joint10 1
+    100090: joint10 2
+    100092: joint11
+    100094: joint11 1
+    100096: joint11 2
+    100098: joint12
+    100100: joint12 1
+    100102: joint12 2
+    100104: joint13
+    100106: joint13 1
+    100108: joint14
+    100110: joint14 1
+    100112: joint15
+    100114: joint16
+    100116: joint17
+    100118: joint18
+    100120: joint19
+    100122: joint2
+    100124: joint2 1
+    100126: joint2 2
+    100128: joint3
+    100130: joint3 1
+    100132: joint3 2
+    100134: joint36
+    100136: joint36 1
+    100138: joint37
+    100140: joint37 1
+    100142: joint38
+    100144: joint38 1
+    100146: joint4
+    100148: joint4 1
+    100150: joint4 2
+    100152: joint41
+    100154: joint42
+    100156: joint43
+    100158: joint44
+    100160: joint45
+    100162: joint47
+    100164: joint48
+    100166: joint49
+    100168: joint5
+    100170: joint5 1
+    100172: joint5 2
+    100174: joint50
+    100176: joint51
+    100178: joint53
+    100180: joint54
+    100182: joint55
+    100184: joint56
+    100186: joint58
+    100188: joint59
+    100190: joint6
+    100192: joint6 1
+    100194: joint6 2
+    100196: joint60
+    100198: joint61
+    100200: joint62
+    100202: joint64
+    100204: joint65
+    100206: joint66
+    100208: joint67
+    100210: joint69
+    100212: joint69 1
+    100214: joint69 2
+    100216: joint7
+    100218: joint7 1
+    100220: joint7 2
+    100222: joint70
+    100224: joint70 1
+    100226: joint70 2
+    100228: joint71
+    100230: joint71 1
+    100232: joint71 2
+    100234: joint72
+    100236: joint72 1
+    100238: joint72 2
+    100240: joint73
+    100242: joint73 1
+    100244: joint73 2
+    100246: joint74
+    100248: joint74 1
+    100250: joint74 2
+    100252: joint75
+    100254: joint75 1
+    100256: joint75 2
+    100258: joint8
+    100260: joint8 1
+    100262: joint8 2
+    100264: joint9
+    100266: joint9 1
+    100268: joint9 2
+    100270: L1
+    100272: L2
+    100274: L3
+    100276: L4
+    100278: L5
+    100280: L6
+    100282: L7
+    100284: Leaves
+    100286: nurbsCircle11
+    100288: nurbsCircle12
+    100290: nurbsCircle13
+    100292: nurbsCircle15
+    100294: nurbsCircle17
+    100296: nurbsCircle20
+    100298: nurbsCircle21
+    100300: nurbsCircle22
+    100302: nurbsCircle24
+    100304: nurbsCircle25
+    100306: nurbsCircle26
+    100308: nurbsCircle27
+    100310: nurbsCircle28
+    100312: nurbsCircle29
+    100314: nurbsCircle3
+    100316: nurbsCircle30
+    100318: nurbsCircle31
+    100320: nurbsCircle4
+    100322: nurbsCircle7
+    100324: nurbsCircle8
+    100326: S1
+    100328: S2
+    100330: S3
+    100332: Spike_1
+    100334: Spike_2
+    100336: Spike_3
+    100338: Spikes
+    100340: //RootNode
+    100342: Stems
+    400000: cluster13Handle
+    400002: cluster14Handle
+    400004: cluster15Handle
+    400006: cluster16Handle
+    400008: cluster17Handle
+    400010: cluster18Handle
+    400012: cluster19Handle
+    400014: cluster20Handle
+    400016: cluster21Handle
+    400018: cluster22Handle
+    400020: cluster23Handle
+    400022: cluster24Handle
+    400024: cluster25Handle
+    400026: cluster26Handle
+    400028: cluster27Handle
+    400030: cluster28Handle
+    400032: cluster29Handle
+    400034: cluster30Handle
+    400036: cluster31Handle
+    400038: cluster32Handle
+    400040: curve1
+    400042: curve3
+    400044: curve5
+    400046: group12
+    400048: group13
+    400050: group14
+    400052: group15
+    400054: group16
+    400056: group17
+    400058: group18
+    400060: group19
+    400062: group20
+    400064: group21
+    400066: group22
+    400068: group23
+    400070: group24
+    400072: group25
+    400074: group26
+    400076: group27
+    400078: group28
+    400080: group29
+    400082: group30
+    400084: group31
+    400086: joint10
+    400088: joint10 1
+    400090: joint10 2
+    400092: joint11
+    400094: joint11 1
+    400096: joint11 2
+    400098: joint12
+    400100: joint12 1
+    400102: joint12 2
+    400104: joint13
+    400106: joint13 1
+    400108: joint14
+    400110: joint14 1
+    400112: joint15
+    400114: joint16
+    400116: joint17
+    400118: joint18
+    400120: joint19
+    400122: joint2
+    400124: joint2 1
+    400126: joint2 2
+    400128: joint3
+    400130: joint3 1
+    400132: joint3 2
+    400134: joint36
+    400136: joint36 1
+    400138: joint37
+    400140: joint37 1
+    400142: joint38
+    400144: joint38 1
+    400146: joint4
+    400148: joint4 1
+    400150: joint4 2
+    400152: joint41
+    400154: joint42
+    400156: joint43
+    400158: joint44
+    400160: joint45
+    400162: joint47
+    400164: joint48
+    400166: joint49
+    400168: joint5
+    400170: joint5 1
+    400172: joint5 2
+    400174: joint50
+    400176: joint51
+    400178: joint53
+    400180: joint54
+    400182: joint55
+    400184: joint56
+    400186: joint58
+    400188: joint59
+    400190: joint6
+    400192: joint6 1
+    400194: joint6 2
+    400196: joint60
+    400198: joint61
+    400200: joint62
+    400202: joint64
+    400204: joint65
+    400206: joint66
+    400208: joint67
+    400210: joint69
+    400212: joint69 1
+    400214: joint69 2
+    400216: joint7
+    400218: joint7 1
+    400220: joint7 2
+    400222: joint70
+    400224: joint70 1
+    400226: joint70 2
+    400228: joint71
+    400230: joint71 1
+    400232: joint71 2
+    400234: joint72
+    400236: joint72 1
+    400238: joint72 2
+    400240: joint73
+    400242: joint73 1
+    400244: joint73 2
+    400246: joint74
+    400248: joint74 1
+    400250: joint74 2
+    400252: joint75
+    400254: joint75 1
+    400256: joint75 2
+    400258: joint8
+    400260: joint8 1
+    400262: joint8 2
+    400264: joint9
+    400266: joint9 1
+    400268: joint9 2
+    400270: L1
+    400272: L2
+    400274: L3
+    400276: L4
+    400278: L5
+    400280: L6
+    400282: L7
+    400284: Leaves
+    400286: nurbsCircle11
+    400288: nurbsCircle12
+    400290: nurbsCircle13
+    400292: nurbsCircle15
+    400294: nurbsCircle17
+    400296: nurbsCircle20
+    400298: nurbsCircle21
+    400300: nurbsCircle22
+    400302: nurbsCircle24
+    400304: nurbsCircle25
+    400306: nurbsCircle26
+    400308: nurbsCircle27
+    400310: nurbsCircle28
+    400312: nurbsCircle29
+    400314: nurbsCircle3
+    400316: nurbsCircle30
+    400318: nurbsCircle31
+    400320: nurbsCircle4
+    400322: nurbsCircle7
+    400324: nurbsCircle8
+    400326: S1
+    400328: S2
+    400330: S3
+    400332: Spike_1
+    400334: Spike_2
+    400336: Spike_3
+    400338: Spikes
+    400340: //RootNode
+    400342: Stems
+    4300000: Spikes
+    4300002: Stems
+    4300004: Leaves
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Leaves
+    13700002: Spikes
+    13700004: Stems
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 500
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Leaves
+        weight: 1
+      - path: Spike_1
+        weight: 1
+      - path: Spike_1/curve1
+        weight: 1
+      - path: Spike_1/joint2
+        weight: 1
+      - path: Spike_1/joint2/joint3
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/nurbsCircle3
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/nurbsCircle3/group13
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/nurbsCircle3/group13/cluster17Handle
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/nurbsCircle3/nurbsCircle4
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/nurbsCircle3/nurbsCircle4/group12
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/joint14/nurbsCircle3/nurbsCircle4/group12/cluster18Handle
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/S2
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/S2/joint69
+          1
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/S2/joint69
+          1/joint70 1
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/S2/joint69
+          1/joint70 1/joint71 1
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/S2/joint69
+          1/joint70 1/joint71 1/joint72 1
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/S2/joint69
+          1/joint70 1/joint71 1/joint72 1/joint73 1
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/S2/joint69
+          1/joint70 1/joint71 1/joint72 1/joint73 1/joint74 1
+        weight: 1
+      - path: Spike_1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10/joint11/joint12/joint13/S2/joint69
+          1/joint70 1/joint71 1/joint72 1/joint73 1/joint74 1/joint75 1
+        weight: 1
+      - path: Spike_2
+        weight: 1
+      - path: Spike_2/curve3
+        weight: 1
+      - path: Spike_2/joint2 1
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18/joint19
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18/joint19/nurbsCircle12
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18/joint19/nurbsCircle12/group14
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18/joint19/nurbsCircle12/group14/cluster13Handle
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18/joint19/nurbsCircle12/nurbsCircle11
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18/joint19/nurbsCircle12/nurbsCircle11/group15
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18/joint19/nurbsCircle12/nurbsCircle11/group15/cluster14Handle
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18/joint19/S3
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18/joint19/S3/joint69
+          2
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18/joint19/S3/joint69
+          2/joint70 2
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18/joint19/S3/joint69
+          2/joint70 2/joint71 2
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18/joint19/S3/joint69
+          2/joint70 2/joint71 2/joint72 2
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18/joint19/S3/joint69
+          2/joint70 2/joint71 2/joint72 2/joint73 2
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18/joint19/S3/joint69
+          2/joint70 2/joint71 2/joint72 2/joint73 2/joint74 2
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/joint12 1/joint13 1/joint14 1/joint15/joint16/joint17/joint18/joint19/S3/joint69
+          2/joint70 2/joint71 2/joint72 2/joint73 2/joint74 2/joint75 2
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/L7
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/L7/joint41
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/L7/joint41/joint42
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/L7/joint41/joint42/joint43
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/L7/joint41/joint42/joint43/joint44
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/L7/joint41/joint42/joint43/joint44/joint45
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/nurbsCircle31
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/nurbsCircle31/group30
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/nurbsCircle31/group30/cluster23Handle
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/nurbsCircle31/nurbsCircle30
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/nurbsCircle31/nurbsCircle30/group31
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/joint10 1/joint11 1/nurbsCircle31/nurbsCircle30/group31/cluster24Handle
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/L5
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/L5/joint53
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/L5/joint53/joint54
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/L5/joint53/joint54/joint55
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/L5/joint53/joint54/joint55/joint56
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/nurbsCircle24
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/nurbsCircle24/group29
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/nurbsCircle24/group29/cluster21Handle
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/nurbsCircle24/nurbsCircle21
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/nurbsCircle24/nurbsCircle21/group28
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/joint6 1/joint7 1/joint8
+          1/joint9 1/nurbsCircle24/nurbsCircle21/group28/cluster22Handle
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/L1
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/L1/joint36
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/L1/joint36/joint37
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/L1/joint36/joint37/joint38
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/nurbsCircle27
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/nurbsCircle27/group24
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/nurbsCircle27/group24/cluster25Handle
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/nurbsCircle27/nurbsCircle28
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/nurbsCircle27/nurbsCircle28/group25
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/joint4 1/joint5 1/nurbsCircle27/nurbsCircle28/group25/cluster26Handle
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/L4
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/L4/joint58
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/L4/joint58/joint59
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/L4/joint58/joint59/joint60
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/L4/joint58/joint59/joint60/joint61
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/L4/joint58/joint59/joint60/joint61/joint62
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/nurbsCircle17
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/nurbsCircle17/group20
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/nurbsCircle17/group20/cluster29Handle
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/nurbsCircle17/nurbsCircle25
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/nurbsCircle17/nurbsCircle25/group21
+        weight: 1
+      - path: Spike_2/joint2 1/joint3 1/nurbsCircle17/nurbsCircle25/group21/cluster30Handle
+        weight: 1
+      - path: Spike_3
+        weight: 1
+      - path: Spike_3/curve5
+        weight: 1
+      - path: Spike_3/joint2 2
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2/joint12 2
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2/joint12 2/nurbsCircle7
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2/joint12 2/nurbsCircle7/group16
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2/joint12 2/nurbsCircle7/group16/cluster15Handle
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2/joint12 2/nurbsCircle7/nurbsCircle8
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2/joint12 2/nurbsCircle7/nurbsCircle8/group17
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2/joint12 2/nurbsCircle7/nurbsCircle8/group17/cluster16Handle
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2/joint12 2/S1
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2/joint12 2/S1/joint69
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2/joint12 2/S1/joint69/joint70
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2/joint12 2/S1/joint69/joint70/joint71
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2/joint12 2/S1/joint69/joint70/joint71/joint72
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2/joint12 2/S1/joint69/joint70/joint71/joint72/joint73
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2/joint12 2/S1/joint69/joint70/joint71/joint72/joint73/joint74
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/joint10 2/joint11 2/joint12 2/S1/joint69/joint70/joint71/joint72/joint73/joint74/joint75
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/L6
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/L6/joint47
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/L6/joint47/joint48
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/L6/joint47/joint48/joint49
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/L6/joint47/joint48/joint49/joint50
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/L6/joint47/joint48/joint49/joint50/joint51
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/nurbsCircle22
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/nurbsCircle22/group26
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/nurbsCircle22/group26/cluster19Handle
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/nurbsCircle22/nurbsCircle29
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/nurbsCircle22/nurbsCircle29/group27
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/joint6 2/joint7 2/joint8
+          2/joint9 2/nurbsCircle22/nurbsCircle29/group27/cluster20Handle
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/L2
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/L2/joint36 1
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/L2/joint36 1/joint37 1
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/L2/joint36 1/joint37 1/joint38
+          1
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/nurbsCircle20
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/nurbsCircle20/group22
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/nurbsCircle20/group22/cluster27Handle
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/nurbsCircle20/nurbsCircle26
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/nurbsCircle20/nurbsCircle26/group23
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/joint4 2/joint5 2/nurbsCircle20/nurbsCircle26/group23/cluster28Handle
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/L3
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/L3/joint64
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/L3/joint64/joint65
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/L3/joint64/joint65/joint66
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/L3/joint64/joint65/joint66/joint67
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/nurbsCircle13
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/nurbsCircle13/group18
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/nurbsCircle13/group18/cluster31Handle
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/nurbsCircle13/nurbsCircle15
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/nurbsCircle13/nurbsCircle15/group19
+        weight: 1
+      - path: Spike_3/joint2 2/joint3 2/nurbsCircle13/nurbsCircle15/group19/cluster32Handle
+        weight: 1
+      - path: Spikes
+        weight: 1
+      - path: Stems
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 90
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

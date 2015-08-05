@@ -1,0 +1,579 @@
+fileFormatVersion: 2
+guid: b6dca8fcf82fe4e889d754623731e4fb
+timeCreated: 1438470372
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: B1
+    100002: B10
+    100004: B11
+    100006: B12
+    100008: B2
+    100010: B3
+    100012: B4
+    100014: B5
+    100016: B6
+    100018: B7
+    100020: B8
+    100022: B9
+    100024: curve1
+    100026: F2
+    100028: F3
+    100030: F4
+    100032: F5
+    100034: F6
+    100036: Flower1
+    100038: Flower1_S
+    100040: Flower2
+    100042: Flower2_S
+    100044: Flower3
+    100046: Flower3_S
+    100048: Flower4
+    100050: Flower4_s
+    100052: Flower5
+    100054: Flower5_S
+    100056: Flower6
+    100058: Flower6_S
+    100060: //RootNode
+    100062: joint10
+    100064: joint100
+    100066: joint101
+    100068: joint103
+    100070: joint104
+    100072: joint105
+    100074: joint106
+    100076: joint107
+    100078: joint108
+    100080: joint109
+    100082: joint11
+    100084: joint110
+    100086: joint111
+    100088: joint112
+    100090: joint113
+    100092: joint114
+    100094: joint116
+    100096: joint117
+    100098: joint118
+    100100: joint119
+    100102: joint12
+    100104: joint120
+    100106: joint121
+    100108: joint122
+    100110: joint123
+    100112: joint125
+    100114: joint126
+    100116: joint127
+    100118: joint128
+    100120: joint129
+    100122: joint13
+    100124: joint130
+    100126: joint131
+    100128: joint132
+    100130: joint133
+    100132: joint134
+    100134: joint136
+    100136: joint136 1
+    100138: joint136 10
+    100140: joint136 11
+    100142: joint136 12
+    100144: joint136 13
+    100146: joint136 14
+    100148: joint136 15
+    100150: joint136 16
+    100152: joint136 17
+    100154: joint136 18
+    100156: joint136 19
+    100158: joint136 2
+    100160: joint136 20
+    100162: joint136 21
+    100164: joint136 22
+    100166: joint136 3
+    100168: joint136 4
+    100170: joint136 5
+    100172: joint136 6
+    100174: joint136 7
+    100176: joint136 8
+    100178: joint136 9
+    100180: joint137
+    100182: joint137 1
+    100184: joint137 10
+    100186: joint137 11
+    100188: joint137 12
+    100190: joint137 13
+    100192: joint137 14
+    100194: joint137 15
+    100196: joint137 16
+    100198: joint137 17
+    100200: joint137 18
+    100202: joint137 19
+    100204: joint137 2
+    100206: joint137 20
+    100208: joint137 21
+    100210: joint137 22
+    100212: joint137 3
+    100214: joint137 4
+    100216: joint137 5
+    100218: joint137 6
+    100220: joint137 7
+    100222: joint137 8
+    100224: joint137 9
+    100226: joint14
+    100228: joint147
+    100230: joint148
+    100232: joint149
+    100234: joint15
+    100236: joint150
+    100238: joint151
+    100240: joint152
+    100242: joint153
+    100244: joint154
+    100246: joint155
+    100248: joint156
+    100250: joint157
+    100252: joint159
+    100254: joint159 1
+    100256: joint159 2
+    100258: joint159 3
+    100260: joint159 4
+    100262: joint16
+    100264: joint160
+    100266: joint160 1
+    100268: joint160 2
+    100270: joint160 3
+    100272: joint160 4
+    100274: joint19
+    100276: joint2
+    100278: joint20
+    100280: joint21
+    100282: joint22
+    100284: joint24
+    100286: joint25
+    100288: joint26
+    100290: joint27
+    100292: joint28
+    100294: joint29
+    100296: joint3
+    100298: joint30
+    100300: joint32
+    100302: joint33
+    100304: joint34
+    100306: joint35
+    100308: joint36
+    100310: joint37
+    100312: joint38
+    100314: joint39
+    100316: joint4
+    100318: joint40
+    100320: joint42
+    100322: joint43
+    100324: joint44
+    100326: joint45
+    100328: joint46
+    100330: joint47
+    100332: joint48
+    100334: joint49
+    100336: joint5
+    100338: joint50
+    100340: joint51
+    100342: joint52
+    100344: joint53
+    100346: joint55
+    100348: joint56
+    100350: joint57
+    100352: joint58
+    100354: joint59
+    100356: joint6
+    100358: joint60
+    100360: joint61
+    100362: joint62
+    100364: joint64
+    100366: joint65
+    100368: joint66
+    100370: joint67
+    100372: joint68
+    100374: joint69
+    100376: joint7
+    100378: joint70
+    100380: joint71
+    100382: joint72
+    100384: joint73
+    100386: joint74
+    100388: joint76
+    100390: joint77
+    100392: joint78
+    100394: joint79
+    100396: joint8
+    100398: joint80
+    100400: joint81
+    100402: joint82
+    100404: joint83
+    100406: joint84
+    100408: joint85
+    100410: joint86
+    100412: joint87
+    100414: joint88
+    100416: joint89
+    100418: joint9
+    100420: joint90
+    100422: joint92
+    100424: joint93
+    100426: joint94
+    100428: joint95
+    100430: joint96
+    100432: joint97
+    100434: joint98
+    100436: joint99
+    100438: L1
+    100440: L10
+    100442: L11
+    100444: L12
+    100446: L13
+    100448: L14
+    100450: L15
+    100452: L16
+    100454: L17
+    100456: L18
+    100458: L19
+    100460: L2
+    100462: L20
+    100464: L21
+    100466: L22
+    100468: L23
+    100470: L3
+    100472: L4
+    100474: L5
+    100476: L6
+    100478: L7
+    100480: L8
+    100482: L9
+    100484: Leaves
+    100486: MainStem
+    100488: Stem_end
+    100490: Stem_Terminal
+    400000: B1
+    400002: B10
+    400004: B11
+    400006: B12
+    400008: B2
+    400010: B3
+    400012: B4
+    400014: B5
+    400016: B6
+    400018: B7
+    400020: B8
+    400022: B9
+    400024: curve1
+    400026: F2
+    400028: F3
+    400030: F4
+    400032: F5
+    400034: F6
+    400036: Flower1
+    400038: Flower1_S
+    400040: Flower2
+    400042: Flower2_S
+    400044: Flower3
+    400046: Flower3_S
+    400048: Flower4
+    400050: Flower4_s
+    400052: Flower5
+    400054: Flower5_S
+    400056: Flower6
+    400058: Flower6_S
+    400060: //RootNode
+    400062: joint10
+    400064: joint100
+    400066: joint101
+    400068: joint103
+    400070: joint104
+    400072: joint105
+    400074: joint106
+    400076: joint107
+    400078: joint108
+    400080: joint109
+    400082: joint11
+    400084: joint110
+    400086: joint111
+    400088: joint112
+    400090: joint113
+    400092: joint114
+    400094: joint116
+    400096: joint117
+    400098: joint118
+    400100: joint119
+    400102: joint12
+    400104: joint120
+    400106: joint121
+    400108: joint122
+    400110: joint123
+    400112: joint125
+    400114: joint126
+    400116: joint127
+    400118: joint128
+    400120: joint129
+    400122: joint13
+    400124: joint130
+    400126: joint131
+    400128: joint132
+    400130: joint133
+    400132: joint134
+    400134: joint136
+    400136: joint136 1
+    400138: joint136 10
+    400140: joint136 11
+    400142: joint136 12
+    400144: joint136 13
+    400146: joint136 14
+    400148: joint136 15
+    400150: joint136 16
+    400152: joint136 17
+    400154: joint136 18
+    400156: joint136 19
+    400158: joint136 2
+    400160: joint136 20
+    400162: joint136 21
+    400164: joint136 22
+    400166: joint136 3
+    400168: joint136 4
+    400170: joint136 5
+    400172: joint136 6
+    400174: joint136 7
+    400176: joint136 8
+    400178: joint136 9
+    400180: joint137
+    400182: joint137 1
+    400184: joint137 10
+    400186: joint137 11
+    400188: joint137 12
+    400190: joint137 13
+    400192: joint137 14
+    400194: joint137 15
+    400196: joint137 16
+    400198: joint137 17
+    400200: joint137 18
+    400202: joint137 19
+    400204: joint137 2
+    400206: joint137 20
+    400208: joint137 21
+    400210: joint137 22
+    400212: joint137 3
+    400214: joint137 4
+    400216: joint137 5
+    400218: joint137 6
+    400220: joint137 7
+    400222: joint137 8
+    400224: joint137 9
+    400226: joint14
+    400228: joint147
+    400230: joint148
+    400232: joint149
+    400234: joint15
+    400236: joint150
+    400238: joint151
+    400240: joint152
+    400242: joint153
+    400244: joint154
+    400246: joint155
+    400248: joint156
+    400250: joint157
+    400252: joint159
+    400254: joint159 1
+    400256: joint159 2
+    400258: joint159 3
+    400260: joint159 4
+    400262: joint16
+    400264: joint160
+    400266: joint160 1
+    400268: joint160 2
+    400270: joint160 3
+    400272: joint160 4
+    400274: joint19
+    400276: joint2
+    400278: joint20
+    400280: joint21
+    400282: joint22
+    400284: joint24
+    400286: joint25
+    400288: joint26
+    400290: joint27
+    400292: joint28
+    400294: joint29
+    400296: joint3
+    400298: joint30
+    400300: joint32
+    400302: joint33
+    400304: joint34
+    400306: joint35
+    400308: joint36
+    400310: joint37
+    400312: joint38
+    400314: joint39
+    400316: joint4
+    400318: joint40
+    400320: joint42
+    400322: joint43
+    400324: joint44
+    400326: joint45
+    400328: joint46
+    400330: joint47
+    400332: joint48
+    400334: joint49
+    400336: joint5
+    400338: joint50
+    400340: joint51
+    400342: joint52
+    400344: joint53
+    400346: joint55
+    400348: joint56
+    400350: joint57
+    400352: joint58
+    400354: joint59
+    400356: joint6
+    400358: joint60
+    400360: joint61
+    400362: joint62
+    400364: joint64
+    400366: joint65
+    400368: joint66
+    400370: joint67
+    400372: joint68
+    400374: joint69
+    400376: joint7
+    400378: joint70
+    400380: joint71
+    400382: joint72
+    400384: joint73
+    400386: joint74
+    400388: joint76
+    400390: joint77
+    400392: joint78
+    400394: joint79
+    400396: joint8
+    400398: joint80
+    400400: joint81
+    400402: joint82
+    400404: joint83
+    400406: joint84
+    400408: joint85
+    400410: joint86
+    400412: joint87
+    400414: joint88
+    400416: joint89
+    400418: joint9
+    400420: joint90
+    400422: joint92
+    400424: joint93
+    400426: joint94
+    400428: joint95
+    400430: joint96
+    400432: joint97
+    400434: joint98
+    400436: joint99
+    400438: L1
+    400440: L10
+    400442: L11
+    400444: L12
+    400446: L13
+    400448: L14
+    400450: L15
+    400452: L16
+    400454: L17
+    400456: L18
+    400458: L19
+    400460: L2
+    400462: L20
+    400464: L21
+    400466: L22
+    400468: L23
+    400470: L3
+    400472: L4
+    400474: L5
+    400476: L6
+    400478: L7
+    400480: L8
+    400482: L9
+    400484: Leaves
+    400486: MainStem
+    400488: Stem_end
+    400490: Stem_Terminal
+    4300000: MainStem
+    4300002: Leaves
+    4300004: Flower1_S
+    4300006: Flower3_S
+    4300008: Flower4_s
+    4300010: Flower6_S
+    4300012: Flower2_S
+    4300014: Flower5_S
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Flower1_S
+    13700002: Flower2_S
+    13700004: Flower3_S
+    13700006: Flower4_s
+    13700008: Flower5_S
+    13700010: Flower6_S
+    13700012: Leaves
+    13700014: MainStem
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

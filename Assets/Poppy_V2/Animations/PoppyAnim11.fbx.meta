@@ -1,0 +1,775 @@
+fileFormatVersion: 2
+guid: 88659cceec0784497958a92f1813a479
+timeCreated: 1438652431
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: BadLeafs
+    100002: BP_1
+    100004: BP_1_Little
+    100006: BP_1_Root
+    100008: BP_2
+    100010: BP_2_Little
+    100012: BP_2_Root
+    100014: BP_3
+    100016: BP_3_little
+    100018: BP_3_Root
+    100020: BP_4
+    100022: BP_4_Little
+    100024: BP_4_Root
+    100026: cluster3Handle
+    100028: cluster4Handle
+    100030: D_Group
+    100032: D_Group1
+    100034: FULL_FlowerControl
+    100036: group1
+    100038: joint10
+    100040: joint100
+    100042: joint101
+    100044: joint102
+    100046: joint103
+    100048: joint105
+    100050: joint106
+    100052: joint107
+    100054: joint108
+    100056: joint109
+    100058: joint110
+    100060: joint111
+    100062: joint112
+    100064: joint113
+    100066: joint114
+    100068: joint115
+    100070: joint116
+    100072: joint118
+    100074: joint119
+    100076: joint12
+    100078: joint120
+    100080: joint121
+    100082: joint122
+    100084: joint123
+    100086: joint124
+    100088: joint125
+    100090: joint126
+    100092: joint127
+    100094: joint128
+    100096: joint129
+    100098: joint13
+    100100: joint131
+    100102: joint132
+    100104: joint133
+    100106: joint134
+    100108: joint135
+    100110: joint136
+    100112: joint137
+    100114: joint138
+    100116: joint139
+    100118: joint14
+    100120: joint140
+    100122: joint142
+    100124: joint143
+    100126: joint144
+    100128: joint145
+    100130: joint146
+    100132: joint147
+    100134: joint148
+    100136: joint149
+    100138: joint15
+    100140: joint150
+    100142: joint151
+    100144: joint153
+    100146: joint154
+    100148: joint155
+    100150: joint156
+    100152: joint157
+    100154: joint158
+    100156: joint159
+    100158: joint16
+    100160: joint160
+    100162: joint161
+    100164: joint162
+    100166: joint17
+    100168: joint18
+    100170: joint19
+    100172: joint2
+    100174: joint20
+    100176: joint21
+    100178: joint22
+    100180: joint23
+    100182: joint25
+    100184: joint26
+    100186: joint27
+    100188: joint28
+    100190: joint29
+    100192: joint30
+    100194: joint31
+    100196: joint32
+    100198: joint33
+    100200: joint35
+    100202: joint36
+    100204: joint37
+    100206: joint38
+    100208: joint39
+    100210: joint3_Leaf6
+    100212: joint40
+    100214: joint41
+    100216: joint42
+    100218: joint43
+    100220: joint44
+    100222: joint45
+    100224: joint46
+    100226: joint47
+    100228: joint49
+    100230: joint4_Leaf5
+    100232: joint50
+    100234: joint51
+    100236: joint52
+    100238: joint53
+    100240: joint54
+    100242: joint55
+    100244: joint56
+    100246: joint57
+    100248: joint58
+    100250: joint59
+    100252: joint5_Leaf4
+    100254: joint60
+    100256: joint61
+    100258: joint62
+    100260: joint63
+    100262: joint64
+    100264: joint66
+    100266: joint67
+    100268: joint68
+    100270: joint69
+    100272: joint6_Leaf3
+    100274: joint70
+    100276: joint71
+    100278: joint73
+    100280: joint74
+    100282: joint75
+    100284: joint76
+    100286: joint78
+    100288: joint79
+    100290: joint7_Leaf2
+    100292: joint80
+    100294: joint81
+    100296: joint82
+    100298: joint83
+    100300: joint84
+    100302: joint85
+    100304: joint86
+    100306: joint87
+    100308: joint88
+    100310: joint89
+    100312: joint8_Leaf1
+    100314: joint90
+    100316: joint91
+    100318: joint93
+    100320: joint94
+    100322: joint95
+    100324: joint96
+    100326: joint97
+    100328: joint98
+    100330: joint99
+    100332: joint9_Petals
+    100334: Leaf1
+    100336: Leaf1 1
+    100338: Leaf1_Handle_In
+    100340: Leaf1_Handle_Out
+    100342: Leaf1_In
+    100344: Leaf1_Out
+    100346: Leaf1_Root
+    100348: Leaf2
+    100350: Leaf2 1
+    100352: Leaf2_Handle_in
+    100354: Leaf2_Handle_out
+    100356: Leaf2_In
+    100358: Leaf2_Out
+    100360: Leaf2_Root
+    100362: Leaf3
+    100364: Leaf3 1
+    100366: Leaf3_Handle_In
+    100368: Leaf3_Handle_mid
+    100370: Leaf3_Handle_out
+    100372: Leaf3_In
+    100374: Leaf3_Mid
+    100376: Leaf3_Out
+    100378: Leaf3_Root
+    100380: Leaf4
+    100382: Leaf4 1
+    100384: Leaf4_Handle_In
+    100386: Leaf4_Handle_Out
+    100388: Leaf4_in
+    100390: Leaf4_Out
+    100392: Leaf4_Root
+    100394: Leaf5
+    100396: Leaf5 1
+    100398: Leaf5_ClusterHandle_In
+    100400: Leaf5_ClusterHandle_Out
+    100402: Leaf5_In
+    100404: Leaf5_Out
+    100406: Leaf5_Root
+    100408: Leaf6
+    100410: Leaf6 1
+    100412: Leaf6_In
+    100414: Leaf6_Out
+    100416: Leaf6_Root
+    100418: LeafNew
+    100420: Leafs
+    100422: Leafs1
+    100424: Leafs2
+    100426: Leafs3
+    100428: Leafs4
+    100430: Leafs5
+    100432: Leafs6
+    100434: Leafs7
+    100436: LeafSmalls
+    100438: LeafsOrginals
+    100440: LittlePetals
+    100442: LittlePetalsNew
+    100444: LowerStemControl
+    100446: Petals
+    100448: polySurface1
+    100450: polySurface1 1
+    100452: polySurface10
+    100454: polySurface10 1
+    100456: polySurface11
+    100458: polySurface11 1
+    100460: polySurface12
+    100462: polySurface12 1
+    100464: polySurface13
+    100466: polySurface13 1
+    100468: polySurface14
+    100470: polySurface14 1
+    100472: polySurface15
+    100474: polySurface15 1
+    100476: polySurface2
+    100478: polySurface2 1
+    100480: polySurface3
+    100482: polySurface3 1
+    100484: polySurface4
+    100486: polySurface4 1
+    100488: polySurface5
+    100490: polySurface5 1
+    100492: polySurface6
+    100494: polySurface6 1
+    100496: polySurface7
+    100498: polySurface7 1
+    100500: polySurface8
+    100502: polySurface8 1
+    100504: polySurface9
+    100506: polySurface9 1
+    100508: Poppy_V3:polySurface1
+    100510: //RootNode
+    100512: Stem1
+    100514: StemRoot
+    100516: TP1_root
+    100518: TP2_Root
+    100520: TP3_Root
+    100522: TP_1
+    100524: TP_1_Little
+    100526: TP_2
+    100528: TP_2_Little
+    100530: TP_3
+    100532: TP_3_Little
+    100534: transform1
+    100536: transform2
+    400000: BadLeafs
+    400002: BP_1
+    400004: BP_1_Little
+    400006: BP_1_Root
+    400008: BP_2
+    400010: BP_2_Little
+    400012: BP_2_Root
+    400014: BP_3
+    400016: BP_3_little
+    400018: BP_3_Root
+    400020: BP_4
+    400022: BP_4_Little
+    400024: BP_4_Root
+    400026: cluster3Handle
+    400028: cluster4Handle
+    400030: D_Group
+    400032: D_Group1
+    400034: FULL_FlowerControl
+    400036: group1
+    400038: joint10
+    400040: joint100
+    400042: joint101
+    400044: joint102
+    400046: joint103
+    400048: joint105
+    400050: joint106
+    400052: joint107
+    400054: joint108
+    400056: joint109
+    400058: joint110
+    400060: joint111
+    400062: joint112
+    400064: joint113
+    400066: joint114
+    400068: joint115
+    400070: joint116
+    400072: joint118
+    400074: joint119
+    400076: joint12
+    400078: joint120
+    400080: joint121
+    400082: joint122
+    400084: joint123
+    400086: joint124
+    400088: joint125
+    400090: joint126
+    400092: joint127
+    400094: joint128
+    400096: joint129
+    400098: joint13
+    400100: joint131
+    400102: joint132
+    400104: joint133
+    400106: joint134
+    400108: joint135
+    400110: joint136
+    400112: joint137
+    400114: joint138
+    400116: joint139
+    400118: joint14
+    400120: joint140
+    400122: joint142
+    400124: joint143
+    400126: joint144
+    400128: joint145
+    400130: joint146
+    400132: joint147
+    400134: joint148
+    400136: joint149
+    400138: joint15
+    400140: joint150
+    400142: joint151
+    400144: joint153
+    400146: joint154
+    400148: joint155
+    400150: joint156
+    400152: joint157
+    400154: joint158
+    400156: joint159
+    400158: joint16
+    400160: joint160
+    400162: joint161
+    400164: joint162
+    400166: joint17
+    400168: joint18
+    400170: joint19
+    400172: joint2
+    400174: joint20
+    400176: joint21
+    400178: joint22
+    400180: joint23
+    400182: joint25
+    400184: joint26
+    400186: joint27
+    400188: joint28
+    400190: joint29
+    400192: joint30
+    400194: joint31
+    400196: joint32
+    400198: joint33
+    400200: joint35
+    400202: joint36
+    400204: joint37
+    400206: joint38
+    400208: joint39
+    400210: joint3_Leaf6
+    400212: joint40
+    400214: joint41
+    400216: joint42
+    400218: joint43
+    400220: joint44
+    400222: joint45
+    400224: joint46
+    400226: joint47
+    400228: joint49
+    400230: joint4_Leaf5
+    400232: joint50
+    400234: joint51
+    400236: joint52
+    400238: joint53
+    400240: joint54
+    400242: joint55
+    400244: joint56
+    400246: joint57
+    400248: joint58
+    400250: joint59
+    400252: joint5_Leaf4
+    400254: joint60
+    400256: joint61
+    400258: joint62
+    400260: joint63
+    400262: joint64
+    400264: joint66
+    400266: joint67
+    400268: joint68
+    400270: joint69
+    400272: joint6_Leaf3
+    400274: joint70
+    400276: joint71
+    400278: joint73
+    400280: joint74
+    400282: joint75
+    400284: joint76
+    400286: joint78
+    400288: joint79
+    400290: joint7_Leaf2
+    400292: joint80
+    400294: joint81
+    400296: joint82
+    400298: joint83
+    400300: joint84
+    400302: joint85
+    400304: joint86
+    400306: joint87
+    400308: joint88
+    400310: joint89
+    400312: joint8_Leaf1
+    400314: joint90
+    400316: joint91
+    400318: joint93
+    400320: joint94
+    400322: joint95
+    400324: joint96
+    400326: joint97
+    400328: joint98
+    400330: joint99
+    400332: joint9_Petals
+    400334: Leaf1
+    400336: Leaf1 1
+    400338: Leaf1_Handle_In
+    400340: Leaf1_Handle_Out
+    400342: Leaf1_In
+    400344: Leaf1_Out
+    400346: Leaf1_Root
+    400348: Leaf2
+    400350: Leaf2 1
+    400352: Leaf2_Handle_in
+    400354: Leaf2_Handle_out
+    400356: Leaf2_In
+    400358: Leaf2_Out
+    400360: Leaf2_Root
+    400362: Leaf3
+    400364: Leaf3 1
+    400366: Leaf3_Handle_In
+    400368: Leaf3_Handle_mid
+    400370: Leaf3_Handle_out
+    400372: Leaf3_In
+    400374: Leaf3_Mid
+    400376: Leaf3_Out
+    400378: Leaf3_Root
+    400380: Leaf4
+    400382: Leaf4 1
+    400384: Leaf4_Handle_In
+    400386: Leaf4_Handle_Out
+    400388: Leaf4_in
+    400390: Leaf4_Out
+    400392: Leaf4_Root
+    400394: Leaf5
+    400396: Leaf5 1
+    400398: Leaf5_ClusterHandle_In
+    400400: Leaf5_ClusterHandle_Out
+    400402: Leaf5_In
+    400404: Leaf5_Out
+    400406: Leaf5_Root
+    400408: Leaf6
+    400410: Leaf6 1
+    400412: Leaf6_In
+    400414: Leaf6_Out
+    400416: Leaf6_Root
+    400418: LeafNew
+    400420: Leafs
+    400422: Leafs1
+    400424: Leafs2
+    400426: Leafs3
+    400428: Leafs4
+    400430: Leafs5
+    400432: Leafs6
+    400434: Leafs7
+    400436: LeafSmalls
+    400438: LeafsOrginals
+    400440: LittlePetals
+    400442: LittlePetalsNew
+    400444: LowerStemControl
+    400446: Petals
+    400448: polySurface1
+    400450: polySurface1 1
+    400452: polySurface10
+    400454: polySurface10 1
+    400456: polySurface11
+    400458: polySurface11 1
+    400460: polySurface12
+    400462: polySurface12 1
+    400464: polySurface13
+    400466: polySurface13 1
+    400468: polySurface14
+    400470: polySurface14 1
+    400472: polySurface15
+    400474: polySurface15 1
+    400476: polySurface2
+    400478: polySurface2 1
+    400480: polySurface3
+    400482: polySurface3 1
+    400484: polySurface4
+    400486: polySurface4 1
+    400488: polySurface5
+    400490: polySurface5 1
+    400492: polySurface6
+    400494: polySurface6 1
+    400496: polySurface7
+    400498: polySurface7 1
+    400500: polySurface8
+    400502: polySurface8 1
+    400504: polySurface9
+    400506: polySurface9 1
+    400508: Poppy_V3:polySurface1
+    400510: //RootNode
+    400512: Stem1
+    400514: StemRoot
+    400516: TP1_root
+    400518: TP2_Root
+    400520: TP3_Root
+    400522: TP_1
+    400524: TP_1_Little
+    400526: TP_2
+    400528: TP_2_Little
+    400530: TP_3
+    400532: TP_3_Little
+    400534: transform1
+    400536: transform2
+    2300000: BP_1_Little
+    2300002: BP_2_Little
+    2300004: BP_3_little
+    2300006: BP_4_Little
+    2300008: Leafs1
+    2300010: Leafs2
+    2300012: Leafs3
+    2300014: Leafs4
+    2300016: Leafs5
+    2300018: Leafs6
+    2300020: Leafs7
+    2300022: polySurface1
+    2300024: polySurface1 1
+    2300026: polySurface10
+    2300028: polySurface10 1
+    2300030: polySurface11
+    2300032: polySurface11 1
+    2300034: polySurface12
+    2300036: polySurface12 1
+    2300038: polySurface13
+    2300040: polySurface13 1
+    2300042: polySurface14
+    2300044: polySurface14 1
+    2300046: polySurface15
+    2300048: polySurface15 1
+    2300050: polySurface2
+    2300052: polySurface2 1
+    2300054: polySurface3
+    2300056: polySurface3 1
+    2300058: polySurface4
+    2300060: polySurface4 1
+    2300062: polySurface5
+    2300064: polySurface5 1
+    2300066: polySurface6
+    2300068: polySurface6 1
+    2300070: polySurface7
+    2300072: polySurface7 1
+    2300074: polySurface8 1
+    2300076: polySurface9 1
+    2300078: TP_1_Little
+    2300080: TP_2_Little
+    2300082: TP_3_Little
+    3300000: BP_1_Little
+    3300002: BP_2_Little
+    3300004: BP_3_little
+    3300006: BP_4_Little
+    3300008: Leafs1
+    3300010: Leafs2
+    3300012: Leafs3
+    3300014: Leafs4
+    3300016: Leafs5
+    3300018: Leafs6
+    3300020: Leafs7
+    3300022: polySurface1
+    3300024: polySurface1 1
+    3300026: polySurface10
+    3300028: polySurface10 1
+    3300030: polySurface11
+    3300032: polySurface11 1
+    3300034: polySurface12
+    3300036: polySurface12 1
+    3300038: polySurface13
+    3300040: polySurface13 1
+    3300042: polySurface14
+    3300044: polySurface14 1
+    3300046: polySurface15
+    3300048: polySurface15 1
+    3300050: polySurface2
+    3300052: polySurface2 1
+    3300054: polySurface3
+    3300056: polySurface3 1
+    3300058: polySurface4
+    3300060: polySurface4 1
+    3300062: polySurface5
+    3300064: polySurface5 1
+    3300066: polySurface6
+    3300068: polySurface6 1
+    3300070: polySurface7
+    3300072: polySurface7 1
+    3300074: polySurface8 1
+    3300076: polySurface9 1
+    3300078: TP_1_Little
+    3300080: TP_2_Little
+    3300082: TP_3_Little
+    4300000: TP_1
+    4300002: TP_2
+    4300004: TP_3
+    4300006: BP_1
+    4300008: BP_2
+    4300010: BP_3
+    4300012: BP_4
+    4300014: BP_1_Little
+    4300016: BP_2_Little
+    4300018: BP_3_little
+    4300020: BP_4_Little
+    4300022: TP_1_Little
+    4300024: TP_2_Little
+    4300026: TP_3_Little
+    4300028: Leaf1
+    4300030: Leaf2
+    4300032: Leaf3
+    4300034: Leaf4
+    4300036: Leaf5
+    4300038: Leaf6
+    4300040: Leafs6
+    4300042: Leafs5
+    4300044: Leafs4
+    4300046: Leafs3
+    4300048: Leafs2
+    4300050: Leafs1
+    4300052: Leafs7
+    4300054: Leaf1
+    4300056: Leaf2
+    4300058: Leaf3
+    4300060: Leaf4
+    4300062: Leaf5
+    4300064: Leaf6
+    4300066: Stem1
+    4300068: polySurface1
+    4300070: polySurface2
+    4300072: polySurface3
+    4300074: polySurface4
+    4300076: polySurface5
+    4300078: polySurface6
+    4300080: polySurface7
+    4300082: polySurface10
+    4300084: polySurface11
+    4300086: polySurface12
+    4300088: polySurface13
+    4300090: polySurface14
+    4300092: polySurface15
+    4300094: polySurface1
+    4300096: polySurface2
+    4300098: polySurface3
+    4300100: polySurface4
+    4300102: polySurface5
+    4300104: polySurface6
+    4300106: polySurface7
+    4300108: polySurface8
+    4300110: polySurface9
+    4300112: polySurface10
+    4300114: polySurface11
+    4300116: polySurface12
+    4300118: polySurface13
+    4300120: polySurface14
+    4300122: polySurface15
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: BP_1
+    13700002: BP_2
+    13700004: BP_3
+    13700006: BP_4
+    13700008: Leaf1
+    13700010: Leaf1 1
+    13700012: Leaf2
+    13700014: Leaf2 1
+    13700016: Leaf3
+    13700018: Leaf3 1
+    13700020: Leaf4
+    13700022: Leaf4 1
+    13700024: Leaf5
+    13700026: Leaf5 1
+    13700028: Leaf6
+    13700030: Leaf6 1
+    13700032: Stem1
+    13700034: TP_1
+    13700036: TP_2
+    13700038: TP_3
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
