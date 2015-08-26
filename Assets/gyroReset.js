@@ -41,6 +41,7 @@ public function setTightTracking(t:boolean){
 }
 
 public function resetResetter(){
-	transform.localRotation = Quaternion();
+	targetRotation = Quaternion.identity;
+	targetRotation.SetFromToRotation(Input.gyro.gravity, Vector3(0,0,0));
 	Debug.Log("---RESET RESETTER---");
 }
