@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
-  <Tracking>
-    <ImageTarget name="cyclone_Page_015" size="0.130000 0.171762" />
-    <ImageTarget name="MGM_LogoCalibration_170cm" size="1.700000 1.700000" />
-    <ImageTarget name="MGM_LogoCalibration9x12_meters" size="3.657600 2.743200" />
-    <ImageTarget name="MGM_LogoCalibration9x12" size="3657.600098 2743.199951" />
-  </Tracking>
-</QCARConfig>

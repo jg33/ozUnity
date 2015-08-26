@@ -96,11 +96,11 @@ namespace Vuforia
 				storm = GameObject.Find("storm");
 				storm.SetActive(false);
 
-				Debug.Log (gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.ToString());
-				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.ToString() == mTrackableBehaviour.TrackableName.ToString ()){
+				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name == mTrackableBehaviour.TrackableName){
 					gameObject.transform.GetChild(0).gameObject.SetActive(true);
-
 					gameObject.transform.GetChild(1).gameObject.SetActive(true);
+					Debug.Log ("BORT " + gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name+ " "  );
+
 				}
 
 			}
@@ -116,14 +116,17 @@ namespace Vuforia
 			if (mTrackableBehaviour.TrackableName == "MGM_LogoCalibration9x12"){
 				GameObject camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("lostTarget");
-			} else if (mTrackableBehaviour.TrackableName.StartsWith ( "Passive" ) ){
+			} else if (mTrackableBehaviour.TrackableName.StartsWith( "Passive" ) ){
 				GameObject camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("setTightTracking", false);
 				storm.SetActive(true);
 
-				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.ToString() == mTrackableBehaviour.TrackableName.ToString()){
+				Debug.Log ("BORT OFF " + gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name  );
+				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name == mTrackableBehaviour.TrackableName){
 					gameObject.transform.GetChild(0).gameObject.SetActive(false);
 					gameObject.transform.GetChild(1).gameObject.SetActive(false);
+					Debug.Log ("BORT " + gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name+ " "  );
+
 				}
 
 				GameObject.Find("GyroResetter").SendMessage("resetResetter");
