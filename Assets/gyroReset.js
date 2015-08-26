@@ -17,7 +17,7 @@ function Start () {
 
 function Update () {
 
-	Debug.Log("grav: "+Input.gyro.gravity);
+	//Debug.Log("grav: "+Input.gyro.gravity);
 	if(tightTracking){
 		transform.localRotation = targetRotation;
 	} else{
