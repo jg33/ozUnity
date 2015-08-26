@@ -39,3 +39,8 @@ public function setTightTracking(t:boolean){
 
 	tightTracking = t;
 }
+
+public function resetResetter(){
+	transform.localRotation = Quaternion();
+	Debug.Log("---RESET RESETTER---");
+}

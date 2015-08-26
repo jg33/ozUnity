@@ -95,6 +95,10 @@ namespace Vuforia
 				camCtl.SendMessage("setTightTracking", true);
 				storm = GameObject.Find("storm");
 				storm.SetActive(false);
+				GameObject cyclone = GameObject.Find("Cyclone Target");
+				cyclone.transform.GetChild(0).gameObject.SetActive(true);
+				cyclone.transform.GetChild(1).gameObject.SetActive(true);
+
 			}
 
 
@@ -112,6 +116,12 @@ namespace Vuforia
 				GameObject camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("setTightTracking", false);
 				storm.SetActive(true);
+				GameObject cyclone = GameObject.Find("Cyclone Target");
+				cyclone.transform.GetChild(0).gameObject.SetActive(false);
+				cyclone.transform.GetChild(1).gameObject.SetActive(false);
+
+				GameObject.Find("GyroResetter").SendMessage("resetResetter");
+
 			}
 
 
