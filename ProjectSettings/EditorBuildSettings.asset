@@ -5,13 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Entry.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/PassiveModeTest.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/NativeNetworkClient.unity
   - enabled: 0
     path: Assets/NativeNetworkServer.unity
   - enabled: 0
     path: Assets/Poppies_V2/Poppy_V2.unity
+  - enabled: 1
+    path: Assets/KEVAN_MONTCLAIR_TESTING/LookTests_Evals.unity
