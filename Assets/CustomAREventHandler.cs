@@ -17,7 +17,10 @@ namespace Vuforia
 		#region PRIVATE_MEMBER_VARIABLES
 		
 		private TrackableBehaviour mTrackableBehaviour;
-		
+
+		private GameObject camCtl;
+		private GameObject storm;
+
 		#endregion // PRIVATE_MEMBER_VARIABLES
 		
 		
@@ -84,9 +87,18 @@ namespace Vuforia
 			}
 
 			if (mTrackableBehaviour.TrackableName == "Oz_TopTarget_inverted"){
-				GameObject camCtl = GameObject.Find ("Camera Container");
+				camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("updateTarget");
 				camCtl.SendMessage("setFoundTarget",true);
+			} else if (mTrackableBehaviour.TrackableName == "cyclone_Page_015-2"){
+				camCtl = GameObject.Find ("Camera Container");
+				camCtl.SendMessage("setTightTracking", true);
+				storm = GameObject.Find("storm");
+				storm.SetActive(false);
+				GameObject cyclone = GameObject.Find("Cyclone Target");
+				cyclone.transform.GetChild(0).gameObject.SetActive(true);
+				cyclone.transform.GetChild(1).gameObject.SetActive(true);
+
 			}
 
 
@@ -100,6 +112,16 @@ namespace Vuforia
 			if (mTrackableBehaviour.TrackableName == "MGM_LogoCalibration9x12"){
 				GameObject camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("lostTarget");
+			} else if (mTrackableBehaviour.TrackableName == "cyclone_Page_015-2"){
+				GameObject camCtl = GameObject.Find ("Camera Container");
+				camCtl.SendMessage("setTightTracking", false);
+				storm.SetActive(true);
+				GameObject cyclone = GameObject.Find("Cyclone Target");
+				cyclone.transform.GetChild(0).gameObject.SetActive(false);
+				cyclone.transform.GetChild(1).gameObject.SetActive(false);
+
+				GameObject.Find("GyroResetter").SendMessage("resetResetter");
+
 			}
 
 
