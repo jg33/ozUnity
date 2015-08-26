@@ -90,14 +90,18 @@ namespace Vuforia
 				camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("updateTarget");
 				camCtl.SendMessage("setFoundTarget",true);
-			} else if (mTrackableBehaviour.TrackableName == "cyclone_Page_015-2"){
+			} else if (mTrackableBehaviour.TrackableName.StartsWith("Passive")){
 				camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("setTightTracking", true);
 				storm = GameObject.Find("storm");
 				storm.SetActive(false);
-				GameObject cyclone = GameObject.Find("Cyclone Target");
-				cyclone.transform.GetChild(0).gameObject.SetActive(true);
-				cyclone.transform.GetChild(1).gameObject.SetActive(true);
+
+				Debug.Log (gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.ToString());
+				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.ToString() == mTrackableBehaviour.TrackableName.ToString ()){
+					gameObject.transform.GetChild(0).gameObject.SetActive(true);
+
+					gameObject.transform.GetChild(1).gameObject.SetActive(true);
+				}
 
 			}
 
@@ -112,13 +116,15 @@ namespace Vuforia
 			if (mTrackableBehaviour.TrackableName == "MGM_LogoCalibration9x12"){
 				GameObject camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("lostTarget");
-			} else if (mTrackableBehaviour.TrackableName == "cyclone_Page_015-2"){
+			} else if (mTrackableBehaviour.TrackableName.StartsWith ( "Passive" ) ){
 				GameObject camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("setTightTracking", false);
 				storm.SetActive(true);
-				GameObject cyclone = GameObject.Find("Cyclone Target");
-				cyclone.transform.GetChild(0).gameObject.SetActive(false);
-				cyclone.transform.GetChild(1).gameObject.SetActive(false);
+
+				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.ToString() == mTrackableBehaviour.TrackableName.ToString()){
+					gameObject.transform.GetChild(0).gameObject.SetActive(false);
+					gameObject.transform.GetChild(1).gameObject.SetActive(false);
+				}
 
 				GameObject.Find("GyroResetter").SendMessage("resetResetter");
 
