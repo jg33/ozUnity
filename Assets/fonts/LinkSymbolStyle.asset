@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac2b6ab4dd444dbbab600921238ffba, type: 3}
+  m_Name: LinkSymbolStyle
+  m_EditorClassIdentifier: 
+  m_CustomTextStyles:
+  - m_Tag: sub
+    m_TextStyle:
+      m_SizeScalar: .5
+      m_FontStyle: 0
+      m_ShouldReplaceColor: 0
+      m_ReplacementColor: {r: 1, g: 1, b: 1, a: 1}
+    m_VerticalOffset: -.100000001
+  - m_Tag: sup
+    m_TextStyle:
+      m_SizeScalar: .5
+      m_FontStyle: 0
+      m_ShouldReplaceColor: 0
+      m_ReplacementColor: {r: 1, g: 1, b: 1, a: 1}
+    m_VerticalOffset: .600000024
+  m_DefaultFontStyle: 0
+  m_DefaultLinkStyle:
+    m_VerticalOffset: 0
+    m_TextStyle:
+      m_SizeScalar: 1
+      m_FontStyle: 2
+      m_ShouldReplaceColor: 0
+      m_ReplacementColor: {r: 1, g: 1, b: 1, a: 1}
+    m_Colors:
+      m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+      m_HighlightedColor: {r: .705882311, g: .705882311, b: .705882311, a: 1}
+      m_PressedColor: {r: .411764681, g: .411764681, b: .411764681, a: 1}
+      m_DisabledColor: {r: .449999988, g: .540000021, b: .639999986, a: 1}
+      m_ColorMultiplier: 1
+      m_FadeDuration: .100000001
+    m_ColorTintMode: 1
+    m_ColorTweenMode: 0
+  m_DefaultTextColor: {r: 1, g: 1, b: 1, a: 1}
+  m_Font: {fileID: 12800000, guid: fffda87a1f1054f64a179f46a8e45c03, type: 3}
+  m_FontSize: 54
+  m_InheritedStyles: []
+  m_LineSpacing: .899999976
+  m_LinkStyles: []
+  m_QuadStyles: []
+  m_ShouldOverrideInheritedDefaultFontStyle: 0
+  m_ShouldOverrideInheritedDefaultLinkStyle: 0
+  m_ShouldOverrideInheritedDefaultTextColor: 0
+  m_ShouldOverrideInheritedFontSize: 0
+  m_ShouldOverrideInheritedLineSpacing: 0

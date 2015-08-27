@@ -213,7 +213,7 @@ GameObject:
   - 222: {fileID: 48070750}
   - 114: {fileID: 48070749}
   m_Layer: 5
-  m_Name: Entering Oz Img
+  m_Name: Witch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -233,8 +233,8 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1073.67004}
-  m_SizeDelta: {x: 700, y: 612.699951}
+  m_AnchoredPosition: {x: 0, y: -1142}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &48070749
 MonoBehaviour:
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 66df2d0f790494c4a9ab46af08a5eb04, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b1573417791954e70927a09a98b106b6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -434,8 +434,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: .5}
   m_AnchorMax: {x: 1, y: .5}
-  m_AnchoredPosition: {x: 1, y: 144}
-  m_SizeDelta: {x: 1943, y: 4469.7002}
+  m_AnchoredPosition: {x: 0, y: 1337.31995}
+  m_SizeDelta: {x: 1940, y: 4317}
   m_Pivot: {x: .5, y: 1}
 --- !u!114 &60042685
 MonoBehaviour:
@@ -501,6 +501,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1668328707}
+  - {fileID: 1518118935}
   - {fileID: 1807436751}
   - {fileID: 681216854}
   - {fileID: 1580907864}
@@ -509,7 +510,7 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 269}
+  m_AnchoredPosition: {x: 0, y: 1324}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &87679879
@@ -2588,7 +2589,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 9.89999962}
+  m_AnchoredPosition: {x: -5, y: 9.89999962}
   m_SizeDelta: {x: 0, y: 19.7999992}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &319477315
@@ -7263,7 +7264,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &583409521
@@ -8487,11 +8488,11 @@ RectTransform:
   m_LocalScale: {x: .845867455, y: .905638397, z: .845867515}
   m_Children: []
   m_Father: {fileID: 75852684}
-  m_RootOrder: 2
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -280.600006, y: -3823}
-  m_SizeDelta: {x: 801.700012, y: 2621.18457}
+  m_RootOrder: 3
+  m_AnchorMin: {x: .5, y: 1}
+  m_AnchorMax: {x: .5, y: 1}
+  m_AnchoredPosition: {x: -313.200012, y: -3776}
+  m_SizeDelta: {x: 733.599976, y: 278.600006}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &681216855
 MonoBehaviour:
@@ -8571,7 +8572,7 @@ MonoBehaviour:
     m_InputTextSourceObject: {fileID: 0}
     m_IsDynamicFontDesired: 1
     m_IsRichTextDesired: 1
-    m_OutputText: '<b>The Historical Wizard of Oz: </b>
+    m_OutputText: '<i>The Historical Wizard of Oz: </i>
 
       A run-down by Dan Rezler'
     m_QuadKeywordCollections: []
@@ -8778,8 +8779,8 @@ RectTransform:
   m_RootOrder: 6
   m_AnchorMin: {x: .5, y: 0}
   m_AnchorMax: {x: .5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 51}
-  m_SizeDelta: {x: 1, y: 86}
+  m_AnchoredPosition: {x: 0, y: 44}
+  m_SizeDelta: {x: 1, y: 100}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &714658438
 MonoBehaviour:
@@ -8842,8 +8843,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -14.7500134, y: -34.2299995}
-  m_SizeDelta: {x: -122.499969, y: -106.529999}
+  m_AnchoredPosition: {x: 0, y: -34.2299995}
+  m_SizeDelta: {x: -152, y: -106.529999}
   m_Pivot: {x: .5, y: 1}
 --- !u!114 &717096945
 MonoBehaviour:
@@ -12344,7 +12345,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 39
+    m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -12512,8 +12513,8 @@ RectTransform:
   m_RootOrder: 6
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 35.5999985, y: -2870}
-  m_SizeDelta: {x: 916, y: 715}
+  m_AnchoredPosition: {x: 0, y: -2798}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &898393045
 MonoBehaviour:
@@ -12971,8 +12972,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 38.4362793, y: -2126.64233}
-  m_SizeDelta: {x: 1673, y: 4193.28467}
+  m_AnchoredPosition: {x: 38.4362793, y: -2081}
+  m_SizeDelta: {x: 1689, y: 4193.28467}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &966074801
 MonoBehaviour:
@@ -12999,14 +13000,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<a name=\"tba\">The Builders Association</a> is a New York-based performance
-    and media company that creates original productions based on stories drawn from
-    contemporary life. The company uses the richness of new and old tools to extend
-    the boundaries of theater. Based on innovative collaborations, Builders\u2019
-    productions blend stage performance, text, video, sound, and architecture to tell
-    stories about human experience in the 21st century. From BAM to Bogota, Singapore
-    to Melbourne, Minneapolis and Los Angeles to Budapest, The Builders Association\u2019s
-    OBIE award-winning shows have toured to major venues the world over."
+  m_Text: "The Builders Association is a New York-based performance and media company
+    that creates original productions based on stories drawn from contemporary life.
+    The company uses the richness of new and old tools to extend the boundaries of
+    theater. Based on innovative collaborations, Builders\u2019 productions blend
+    stage performance, text, video, sound, and architecture to tell stories about
+    human experience in the 21st century. From BAM to Bogota, Singapore to Melbourne,
+    Minneapolis and Los Angeles to Budapest, The Builders Association\u2019s OBIE
+    award-winning shows have toured to major venues the world over."
   m_DefaultStyles: {fileID: 0}
   m_QuadRenderersPool: []
   m_Interactable: 1
@@ -13051,27 +13052,25 @@ MonoBehaviour:
   m_ShouldOverrideStylesLineSpacing: 0
   m_TextProcessor:
     m_LinkKeywordCollections: []
-    m_InputText: "<a name=\"tba\">The Builders Association</a> is a New York-based
-      performance and media company that creates original productions based on stories
-      drawn from contemporary life. The company uses the richness of new and old tools
-      to extend the boundaries of theater. Based on innovative collaborations, Builders\u2019
-      productions blend stage performance, text, video, sound, and architecture to
-      tell stories about human experience in the 21st century. From BAM to Bogota,
-      Singapore to Melbourne, Minneapolis and Los Angeles to Budapest, The Builders
-      Association\u2019s OBIE award-winning shows have toured to major venues the
-      world over."
+    m_InputText: "The Builders Association is a New York-based performance and media
+      company that creates original productions based on stories drawn from contemporary
+      life. The company uses the richness of new and old tools to extend the boundaries
+      of theater. Based on innovative collaborations, Builders\u2019 productions blend
+      stage performance, text, video, sound, and architecture to tell stories about
+      human experience in the 21st century. From BAM to Bogota, Singapore to Melbourne,
+      Minneapolis and Los Angeles to Budapest, The Builders Association\u2019s OBIE
+      award-winning shows have toured to major venues the world over."
     m_InputTextSourceObject: {fileID: 0}
     m_IsDynamicFontDesired: 1
     m_IsRichTextDesired: 1
-    m_OutputText: "<b>The Builders Association</b> is a New York-based performance
-      and media company that creates original productions based on stories drawn from
-      contemporary life. The company uses the richness of new and old tools to extend
-      the boundaries of theater. Based on innovative collaborations, Builders\u2019
-      productions blend stage performance, text, video, sound, and architecture to
-      tell stories about human experience in the 21st century. From BAM to Bogota,
-      Singapore to Melbourne, Minneapolis and Los Angeles to Budapest, The Builders
-      Association\u2019s OBIE award-winning shows have toured to major venues the
-      world over."
+    m_OutputText: "The Builders Association is a New York-based performance and media
+      company that creates original productions based on stories drawn from contemporary
+      life. The company uses the richness of new and old tools to extend the boundaries
+      of theater. Based on innovative collaborations, Builders\u2019 productions blend
+      stage performance, text, video, sound, and architecture to tell stories about
+      human experience in the 21st century. From BAM to Bogota, Singapore to Melbourne,
+      Minneapolis and Los Angeles to Budapest, The Builders Association\u2019s OBIE
+      award-winning shows have toured to major venues the world over."
     m_QuadKeywordCollections: []
     m_ReferenceFontSize: 54
     m_ShouldOverrideStylesFontSize: 0
@@ -20524,7 +20523,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 38.4362793, y: -2783}
+  m_AnchoredPosition: {x: 0, y: -2735.11011}
   m_SizeDelta: {x: 1673, y: 5792.7041}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1320314233
@@ -20708,7 +20707,7 @@ RectTransform:
   m_RootOrder: 7
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 38.4364014, y: -4385.00195}
+  m_AnchoredPosition: {x: 0, y: -4184}
   m_SizeDelta: {x: 1673, y: 2188.00391}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1341961985
@@ -21149,7 +21148,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 395.899994, y: -116.099998}
+  m_AnchoredPosition: {x: 413.459991, y: -116.099998}
   m_SizeDelta: {x: 300, y: 180.007202}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1377037790
@@ -21290,7 +21289,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Turn Airplane Mode on.
+  m_Text: Turn Airplane Mode on
 --- !u!222 &1388386558
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21328,8 +21327,8 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 38.4364014, y: -2821.14209}
-  m_SizeDelta: {x: 1673, y: 2804.28442}
+  m_AnchoredPosition: {x: 0, y: -2821.14209}
+  m_SizeDelta: {x: 1689, y: 2804.28442}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1400032260
 MonoBehaviour:
@@ -21446,7 +21445,7 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 38.4364014, y: -3372.9519}
+  m_AnchoredPosition: {x: 0, y: -3398}
   m_SizeDelta: {x: 1673, y: 4212.104}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1426734440
@@ -21713,7 +21712,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Turn vibrate on.
+  m_Text: Ensure vibrate is on
 --- !u!222 &1474488794
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21769,11 +21768,11 @@ MonoBehaviour:
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: fffda87a1f1054f64a179f46a8e45c03, type: 3}
-    m_FontSize: 33
+    m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 36
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -22954,6 +22953,126 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1498399577}
+--- !u!1 &1518118934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1518118935}
+  - 222: {fileID: 1518118937}
+  - 114: {fileID: 1518118936}
+  m_Layer: 5
+  m_Name: ParableLink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1518118935
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1518118934}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .845867455, y: .905638397, z: .845867515}
+  m_Children: []
+  m_Father: {fileID: 75852684}
+  m_RootOrder: 1
+  m_AnchorMin: {x: .5, y: 1}
+  m_AnchorMax: {x: .5, y: 1}
+  m_AnchoredPosition: {x: -350.670013, y: -3350.89941}
+  m_SizeDelta: {x: 733.599976, y: 278.600006}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1518118936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1518118934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5966d34f847d6437a85dbdf20a6a3242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 0}
+    m_FontSize: 124
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: <a name="parable">o</a>
+  m_DefaultStyles: {fileID: 0}
+  m_QuadRenderersPool: []
+  m_Interactable: 1
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 60042685}
+        m_MethodName: openURL
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: parable
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnPress:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnRelease:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_ShouldOverrideStylesFontStyle: 0
+  m_ShouldOverrideStylesFontColor: 0
+  m_ShouldOverrideStylesLineSpacing: 0
+  m_TextProcessor:
+    m_LinkKeywordCollections: []
+    m_InputText: <a name="parable">o</a>
+    m_InputTextSourceObject: {fileID: 0}
+    m_IsDynamicFontDesired: 1
+    m_IsRichTextDesired: 1
+    m_OutputText: <i>o</i>
+    m_QuadKeywordCollections: []
+    m_ReferenceFontSize: 54
+    m_ShouldOverrideStylesFontSize: 0
+    m_Styles: {fileID: 11400000, guid: ef1d4a63c3b094c52ae79b63e0b5dbaf, type: 2}
+    m_TagKeywordCollections: []
+--- !u!222 &1518118937
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1518118934}
 --- !u!1 &1521835432
 GameObject:
   m_ObjectHideFlags: 0
@@ -24403,11 +24522,11 @@ RectTransform:
   m_LocalScale: {x: .845867455, y: .905638397, z: .845867515}
   m_Children: []
   m_Father: {fileID: 75852684}
-  m_RootOrder: 4
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 537.799988, y: -3630}
-  m_SizeDelta: {x: 832.200012, y: 2621.18457}
+  m_RootOrder: 5
+  m_AnchorMin: {x: .5, y: 1}
+  m_AnchorMax: {x: .5, y: 1}
+  m_AnchoredPosition: {x: 355.100006, y: -3580}
+  m_SizeDelta: {x: 733.599976, y: 278.600006}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1567475180
 MonoBehaviour:
@@ -24483,7 +24602,7 @@ MonoBehaviour:
     m_InputTextSourceObject: {fileID: 0}
     m_IsDynamicFontDesired: 1
     m_IsRichTextDesired: 1
-    m_OutputText: "<b>The Dark Side of Oz:</b> \nThe Pink Floyd mashup"
+    m_OutputText: "<i>The Dark Side of Oz:</i> \nThe Pink Floyd mashup"
     m_QuadKeywordCollections: []
     m_ReferenceFontSize: 54
     m_ShouldOverrideStylesFontSize: 0
@@ -24671,11 +24790,11 @@ RectTransform:
   m_LocalScale: {x: .845867455, y: .905638397, z: .845867515}
   m_Children: []
   m_Father: {fileID: 75852684}
-  m_RootOrder: 3
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 542.799988, y: -3342}
-  m_SizeDelta: {x: 821.400024, y: 2621.18457}
+  m_RootOrder: 4
+  m_AnchorMin: {x: .5, y: 1}
+  m_AnchorMax: {x: .5, y: 1}
+  m_AnchoredPosition: {x: 355.100006, y: -3350.8999}
+  m_SizeDelta: {x: 733.599976, y: 278.600006}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1580907865
 MonoBehaviour:
@@ -24753,7 +24872,7 @@ MonoBehaviour:
     m_InputTextSourceObject: {fileID: 0}
     m_IsDynamicFontDesired: 1
     m_IsRichTextDesired: 1
-    m_OutputText: "<b>Oz Needs More Gay:</b> \nA commentary by Youtube personality
+    m_OutputText: "<i>Oz Needs More Gay:</i> \nA commentary by Youtube personality
       Rentasmo"
     m_QuadKeywordCollections: []
     m_ReferenceFontSize: 54
@@ -24825,7 +24944,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Turn your ringer on.
+  m_Text: Turn your ringer on
 --- !u!222 &1589578665
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25064,10 +25183,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 75852684}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -331, y: -3206.69238}
-  m_SizeDelta: {x: 677, y: 2287.38477}
+  m_AnchorMin: {x: .5, y: 1}
+  m_AnchorMax: {x: .5, y: 1}
+  m_AnchoredPosition: {x: -313.200012, y: -3350.8999}
+  m_SizeDelta: {x: 733.599976, y: 278.600006}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1668328708
 MonoBehaviour:
@@ -25145,7 +25264,7 @@ MonoBehaviour:
     m_InputTextSourceObject: {fileID: 0}
     m_IsDynamicFontDesired: 1
     m_IsRichTextDesired: 1
-    m_OutputText: "<b>The Parable on Populism:</b> \nThe monetary allegory about Oz"
+    m_OutputText: "<i>The Parable on Populism:</i> \nThe monetary allegory about Oz"
     m_QuadKeywordCollections: []
     m_ReferenceFontSize: 54
     m_ShouldOverrideStylesFontSize: 0
@@ -25922,11 +26041,11 @@ RectTransform:
   m_LocalScale: {x: .845867455, y: .905638397, z: .845867515}
   m_Children: []
   m_Father: {fileID: 75852684}
-  m_RootOrder: 1
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -281.799988, y: -3586}
-  m_SizeDelta: {x: 790.299988, y: 2621.18457}
+  m_RootOrder: 2
+  m_AnchorMin: {x: .5, y: 1}
+  m_AnchorMax: {x: .5, y: 1}
+  m_AnchoredPosition: {x: -313.200012, y: -3580}
+  m_SizeDelta: {x: 733.599976, y: 278.600006}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1807436752
 MonoBehaviour:
@@ -25953,7 +26072,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: <a name="wallace">Mike Wallace & Ayn Rand:</a> Ayn Rand's interview in 1959
+  m_Text: '<a name="wallace">Mike Wallace & Ayn Rand:</a>
+
+    Ayn Rand''s interview in 1959'
   m_DefaultStyles: {fileID: 0}
   m_QuadRenderersPool: []
   m_Interactable: 1
@@ -25998,12 +26119,15 @@ MonoBehaviour:
   m_ShouldOverrideStylesLineSpacing: 0
   m_TextProcessor:
     m_LinkKeywordCollections: []
-    m_InputText: <a name="wallace">Mike Wallace & Ayn Rand:</a> Ayn Rand's interview
-      in 1959
+    m_InputText: '<a name="wallace">Mike Wallace & Ayn Rand:</a>
+
+      Ayn Rand''s interview in 1959'
     m_InputTextSourceObject: {fileID: 0}
     m_IsDynamicFontDesired: 1
     m_IsRichTextDesired: 1
-    m_OutputText: <b>Mike Wallace & Ayn Rand:</b> Ayn Rand's interview in 1959
+    m_OutputText: '<i>Mike Wallace & Ayn Rand:</i>
+
+      Ayn Rand''s interview in 1959'
     m_QuadKeywordCollections: []
     m_ReferenceFontSize: 54
     m_ShouldOverrideStylesFontSize: 0
@@ -26074,7 +26198,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Connect to the "Surrender Dorothy" WiFi network.
+  m_Text: "Connect to the \n\u201CSurrender Dorothy\u201D WiFi network"
 --- !u!222 &1809041595
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26112,8 +26236,8 @@ RectTransform:
   m_RootOrder: 8
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 38.4364014, y: -3828}
-  m_SizeDelta: {x: 1673, y: 713.285156}
+  m_AnchoredPosition: {x: 0, y: -3595}
+  m_SizeDelta: {x: 1689, y: 713.285156}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1809944099
 MonoBehaviour:
@@ -26199,7 +26323,7 @@ MonoBehaviour:
     m_IsRichTextDesired: 1
     m_OutputText: 'The Kasser Theater at Montclair State University is easily accessible
       from NYC by car, train or bus.  Detailed information on transportation options
-      can be found <b>here.</b>
+      can be found <i>here.</i>
 
 '
     m_QuadKeywordCollections: []
@@ -26272,8 +26396,8 @@ RectTransform:
   m_RootOrder: 9
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 35.5999451, y: -4078}
-  m_SizeDelta: {x: 916, y: 715}
+  m_AnchoredPosition: {x: 0, y: -3851}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1831127122
 MonoBehaviour:
@@ -26629,7 +26753,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1964842694
@@ -28121,7 +28245,7 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 66.4000015, y: 118}
+  m_AnchoredPosition: {x: 91.5, y: 118}
   m_SizeDelta: {x: 320, y: 290.911743}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &2000526137

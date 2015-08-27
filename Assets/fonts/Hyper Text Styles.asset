@@ -31,7 +31,7 @@ MonoBehaviour:
     m_VerticalOffset: 0
     m_TextStyle:
       m_SizeScalar: 1
-      m_FontStyle: 1
+      m_FontStyle: 2
       m_ShouldReplaceColor: 0
       m_ReplacementColor: {r: 1, g: 1, b: 1, a: 1}
     m_Colors:
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Font: {fileID: 12800000, guid: fffda87a1f1054f64a179f46a8e45c03, type: 3}
   m_FontSize: 54
   m_InheritedStyles: []
-  m_LineSpacing: 1
+  m_LineSpacing: .899999976
   m_LinkStyles: []
   m_QuadStyles: []
   m_ShouldOverrideInheritedDefaultFontStyle: 0

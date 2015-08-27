@@ -184,7 +184,7 @@ function Update () {
 						tornadoAlert.alertAction = "Butts.";
 						tornadoAlert.alertBody = "ALERT: FLASH FLOOD WARNING IN YOUR AREA";
 						tornadoAlert.soundName = "cbs_alert_us";
-						tornadoAlert.fireDate = Date.Now.AddSeconds(2);
+						//tornadoAlert.Date = Date.Now.AddSeconds(2);
 						iOS.NotificationServices.ScheduleLocalNotification(tornadoAlert);
 						#endif
 						
