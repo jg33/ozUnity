@@ -22271,7 +22271,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!148 &246532209
 NetworkView:
   m_ObjectHideFlags: 0
@@ -31871,6 +31871,10 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: b58913957de674616924b7f5dcabc3fb, type: 2}
+    - target: {fileID: 100000, guid: 1298f95c07523451b975cbd863e57c96, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1298f95c07523451b975cbd863e57c96, type: 3}
   m_IsPrefabParent: 0
@@ -44683,6 +44687,10 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: 7b74141ca71cc674483070330f8b976f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b74141ca71cc674483070330f8b976f, type: 3}
   m_IsPrefabParent: 0
@@ -48230,7 +48238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &962829341
 Transform:
   m_ObjectHideFlags: 0
@@ -48242,7 +48250,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2050395667}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!114 &962829342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55627,7 +55635,7 @@ Transform:
   - {fileID: 1720042226}
   - {fileID: 1992884142}
   m_Father: {fileID: 2050395667}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &1070209062
 GameObject:
   m_ObjectHideFlags: 0
@@ -56282,7 +56290,7 @@ Transform:
   - {fileID: 190583773}
   - {fileID: 156878022}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!114 &1153344786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71213,7 +71221,7 @@ Transform:
   - {fileID: 4437907}
   - {fileID: 1221300844}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!114 &1334846206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74011,6 +74019,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1731128671}
   - 95: {fileID: 1731128672}
+  - 114: {fileID: 1731128673}
   m_Layer: 0
   m_Name: Glinda
   m_TagString: Untagged
@@ -74025,12 +74034,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1731128670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.62, z: .310000002}
+  m_LocalPosition: {x: 2.23339844, y: -11.9620314, z: -1.41265631}
   m_LocalScale: {x: 5.90199804, y: 5.90199375, z: 5.90199375}
   m_Children:
   - {fileID: 859306190}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Father: {fileID: 2050395667}
+  m_RootOrder: 1
 --- !u!95 &1731128672
 Animator:
   serializedVersion: 3
@@ -74048,6 +74057,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1731128673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1731128670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b89419cbd94d49f8a627126c98b10cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: 1
 --- !u!1 &1759747524
 GameObject:
   m_ObjectHideFlags: 0
@@ -74136,7 +74157,7 @@ Transform:
   m_LocalScale: {x: 3.65759993, y: 3.65759993, z: 3.65759993}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &1759956088
 GameObject:
   m_ObjectHideFlags: 0
@@ -84397,6 +84418,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2081632612}
+  - {fileID: 1731128671}
   - {fileID: 1028095661}
   - {fileID: 962829341}
   m_Father: {fileID: 1153344785}
