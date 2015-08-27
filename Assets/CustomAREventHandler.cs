@@ -112,7 +112,7 @@ namespace Vuforia
 		
 		private void OnTrackingLost() {
 
-			if (mTrackableBehaviour.TrackableName == "MGM_LogoCalibration9x12"){
+			if (mTrackableBehaviour.TrackableName == "Oz_TopTarget_inverted"){
 				GameObject camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("lostTarget");
 			} else if (mTrackableBehaviour.TrackableName.StartsWith( "Passive" ) ){

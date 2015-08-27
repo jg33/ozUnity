@@ -133,7 +133,8 @@ function Update () {
 							camObj = GameObject.Find("Camera");
 							var clip :AudioClip= Resources.Load("Audience_Applause_1");
 							camObj.GetComponent(AudioSource).clip = clip;
-							//camObj.GetComponent(AudioSource).Play(); - Commented out for 3LD
+							camObj.GetComponent(AudioSource).Play(); 
+							Debug.Log("APPLAUSE!");
 							break;
 						
 							case 4:
@@ -294,10 +295,13 @@ function Update () {
 							break;
 						
 							case 2:
-							cueComponent.stopMovie();
+							cueComponent.playMovie("Scratches");
+							Debug.Log("scratch");
 							break;
 						
 							case 3:
+							cueComponent.stopMovie();
+
 							/*
 							camObj = GameObject.Find("Camera");
 							var clip :AudioClip= Resources.Load("Audience_Applause_1");
@@ -352,7 +356,7 @@ function Update () {
 						case 5:
 						
 						cueComponent.playMovie("randomRainbow");
-						Debug.Log("no place!");
+						Debug.Log("random rainbow!");
 
 						break;
 						

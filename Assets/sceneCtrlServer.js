@@ -47,11 +47,13 @@ function Update () {
 						break;
 				
 						case 2:
-						cueComponent.playMovie("kazoo");
-						Debug.Log("kazoo!");
+						cueComponent.playMovie("Scratches");
+						Debug.Log("scratch!");
 
 						break;
 						
+						case 3:
+						break;						
 						
 						default:
 						break;

@@ -155,6 +155,13 @@ public class cueSystem : MonoBehaviour{
 
 				Debug.Log("NoPlaceLikeMoe");
 				
+			} else if (clipName == "Scratches"){
+				cam.SendMessage("loadMovie", "Scratches", SendMessageOptions.DontRequireReceiver);
+				cam.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
+				cam.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
+				cam.SendMessage("setNumLoops", 1);
+				
+				Debug.Log("Scratches");
 			}
 
 		
@@ -184,6 +191,13 @@ public class cueSystem : MonoBehaviour{
 				video.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
 				Debug.Log("NoPlaceLikeMoe");
 				
+			} else if (clipName == "Scratches"){
+				video.SendMessage("loadMovie", "Scratches", SendMessageOptions.DontRequireReceiver);
+				video.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
+				video.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
+				video.SendMessage("setNumLoops", 1);
+				
+				Debug.Log("Server Scratch");
 			}
 
 		}
