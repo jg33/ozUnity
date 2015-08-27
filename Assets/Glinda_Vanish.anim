@@ -115,151 +115,14 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 1
+        value: 0
         inSlope: 0
         outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.r
-    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: .316176474
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.g
-    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: .316176474
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.b
-    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: .291000009
-        inSlope: -.0582000017
-        outSlope: -.0582000017
         tangentMode: 10
       - time: 5
         value: 0
-        inSlope: -.0582000017
-        outSlope: -.0582000017
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.a
-    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 1
         inSlope: 0
         outSlope: 0
-        tangentMode: 10
-      - time: 5
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.r
-    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: .669117689
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 5
-        value: .669117689
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.g
-    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: .799188554
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 5
-        value: .799188554
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.b
-    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: .291000009
-        inSlope: -.0582000017
-        outSlope: -.0582000017
-        tangentMode: 10
-      - time: 5
-        value: 0
-        inSlope: -.0582000017
-        outSlope: -.0582000017
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.a
-    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 28.75
-        inSlope: -5.75
-        outSlope: -5.75
-        tangentMode: 10
-      - time: 5
-        value: 0
-        inSlope: -5.75
-        outSlope: -5.75
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -271,18 +134,18 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 5
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: material._SpecColor.r
+    attribute: material._Color.r
     path: Glenda_Bubble_AnimationV3_NEW/sphere_1
     classID: 137
     script: {fileID: 0}
@@ -290,18 +153,18 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
+        value: .323529422
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 5
-        value: 0
+        value: .323529422
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: material._SpecColor.g
+    attribute: material._Color.g
     path: Glenda_Bubble_AnimationV3_NEW/sphere_1
     classID: 137
     script: {fileID: 0}
@@ -309,18 +172,37 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
+        value: .505476475
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 5
-        value: 0
+        value: .505476475
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: material._SpecColor.b
+    attribute: material._Color.b
+    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .291000009
+        inSlope: -.0582000017
+        outSlope: -.0582000017
+        tangentMode: 10
+      - time: 5
+        value: 0
+        inSlope: -.0582000017
+        outSlope: -.0582000017
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Color.a
     path: Glenda_Bubble_AnimationV3_NEW/sphere_1
     classID: 137
     script: {fileID: 0}
@@ -329,17 +211,212 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 1
-        inSlope: -.200000003
-        outSlope: -.200000003
+        inSlope: 0
+        outSlope: 0
         tangentMode: 10
       - time: 5
+        value: 1
+        inSlope: -1.66666555
+        outSlope: -1.66666555
+        tangentMode: 10
+      - time: 5.30000019
         value: 0
-        inSlope: -.200000003
-        outSlope: -.200000003
+        inSlope: -3.33333111
+        outSlope: -3.33333111
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: material._SpecColor.a
+    attribute: material._Color.r
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .323529422
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5
+        value: .323529422
+        inSlope: -.539215386
+        outSlope: -.539215386
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -1.07843077
+        outSlope: -1.07843077
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Color.g
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .505476475
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5
+        value: .505476475
+        inSlope: -.842460275
+        outSlope: -.842460275
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -1.68492055
+        outSlope: -1.68492055
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Color.b
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .291000009
+        inSlope: -.0582000017
+        outSlope: -.0582000017
+        tangentMode: 10
+      - time: 5
+        value: 0
+        inSlope: -.0582000017
+        outSlope: -.0582000017
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Color.a
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .103
+        inSlope: -.0194339622
+        outSlope: -.0194339622
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -.0194339622
+        outSlope: -.0194339622
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Metallic
+    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .103
+        inSlope: -.0194339622
+        outSlope: -.0194339622
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Metallic
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .833999991
+        inSlope: -.157358482
+        outSlope: -.157358482
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -.157358482
+        outSlope: -.157358482
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Glossiness
+    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .833999991
+        inSlope: -.157358482
+        outSlope: -.157358482
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Glossiness
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0199999996
+        inSlope: -.00377358473
+        outSlope: -.00377358473
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -.00377358473
+        outSlope: -.00377358473
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._EmissionColor.r
+    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0157352947
+        inSlope: -.00296892342
+        outSlope: -.00296892342
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -.00296892342
+        outSlope: -.00296892342
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._EmissionColor.g
+    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0157352947
+        inSlope: -.00296892342
+        outSlope: -.00296892342
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -.00296892342
+        outSlope: -.00296892342
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._EmissionColor.b
     path: Glenda_Bubble_AnimationV3_NEW/sphere_1
     classID: 137
     script: {fileID: 0}
@@ -348,18 +425,94 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
-      - time: 5
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
+        inSlope: -.188679233
+        outSlope: -.188679233
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -.188679233
+        outSlope: -.188679233
+        tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_Enabled
+    attribute: material._EmissionColor.a
     path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0199999996
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5.30000019
+        value: .0199999996
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._EmissionColor.r
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0157352947
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5.30000019
+        value: .0157352947
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._EmissionColor.g
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0157352947
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5.30000019
+        value: .0157352947
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._EmissionColor.b
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5.30000019
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._EmissionColor.a
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
     classID: 137
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -395,28 +548,76 @@ AnimationClip:
       customType: 22
       isPPtrCurve: 0
     - path: 942884053
+      attribute: 1303350129
+      script: {fileID: 0}
+      classID: 137
+      customType: 22
+      isPPtrCurve: 0
+    - path: 942884053
+      attribute: 1571785585
+      script: {fileID: 0}
+      classID: 137
+      customType: 22
+      isPPtrCurve: 0
+    - path: 942884053
+      attribute: 1840221041
+      script: {fileID: 0}
+      classID: 137
+      customType: 22
+      isPPtrCurve: 0
+    - path: 942884053
       attribute: 2108656497
       script: {fileID: 0}
       classID: 137
       customType: 22
       isPPtrCurve: 0
-    - path: 2726931672
-      attribute: 2181258151
-      script: {fileID: 0}
-      classID: 198
-      customType: 0
-      isPPtrCurve: 0
     - path: 4228317331
-      attribute: 2051135446
+      attribute: 2225907118
+      script: {fileID: 0}
+      classID: 137
+      customType: 22
+      isPPtrCurve: 0
+    - path: 942884053
+      attribute: 2225907118
       script: {fileID: 0}
       classID: 137
       customType: 22
       isPPtrCurve: 0
     - path: 4228317331
-      attribute: 3305885265
+      attribute: 2211735517
       script: {fileID: 0}
       classID: 137
-      customType: 0
+      customType: 22
+      isPPtrCurve: 0
+    - path: 942884053
+      attribute: 2211735517
+      script: {fileID: 0}
+      classID: 137
+      customType: 22
+      isPPtrCurve: 0
+    - path: 4228317331
+      attribute: 1218664834
+      script: {fileID: 0}
+      classID: 137
+      customType: 22
+      isPPtrCurve: 0
+    - path: 4228317331
+      attribute: 1487100290
+      script: {fileID: 0}
+      classID: 137
+      customType: 22
+      isPPtrCurve: 0
+    - path: 4228317331
+      attribute: 1755535746
+      script: {fileID: 0}
+      classID: 137
+      customType: 22
+      isPPtrCurve: 0
+    - path: 4228317331
+      attribute: 2023971202
+      script: {fileID: 0}
+      classID: 137
+      customType: 22
       isPPtrCurve: 0
     - path: 0
       attribute: 1
@@ -430,6 +631,12 @@ AnimationClip:
       classID: 4
       customType: 0
       isPPtrCurve: 0
+    - path: 2726931672
+      attribute: 2181258151
+      script: {fileID: 0}
+      classID: 198
+      customType: 0
+      isPPtrCurve: 0
     - path: 4228317331
       attribute: 1303350129
       script: {fileID: 0}
@@ -449,37 +656,25 @@ AnimationClip:
       customType: 22
       isPPtrCurve: 0
     - path: 942884053
-      attribute: 1303350129
+      attribute: 1218664834
       script: {fileID: 0}
       classID: 137
       customType: 22
       isPPtrCurve: 0
     - path: 942884053
-      attribute: 1571785585
+      attribute: 1487100290
       script: {fileID: 0}
       classID: 137
       customType: 22
       isPPtrCurve: 0
     - path: 942884053
-      attribute: 1840221041
+      attribute: 1755535746
       script: {fileID: 0}
       classID: 137
       customType: 22
       isPPtrCurve: 0
-    - path: 4228317331
-      attribute: 1245829078
-      script: {fileID: 0}
-      classID: 137
-      customType: 22
-      isPPtrCurve: 0
-    - path: 4228317331
-      attribute: 1514264534
-      script: {fileID: 0}
-      classID: 137
-      customType: 22
-      isPPtrCurve: 0
-    - path: 4228317331
-      attribute: 1782699990
+    - path: 942884053
+      attribute: 2023971202
       script: {fileID: 0}
       classID: 137
       customType: 22
@@ -587,252 +782,20 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 1
+        value: 0
         inSlope: 0
         outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.r
-    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: .316176474
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.g
-    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: .316176474
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.b
-    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: .291000009
-        inSlope: -.0582000017
-        outSlope: -.0582000017
         tangentMode: 10
       - time: 5
         value: 0
-        inSlope: -.0582000017
-        outSlope: -.0582000017
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.a
-    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 1
         inSlope: 0
         outSlope: 0
-        tangentMode: 10
-      - time: 5
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.r
-    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: .669117689
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 5
-        value: .669117689
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.g
-    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: .799188554
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 5
-        value: .799188554
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.b
-    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: .291000009
-        inSlope: -.0582000017
-        outSlope: -.0582000017
-        tangentMode: 10
-      - time: 5
-        value: 0
-        inSlope: -.0582000017
-        outSlope: -.0582000017
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._Color.a
-    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 28.75
-        inSlope: -5.75
-        outSlope: -5.75
-        tangentMode: 10
-      - time: 5
-        value: 0
-        inSlope: -5.75
-        outSlope: -5.75
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: EmissionModule.rate.scalar
     path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)
     classID: 198
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._SpecColor.r
-    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._SpecColor.g
-    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._SpecColor.b
-    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 1
-        inSlope: -.200000003
-        outSlope: -.200000003
-        tangentMode: 10
-      - time: 5
-        value: 0
-        inSlope: -.200000003
-        outSlope: -.200000003
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: material._SpecColor.a
-    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
-    classID: 137
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
-      - time: 5
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
-    classID: 137
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
@@ -992,6 +955,391 @@ AnimationClip:
     attribute: m_LocalScale.z
     path: 
     classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Color.r
+    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .323529422
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5
+        value: .323529422
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Color.g
+    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .505476475
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5
+        value: .505476475
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Color.b
+    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .291000009
+        inSlope: -.0582000017
+        outSlope: -.0582000017
+        tangentMode: 10
+      - time: 5
+        value: 0
+        inSlope: -.0582000017
+        outSlope: -.0582000017
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Color.a
+    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5
+        value: 1
+        inSlope: -1.66666555
+        outSlope: -1.66666555
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -3.33333111
+        outSlope: -3.33333111
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Color.r
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .323529422
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5
+        value: .323529422
+        inSlope: -.539215386
+        outSlope: -.539215386
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -1.07843077
+        outSlope: -1.07843077
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Color.g
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .505476475
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5
+        value: .505476475
+        inSlope: -.842460275
+        outSlope: -.842460275
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -1.68492055
+        outSlope: -1.68492055
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Color.b
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .291000009
+        inSlope: -.0582000017
+        outSlope: -.0582000017
+        tangentMode: 10
+      - time: 5
+        value: 0
+        inSlope: -.0582000017
+        outSlope: -.0582000017
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Color.a
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .103
+        inSlope: -.0194339622
+        outSlope: -.0194339622
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -.0194339622
+        outSlope: -.0194339622
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Metallic
+    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .103
+        inSlope: -.0194339622
+        outSlope: -.0194339622
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Metallic
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .833999991
+        inSlope: -.157358482
+        outSlope: -.157358482
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -.157358482
+        outSlope: -.157358482
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Glossiness
+    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .833999991
+        inSlope: -.157358482
+        outSlope: -.157358482
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._Glossiness
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0199999996
+        inSlope: -.00377358473
+        outSlope: -.00377358473
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -.00377358473
+        outSlope: -.00377358473
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._EmissionColor.r
+    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0157352947
+        inSlope: -.00296892342
+        outSlope: -.00296892342
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -.00296892342
+        outSlope: -.00296892342
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._EmissionColor.g
+    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0157352947
+        inSlope: -.00296892342
+        outSlope: -.00296892342
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -.00296892342
+        outSlope: -.00296892342
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._EmissionColor.b
+    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -.188679233
+        outSlope: -.188679233
+        tangentMode: 10
+      - time: 5.30000019
+        value: 0
+        inSlope: -.188679233
+        outSlope: -.188679233
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._EmissionColor.a
+    path: Glenda_Bubble_AnimationV3_NEW/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0199999996
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5.30000019
+        value: .0199999996
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._EmissionColor.r
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0157352947
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5.30000019
+        value: .0157352947
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._EmissionColor.g
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0157352947
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5.30000019
+        value: .0157352947
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._EmissionColor.b
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5.30000019
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: material._EmissionColor.a
+    path: Glenda_Bubble_AnimationV3_NEW/Glenda_Bubble_AnimationV3_NEW (1)/sphere_1
+    classID: 137
     script: {fileID: 0}
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 1
