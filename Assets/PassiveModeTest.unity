@@ -234,7 +234,7 @@ RectTransform:
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
   m_AnchoredPosition: {x: 0, y: -1073.67004}
-  m_SizeDelta: {x: 700, y: 612.699951}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &48070749
 MonoBehaviour:
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 66df2d0f790494c4a9ab46af08a5eb04, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b1573417791954e70927a09a98b106b6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -372,11 +372,16 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2094060013}
   - {fileID: 1668328707}
   - {fileID: 1807436751}
+  - {fileID: 2008000523}
   - {fileID: 681216854}
+  - {fileID: 847475501}
   - {fileID: 1580907864}
+  - {fileID: 786863499}
   - {fileID: 1567475179}
+  - {fileID: 1020212435}
   m_Father: {fileID: 60042684}
   m_RootOrder: 5
   m_AnchorMin: {x: .5, y: 1}
@@ -2301,7 +2306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &283364748
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2319,7 +2324,7 @@ RectTransform:
   m_RootOrder: 7
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -3, y: 3}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!95 &283364749
@@ -2329,7 +2334,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 283364747}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: b5d7ac899bb5347d296fce506dd89fa8, type: 2}
   m_CullingMode: 0
@@ -2523,8 +2528,8 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -345.5, y: -102}
-  m_SizeDelta: {x: 350, y: 350}
+  m_AnchoredPosition: {x: -345.5, y: -96.1999969}
+  m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &322162784
 MonoBehaviour:
@@ -5178,7 +5183,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 69}
+  m_AnchoredPosition: {x: 0, y: 71.6200027}
   m_SizeDelta: {x: 0, y: 1}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &513033066
@@ -6879,7 +6884,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5, y: 0}
+  m_AnchoredPosition: {x: -10, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &583409521
@@ -6895,8 +6900,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 1cdf6898493d745dc8b6ecf19df445d7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -8231,7 +8236,7 @@ RectTransform:
   m_LocalScale: {x: .845867455, y: .905638397, z: .845867515}
   m_Children: []
   m_Father: {fileID: 75852684}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
   m_AnchoredPosition: {x: -313.200012, y: -3776}
@@ -8251,7 +8256,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 0}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -8262,7 +8267,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '<a name="historical">The Historical Wizard of Oz: </a>
+  m_Text: '<a name="historical">The Historical Wizard of Oz </a>
 
     A run-down by Dan Rezler'
   m_DefaultStyles: {fileID: 0}
@@ -8309,15 +8314,13 @@ MonoBehaviour:
   m_ShouldOverrideStylesLineSpacing: 0
   m_TextProcessor:
     m_LinkKeywordCollections: []
-    m_InputText: '<a name="historical">The Historical Wizard of Oz: </a>
+    m_InputText: '<a name="historical">The Historical Wizard of Oz </a>
 
       A run-down by Dan Rezler'
     m_InputTextSourceObject: {fileID: 0}
     m_IsDynamicFontDesired: 1
     m_IsRichTextDesired: 1
-    m_OutputText: '<i>The Historical Wizard of Oz: </i>
-
-      A run-down by Dan Rezler'
+    m_OutputText: "The Historical Wizard of Oz \nA run-down by Dan Rezler"
     m_QuadKeywordCollections: []
     m_ReferenceFontSize: 54
     m_ShouldOverrideStylesFontSize: 0
@@ -11973,6 +11976,126 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
+--- !u!1 &786863498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 786863499}
+  - 222: {fileID: 786863501}
+  - 114: {fileID: 786863500}
+  m_Layer: 5
+  m_Name: GayLink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &786863499
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 786863498}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .845867455, y: .905638218, z: .845867515}
+  m_Children: []
+  m_Father: {fileID: 75852684}
+  m_RootOrder: 7
+  m_AnchorMin: {x: .5, y: 1}
+  m_AnchorMax: {x: .5, y: 1}
+  m_AnchoredPosition: {x: 730, y: -3350.80005}
+  m_SizeDelta: {x: 733.599976, y: 278.600006}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &786863500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 786863498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5966d34f847d6437a85dbdf20a6a3242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: <a name="moreGay">o</a>
+  m_DefaultStyles: {fileID: 0}
+  m_QuadRenderersPool: []
+  m_Interactable: 1
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 60042685}
+        m_MethodName: openURL
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: parable
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnPress:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnRelease:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_ShouldOverrideStylesFontStyle: 0
+  m_ShouldOverrideStylesFontColor: 0
+  m_ShouldOverrideStylesLineSpacing: 0
+  m_TextProcessor:
+    m_LinkKeywordCollections: []
+    m_InputText: <a name="moreGay">o</a>
+    m_InputTextSourceObject: {fileID: 0}
+    m_IsDynamicFontDesired: 1
+    m_IsRichTextDesired: 1
+    m_OutputText: o
+    m_QuadKeywordCollections: []
+    m_ReferenceFontSize: 73
+    m_ShouldOverrideStylesFontSize: 0
+    m_Styles: {fileID: 11400000, guid: ef1d4a63c3b094c52ae79b63e0b5dbaf, type: 2}
+    m_TagKeywordCollections: []
+--- !u!222 &786863501
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 786863498}
 --- !u!1 &798269986
 GameObject:
   m_ObjectHideFlags: 0
@@ -12087,7 +12210,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: fffda87a1f1054f64a179f46a8e45c03, type: 3}
     m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
@@ -12133,6 +12256,126 @@ Material:
         first:
           name: _Color
         second: {r: .820895553, g: .820895553, b: .820895553, a: 1}
+--- !u!1 &847475500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 847475501}
+  - 222: {fileID: 847475503}
+  - 114: {fileID: 847475502}
+  m_Layer: 5
+  m_Name: HiustoricaLink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &847475501
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 847475500}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .845867455, y: .905638278, z: .845867515}
+  m_Children: []
+  m_Father: {fileID: 75852684}
+  m_RootOrder: 5
+  m_AnchorMin: {x: .5, y: 1}
+  m_AnchorMax: {x: .5, y: 1}
+  m_AnchoredPosition: {x: 207.899994, y: -3772.30005}
+  m_SizeDelta: {x: 733.599976, y: 278.600006}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &847475502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 847475500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5966d34f847d6437a85dbdf20a6a3242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: <a name="historical">o</a>
+  m_DefaultStyles: {fileID: 0}
+  m_QuadRenderersPool: []
+  m_Interactable: 1
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 60042685}
+        m_MethodName: openURL
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: parable
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnPress:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnRelease:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_ShouldOverrideStylesFontStyle: 0
+  m_ShouldOverrideStylesFontColor: 0
+  m_ShouldOverrideStylesLineSpacing: 0
+  m_TextProcessor:
+    m_LinkKeywordCollections: []
+    m_InputText: <a name="historical">o</a>
+    m_InputTextSourceObject: {fileID: 0}
+    m_IsDynamicFontDesired: 1
+    m_IsRichTextDesired: 1
+    m_OutputText: o
+    m_QuadKeywordCollections: []
+    m_ReferenceFontSize: 73
+    m_ShouldOverrideStylesFontSize: 0
+    m_Styles: {fileID: 11400000, guid: ef1d4a63c3b094c52ae79b63e0b5dbaf, type: 2}
+    m_TagKeywordCollections: []
+--- !u!222 &847475503
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 847475500}
 --- !u!1 &862953450 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 34b4cf679fa444d2cbfe2fb33fa037cf, type: 3}
@@ -12743,7 +12986,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 38.4362793, y: -2081}
+  m_AnchoredPosition: {x: 0, y: -2111}
   m_SizeDelta: {x: 1689, y: 4193.28467}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &966074801
@@ -12778,7 +13021,8 @@ MonoBehaviour:
     stage performance, text, video, sound, and architecture to tell stories about
     human experience in the 21st century. From BAM to Bogota, Singapore to Melbourne,
     Minneapolis and Los Angeles to Budapest, The Builders Association\u2019s OBIE
-    award-winning shows have toured to major venues the world over."
+    award-winning shows have toured to major venues the world over.\n(Scroll down
+    for more.)"
   m_DefaultStyles: {fileID: 0}
   m_QuadRenderersPool: []
   m_Interactable: 1
@@ -12830,7 +13074,8 @@ MonoBehaviour:
       stage performance, text, video, sound, and architecture to tell stories about
       human experience in the 21st century. From BAM to Bogota, Singapore to Melbourne,
       Minneapolis and Los Angeles to Budapest, The Builders Association\u2019s OBIE
-      award-winning shows have toured to major venues the world over."
+      award-winning shows have toured to major venues the world over.\n(Scroll down
+      for more.)"
     m_InputTextSourceObject: {fileID: 0}
     m_IsDynamicFontDesired: 1
     m_IsRichTextDesired: 1
@@ -12841,7 +13086,8 @@ MonoBehaviour:
       stage performance, text, video, sound, and architecture to tell stories about
       human experience in the 21st century. From BAM to Bogota, Singapore to Melbourne,
       Minneapolis and Los Angeles to Budapest, The Builders Association\u2019s OBIE
-      award-winning shows have toured to major venues the world over."
+      award-winning shows have toured to major venues the world over.\n(Scroll down
+      for more.)"
     m_QuadKeywordCollections: []
     m_ReferenceFontSize: 54
     m_ShouldOverrideStylesFontSize: 0
@@ -14240,6 +14486,126 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1561a80446266486e94b9e2501087b51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1020212434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1020212435}
+  - 222: {fileID: 1020212437}
+  - 114: {fileID: 1020212436}
+  m_Layer: 5
+  m_Name: DarkSideLink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1020212435
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1020212434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .845867455, y: .905638158, z: .845867515}
+  m_Children: []
+  m_Father: {fileID: 75852684}
+  m_RootOrder: 9
+  m_AnchorMin: {x: .5, y: 1}
+  m_AnchorMax: {x: .5, y: 1}
+  m_AnchoredPosition: {x: 736.200012, y: -3577.5}
+  m_SizeDelta: {x: 733.599976, y: 278.600006}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1020212436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1020212434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5966d34f847d6437a85dbdf20a6a3242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: <a name="darkSide">o</a>
+  m_DefaultStyles: {fileID: 0}
+  m_QuadRenderersPool: []
+  m_Interactable: 1
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 60042685}
+        m_MethodName: openURL
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: parable
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnPress:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnRelease:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_ShouldOverrideStylesFontStyle: 0
+  m_ShouldOverrideStylesFontColor: 0
+  m_ShouldOverrideStylesLineSpacing: 0
+  m_TextProcessor:
+    m_LinkKeywordCollections: []
+    m_InputText: <a name="darkSide">o</a>
+    m_InputTextSourceObject: {fileID: 0}
+    m_IsDynamicFontDesired: 1
+    m_IsRichTextDesired: 1
+    m_OutputText: o
+    m_QuadKeywordCollections: []
+    m_ReferenceFontSize: 73
+    m_ShouldOverrideStylesFontSize: 0
+    m_Styles: {fileID: 11400000, guid: ef1d4a63c3b094c52ae79b63e0b5dbaf, type: 2}
+    m_TagKeywordCollections: []
+--- !u!222 &1020212437
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1020212434}
 --- !u!1 &1021671630
 GameObject:
   m_ObjectHideFlags: 0
@@ -17284,9 +17650,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 132377974}
-        m_MethodName: SetTrigger
-        m_Mode: 5
+      - m_Target: {fileID: 132377975}
+        m_MethodName: panelUp
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -17371,8 +17737,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 1cdf6898493d745dc8b6ecf19df445d7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -20114,7 +20480,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -2735.11011}
+  m_AnchoredPosition: {x: 0, y: -2761}
   m_SizeDelta: {x: 1673, y: 5792.7041}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1320314233
@@ -20739,8 +21105,8 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 413.459991, y: -116.099998}
-  m_SizeDelta: {x: 300, y: 180.007202}
+  m_AnchoredPosition: {x: 435.600006, y: -116.099998}
+  m_SizeDelta: {x: 350, y: 225}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1377037790
 MonoBehaviour:
@@ -20776,7 +21142,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1377037791}
   m_OnClick:
     m_PersistentCalls:
@@ -20991,7 +21357,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 0}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -21145,7 +21511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1454488210
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21176,7 +21542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: fb2816c1bce7545cca07c8247bdf3edd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f6b64c0c47bd243f38484fbb276fdd68, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24149,7 +24515,7 @@ RectTransform:
   m_LocalScale: {x: .845867455, y: .905638397, z: .845867515}
   m_Children: []
   m_Father: {fileID: 75852684}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
   m_AnchoredPosition: {x: 355.100006, y: -3580}
@@ -24169,7 +24535,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 0}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -24180,7 +24546,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<a name=\"darkSide\">The Dark Side of Oz:</a> \nThe Pink Floyd mashup"
+  m_Text: "<a name=\"darkSide\">The Dark Side of Oz</a> \nThe Pink Floyd mashup"
   m_DefaultStyles: {fileID: 0}
   m_QuadRenderersPool: []
   m_Interactable: 1
@@ -24225,11 +24591,11 @@ MonoBehaviour:
   m_ShouldOverrideStylesLineSpacing: 0
   m_TextProcessor:
     m_LinkKeywordCollections: []
-    m_InputText: "<a name=\"darkSide\">The Dark Side of Oz:</a> \nThe Pink Floyd mashup"
+    m_InputText: "<a name=\"darkSide\">The Dark Side of Oz</a> \nThe Pink Floyd mashup"
     m_InputTextSourceObject: {fileID: 0}
     m_IsDynamicFontDesired: 1
     m_IsRichTextDesired: 1
-    m_OutputText: "<i>The Dark Side of Oz:</i> \nThe Pink Floyd mashup"
+    m_OutputText: "The Dark Side of Oz \nThe Pink Floyd mashup"
     m_QuadKeywordCollections: []
     m_ReferenceFontSize: 54
     m_ShouldOverrideStylesFontSize: 0
@@ -24417,7 +24783,7 @@ RectTransform:
   m_LocalScale: {x: .845867455, y: .905638397, z: .845867515}
   m_Children: []
   m_Father: {fileID: 75852684}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
   m_AnchoredPosition: {x: 355.100006, y: -3350.8999}
@@ -24437,7 +24803,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 0}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -24448,7 +24814,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<a name=\"moreGay\">Oz Needs More Gay:</a> \nA commentary by Youtube personality
+  m_Text: "<a name=\"moreGay\">Oz Needs More Gay</a> \nA commentary by Youtube personality
     Rentasmo"
   m_DefaultStyles: {fileID: 0}
   m_QuadRenderersPool: []
@@ -24494,13 +24860,12 @@ MonoBehaviour:
   m_ShouldOverrideStylesLineSpacing: 0
   m_TextProcessor:
     m_LinkKeywordCollections: []
-    m_InputText: "<a name=\"moreGay\">Oz Needs More Gay:</a> \nA commentary by Youtube
+    m_InputText: "<a name=\"moreGay\">Oz Needs More Gay</a> \nA commentary by Youtube
       personality Rentasmo"
     m_InputTextSourceObject: {fileID: 0}
     m_IsDynamicFontDesired: 1
     m_IsRichTextDesired: 1
-    m_OutputText: "<i>Oz Needs More Gay:</i> \nA commentary by Youtube personality
-      Rentasmo"
+    m_OutputText: "Oz Needs More Gay \nA commentary by Youtube personality Rentasmo"
     m_QuadKeywordCollections: []
     m_ReferenceFontSize: 54
     m_ShouldOverrideStylesFontSize: 0
@@ -24792,7 +25157,7 @@ GameObject:
   - 222: {fileID: 1668328709}
   - 114: {fileID: 1668328708}
   m_Layer: 5
-  m_Name: Parable
+  m_Name: ParableLink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24809,10 +25174,10 @@ RectTransform:
   m_LocalScale: {x: .845867455, y: .905638397, z: .845867515}
   m_Children: []
   m_Father: {fileID: 75852684}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: -313.200012, y: -3350.8999}
+  m_AnchoredPosition: {x: 159.5, y: -3348}
   m_SizeDelta: {x: 733.599976, y: 278.600006}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1668328708
@@ -24829,7 +25194,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 0}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -24840,8 +25205,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<a name=\"parable\">The Parable on Populism:</a> \nThe monetary allegory
-    about Oz"
+  m_Text: <a name="parable">o</a>
   m_DefaultStyles: {fileID: 0}
   m_QuadRenderersPool: []
   m_Interactable: 1
@@ -24886,16 +25250,15 @@ MonoBehaviour:
   m_ShouldOverrideStylesLineSpacing: 0
   m_TextProcessor:
     m_LinkKeywordCollections: []
-    m_InputText: "<a name=\"parable\">The Parable on Populism:</a> \nThe monetary
-      allegory about Oz"
+    m_InputText: <a name="parable">o</a>
     m_InputTextSourceObject: {fileID: 0}
     m_IsDynamicFontDesired: 1
     m_IsRichTextDesired: 1
-    m_OutputText: "<i>The Parable on Populism:</i> \nThe monetary allegory about Oz"
+    m_OutputText: o
     m_QuadKeywordCollections: []
-    m_ReferenceFontSize: 54
+    m_ReferenceFontSize: 73
     m_ShouldOverrideStylesFontSize: 0
-    m_Styles: {fileID: 11400000, guid: 6ceea1b1d91bf49c1bc9de79c6cfb42f, type: 2}
+    m_Styles: {fileID: 11400000, guid: ef1d4a63c3b094c52ae79b63e0b5dbaf, type: 2}
     m_TagKeywordCollections: []
 --- !u!222 &1668328709
 CanvasRenderer:
@@ -25824,7 +26187,7 @@ RectTransform:
   m_LocalScale: {x: .845867455, y: .905638397, z: .845867515}
   m_Children: []
   m_Father: {fileID: 75852684}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
   m_AnchoredPosition: {x: -313.200012, y: -3580}
@@ -25844,7 +26207,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 0}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -25855,7 +26218,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '<a name="wallace">Mike Wallace & Ayn Rand:</a>
+  m_Text: '<a name="wallace">Mike Wallace & Ayn Rand</a>
 
     Ayn Rand''s interview in 1959'
   m_DefaultStyles: {fileID: 0}
@@ -25902,13 +26265,13 @@ MonoBehaviour:
   m_ShouldOverrideStylesLineSpacing: 0
   m_TextProcessor:
     m_LinkKeywordCollections: []
-    m_InputText: '<a name="wallace">Mike Wallace & Ayn Rand:</a>
+    m_InputText: '<a name="wallace">Mike Wallace & Ayn Rand</a>
 
       Ayn Rand''s interview in 1959'
     m_InputTextSourceObject: {fileID: 0}
     m_IsDynamicFontDesired: 1
     m_IsRichTextDesired: 1
-    m_OutputText: '<i>Mike Wallace & Ayn Rand:</i>
+    m_OutputText: 'Mike Wallace & Ayn Rand
 
       Ayn Rand''s interview in 1959'
     m_QuadKeywordCollections: []
@@ -25980,7 +26343,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: .800000012
   m_Text: "Connect to the \n\u201CSurrender Dorothy\u201D WiFi network"
 --- !u!222 &1809041595
 CanvasRenderer:
@@ -26036,7 +26399,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 0}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -26106,7 +26469,7 @@ MonoBehaviour:
     m_IsRichTextDesired: 1
     m_OutputText: 'The Kasser Theater at Montclair State University is easily accessible
       from NYC by car, train or bus.  Detailed information on transportation options
-      can be found <i>here.</i>
+      can be found here.
 
 '
     m_QuadKeywordCollections: []
@@ -26524,8 +26887,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 1cdf6898493d745dc8b6ecf19df445d7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -28000,8 +28363,8 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 91.5, y: 118}
-  m_SizeDelta: {x: 320, y: 290.911743}
+  m_AnchoredPosition: {x: 91.5, y: 97.5999985}
+  m_SizeDelta: {x: 340.700012, y: 324.399994}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &2000526137
 MonoBehaviour:
@@ -28082,6 +28445,126 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2000526135}
+--- !u!1 &2008000522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 2008000523}
+  - 222: {fileID: 2008000525}
+  - 114: {fileID: 2008000524}
+  m_Layer: 5
+  m_Name: WallaceLink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2008000523
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2008000522}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .845867455, y: .905638337, z: .845867515}
+  m_Children: []
+  m_Father: {fileID: 75852684}
+  m_RootOrder: 3
+  m_AnchorMin: {x: .5, y: 1}
+  m_AnchorMax: {x: .5, y: 1}
+  m_AnchoredPosition: {x: 181.199997, y: -3574}
+  m_SizeDelta: {x: 733.599976, y: 278.600006}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &2008000524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2008000522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5966d34f847d6437a85dbdf20a6a3242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: <a name="wallace">o</a>
+  m_DefaultStyles: {fileID: 0}
+  m_QuadRenderersPool: []
+  m_Interactable: 1
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 60042685}
+        m_MethodName: openURL
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: parable
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnPress:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnRelease:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_ShouldOverrideStylesFontStyle: 0
+  m_ShouldOverrideStylesFontColor: 0
+  m_ShouldOverrideStylesLineSpacing: 0
+  m_TextProcessor:
+    m_LinkKeywordCollections: []
+    m_InputText: <a name="wallace">o</a>
+    m_InputTextSourceObject: {fileID: 0}
+    m_IsDynamicFontDesired: 1
+    m_IsRichTextDesired: 1
+    m_OutputText: o
+    m_QuadKeywordCollections: []
+    m_ReferenceFontSize: 73
+    m_ShouldOverrideStylesFontSize: 0
+    m_Styles: {fileID: 11400000, guid: ef1d4a63c3b094c52ae79b63e0b5dbaf, type: 2}
+    m_TagKeywordCollections: []
+--- !u!222 &2008000525
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2008000522}
 --- !u!1 &2014522361
 GameObject:
   m_ObjectHideFlags: 0
@@ -28332,6 +28815,128 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &2094060012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 2094060013}
+  - 222: {fileID: 2094060015}
+  - 114: {fileID: 2094060014}
+  m_Layer: 5
+  m_Name: Parable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2094060013
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2094060012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .845867455, y: .905638337, z: .845867515}
+  m_Children: []
+  m_Father: {fileID: 75852684}
+  m_RootOrder: 0
+  m_AnchorMin: {x: .5, y: 1}
+  m_AnchorMax: {x: .5, y: 1}
+  m_AnchoredPosition: {x: -313.200073, y: -3350.89966}
+  m_SizeDelta: {x: 733.599976, y: 278.600006}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &2094060014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2094060012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5966d34f847d6437a85dbdf20a6a3242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "<a name=\"parable\">The Parable on Populism</a> \nThe monetary allegory
+    about Oz"
+  m_DefaultStyles: {fileID: 0}
+  m_QuadRenderersPool: []
+  m_Interactable: 1
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 60042685}
+        m_MethodName: openURL
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: parable
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnPress:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_OnRelease:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Candlelight.UI.HyperText+HyperlinkEvent, Assembly-CSharp-firstpass,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_ShouldOverrideStylesFontStyle: 0
+  m_ShouldOverrideStylesFontColor: 0
+  m_ShouldOverrideStylesLineSpacing: 0
+  m_TextProcessor:
+    m_LinkKeywordCollections: []
+    m_InputText: "<a name=\"parable\">The Parable on Populism</a> \nThe monetary allegory
+      about Oz"
+    m_InputTextSourceObject: {fileID: 0}
+    m_IsDynamicFontDesired: 1
+    m_IsRichTextDesired: 1
+    m_OutputText: "The Parable on Populism \nThe monetary allegory about Oz"
+    m_QuadKeywordCollections: []
+    m_ReferenceFontSize: 54
+    m_ShouldOverrideStylesFontSize: 0
+    m_Styles: {fileID: 11400000, guid: 6ceea1b1d91bf49c1bc9de79c6cfb42f, type: 2}
+    m_TagKeywordCollections: []
+--- !u!222 &2094060015
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2094060012}
 --- !u!1 &2135221940
 GameObject:
   m_ObjectHideFlags: 0

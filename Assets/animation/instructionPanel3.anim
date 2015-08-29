@@ -19,9 +19,9 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: -2560
-        inSlope: 0
-        outSlope: 0
+        value: -2600
+        inSlope: -599.999939
+        outSlope: -599.999939
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -75,7 +75,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
+        value: -3
         inSlope: 0
         outSlope: 0
         tangentMode: 10
@@ -89,7 +89,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
+        value: 3
         inSlope: 535
         outSlope: 535
         tangentMode: 10
@@ -107,14 +107,14 @@ AnimationClip:
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
     genericBindings:
-    - path: 0
-      attribute: 538195251
+    - path: 3764522066
+      attribute: 1460864421
       script: {fileID: 0}
       classID: 224
       customType: 0
       isPPtrCurve: 0
-    - path: 3764522066
-      attribute: 1460864421
+    - path: 0
+      attribute: 538195251
       script: {fileID: 0}
       classID: 224
       customType: 0
@@ -166,9 +166,9 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: -2560
-        inSlope: 0
-        outSlope: 0
+        value: -2600
+        inSlope: -599.999939
+        outSlope: -599.999939
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -222,7 +222,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
+        value: -3
         inSlope: 0
         outSlope: 0
         tangentMode: 10
@@ -236,7 +236,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
+        value: 3
         inSlope: 535
         outSlope: 535
         tangentMode: 10
