@@ -36,7 +36,7 @@ function Awake(){
 function Start () {
 
 	#if UNITY_IPHONE
-	iOS.NotificationServices.RegisterForNotifications(iOS.NotificationType.Alert);
+	//iOS.NotificationServices.RegisterForNotifications(iOS.NotificationType.Alert);
 	#endif
 	Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	Network.Connect (connectionIP, portNumber);
@@ -180,12 +180,12 @@ function Update () {
 						///ALERT
 						Debug.Log("ALERT!!!");
 						#if UNITY_IPHONE
-						var tornadoAlert: iOS.LocalNotification = new iOS.LocalNotification();
-						tornadoAlert.alertAction = "Butts.";
-						tornadoAlert.alertBody = "ALERT: FLASH FLOOD WARNING IN YOUR AREA";
-						tornadoAlert.soundName = "cbs_alert_us";
-						//tornadoAlert.Date = Date.Now.AddSeconds(2);
-						iOS.NotificationServices.ScheduleLocalNotification(tornadoAlert);
+//						var tornadoAlert: iOS.LocalNotification = new iOS.LocalNotification();
+//						tornadoAlert.alertAction = "Butts.";
+//						tornadoAlert.alertBody = "ALERT: FLASH FLOOD WARNING IN YOUR AREA";
+//						tornadoAlert.soundName = "cbs_alert_us";
+//						//tornadoAlert.Date = Date.Now.AddSeconds(2);
+//						iOS.NotificationServices.ScheduleLocalNotification(tornadoAlert);
 						#endif
 						
 						break;
