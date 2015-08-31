@@ -76,20 +76,23 @@ public class OzOscReceiver : MonoBehaviour {
 		case "/triggerEvent":
 			int eventID = (int)oscMessage.Values[0];
 
-			switch (eventID){
-				//MOE_VIDEO, RANDOM_RAINBOW, TORNADO_ALERT, APPLAUSE, AWW, NO_PLACE
-			case 0:
-				break;
-
-			case 1:
-				break;
-
-
-				default: 
-
-				break;	
-
-			}
+			cueControl.tempEventTriggers = eventID;
+			Debug.Log ("Event! " + eventID);
+//
+//			switch (eventID){
+//				//MOE_VIDEO, RANDOM_RAINBOW, TORNADO_ALERT, APPLAUSE, AWW, NO_PLACE
+//			case 0:
+//				break;
+//
+//			case 1:
+//				break;
+//
+//
+//				default: 
+//
+//				break;	
+//
+//			}
 
 			break;
 		case "/selectText":

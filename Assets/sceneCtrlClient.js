@@ -35,15 +35,9 @@ function Awake(){
 
 function Start () {
 
-	#if UNITY_IPHONE
-	//iOS.NotificationServices.RegisterForNotifications(iOS.NotificationType.Alert);
-	#endif
 	Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	Network.Connect (connectionIP, portNumber);
-	
-	//GameObject.Find("Scenes").SetActive(true);
-	//var sceneListComp: sceneList = GameObject.Find("Scenes").GetComponent.<sceneList>();
-	
+
 	
 	setupText();
 	
@@ -112,221 +106,9 @@ function Update () {
 		}
 		
 		if (cueComponent.tempEventTriggers != currentEventCue){
-			Debug.Log("event trigger!");
 			currentEventCue = cueComponent.tempEventTriggers;
-			
-				switch(currentCue){
-					case 1: //Intermediate Scene
-						switch( currentEventCue ){
-							case 1:
-							cueComponent.playMovie("NoPlaceLikeMoe");
-							Debug.Log("NoPlace!");
-							break;
-						
-							case 2:
-							cueComponent.stopMovie();
-							break;
-						
-							case 3:
-							camObj = GameObject.Find("Camera");
-							var clip :AudioClip= Resources.Load("Audience_Applause_1");
-							camObj.GetComponent(AudioSource).clip = clip;
-							camObj.GetComponent(AudioSource).Play(); 
-							Debug.Log("APPLAUSE!");
-							break;
-						
-							case 4:
-							break;
-						
-							case 5:
-							cueComponent.playMovie("randomRainbow");
-							Debug.Log("rainbone!");
-							break;
-						
-							case 6:
-							break;
-						
-							default:
-						
-							break;
-						}					
-							
-									
-					break;
-					
-					case 2: //CubeTest?
-						switch( currentEventCue ){
-						case 1:
-						
-						GameObject.Find("FunkyCube").GetComponent.<Animator>().SetTrigger("Anim1_1");
-						Debug.Log("ImNumba1");
-
-						break;
-					
-						case 2:
-						GameObject.Find("FunkyCube").GetComponent.<Animator>().SetTrigger("Anim2_1");
-						Debug.Log("ImNumba2");
-
-						break;
-					}
-					break;
-					
-					case 4: //'Nado
-					
-					switch( currentEventCue ){
-						case 1:
-						///ALERT
-						Debug.Log("ALERT!!!");
-						#if UNITY_IPHONE
-//						var tornadoAlert: iOS.LocalNotification = new iOS.LocalNotification();
-//						tornadoAlert.alertAction = "Butts.";
-//						tornadoAlert.alertBody = "ALERT: FLASH FLOOD WARNING IN YOUR AREA";
-//						tornadoAlert.soundName = "cbs_alert_us";
-//						//tornadoAlert.Date = Date.Now.AddSeconds(2);
-//						iOS.NotificationServices.ScheduleLocalNotification(tornadoAlert);
-						#endif
-						
-						break;
-						
-						case 2:
-						//TORNADO ComeIn
-						GameObject.Find("Tornado").GetComponent.<Animator>().SetTrigger("TornadoTrigger1");
-						
-						break;
-						
-						case 3:
-						///TORNADO Move To Loop2
-						GameObject.Find("Tornado").GetComponent.<Animator>().SetTrigger("TornadoTrigger2");
-						break;
-						
-						case 4:
-						///TORNADO OUT
-						GameObject.Find("Tornado").GetComponent.<Animator>().SetTrigger("TornadoTrigger3");
-
-						break;
-						
-						default:
-						
-						break;
-						
-					}
-					break;
-					
-					
-					case 5: //MUNCHKINLAND!
-					
-					switch( currentEventCue ){
-						case 1:
-						GameObject.Find("GlindaPath").GetComponent.<Animator>().SetTrigger("Anim1_11");
-
-						break;
-						
-						case 2:
-						GameObject.Find("Camera").GetComponent.<Animator>().SetTrigger("Anim1_M");
-
-						break;
-					}
-					break;
-					
-					
-					case 8: //MONKEYS!
-					
-					switch( currentEventCue ){
-						case 1:
-						
-						/// Monkeys fly forwards
-
-						break;
-					
-						case 2:
-						
-						/// monkeys fly away
-						
-						break;
-
-					}
-					break;
-					
-					
-					
-					case 9: //POPPIES!
-					
-					switch( currentEventCue ){
-						case 1:
-						
-						var go:GameObject = Instantiate (Resources.Load ("PoppyGroupAnimated_V1")) as GameObject; 
-						go.transform.parent = GameObject.Find("Scene9").transform;
-						Debug.Log("poppyClump1");
-
-						break;
-					
-						//case 2:
-						
-						//var go2:GameObject  = Instantiate (Resources.Load ("PoppAYE")) as GameObject; 
-						//go2.transform.parent = GameObject.Find("Scene9").transform;
-						//Debug.Log("poppyClump2");
-						
-						//break;
-						
-						case 3:
-						
-						var animList = GameObject.Find("Scene9").GetComponentsInChildren.<Animator>();
-						for ( a in animList){
-						a.SetTrigger("PoppyGetGone");
-						}
-						break;
-						
-						case 4:
-						
-						GameObject.Find("PoppyFeild").GetComponent.<Animator>().SetTrigger("PoppySnowGO");
-						
-						break;
-
-					}
-					break;
-					
-					case 0:
-						switch( currentEventCue ){
-							case 1:
-							cueComponent.playMovie("NoPlaceLikeMoe");
-							Debug.Log("NoPlace!");
-							break;
-						
-							case 2:
-							cueComponent.playMovie("Scratches");
-							Debug.Log("scratch");
-							break;
-						
-							case 3:
-							cueComponent.stopMovie();
-
-							/*
-							camObj = GameObject.Find("Camera");
-							var clip :AudioClip= Resources.Load("Audience_Applause_1");
-							camObj.GetComponent(AudioSource).clip = clip;
-							camObj.GetComponent(AudioSource).Play();
-							*/
-							break;
-						
-							case 4:
-							break;
-						
-							case 5:
-							cueComponent.playMovie("randomRainbow");
-							Debug.Log("rainbone!");
-							break;
-						
-							case 6:
-							break;
-						
-							default:
-						
-							break;
-						}		
-					break;
-					
-					default:
-						switch( currentEventCue ){
+		
+				switch( currentEventCue ){
 						case 1:
 						cueComponent.playMovie("MoeTest");
 						Debug.Log("MoeTest!");
@@ -347,7 +129,7 @@ function Update () {
 						case 4:
 						
 						cueComponent.playAudio("noPlace");
-						Debug.Log("no place!");
+						Debug.Log("no place audio!");
 
 						break;
 						
@@ -358,13 +140,278 @@ function Update () {
 
 						break;
 						
+						case 6:
+							camObj = GameObject.Find("Camera");
+							var clip :AudioClip= Resources.Load("Audience_Applause_1");
+							camObj.GetComponent(AudioSource).clip = clip;
+							camObj.GetComponent(AudioSource).Play(); 
+							Debug.Log("APPLAUSE!");
+						break;
+						
+						case 7:
+							cueComponent.playMovie("NoPlaceLikeMoe");
+							Debug.Log("no place!");
+
+						break;
+						
 						default: 
 						break;
 					  
 					
 					}
-			
-				}
+//			Debug.Log("event trigger!");
+//			currentEventCue = cueComponent.tempEventTriggers;
+//			
+//				switch(currentCue){
+//					case 1: //Intermediate Scene
+//						switch( currentEventCue ){
+//							case 1:
+//							cueComponent.playMovie("NoPlaceLikeMoe");
+//							Debug.Log("NoPlace!");
+//							break;
+//						
+//							case 2:
+//							cueComponent.stopMovie();
+//							break;
+//						
+//							case 3:
+//							camObj = GameObject.Find("Camera");
+//							var clip :AudioClip= Resources.Load("Audience_Applause_1");
+//							camObj.GetComponent(AudioSource).clip = clip;
+//							camObj.GetComponent(AudioSource).Play(); 
+//							Debug.Log("APPLAUSE!");
+//							break;
+//						
+//							case 4:
+//							break;
+//						
+//							case 5:
+//							cueComponent.playMovie("randomRainbow");
+//							Debug.Log("rainbone!");
+//							break;
+//						
+//							case 6:
+//							break;
+//						
+//							default:
+//						
+//							break;
+//						}					
+//							
+//									
+//					break;
+//					
+//					case 2: //CubeTest?
+//						switch( currentEventCue ){
+//						case 1:
+//						
+//						GameObject.Find("FunkyCube").GetComponent.<Animator>().SetTrigger("Anim1_1");
+//						Debug.Log("ImNumba1");
+//
+//						break;
+//					
+//						case 2:
+//						GameObject.Find("FunkyCube").GetComponent.<Animator>().SetTrigger("Anim2_1");
+//						Debug.Log("ImNumba2");
+//
+//						break;
+//					}
+//					break;
+//					
+//					case 4: //'Nado
+//					
+//					switch( currentEventCue ){
+//						case 1:
+//						///ALERT
+//						Debug.Log("ALERT!!!");
+//						#if UNITY_IPHONE
+////						var tornadoAlert: iOS.LocalNotification = new iOS.LocalNotification();
+////						tornadoAlert.alertAction = "Butts.";
+////						tornadoAlert.alertBody = "ALERT: FLASH FLOOD WARNING IN YOUR AREA";
+////						tornadoAlert.soundName = "cbs_alert_us";
+////						//tornadoAlert.Date = Date.Now.AddSeconds(2);
+////						iOS.NotificationServices.ScheduleLocalNotification(tornadoAlert);
+//						#endif
+//						
+//						break;
+//						
+//						case 2:
+//						//TORNADO ComeIn
+//						GameObject.Find("Tornado").GetComponent.<Animator>().SetTrigger("TornadoTrigger1");
+//						
+//						break;
+//						
+//						case 3:
+//						///TORNADO Move To Loop2
+//						GameObject.Find("Tornado").GetComponent.<Animator>().SetTrigger("TornadoTrigger2");
+//						break;
+//						
+//						case 4:
+//						///TORNADO OUT
+//						GameObject.Find("Tornado").GetComponent.<Animator>().SetTrigger("TornadoTrigger3");
+//
+//						break;
+//						
+//						default:
+//						
+//						break;
+//						
+//					}
+//					break;
+//					
+//					
+//					case 5: //MUNCHKINLAND!
+//					
+//					switch( currentEventCue ){
+//						case 1:
+//						GameObject.Find("GlindaPath").GetComponent.<Animator>().SetTrigger("Anim1_11");
+//
+//						break;
+//						
+//						case 2:
+//						GameObject.Find("Camera").GetComponent.<Animator>().SetTrigger("Anim1_M");
+//
+//						break;
+//					}
+//					break;
+//					
+//					
+//					case 8: //MONKEYS!
+//					
+//					switch( currentEventCue ){
+//						case 1:
+//						
+//						/// Monkeys fly forwards
+//
+//						break;
+//					
+//						case 2:
+//						
+//						/// monkeys fly away
+//						
+//						break;
+//
+//					}
+//					break;
+//					
+//					
+//					
+//					case 9: //POPPIES!
+//					
+//					switch( currentEventCue ){
+//						case 1:
+//						
+//						var go:GameObject = Instantiate (Resources.Load ("PoppyGroupAnimated_V1")) as GameObject; 
+//						go.transform.parent = GameObject.Find("Scene9").transform;
+//						Debug.Log("poppyClump1");
+//
+//						break;
+//					
+//						//case 2:
+//						
+//						//var go2:GameObject  = Instantiate (Resources.Load ("PoppAYE")) as GameObject; 
+//						//go2.transform.parent = GameObject.Find("Scene9").transform;
+//						//Debug.Log("poppyClump2");
+//						
+//						//break;
+//						
+//						case 3:
+//						
+//						var animList = GameObject.Find("Scene9").GetComponentsInChildren.<Animator>();
+//						for ( a in animList){
+//						a.SetTrigger("PoppyGetGone");
+//						}
+//						break;
+//						
+//						case 4:
+//						
+//						GameObject.Find("PoppyFeild").GetComponent.<Animator>().SetTrigger("PoppySnowGO");
+//						
+//						break;
+//
+//					}
+//					break;
+//					
+//					case 0:
+//						switch( currentEventCue ){
+//							case 1:
+//							cueComponent.playMovie("NoPlaceLikeMoe");
+//							Debug.Log("NoPlace!");
+//							break;
+//						
+//							case 2:
+//							cueComponent.playMovie("Scratches");
+//							Debug.Log("scratch");
+//							break;
+//						
+//							case 3:
+//							cueComponent.stopMovie();
+//
+//							/*
+//							camObj = GameObject.Find("Camera");
+//							var clip :AudioClip= Resources.Load("Audience_Applause_1");
+//							camObj.GetComponent(AudioSource).clip = clip;
+//							camObj.GetComponent(AudioSource).Play();
+//							*/
+//							break;
+//						
+//							case 4:
+//							break;
+//						
+//							case 5:
+//							cueComponent.playMovie("randomRainbow");
+//							Debug.Log("rainbone!");
+//							break;
+//						
+//							case 6:
+//							break;
+//						
+//							default:
+//						
+//							break;
+//						}		
+//					break;
+//					
+//					default:
+//						switch( currentEventCue ){
+//						case 1:
+//						cueComponent.playMovie("MoeTest");
+//						Debug.Log("MoeTest!");
+//
+//						break;
+//				
+//						case 2:
+//						cueComponent.playMovie("kazoo");
+//						Debug.Log("kazoo!");
+//
+//						break;
+//				
+//						case 3:
+//						cueComponent.stopMovie();
+//
+//						break;
+//						
+//						case 4:
+//						
+//						cueComponent.playAudio("noPlace");
+//						Debug.Log("no place!");
+//
+//						break;
+//						
+//						case 5:
+//						
+//						cueComponent.playMovie("randomRainbow");
+//						Debug.Log("random rainbow!");
+//
+//						break;
+//						
+//						default: 
+//						break;
+//					  
+//					
+//					}
+//			
+//				}
 		}
 		
 		
