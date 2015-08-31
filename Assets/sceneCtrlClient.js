@@ -46,23 +46,20 @@ function Start () {
 	
 	
 	setupText();
-
 	
+
 
 }
 
 function Update () {
-	if (connected){
-		
+	if (connected){	
 		
 		forcePassive = cueComponent.forcePassive;
-		
-		if(currentCue !=0 && Application.loadedLevel == 2){
-			//GameObject.Find("Look Up").active =  true;
-		
-		} else{
-			//GameObject.Find("Look Up").active =  false;
-
+				
+		if(Application.loadedLevel == 1){ //if connected and in passive mode show connected text
+			var alert:GameObject = GameObject.Find("InstructionAlertText");
+			alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
+			
 		}
 	
 		if (Application.loadedLevel != 2 && !forcePassive){
@@ -85,6 +82,7 @@ function Update () {
 
 			Application.LoadLevel(1);
 			
+
 			
 		}
 
@@ -379,6 +377,7 @@ function Update () {
 			camObj = GameObject.Find("Camera");
 
 		}
+
 		
 		
 	} else{ //not connected
@@ -413,6 +412,8 @@ function Update () {
 function OnConnectedToServer(){
 		Debug.Log ("Connected To Server");
 		connected = true;
+		var alert:GameObject = GameObject.Find("InstructionAlertText");
+		alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
 	}
 
 function OnDisconnectedFromServer(){
