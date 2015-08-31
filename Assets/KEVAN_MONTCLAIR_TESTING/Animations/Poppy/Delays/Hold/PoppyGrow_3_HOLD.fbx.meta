@@ -1,0 +1,865 @@
+fileFormatVersion: 2
+guid: 5c7744443551b4999afa0df58cb53ff9
+timeCreated: 1440967048
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: BP_1
+    100002: BP_1_Root
+    100004: BP_2
+    100006: BP_2_Root
+    100008: BP_3
+    100010: BP_3_Root
+    100012: BP_4
+    100014: BP_4_Root
+    100016: group1
+    100018: joint10
+    100020: joint100
+    100022: joint101
+    100024: joint102
+    100026: joint103
+    100028: joint105
+    100030: joint106
+    100032: joint107
+    100034: joint108
+    100036: joint109
+    100038: joint110
+    100040: joint111
+    100042: joint112
+    100044: joint113
+    100046: joint114
+    100048: joint115
+    100050: joint116
+    100052: joint118
+    100054: joint119
+    100056: joint12
+    100058: joint120
+    100060: joint121
+    100062: joint122
+    100064: joint123
+    100066: joint124
+    100068: joint125
+    100070: joint126
+    100072: joint127
+    100074: joint128
+    100076: joint129
+    100078: joint13
+    100080: joint131
+    100082: joint132
+    100084: joint133
+    100086: joint134
+    100088: joint135
+    100090: joint136
+    100092: joint137
+    100094: joint138
+    100096: joint139
+    100098: joint14
+    100100: joint140
+    100102: joint142
+    100104: joint143
+    100106: joint144
+    100108: joint145
+    100110: joint146
+    100112: joint147
+    100114: joint148
+    100116: joint149
+    100118: joint15
+    100120: joint150
+    100122: joint151
+    100124: joint153
+    100126: joint154
+    100128: joint155
+    100130: joint156
+    100132: joint157
+    100134: joint158
+    100136: joint159
+    100138: joint16
+    100140: joint160
+    100142: joint161
+    100144: joint162
+    100146: joint17
+    100148: joint18
+    100150: joint19
+    100152: joint2
+    100154: joint20
+    100156: joint21
+    100158: joint22
+    100160: joint23
+    100162: joint25
+    100164: joint26
+    100166: joint27
+    100168: joint28
+    100170: joint29
+    100172: joint30
+    100174: joint31
+    100176: joint32
+    100178: joint33
+    100180: joint35
+    100182: joint36
+    100184: joint37
+    100186: joint38
+    100188: joint39
+    100190: joint3_Leaf6
+    100192: joint40
+    100194: joint41
+    100196: joint42
+    100198: joint43
+    100200: joint44
+    100202: joint45
+    100204: joint46
+    100206: joint47
+    100208: joint49
+    100210: joint4_Leaf5
+    100212: joint50
+    100214: joint51
+    100216: joint52
+    100218: joint53
+    100220: joint54
+    100222: joint55
+    100224: joint56
+    100226: joint57
+    100228: joint58
+    100230: joint59
+    100232: joint5_Leaf4
+    100234: joint60
+    100236: joint61
+    100238: joint62
+    100240: joint63
+    100242: joint64
+    100244: joint66
+    100246: joint67
+    100248: joint68
+    100250: joint69
+    100252: joint6_Leaf3
+    100254: joint70
+    100256: joint71
+    100258: joint73
+    100260: joint74
+    100262: joint75
+    100264: joint76
+    100266: joint78
+    100268: joint79
+    100270: joint7_Leaf2
+    100272: joint80
+    100274: joint81
+    100276: joint82
+    100278: joint83
+    100280: joint84
+    100282: joint85
+    100284: joint86
+    100286: joint87
+    100288: joint88
+    100290: joint89
+    100292: joint8_Leaf1
+    100294: joint90
+    100296: joint91
+    100298: joint93
+    100300: joint94
+    100302: joint95
+    100304: joint96
+    100306: joint97
+    100308: joint98
+    100310: joint99
+    100312: joint9_Petals
+    100314: Leaf1
+    100316: Leaf1_Root
+    100318: Leaf2
+    100320: Leaf2_Root
+    100322: Leaf3
+    100324: Leaf3_Root
+    100326: Leaf4
+    100328: Leaf4_Root
+    100330: Leaf5
+    100332: Leaf5_Root
+    100334: Leaf6
+    100336: Leaf6_Root
+    100338: LeafNew
+    100340: Leafs
+    100342: LeafSmalls
+    100344: LeafsOrginals
+    100346: LittlePetalsNew
+    100348: Petals
+    100350: Poppy_V3:polySurface1
+    100352: //RootNode
+    100354: Stem1
+    100356: StemRoot
+    100358: TP1_root
+    100360: TP2_Root
+    100362: TP3_Root
+    100364: TP_1
+    100366: TP_2
+    100368: TP_3
+    400000: BP_1
+    400002: BP_1_Root
+    400004: BP_2
+    400006: BP_2_Root
+    400008: BP_3
+    400010: BP_3_Root
+    400012: BP_4
+    400014: BP_4_Root
+    400016: group1
+    400018: joint10
+    400020: joint100
+    400022: joint101
+    400024: joint102
+    400026: joint103
+    400028: joint105
+    400030: joint106
+    400032: joint107
+    400034: joint108
+    400036: joint109
+    400038: joint110
+    400040: joint111
+    400042: joint112
+    400044: joint113
+    400046: joint114
+    400048: joint115
+    400050: joint116
+    400052: joint118
+    400054: joint119
+    400056: joint12
+    400058: joint120
+    400060: joint121
+    400062: joint122
+    400064: joint123
+    400066: joint124
+    400068: joint125
+    400070: joint126
+    400072: joint127
+    400074: joint128
+    400076: joint129
+    400078: joint13
+    400080: joint131
+    400082: joint132
+    400084: joint133
+    400086: joint134
+    400088: joint135
+    400090: joint136
+    400092: joint137
+    400094: joint138
+    400096: joint139
+    400098: joint14
+    400100: joint140
+    400102: joint142
+    400104: joint143
+    400106: joint144
+    400108: joint145
+    400110: joint146
+    400112: joint147
+    400114: joint148
+    400116: joint149
+    400118: joint15
+    400120: joint150
+    400122: joint151
+    400124: joint153
+    400126: joint154
+    400128: joint155
+    400130: joint156
+    400132: joint157
+    400134: joint158
+    400136: joint159
+    400138: joint16
+    400140: joint160
+    400142: joint161
+    400144: joint162
+    400146: joint17
+    400148: joint18
+    400150: joint19
+    400152: joint2
+    400154: joint20
+    400156: joint21
+    400158: joint22
+    400160: joint23
+    400162: joint25
+    400164: joint26
+    400166: joint27
+    400168: joint28
+    400170: joint29
+    400172: joint30
+    400174: joint31
+    400176: joint32
+    400178: joint33
+    400180: joint35
+    400182: joint36
+    400184: joint37
+    400186: joint38
+    400188: joint39
+    400190: joint3_Leaf6
+    400192: joint40
+    400194: joint41
+    400196: joint42
+    400198: joint43
+    400200: joint44
+    400202: joint45
+    400204: joint46
+    400206: joint47
+    400208: joint49
+    400210: joint4_Leaf5
+    400212: joint50
+    400214: joint51
+    400216: joint52
+    400218: joint53
+    400220: joint54
+    400222: joint55
+    400224: joint56
+    400226: joint57
+    400228: joint58
+    400230: joint59
+    400232: joint5_Leaf4
+    400234: joint60
+    400236: joint61
+    400238: joint62
+    400240: joint63
+    400242: joint64
+    400244: joint66
+    400246: joint67
+    400248: joint68
+    400250: joint69
+    400252: joint6_Leaf3
+    400254: joint70
+    400256: joint71
+    400258: joint73
+    400260: joint74
+    400262: joint75
+    400264: joint76
+    400266: joint78
+    400268: joint79
+    400270: joint7_Leaf2
+    400272: joint80
+    400274: joint81
+    400276: joint82
+    400278: joint83
+    400280: joint84
+    400282: joint85
+    400284: joint86
+    400286: joint87
+    400288: joint88
+    400290: joint89
+    400292: joint8_Leaf1
+    400294: joint90
+    400296: joint91
+    400298: joint93
+    400300: joint94
+    400302: joint95
+    400304: joint96
+    400306: joint97
+    400308: joint98
+    400310: joint99
+    400312: joint9_Petals
+    400314: Leaf1
+    400316: Leaf1_Root
+    400318: Leaf2
+    400320: Leaf2_Root
+    400322: Leaf3
+    400324: Leaf3_Root
+    400326: Leaf4
+    400328: Leaf4_Root
+    400330: Leaf5
+    400332: Leaf5_Root
+    400334: Leaf6
+    400336: Leaf6_Root
+    400338: LeafNew
+    400340: Leafs
+    400342: LeafSmalls
+    400344: LeafsOrginals
+    400346: LittlePetalsNew
+    400348: Petals
+    400350: Poppy_V3:polySurface1
+    400352: //RootNode
+    400354: Stem1
+    400356: StemRoot
+    400358: TP1_root
+    400360: TP2_Root
+    400362: TP3_Root
+    400364: TP_1
+    400366: TP_2
+    400368: TP_3
+    4300000: TP_1
+    4300002: TP_2
+    4300004: TP_3
+    4300006: BP_1
+    4300008: BP_2
+    4300010: BP_3
+    4300012: BP_4
+    4300014: Leaf1
+    4300016: Leaf2
+    4300018: Leaf3
+    4300020: Leaf4
+    4300022: Leaf5
+    4300024: Leaf6
+    4300026: Stem1
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: BP_1
+    13700002: BP_2
+    13700004: BP_3
+    13700006: BP_4
+    13700008: Leaf1
+    13700010: Leaf2
+    13700012: Leaf3
+    13700014: Leaf4
+    13700016: Leaf5
+    13700018: Leaf6
+    13700020: Stem1
+    13700022: TP_1
+    13700024: TP_2
+    13700026: TP_3
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Poppy_V3:polySurface1
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Leafs
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Leafs/LeafNew
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Leafs/LeafNew/Leaf1
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Leafs/LeafNew/Leaf2
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Leafs/LeafNew/Leaf3
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Leafs/LeafNew/Leaf4
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Leafs/LeafNew/Leaf5
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Leafs/LeafNew/Leaf6
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Leafs/LeafsOrginals
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Leafs/LeafsOrginals/LeafSmalls
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Petals
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Petals/BP_1
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Petals/BP_2
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Petals/BP_3
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Petals/BP_4
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Petals/LittlePetalsNew
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Petals/TP_1
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Petals/TP_2
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Petals/TP_3
+        weight: 1
+      - path: Poppy_V3:polySurface1/group1/Stem1
+        weight: 1
+      - path: StemRoot
+        weight: 1
+      - path: StemRoot/joint2
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_1_Root
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_1_Root/joint93
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_1_Root/joint93/joint94
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_1_Root/joint93/joint94/joint95
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_1_Root/joint93/joint94/joint95/joint96
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_1_Root/joint93/joint94/joint95/joint96/joint97
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_1_Root/joint93/joint94/joint95/joint96/joint97/joint98
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_1_Root/joint93/joint94/joint95/joint96/joint97/joint98/joint99
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_1_Root/joint93/joint94/joint95/joint96/joint97/joint98/joint99/joint100
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_1_Root/joint93/joint94/joint95/joint96/joint97/joint98/joint99/joint100/joint101
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_1_Root/joint93/joint94/joint95/joint96/joint97/joint98/joint99/joint100/joint101/joint102
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_1_Root/joint93/joint94/joint95/joint96/joint97/joint98/joint99/joint100/joint101/joint102/joint103
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_2_Root
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_2_Root/joint105
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_2_Root/joint105/joint106
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_2_Root/joint105/joint106/joint107
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_2_Root/joint105/joint106/joint107/joint108
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_2_Root/joint105/joint106/joint107/joint108/joint109
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_2_Root/joint105/joint106/joint107/joint108/joint109/joint110
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_2_Root/joint105/joint106/joint107/joint108/joint109/joint110/joint111
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_2_Root/joint105/joint106/joint107/joint108/joint109/joint110/joint111/joint112
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_2_Root/joint105/joint106/joint107/joint108/joint109/joint110/joint111/joint112/joint113
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_2_Root/joint105/joint106/joint107/joint108/joint109/joint110/joint111/joint112/joint113/joint114
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_2_Root/joint105/joint106/joint107/joint108/joint109/joint110/joint111/joint112/joint113/joint114/joint115
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_2_Root/joint105/joint106/joint107/joint108/joint109/joint110/joint111/joint112/joint113/joint114/joint115/joint116
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_3_Root
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_3_Root/joint78
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_3_Root/joint78/joint79
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_3_Root/joint78/joint79/joint80
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_3_Root/joint78/joint79/joint80/joint81
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_3_Root/joint78/joint79/joint80/joint81/joint82
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_3_Root/joint78/joint79/joint80/joint81/joint82/joint83
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_3_Root/joint78/joint79/joint80/joint81/joint82/joint83/joint84
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_3_Root/joint78/joint79/joint80/joint81/joint82/joint83/joint84/joint85
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_3_Root/joint78/joint79/joint80/joint81/joint82/joint83/joint84/joint85/joint86
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_3_Root/joint78/joint79/joint80/joint81/joint82/joint83/joint84/joint85/joint86/joint87
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_3_Root/joint78/joint79/joint80/joint81/joint82/joint83/joint84/joint85/joint86/joint87/joint88
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_3_Root/joint78/joint79/joint80/joint81/joint82/joint83/joint84/joint85/joint86/joint87/joint88/joint89
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_3_Root/joint78/joint79/joint80/joint81/joint82/joint83/joint84/joint85/joint86/joint87/joint88/joint89/joint90
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_3_Root/joint78/joint79/joint80/joint81/joint82/joint83/joint84/joint85/joint86/joint87/joint88/joint89/joint90/joint91
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_4_Root
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_4_Root/joint118
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_4_Root/joint118/joint119
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_4_Root/joint118/joint119/joint120
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_4_Root/joint118/joint119/joint120/joint121
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_4_Root/joint118/joint119/joint120/joint121/joint122
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_4_Root/joint118/joint119/joint120/joint121/joint122/joint123
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_4_Root/joint118/joint119/joint120/joint121/joint122/joint123/joint124
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_4_Root/joint118/joint119/joint120/joint121/joint122/joint123/joint124/joint125
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_4_Root/joint118/joint119/joint120/joint121/joint122/joint123/joint124/joint125/joint126
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_4_Root/joint118/joint119/joint120/joint121/joint122/joint123/joint124/joint125/joint126/joint127
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_4_Root/joint118/joint119/joint120/joint121/joint122/joint123/joint124/joint125/joint126/joint127/joint128
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/BP_4_Root/joint118/joint119/joint120/joint121/joint122/joint123/joint124/joint125/joint126/joint127/joint128/joint129
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/joint10
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP1_root
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP1_root/joint142
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP1_root/joint142/joint143
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP1_root/joint142/joint143/joint144
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP1_root/joint142/joint143/joint144/joint145
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP1_root/joint142/joint143/joint144/joint145/joint146
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP1_root/joint142/joint143/joint144/joint145/joint146/joint147
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP1_root/joint142/joint143/joint144/joint145/joint146/joint147/joint148
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP1_root/joint142/joint143/joint144/joint145/joint146/joint147/joint148/joint149
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP1_root/joint142/joint143/joint144/joint145/joint146/joint147/joint148/joint149/joint150
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP1_root/joint142/joint143/joint144/joint145/joint146/joint147/joint148/joint149/joint150/joint151
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP2_Root
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP2_Root/joint153
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP2_Root/joint153/joint154
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP2_Root/joint153/joint154/joint155
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP2_Root/joint153/joint154/joint155/joint156
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP2_Root/joint153/joint154/joint155/joint156/joint157
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP2_Root/joint153/joint154/joint155/joint156/joint157/joint158
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP2_Root/joint153/joint154/joint155/joint156/joint157/joint158/joint159
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP2_Root/joint153/joint154/joint155/joint156/joint157/joint158/joint159/joint160
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP2_Root/joint153/joint154/joint155/joint156/joint157/joint158/joint159/joint160/joint161
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP2_Root/joint153/joint154/joint155/joint156/joint157/joint158/joint159/joint160/joint161/joint162
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP3_Root
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP3_Root/joint131
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP3_Root/joint131/joint132
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP3_Root/joint131/joint132/joint133
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP3_Root/joint131/joint132/joint133/joint134
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP3_Root/joint131/joint132/joint133/joint134/joint135
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP3_Root/joint131/joint132/joint133/joint134/joint135/joint136
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP3_Root/joint131/joint132/joint133/joint134/joint135/joint136/joint137
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP3_Root/joint131/joint132/joint133/joint134/joint135/joint136/joint137/joint138
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP3_Root/joint131/joint132/joint133/joint134/joint135/joint136/joint137/joint138/joint139
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/joint9_Petals/TP3_Root/joint131/joint132/joint133/joint134/joint135/joint136/joint137/joint138/joint139/joint140
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/Leaf1_Root
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/Leaf1_Root/joint73
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/Leaf1_Root/joint73/joint74
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/Leaf1_Root/joint73/joint74/joint75
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/joint8_Leaf1/Leaf1_Root/joint73/joint74/joint75/joint76
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/Leaf2_Root
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/Leaf2_Root/joint66
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/Leaf2_Root/joint66/joint67
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/Leaf2_Root/joint66/joint67/joint68
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/Leaf2_Root/joint66/joint67/joint68/joint69
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/Leaf2_Root/joint66/joint67/joint68/joint69/joint70
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/joint7_Leaf2/Leaf2_Root/joint66/joint67/joint68/joint69/joint70/joint71
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49/joint50
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49/joint50/joint51
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49/joint50/joint51/joint52
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49/joint50/joint51/joint52/joint53
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49/joint50/joint51/joint52/joint53/joint54
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49/joint50/joint51/joint52/joint53/joint54/joint55
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49/joint50/joint51/joint52/joint53/joint54/joint55/joint56
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49/joint50/joint51/joint52/joint53/joint54/joint55/joint56/joint57
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49/joint50/joint51/joint52/joint53/joint54/joint55/joint56/joint57/joint58
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49/joint50/joint51/joint52/joint53/joint54/joint55/joint56/joint57/joint58/joint59
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49/joint50/joint51/joint52/joint53/joint54/joint55/joint56/joint57/joint58/joint59/joint60
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49/joint50/joint51/joint52/joint53/joint54/joint55/joint56/joint57/joint58/joint59/joint60/joint61
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49/joint50/joint51/joint52/joint53/joint54/joint55/joint56/joint57/joint58/joint59/joint60/joint61/joint62
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49/joint50/joint51/joint52/joint53/joint54/joint55/joint56/joint57/joint58/joint59/joint60/joint61/joint62/joint63
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/joint6_Leaf3/Leaf3_Root/joint49/joint50/joint51/joint52/joint53/joint54/joint55/joint56/joint57/joint58/joint59/joint60/joint61/joint62/joint63/joint64
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/Leaf4_Root
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/Leaf4_Root/joint35
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/Leaf4_Root/joint35/joint36
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/Leaf4_Root/joint35/joint36/joint37
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/Leaf4_Root/joint35/joint36/joint37/joint38
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/Leaf4_Root/joint35/joint36/joint37/joint38/joint39
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/Leaf4_Root/joint35/joint36/joint37/joint38/joint39/joint40
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/Leaf4_Root/joint35/joint36/joint37/joint38/joint39/joint40/joint41
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/Leaf4_Root/joint35/joint36/joint37/joint38/joint39/joint40/joint41/joint42
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/Leaf4_Root/joint35/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/Leaf4_Root/joint35/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43/joint44
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/Leaf4_Root/joint35/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43/joint44/joint45
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/Leaf4_Root/joint35/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43/joint44/joint45/joint46
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/joint5_Leaf4/Leaf4_Root/joint35/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43/joint44/joint45/joint46/joint47
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/Leaf5_Root
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/Leaf5_Root/joint25
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/Leaf5_Root/joint25/joint26
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/Leaf5_Root/joint25/joint26/joint27
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/Leaf5_Root/joint25/joint26/joint27/joint28
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/Leaf5_Root/joint25/joint26/joint27/joint28/joint29
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/Leaf5_Root/joint25/joint26/joint27/joint28/joint29/joint30
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/Leaf5_Root/joint25/joint26/joint27/joint28/joint29/joint30/joint31
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/Leaf5_Root/joint25/joint26/joint27/joint28/joint29/joint30/joint31/joint32
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/joint4_Leaf5/Leaf5_Root/joint25/joint26/joint27/joint28/joint29/joint30/joint31/joint32/joint33
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/Leaf6_Root
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/Leaf6_Root/joint12
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/Leaf6_Root/joint12/joint13
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/Leaf6_Root/joint12/joint13/joint14
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/Leaf6_Root/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/Leaf6_Root/joint12/joint13/joint14/joint15/joint16
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/Leaf6_Root/joint12/joint13/joint14/joint15/joint16/joint17
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/Leaf6_Root/joint12/joint13/joint14/joint15/joint16/joint17/joint18
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/Leaf6_Root/joint12/joint13/joint14/joint15/joint16/joint17/joint18/joint19
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/Leaf6_Root/joint12/joint13/joint14/joint15/joint16/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/Leaf6_Root/joint12/joint13/joint14/joint15/joint16/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/Leaf6_Root/joint12/joint13/joint14/joint15/joint16/joint17/joint18/joint19/joint20/joint21/joint22
+        weight: 1
+      - path: StemRoot/joint2/joint3_Leaf6/Leaf6_Root/joint12/joint13/joint14/joint15/joint16/joint17/joint18/joint19/joint20/joint21/joint22/joint23
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -72,12 +72,11 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleIdentifier: org.thebuildersassociation.ozBeta2
-  bundleVersion: 3.0
+  bundleVersion: 4.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
-  virtualRealitySupported: 0
   productGUID: edd5aa87491414ca59ea2b08cfbbb063
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 14
@@ -267,6 +266,7 @@ PlayerSettings:
   psp2InfoBarOnStartup: 0
   psp2InfoBarColor: 0
   psmSplashimage: {fileID: 0}
+  virtualRealitySupported: 0
   spritePackerPolicy: 
   scriptingDefineSymbols:
     1: IS_UNITYEDITOR_ANIMATIONS_AVAILABLE;IS_CANDLELIGHT_HYPERTEXT_AVAILABLE;IS_CANDLELIGHT_SCENE_GUI_AVAILABLE
