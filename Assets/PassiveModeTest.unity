@@ -21715,7 +21715,7 @@ GameObject:
   - 222: {fileID: 1488365329}
   - 114: {fileID: 1488365328}
   m_Layer: 5
-  m_Name: Text
+  m_Name: InstructionAlertText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
