@@ -93,10 +93,10 @@ function Update () {
 			currentCue = cueComponent.cueNumber;
 			setActiveScene(currentCue.ToString());
 		
-			#if UNITY_IPHONE
+			#if UNITY_IPHONE || UNITY_ANDROID
 			if (currentCue != 0 &&  currentCue != 1) Handheld.Vibrate();
 			#endif
-		
+			
 		} 
 		
 		if (cueComponent.textSelection != currentTextSelection && Application.loadedLevel == 2){
