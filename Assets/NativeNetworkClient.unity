@@ -77824,6 +77824,7 @@ GameObject:
   - 114: {fileID: 1694134510}
   - 225: {fileID: 1694134509}
   - 111: {fileID: 1694134508}
+  - 114: {fileID: 1694134513}
   m_Layer: 0
   m_Name: Scene1
   m_TagString: Untagged
@@ -77937,6 +77938,18 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &1694134513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1694134506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f793c37378ff0417dacdff02d8dbad4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AREnabled: 1
 --- !u!1 &1731128670
 GameObject:
   m_ObjectHideFlags: 0
