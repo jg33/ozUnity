@@ -34,6 +34,19 @@ namespace Vuforia
 			{
 				mTrackableBehaviour.RegisterTrackableEventHandler(this);
 			}
+
+			 if (mTrackableBehaviour.TrackableName.StartsWith( "Passive" ) ){
+
+				gameObject.transform.GetChild(0).gameObject.SetActive(false);
+				gameObject.transform.GetChild(1).gameObject.SetActive(false);
+				Debug.Log ("Turn that shit off " + gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name+ " "  );
+					
+
+				
+			}
+
+
+
 		}
 		
 		#endregion // UNTIY_MONOBEHAVIOUR_METHODS
@@ -98,7 +111,7 @@ namespace Vuforia
 
 				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name == mTrackableBehaviour.TrackableName){
 					gameObject.transform.GetChild(0).gameObject.SetActive(true);
-					gameObject.transform.GetChild(1).gameObject.SetActive(true);
+	//				gameObject.transform.GetChild(1).gameObject.SetActive(true);
 
 				}
 
@@ -118,11 +131,12 @@ namespace Vuforia
 			} else if (mTrackableBehaviour.TrackableName.StartsWith( "Passive" ) ){
 				GameObject camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("setTightTracking", false);
+				if(!storm) storm = GameObject.Find("storm");
 				storm.SetActive(true);
 
 				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name == mTrackableBehaviour.TrackableName){
 					gameObject.transform.GetChild(0).gameObject.SetActive(false);
-					gameObject.transform.GetChild(1).gameObject.SetActive(false);
+//					gameObject.transform.GetChild(1).gameObject.SetActive(false);
 					Debug.Log ("BORT " + gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name+ " "  );
 
 				}
