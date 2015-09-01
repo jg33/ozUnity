@@ -52,6 +52,9 @@ function Update () {
 		cam = this.GetComponentsInChildren(Camera)[0];
 		cam.set_projectionMatrix(projMatrix);
 		
+		var motionAmp:Behaviour = cam.gameObject.GetComponent("Amplify Motion Effect");
+		motionAmp.enabled = false;
+		
 		gyroResetter.SendMessage("setTightTracking",true);
 		gyroResetter.SendMessage("resetGyro");
 	
@@ -94,7 +97,10 @@ function Update () {
 				updateTarget();
 				
 		}
-	
+		
+		motionAmp  = this.gameObject.GetComponentsInChildren(Camera)[0].gameObject.GetComponent("Amplify Motion Effect");
+		motionAmp.enabled = true;
+
 	}
 	
 }
