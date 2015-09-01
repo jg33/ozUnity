@@ -26,6 +26,18 @@ function Update () {
 			if(cueCtrl.munchkinState != currentState){
 				currentState = cueCtrl.munchkinState;
 				ani.SetInteger("state", currentState);
+				
+				if(currentState == 1){
+					for(var a:AudioSource in this.gameObject.GetComponentsInChildren(AudioSource)){
+						a.Play();
+					
+					}
+				} else {
+					for(var a:AudioSource in this.gameObject.GetComponentsInChildren(AudioSource)){
+						//a.Stop();
+					
+					}
+				}
 			}	
 		break;
 		
