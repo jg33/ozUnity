@@ -38,11 +38,8 @@ namespace Vuforia
 			 if (mTrackableBehaviour.TrackableName.StartsWith( "Passive" ) ){
 
 				gameObject.transform.GetChild(0).gameObject.SetActive(false);
-				gameObject.transform.GetChild(1).gameObject.SetActive(false);
 				Debug.Log ("Turn that shit off " + gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name+ " "  );
-					
-
-				
+		
 			}
 
 
