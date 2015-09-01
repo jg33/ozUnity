@@ -116,6 +116,9 @@ public class OzOscReceiver : MonoBehaviour {
 			cueControl.monkeyState = (int)oscMessage.Values[0];
 
 			break;
+		case "/forcePassive":
+			cueControl.forcePassive = (bool)oscMessage.Values[0];
+			break;
 
 		default:
 			Debug.Log("unhandled osc: " + msgValue );

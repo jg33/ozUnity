@@ -480,13 +480,13 @@ function setActiveScene(newScene:String){
 	
 	if(i == 1){
 		canvasObject = sceneArray[i];
-		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length);
 		Debug.Log(sceneArray[i]);
 		canvasObject.SetActive(true);
 		canvasObject.GetComponent(Animation).Play("UIFadeIn");
 	
 		canvasObject = sceneArray[prevCue];
 		canvasObject.GetComponent(Animation).Play("UIFadeOut");
+		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length+3);
 		canvasObject.SetActive(false);
 		
 	} else if(i>1){
@@ -496,7 +496,7 @@ function setActiveScene(newScene:String){
 		
 		canvasObject = sceneArray[prevCue];
 		canvasObject.GetComponent(Animation).Play("UIFadeOut");
-		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length);
+		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length+3);
 		canvasObject.SetActive(false);
 	
 		
