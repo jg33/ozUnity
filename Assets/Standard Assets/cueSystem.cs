@@ -133,9 +133,9 @@ public class cueSystem : MonoBehaviour{
 			} else if(clipName == "MoeTest"){
 				cam.SendMessage("loadMovie", "MoeOzTest", SendMessageOptions.DontRequireReceiver);
 				cam.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
-				cam.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
 				cam.SendMessage("setNumLoops", 1);
-
+				cam.SendMessage("setLooping", false);
+				cam.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
 				Debug.Log("MoeTest");
 
 			} else if(clipName == "kazoo"){
@@ -172,6 +172,8 @@ public class cueSystem : MonoBehaviour{
 			if(clipName == "MoeTest"){
 				video.SendMessage("loadMovie", "MoeOzTest", SendMessageOptions.DontRequireReceiver);
 				video.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
+				video.SendMessage("setNumLoops", 1);
+				video.SendMessage("setLooping", false);
 				video.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
 				//video.SendMessage("setNumLoops", 1);
 
