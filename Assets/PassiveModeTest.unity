@@ -306,7 +306,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: .5}
   m_AnchorMax: {x: 1, y: .5}
-  m_AnchoredPosition: {x: 0, y: 1448.75}
+  m_AnchoredPosition: {x: 0, y: 272}
   m_SizeDelta: {x: 1940, y: 4317}
   m_Pivot: {x: .5, y: 1}
 --- !u!114 &60042685
@@ -25341,8 +25341,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1616942061}
   - 114: {fileID: 1616942060}
+  - 114: {fileID: 1616942062}
   m_Layer: 0
-  m_Name: PlayerStateTest
+  m_Name: Control
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25371,6 +25372,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &1616942062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1616942059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f793c37378ff0417dacdff02d8dbad4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AREnabled: 1
 --- !u!1 &1662110653
 GameObject:
   m_ObjectHideFlags: 0

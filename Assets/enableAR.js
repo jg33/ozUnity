@@ -2,7 +2,7 @@
 
 
 public var AREnabled:boolean = true;
-private var ARCam:GameObject;
+private var ARCam:Behaviour;
 
 function Start () {
 
@@ -10,12 +10,12 @@ function Start () {
 
 function Update () {
 	if(!ARCam){
-		ARCam = GameObject.Find("ARCamera");
+		ARCam = GameObject.Find("ARCamera").GetComponent("QCARBehaviour");
 	}
 	
-	if(AREnabled && !ARCam.active){
-		ARCam.active = true;
-	} else if (!AREnabled && ARCam.active){
-		ARCam.active = false;
+	if(AREnabled && !ARCam.enabled){
+		ARCam.enabled = true;
+	} else if (!AREnabled && ARCam.enabled){
+		ARCam.enabled = false;
 	}
 }
