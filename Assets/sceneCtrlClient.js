@@ -95,8 +95,8 @@ function Update () {
 						break;
 				
 						case 2:
-						cueComponent.playMovie("kazoo");
-						Debug.Log("kazoo!");
+							cueComponent.playMovie("NoPlaceLikeMoe");
+							Debug.Log("no place!");
 
 						break;
 				
