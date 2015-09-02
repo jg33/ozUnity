@@ -16,6 +16,8 @@ public class cueSystem : MonoBehaviour{
 
 	NetworkView nv;
 
+	private GameObject seqPlayer;
+
 	public void Start(){
 
 		nv = this.GetComponent<NetworkView>();
@@ -76,6 +78,10 @@ public class cueSystem : MonoBehaviour{
 
 			}
 		}	
+
+		if(!seqPlayer && cueNumber ==1){
+			seqPlayer = GameObject.Find ("TexturePlayer");
+		}
 	}
 
 	public void GUI(){
@@ -155,13 +161,15 @@ public class cueSystem : MonoBehaviour{
 
 				Debug.Log("NoPlaceLikeMoe");
 				
-			} else if (clipName == "Scratches"){
-				cam.SendMessage("loadMovie", "Scratches", SendMessageOptions.DontRequireReceiver);
-				cam.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
-				cam.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
-				cam.SendMessage("setNumLoops", 1);
-				
-				Debug.Log("Scratches");
+			} else if(clipName == "scratches"){
+				seqPlayer.SendMessage("loadMovie","scratchSm" );
+				seqPlayer.SendMessage("setFrames", 117);
+				seqPlayer.SendMessage("play");
+			} else if(clipName == "tvStatic"){
+				seqPlayer.SendMessage("loadMovie","tvStatic" );
+				seqPlayer.SendMessage("setFrames", 70);
+
+				seqPlayer.SendMessage("play");
 			}
 
 		
@@ -193,15 +201,9 @@ public class cueSystem : MonoBehaviour{
 				video.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
 				Debug.Log("NoPlaceLikeMoe");
 				
-			} else if (clipName == "Scratches"){
-				video.SendMessage("loadMovie", "Scratches", SendMessageOptions.DontRequireReceiver);
-				video.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
-				video.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
-				video.SendMessage("setNumLoops", 1);
-				
-				Debug.Log("Server Scratch");
+			} else{
+				Debug.Log("Server cannot play "+clipName);
 			}
-
 		}
 	}
 	
@@ -209,6 +211,7 @@ public class cueSystem : MonoBehaviour{
 
 		if (Network.isClient){
 			GameObject.Find ("Camera").SendMessage("Stop");
+			seqPlayer.SendMessage("stop");
 
 		}else if (Network.isServer){
 			GameObject.Find ("Video").SendMessage("Stop");
@@ -234,6 +237,7 @@ public class cueSystem : MonoBehaviour{
 
 		
 	}
+
 
 	public void selectText( int i){
 		textSelection = i;

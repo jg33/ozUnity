@@ -30,6 +30,7 @@ function Update () {
 
 function loadMovie(name:String){
 
+	movieName = name;
 	for(var i =0;i<frames;i++){
 		var numString = i.ToString();
 		var num:String = pad(numString,4,'0');
@@ -39,11 +40,27 @@ function loadMovie(name:String){
 
 }
 
+function loadMovie(name:String, _fps:int, _frames:int){
+	fps = _fps || 24;
+	frames = _frames || 100;
+	
+	loadMovie(name);
+
+}
+
+function setFrames(_frames:int){
+	frames = _frames;
+}
+
+function setFps(_fps:int){
+	fps = _fps;
+}
+
 function play(){
 	isPlaying = true;
 }
 
-function pause(){
+function stop(){
 	isPlaying = false;
 
 }

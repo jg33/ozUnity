@@ -133,6 +133,16 @@ function Update () {
 
 						break;
 						
+						case 8:
+							cueComponent.playMovie("tvStatic");
+							Debug.Log("Static!");
+							break;
+						
+						case 9:
+							cueComponent.playMovie("scratches");
+							Debug.Log("scratches!");
+							break;
+
 						default: 
 						break;
 					  
