@@ -11,6 +11,8 @@ function Start () {
 			sceneArray[i].SetActive(false);
 		}
 	};
+	
+	sceneArray[0].SetActive(true);
 }
 
 function Update () {
