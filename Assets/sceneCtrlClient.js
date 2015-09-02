@@ -50,13 +50,11 @@ function Update () {
 		
 		forcePassive = cueComponent.forcePassive;
 				
-		if(Application.loadedLevel == 1){ //if connected and in passive mode show connected text
+		if(Application.loadedLevel == 1 && forcePassive){ //if connected and in passive mode show connected text
 			var alert:GameObject = GameObject.Find("InstructionAlertText");
 			alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
 			
-		}
-	
-		if (Application.loadedLevel != 2 && !forcePassive){
+		} else if (Application.loadedLevel != 2 && !forcePassive){
 			//GameObject.Destroy(GameObject.Find("Camera Container"));
 			//yield WaitForSeconds(1);
 			GameObject.Find("Camera Container").SendMessage("setTightTracking", false);
@@ -66,45 +64,26 @@ function Update () {
 			Debug.Log("Connected! Loading Active Mode!");
 			
 			camObj = GameObject.Find("Camera");
+			
 		
-		} if (forcePassive && Application.loadedLevel != 1){
+		} else if (forcePassive && Application.loadedLevel != 1){
 			//GameObject.Destroy(GameObject.Find("Camera Container"));
 			//yield WaitForSeconds(1);
 			GameObject.Find("Camera Container").SendMessage("setTightTracking", true);			
 			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
 
-
 			Application.LoadLevel(1);
-			
-
-			
-		}
+		} 
 
 		if (cueComponent.cueNumber != currentCue && Application.loadedLevel == 2){
-			prevCue = currentCue;
-			currentCue = cueComponent.cueNumber;
-			setActiveScene(currentCue.ToString());
-		
-			#if UNITY_IPHONE || UNITY_ANDROID
-			if (currentCue != 0 &&  currentCue != 1) Handheld.Vibrate();
-			#endif
-			
-		} 
-		
-		if (cueComponent.textSelection != currentTextSelection && Application.loadedLevel == 2){
-			var msg:GameObject = GameObject.Find("Message");
-			var msgTxt: UI.Text = msg.GetComponent(UI.Text);
-			currentTextSelection = cueComponent.textSelection;
-			msgTxt.text = messageText[currentTextSelection];
-			if (messageText[currentTextSelection].Length>140){
-				//msg.transform.GetComponent(RectTransform).anchorMin = Vector2(0,-400);
-				//msg.transform.GetComponent(RectTransform).anchorMax = Vector2(0,800);
-			} else {
-				//msg.transform.GetComponent(RectTransform).anchorMin = Vector2(0,-150);
-				//msg.transform.GetComponent(RectTransform).anchorMax = Vector2(0,300);
-			}
+
+			setActiveScene(cueComponent.cueNumber.ToString());
+
+		} else if (cueComponent.cueNumber == 1 && Application.loadedLevel == 2 && !GameObject.Find("Scene1")){
+			setActiveScene("1");
 		}
-		
+
+		/// Event Cueing ///
 		if (cueComponent.tempEventTriggers != currentEventCue){
 			currentEventCue = cueComponent.tempEventTriggers;
 		
@@ -116,8 +95,8 @@ function Update () {
 						break;
 				
 						case 2:
-						cueComponent.playMovie("kazoo");
-						Debug.Log("kazoo!");
+							cueComponent.playMovie("NoPlaceLikeMoe");
+							Debug.Log("no place!");
 
 						break;
 				
@@ -163,6 +142,22 @@ function Update () {
 		}
 		
 		
+		/// Text Cueing ///
+		if (cueComponent.textSelection != currentTextSelection && Application.loadedLevel == 2){
+			var msg:GameObject = GameObject.Find("Message");
+			var msgTxt: UI.Text = msg.GetComponent(UI.Text);
+			currentTextSelection = cueComponent.textSelection;
+			msgTxt.text = messageText[currentTextSelection];
+			if (messageText[currentTextSelection].Length>140){
+				//msg.transform.GetComponent(RectTransform).anchorMin = Vector2(0,-400);
+				//msg.transform.GetComponent(RectTransform).anchorMax = Vector2(0,800);
+			} else {
+				//msg.transform.GetComponent(RectTransform).anchorMin = Vector2(0,-150);
+				//msg.transform.GetComponent(RectTransform).anchorMax = Vector2(0,300);
+			}
+		}
+		
+		/// Movie Sync ///
 		if(cueComponent.moviePosition != moviePosition && camObj != null){
 			moviePosition = cueComponent.moviePosition;
 			camObj.SendMessage("syncToPosition", moviePosition, SendMessageOptions.DontRequireReceiver);	
@@ -222,6 +217,13 @@ function OnFailedToConnect(error: NetworkConnectionError){
 	}
 
 function setActiveScene(newScene:String){
+	prevCue = currentCue;
+	currentCue = cueComponent.cueNumber;
+	
+	#if UNITY_IPHONE || UNITY_ANDROID
+	if (currentCue != 0 &&  currentCue != 1) Handheld.Vibrate();
+	#endif
+	
 	var i=parseInt(newScene);
 	
 	sceneArray = GameObject.Find("Scenes").GetComponent.<sceneList>().sceneArray;
@@ -232,10 +234,14 @@ function setActiveScene(newScene:String){
 		canvasObject.SetActive(true);
 		canvasObject.GetComponent(Animation).Play("UIFadeIn");
 	
-		canvasObject = sceneArray[prevCue];
-		canvasObject.GetComponent(Animation).Play("UIFadeOut");
 		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length+3);
-		canvasObject.SetActive(false);
+
+		for (var j = 0; j< sceneArray.Count  ;j++){ //turn off the rest
+			if(j!=i){
+				canvasObject = sceneArray[j];
+				canvasObject.SetActive(false);
+			}
+		}
 		
 	} else if(i>1){
 		canvasObject = sceneArray[i];
@@ -245,13 +251,23 @@ function setActiveScene(newScene:String){
 		canvasObject = sceneArray[prevCue];
 		canvasObject.GetComponent(Animation).Play("UIFadeOut");
 		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length+3);
-		canvasObject.SetActive(false);
+		for (j = 0; j< sceneArray.Count  ;j++){ //turn off the rest
+			if(j!=i){
+				canvasObject = sceneArray[j];
+				canvasObject.SetActive(false);
+			}
+		}
 	
 		
 	
-	} else if (i<0){
-		canvasObject = sceneArray[prevCue];
-		canvasObject.SetActive(false);
+	} else if (i==0){
+		for (j = 0; j< sceneArray.Count  ;j++){
+			canvasObject = sceneArray[j];
+//			canvasObject.GetComponent(Animation).Play("UIFadeOut");
+			canvasObject.SetActive(false);
+		}
+		canvasObject = sceneArray[0];
+		canvasObject.SetActive(true);
 
 	}
 
