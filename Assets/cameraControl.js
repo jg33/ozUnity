@@ -52,6 +52,8 @@ function Update () {
 		cam = this.GetComponentsInChildren(Camera)[0];
 		cam.set_projectionMatrix(projMatrix);
 		
+		
+		// motion blur toggle //
 		var motionAmp:Behaviour = cam.gameObject.GetComponent("AmplifyMotionEffect");
 		motionAmp.enabled = false;
 		
