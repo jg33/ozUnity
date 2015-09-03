@@ -54,8 +54,8 @@ function Update () {
 		
 		
 		// motion blur toggle //
-		var motionAmp:Behaviour = cam.gameObject.GetComponent("AmplifyMotionEffect");
-		motionAmp.enabled = false;
+//		var motionAmp:Behaviour = cam.gameObject.GetComponent("AmplifyMotionEffect");
+//		motionAmp.enabled = false;
 		
 		gyroResetter.SendMessage("setTightTracking",true);
 		gyroResetter.SendMessage("resetGyro");
@@ -99,8 +99,8 @@ function Update () {
 				
 		}
 		
-		motionAmp  = this.gameObject.GetComponentsInChildren(Camera)[0].gameObject.GetComponent("AmplifyMotionEffect");
-		motionAmp.enabled = true;
+//		motionAmp  = this.gameObject.GetComponentsInChildren(Camera)[0].gameObject.GetComponent("AmplifyMotionEffect");
+//		motionAmp.enabled = true;
 
 	}
 	

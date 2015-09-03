@@ -6,6 +6,7 @@ public class cueSystem : MonoBehaviour{
 	public int tempEventTriggers = 0;
 	public float moviePosition = 0;
 	public int textSelection = 0;
+	public float transitionSpeed = 1;
 
 	public int tornadoState;
 	public int poppyState;
@@ -238,6 +239,10 @@ public class cueSystem : MonoBehaviour{
 	[RPC] public void stopAudio(){
 
 		
+	}
+
+	public void setTransitionSpeed(float f){
+		transitionSpeed = f;
 	}
 
 
