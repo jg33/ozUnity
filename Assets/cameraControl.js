@@ -92,8 +92,7 @@ function Update () {
 		
 		if(Input.GetButton("Fire1") && foundTarget ){
 		
-				targetPositionArray.Clear();
-				targetRotationArray.Clear();
+				resetTracking();
 				updateTarget();
 				
 		}
@@ -109,6 +108,12 @@ function smoothToTarget(target:Transform, smooth:float){
 	this.gameObject.transform.localPosition = Vector3.Lerp(this.gameObject.transform.localPosition, targetPosition.localPosition, smooth);
 	this.gameObject.transform.localRotation = Quaternion.Lerp(this.gameObject.transform.localRotation, targetPosition.localRotation, smooth);
 	//GameObject.Find("GyroResetter").transform.localRotation = Quaternion.Lerp(GameObject.Find("GyroResetter").transform.localRotation, targetGyroCorrection, smooth);
+}
+
+function hopToTarget(){
+	this.gameObject.transform.localPosition = targetPosition.localPosition;
+	this.gameObject.transform.localRotation = targetPosition.localRotation;
+
 }
 
 function updateTarget(){
@@ -180,6 +185,7 @@ public function setTightTracking(b:boolean){
 }
 
 public function resetTracking(){
+	Debug.Log("Reset Tracking!");
 	targetPositionArray.Clear();
 	targetRotationArray.Clear();
 }
