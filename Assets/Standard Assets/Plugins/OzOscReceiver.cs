@@ -99,6 +99,10 @@ public class OzOscReceiver : MonoBehaviour {
 			cueControl.textSelection = (int)oscMessage.Values[0];
 
 			break;	
+		case "/sendText":
+
+			break;
+
 		case "/tornadoState":
 			cueControl.tornadoState = (int)oscMessage.Values[0];
 
