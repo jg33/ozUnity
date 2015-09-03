@@ -76,7 +76,7 @@ function Update () {
 		} 
 
 		if (cueComponent.cueNumber != currentCue && Application.loadedLevel == 2){
-
+			GameObject.Find("Camera Container").SendMessage("resetTracking");
 			setActiveScene(cueComponent.cueNumber.ToString());
 
 		} else if (cueComponent.cueNumber == 1 && Application.loadedLevel == 2 && !GameObject.Find("Scene1")){
