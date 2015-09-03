@@ -28,6 +28,13 @@ public class OzOscReceiver : MonoBehaviour {
 
 	// one-shot events that fire on cue or never //
 
+	private UnityEngine.UI.Slider tornadoSlider;
+	private UnityEngine.UI.Slider munchkinSlider;
+	private UnityEngine.UI.Slider poppySlider;
+	private UnityEngine.UI.Slider monkeySlider;
+	private UnityEngine.UI.Slider fireSlider;
+
+	
 	
 	public void Start ()
 	{
@@ -39,7 +46,15 @@ public class OzOscReceiver : MonoBehaviour {
 		handler = (Osc)GetComponent("Osc");
 		handler.init(udp);
 		handler.SetAllMessageHandler(AllMessageHandler);
-		
+
+
+		tornadoSlider = GameObject.Find("Tornado Slider").GetComponent<UnityEngine.UI.Slider>();
+		munchkinSlider = GameObject.Find("Munchkin Slider").GetComponent<UnityEngine.UI.Slider>();
+		poppySlider = GameObject.Find("Poppy Slider").GetComponent<UnityEngine.UI.Slider>();
+		monkeySlider = GameObject.Find("Monkey Slider").GetComponent<UnityEngine.UI.Slider>();
+		fireSlider = GameObject.Find("Fire Slider").GetComponent<UnityEngine.UI.Slider>();
+
+
 		
 		Debug.Log("Osc Running");
 		
@@ -99,25 +114,42 @@ public class OzOscReceiver : MonoBehaviour {
 			cueControl.textSelection = (int)oscMessage.Values[0];
 
 			break;	
+		case "/sendText":
+
+			break;
+
 		case "/tornadoState":
 			cueControl.tornadoState = (int)oscMessage.Values[0];
-
+			tornadoSlider.value =  (int)oscMessage.Values[0];
 			break;
 		case "/munchkinState":
 			cueControl.munchkinState = (int)oscMessage.Values[0]; 
+			munchkinSlider.value =  (int)oscMessage.Values[0];
 
 			break;
 
 		case "/poppyState":
 			cueControl.poppyState = (int)oscMessage.Values[0];
+			poppySlider.value =  (int)oscMessage.Values[0];
+
 			break;
 
 		case "/monkeyState":
 			cueControl.monkeyState = (int)oscMessage.Values[0];
+			monkeySlider.value =  (int)oscMessage.Values[0];
+
+			break;
+		case "/fireState":
+			cueControl.fireState = (int)oscMessage.Values[0];
+			fireSlider.value =  (int)oscMessage.Values[0];
 
 			break;
 		case "/forcePassive":
-			cueControl.forcePassive = (bool)oscMessage.Values[0];
+			if((int)oscMessage.Values[0] == 1){
+				cueControl.forcePassive = true;
+			} else {
+				cueControl.forcePassive = false;
+			}
 			break;
 
 		default:

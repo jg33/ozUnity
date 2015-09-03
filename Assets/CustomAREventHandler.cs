@@ -100,7 +100,17 @@ namespace Vuforia
 				camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("updateTarget");
 				camCtl.SendMessage("setFoundTarget",true);
-			} else if (mTrackableBehaviour.TrackableName.StartsWith("Passive")){
+			} else if (mTrackableBehaviour.TrackableName.StartsWith("Passive") && PlayerPrefs.GetInt("CompletedShow",0) != 0){ //if the show's complete, display any passive target
+				camCtl = GameObject.Find ("Camera Container");
+				camCtl.SendMessage("setTightTracking", true);
+				storm = GameObject.Find("storm");
+				storm.SetActive(false);
+				
+				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name == mTrackableBehaviour.TrackableName){
+					gameObject.transform.GetChild(0).gameObject.SetActive(true);
+				}
+
+			} else if (mTrackableBehaviour.TrackableName== "Passive1Cylone"){ //always show cyclone
 				camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("setTightTracking", true);
 				storm = GameObject.Find("storm");
@@ -108,7 +118,6 @@ namespace Vuforia
 
 				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name == mTrackableBehaviour.TrackableName){
 					gameObject.transform.GetChild(0).gameObject.SetActive(true);
-	//				gameObject.transform.GetChild(1).gameObject.SetActive(true);
 
 				}
 

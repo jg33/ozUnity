@@ -76,7 +76,7 @@ function Update () {
 		} 
 
 		if (cueComponent.cueNumber != currentCue && Application.loadedLevel == 2){
-
+			GameObject.Find("Camera Container").SendMessage("resetTracking");
 			setActiveScene(cueComponent.cueNumber.ToString());
 
 		} else if (cueComponent.cueNumber == 1 && Application.loadedLevel == 2 && !GameObject.Find("Scene1")){
@@ -143,8 +143,14 @@ function Update () {
 							Debug.Log("scratches!");
 							break;
 
+						case 10:
+							setCompletedShow();
+						break;
+						
 						default: 
 						break;
+						
+
 					  
 					
 					}
@@ -315,3 +321,11 @@ function setupText(){
 }
 
 
+
+
+function setCompletedShow(){
+	
+	PlayerPrefs.SetInt("CompletedShow",1);
+	PlayerPrefs.Save();
+
+}

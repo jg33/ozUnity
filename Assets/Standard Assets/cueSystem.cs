@@ -11,6 +11,7 @@ public class cueSystem : MonoBehaviour{
 	public int poppyState;
 	public int munchkinState;
 	public int monkeyState;
+	public int fireState;
 
 	public bool forcePassive = false;
 
@@ -99,6 +100,7 @@ public class cueSystem : MonoBehaviour{
 			stream.Serialize (ref munchkinState);
 			stream.Serialize (ref poppyState);
 			stream.Serialize (ref monkeyState);
+			stream.Serialize (ref fireState);
 
 
 
@@ -113,7 +115,7 @@ public class cueSystem : MonoBehaviour{
 			stream.Serialize (ref munchkinState);
 			stream.Serialize (ref poppyState);
 			stream.Serialize (ref monkeyState);
-
+			stream.Serialize (ref fireState);
 		}
 	}
 

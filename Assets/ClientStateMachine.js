@@ -5,12 +5,14 @@ function Start () {
 	if(PlayerPrefs.GetInt("FirstLaunch",0) != 0){
 	
 		GameObject.Find("Intro").SetActive(false);
-	
+		Debug.Log("INTRO OFF");	
+
 	}
 
 	if (PlayerPrefs.GetInt("CompletedShow",0) != 0){
 		
-		//GameObject.Find("Extras Button").GetComponent("Image").color.a = 255;
+		GameObject.Find("Extras Button").GetComponent(UI.Image).color.a = 255;
+		Debug.Log("EXTRAS BUTTON UP");	
 	
 	}
 	
