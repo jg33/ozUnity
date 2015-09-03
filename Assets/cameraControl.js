@@ -71,11 +71,11 @@ function Update () {
 	    	updateTarget();
 	    	isTracking = true;
 	    	Debug.Log("intial tracking....");
-		
-	    } else if ( Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= 0.01 &&
-	    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= 1 &&
-	    	Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= 1
-	    	){ 
+	    } else if ( Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= 0.0001 && 
+	    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= 10 &&
+	    	Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= 10
+	    	){ 		//used to be 0.01, 1, 1.
+
 	    	updateTarget();
 	    	isTracking = true;
 	    	Debug.Log("tracking.... Dist: " + Vector3.Distance(targetPositionArray[targetPositionArray.length-1],ARCam.transform.localPosition) );
