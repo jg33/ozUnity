@@ -15534,6 +15534,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 1175587389}
   - 95: {fileID: 1175587390}
+  - 114: {fileID: 1175587391}
   m_Layer: 5
   m_Name: MenuContainer
   m_TagString: Untagged
@@ -15580,6 +15581,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1175587391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175587388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f793c37378ff0417dacdff02d8dbad4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AREnabled: 0
 --- !u!1 &1186312585
 GameObject:
   m_ObjectHideFlags: 0
@@ -25201,7 +25214,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1616942059}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f793c37378ff0417dacdff02d8dbad4f, type: 3}
   m_Name: 
