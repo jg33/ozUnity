@@ -143,8 +143,14 @@ function Update () {
 							Debug.Log("scratches!");
 							break;
 
+						case 10:
+							setCompletedShow();
+						break;
+						
 						default: 
 						break;
+						
+
 					  
 					
 					}
@@ -315,3 +321,11 @@ function setupText(){
 }
 
 
+
+
+function setCompletedShow(){
+	
+	PlayerPrefs.SetInt("CompletedShow",1);
+	PlayerPrefs.Save();
+
+}

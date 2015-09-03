@@ -47,17 +47,61 @@ function Update () {
 						break;
 				
 						case 2:
-						cueComponent.playMovie("Scratches");
-						Debug.Log("scratch!");
+							cueComponent.playMovie("NoPlaceLikeMoe");
+							Debug.Log("no place!");
+
+						break;
+				
+						case 3:
+						cueComponent.stopMovie();
 
 						break;
 						
-						case 3:
-						break;						
+						case 4:
 						
-						default:
+						cueComponent.playAudio("noPlace");
+						Debug.Log("no place audio!");
+
 						break;
-						}
+						
+						case 5:
+						
+						cueComponent.playMovie("randomRainbow");
+						Debug.Log("random rainbow!");
+
+						break;
+						
+						case 6:
+							//applause
+						break;
+						
+						case 7:
+							cueComponent.playMovie("NoPlaceLikeMoe");
+							Debug.Log("no place!");
+
+						break;
+						
+						case 8:
+							cueComponent.playMovie("tvStatic");
+							Debug.Log("Static!");
+							break;
+						
+						case 9:
+							cueComponent.playMovie("scratches");
+							Debug.Log("scratches!");
+							break;
+
+						case 10:
+							//setCompletedShow();
+						break;
+						
+						default: 
+						break;
+						
+
+					  
+					
+					}
 						
 	}
 
@@ -67,6 +111,8 @@ function OnGUI()
 	{
 		GUILayout.Label ("Connections: " + Network.connections.Length.ToString());
 		GUILayout.Label ("Current Scene: " +  currentCue);
+		GUILayout.Label ("Current Event: " +  currentEvent);
+
 		GUILayout.Label ("Force Passive Mode: " +  cueComponent.forcePassive);
 
 		
