@@ -13,6 +13,7 @@ function Start () {
 	};
 	
 	sceneArray[0].SetActive(true);
+	
 }
 
 function Update () {

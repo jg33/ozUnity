@@ -52,23 +52,23 @@ function Update () {
 		
 		forcePassive = cueComponent.forcePassive;
 				
-		if(Application.loadedLevel == 1 && forcePassive){ //if connected and in passive mode show connected text
-			var alert:GameObject = GameObject.Find("InstructionAlertText");
-			alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
-			
-		} else if (Application.loadedLevel != 2 && !forcePassive){
+		  if (Application.loadedLevel != 2 && !forcePassive){ //if connected and in the show, jump on in!
 			//GameObject.Destroy(GameObject.Find("Camera Container"));
 			//yield WaitForSeconds(1);
 			GameObject.Find("Camera Container").SendMessage("setTightTracking", false);
 			GameObject.Find("Look Up").GetComponent(Renderer).enabled = true;
 
-			Application.LoadLevel(2);
 			Debug.Log("Connected! Loading Active Mode!");
-			
+			Application.LoadLevel(2);
+			currentCue = -1; //force scene refresh
 			camObj = GameObject.Find("Camera");
 			GameObject.Find("RealImageTarget").SendMessage("updateTargetPos");
 
 		
+		} else if(Application.loadedLevel == 1 && forcePassive){ //if connected and in passive mode show connected text
+			var alert:GameObject = GameObject.Find("InstructionAlertText");
+			alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
+			
 		} else if (forcePassive && Application.loadedLevel != 1){
 			//GameObject.Destroy(GameObject.Find("Camera Container"));
 			//yield WaitForSeconds(1);
@@ -76,16 +76,20 @@ function Update () {
 			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
 
 			Application.LoadLevel(1);
+
 		} 
 
+		/// cue control ///
 		if (cueComponent.cueNumber != currentCue && Application.loadedLevel == 2){
 			transitionSpeed = cueComponent.transitionSpeed;
 			setActiveScene(cueComponent.cueNumber.ToString());
 			GameObject.Find("RealImageTarget").SendMessage("updateTargetPos");
 
 		} else if (cueComponent.cueNumber == 1 && Application.loadedLevel == 2 && !GameObject.Find("Scene1")){
-			setActiveScene("1");
+			setActiveScene("1"); // emergency backup goto 1
 		}
+
+
 
 		/// Event Cueing ///
 		if (cueComponent.tempEventTriggers != currentEventCue){
@@ -237,6 +241,8 @@ function OnFailedToConnect(error: NetworkConnectionError){
 	}
 
 function setActiveScene(newScene:String){
+
+	Debug.Log("SETTING ACTIVE SCENE: " + newScene);
 	prevCue = currentCue;
 	currentCue = cueComponent.cueNumber;
 	
