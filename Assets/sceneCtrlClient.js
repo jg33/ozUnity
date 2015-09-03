@@ -64,7 +64,8 @@ function Update () {
 			Debug.Log("Connected! Loading Active Mode!");
 			
 			camObj = GameObject.Find("Camera");
-			
+			GameObject.Find("RealImageTarget").SendMessage("updateTargetPos");
+
 		
 		} else if (forcePassive && Application.loadedLevel != 1){
 			//GameObject.Destroy(GameObject.Find("Camera Container"));
@@ -76,8 +77,8 @@ function Update () {
 		} 
 
 		if (cueComponent.cueNumber != currentCue && Application.loadedLevel == 2){
-			GameObject.Find("Camera Container").SendMessage("resetTracking");
 			setActiveScene(cueComponent.cueNumber.ToString());
+			GameObject.Find("RealImageTarget").SendMessage("updateTargetPos");
 
 		} else if (cueComponent.cueNumber == 1 && Application.loadedLevel == 2 && !GameObject.Find("Scene1")){
 			setActiveScene("1");
@@ -273,7 +274,6 @@ function setActiveScene(newScene:String){
 				canvasObject.SetActive(false);
 			}
 		}
-	
 		
 	
 	} else if (i==0){
