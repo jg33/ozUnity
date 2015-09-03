@@ -25,6 +25,8 @@ private var camObj: GameObject;
 private var messageText:String[] = new String[10];
 private var currentTextSelection: int = 0;
 
+private var transitionSpeed : int =1;
+
 // one-shot events that fire on cue or never //
 enum TriggeredEvents{ MOE_VIDEO, RANDOM_RAINBOW, TORNADO_ALERT, APPLAUSE, AWW, NO_PLACE };
 
@@ -77,6 +79,7 @@ function Update () {
 		} 
 
 		if (cueComponent.cueNumber != currentCue && Application.loadedLevel == 2){
+			transitionSpeed = cueComponent.transitionSpeed;
 			setActiveScene(cueComponent.cueNumber.ToString());
 			GameObject.Find("RealImageTarget").SendMessage("updateTargetPos");
 
@@ -249,6 +252,7 @@ function setActiveScene(newScene:String){
 		canvasObject = sceneArray[i];
 		Debug.Log(sceneArray[i]);
 		canvasObject.SetActive(true);
+//		animation["UIFadeIn"].speed = transitionSpeed;
 		canvasObject.GetComponent(Animation).Play("UIFadeIn");
 	
 		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length+3);
@@ -266,6 +270,7 @@ function setActiveScene(newScene:String){
 		canvasObject.SetActive(true);
 		
 		canvasObject = sceneArray[prevCue];
+//		animation["UIFadeOut"].speed = transitionSpeed;
 		canvasObject.GetComponent(Animation).Play("UIFadeOut");
 		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length+3);
 		for (j = 0; j< sceneArray.Count  ;j++){ //turn off the rest

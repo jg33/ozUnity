@@ -33,6 +33,7 @@ public class OzOscReceiver : MonoBehaviour {
 	private UnityEngine.UI.Slider poppySlider;
 	private UnityEngine.UI.Slider monkeySlider;
 	private UnityEngine.UI.Slider fireSlider;
+	private UnityEngine.UI.Slider transSpeedSlider;
 
 	
 	
@@ -53,6 +54,7 @@ public class OzOscReceiver : MonoBehaviour {
 		poppySlider = GameObject.Find("Poppy Slider").GetComponent<UnityEngine.UI.Slider>();
 		monkeySlider = GameObject.Find("Monkey Slider").GetComponent<UnityEngine.UI.Slider>();
 		fireSlider = GameObject.Find("Fire Slider").GetComponent<UnityEngine.UI.Slider>();
+		transSpeedSlider = GameObject.Find("Transition Slider").GetComponent<UnityEngine.UI.Slider>();
 
 
 		
@@ -150,6 +152,10 @@ public class OzOscReceiver : MonoBehaviour {
 			} else {
 				cueControl.forcePassive = false;
 			}
+			break;
+
+		case "/transitionSpeed":
+			cueControl.transitionSpeed = (int)oscMessage.Values[0];
 			break;
 
 		default:
