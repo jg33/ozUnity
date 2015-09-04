@@ -198,10 +198,11 @@ public class VideoTexture_FullScreen : MonoBehaviour
 	{
 		if (enableGUI && playState != UVT_PlayState.Stopped )
 		{
-			if(hideBackground)
+			if ((hideBackground) && (backgroundTexture != null) )
 				GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height),backgroundTexture,ScaleMode.StretchToFill,true,aspectRatio); // Background Texture draw	to avoid ghosting
-			
-			GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height),newTex,ScaleMode.ScaleToFit,true,aspectRatio); // Actual video texture draw
+
+			if (newTex != null)
+				GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height),newTex,ScaleMode.ScaleToFit,true,aspectRatio); // Actual video texture draw
 			
 			if (enableControls)
 			{
