@@ -66,9 +66,9 @@ function Update () {
 	} else {
 	
 		//Calculate when to track
-		if (targetPositionArray.length == 0  ){
-			//updateTarget();
-			//isTracking = true;
+		if (targetPositionArray.length == 0  && foundTarget){
+			updateTarget();
+			isTracking = true;
 
 		} else if ( targetPositionArray.length > 0 && targetPositionArray.length < 20){ //initial calibration
 	    	updateTarget();
