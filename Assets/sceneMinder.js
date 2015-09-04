@@ -9,6 +9,8 @@ private var sepiaOn: boolean = true;
 
 
 function Start () {
+	var ArEnabler:Behaviour = GameObject.Find("ARCamera").GetComponent("QCARBehaviour");
+	ArEnabler.enabled= true;
 
 }
 
