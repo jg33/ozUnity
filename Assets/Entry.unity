@@ -145,6 +145,8 @@ MonoBehaviour:
   tightTracking: 1
   gyroResetter: {fileID: 1638352695}
   foundTarget: 0
+  maxDistanceThreshold: 10
+  maxAngleThreshold: 10
 --- !u!1 &333248819
 GameObject:
   m_ObjectHideFlags: 0
