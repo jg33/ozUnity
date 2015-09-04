@@ -136,7 +136,7 @@ function Update () {
 						break;
 						
 						case 7:
-							cueComponent.playMovie("NoPlaceLikeMoe");
+							cueComponent.playMovie("kazoo");
 							Debug.Log("no place!");
 
 						break;

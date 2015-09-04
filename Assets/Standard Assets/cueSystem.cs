@@ -148,20 +148,23 @@ public class cueSystem : MonoBehaviour{
 				Debug.Log("MoeTest");
 
 			} else if(clipName == "kazoo"){
-				cam.SendMessage("loadMovie", "rainbow04_", SendMessageOptions.DontRequireReceiver);
+				cam.SendMessage("loadMovie", "rainbowAudioTest", SendMessageOptions.DontRequireReceiver);
+				cam.SendMessage("setNumLoops", 1);
+				cam.SendMessage("setLooping", false);
+				cam.SendMessage ("setLastFrame", 1968);
 				cam.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
 				cam.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
-				cam.SendMessage("setNumLoops", 1);
 
+				
 				Debug.Log("kazooooooo");
 
 			} else if(clipName == "NoPlaceLikeMoe"){
 				cam.SendMessage("loadMovie", "NoPlaceLikeMoe", SendMessageOptions.DontRequireReceiver);
 				cam.SendMessage("setNumLoops", 5);
 				cam.SendMessage("setLooping", true);
+				cam.SendMessage("setLastFrame",149);
 				cam.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
 				cam.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
-
 				Debug.Log("NoPlaceLikeMoe");
 				
 			} else if(clipName == "scratches"){
@@ -185,14 +188,21 @@ public class cueSystem : MonoBehaviour{
 				video.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
 				video.SendMessage("setNumLoops", 1);
 				video.SendMessage("setLooping", false);
+				video.SendMessage("setLastFrame",299);
+
 				video.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
 				//video.SendMessage("setNumLoops", 1);
 
 				Debug.Log("moeTest");
 				
 			} else if(clipName == "kazoo"){
-				video.SendMessage("loadMovie", "rainbow04_", SendMessageOptions.DontRequireReceiver);
+				video.SendMessage("loadMovie", "rainbowAudioTest", SendMessageOptions.DontRequireReceiver);
+				video.SendMessage("setNumLoops", 1);
+				video.SendMessage("setLooping", false);
+				video.SendMessage("setLastFrame",1968);
+
 				video.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
+			
 				video.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
 				//video.SendMessage("setNumLoops", 1);
 
@@ -200,6 +210,8 @@ public class cueSystem : MonoBehaviour{
 				video.SendMessage("loadMovie", "NoPlaceLikeMoe", SendMessageOptions.DontRequireReceiver);
 				video.SendMessage("setNumLoops", 5);
 				video.SendMessage("setLooping", true);
+				video.SendMessage("setLastFrame",149);
+
 				video.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
 				video.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
 				Debug.Log("NoPlaceLikeMoe");
