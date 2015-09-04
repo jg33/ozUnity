@@ -1,5 +1,7 @@
 ﻿#pragma strict
 
+
+private var extraButt:GameObject;
 function Start () {
 	
 	if(PlayerPrefs.GetInt("FirstLaunch",0) != 0){
@@ -9,13 +11,8 @@ function Start () {
 
 	}
 
-	if (PlayerPrefs.GetInt("CompletedShow",0) != 0){
-		
-		GameObject.Find("Extras Button").GetComponent(UI.Image).color.a = 255;
-		Debug.Log("EXTRAS BUTTON UP");	
-	
-	}
-	
+	extraButt = GameObject.Find("Extras Button");
+
 	PlayerPrefs.SetInt("FirstLaunch", 1);
 	PlayerPrefs.Save();
 	
@@ -23,7 +20,18 @@ function Start () {
 
 function Update () {
 
+	if(!extraButt){
+		extraButt = GameObject.Find("Extras Button");
 
+	} else if (PlayerPrefs.GetInt("CompletedShow",0) != 0 && extraButt.GetComponent(UI.Image).color.a != 255){
+		
+		extraButt.GetComponent(UI.Image).color.a = 255;
+		Debug.Log("EXTRAS BUTTON UP");	
+	
+	}
+	
+	
+	
 	if(Input.GetKey('d')) {
 		PlayerPrefs.DeleteAll();
 		PlayerPrefs.Save();
