@@ -121,7 +121,7 @@ public class cueSystem : MonoBehaviour{
 	}
 
 	[RPC] public void vibrate(){
-		#if UNITY_IPHONE
+		#if UNITY_IPHONE || UNITY_ANDROID
 		Handheld.Vibrate();
 		#endif
 	}
@@ -135,7 +135,7 @@ public class cueSystem : MonoBehaviour{
 				Debug.Log("randomRainbow");
 				int rando = Random.Range(1,7);
 				string videoString = string.Format("Video/rainbow_{0:00}.mov", rando );
-					#if UNITY_IPHONE
+					#if UNITY_IPHONE || UNITY_ANDROID
 					Handheld.PlayFullScreenMovie(videoString);
 					#endif
 			

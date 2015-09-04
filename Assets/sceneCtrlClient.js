@@ -167,7 +167,7 @@ function Update () {
 		
 		
 		/// Text Cueing ///
-		if (cueComponent.textSelection != currentTextSelection && Application.loadedLevel == 2){
+		if (cueComponent.textSelection != currentTextSelection && Application.loadedLevel == 2 &&currentCue ==1){
 			var msg:GameObject = GameObject.Find("Message");
 			var msgTxt: UI.Text = msg.GetComponent(UI.Text);
 			currentTextSelection = cueComponent.textSelection;
