@@ -133,6 +133,7 @@ public class cueSystem : MonoBehaviour{
 
 			if(clipName == "randomRainbow"){
 				Debug.Log("randomRainbow");
+				Random.seed = Time.frameCount;
 				int rando = Random.Range(1,7);
 				string videoString = string.Format("Video/rainbow_{0:00}.mov", rando );
 					#if UNITY_IPHONE || UNITY_ANDROID
