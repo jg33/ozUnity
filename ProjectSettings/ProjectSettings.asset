@@ -121,9 +121,9 @@ PlayerSettings:
   iOSLaunchScreenCustomXibPath: 
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
-  androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  androidSplashScreen: {fileID: 2800000, guid: 1f09c188ceeae41e0b5183ae4894315c, type: 3}
+  AndroidKeystoreName: OzElements.keystore
+  AndroidKeyaliasName: ozelements
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   androidEnableBanner: 1
