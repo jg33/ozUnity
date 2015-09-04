@@ -25,3 +25,12 @@ function updateTargetPos(){
 	targetPos = GameObject.Find("ImageTargetLocation"+cueComponent.cueNumber.ToString());
 
 }
+
+function overrideTargetPos(x:float,y:float,z:float){
+
+	targetPos.x=x;
+	targetPos.y=y;
+	targetPos.z=z;
+
+
+}
