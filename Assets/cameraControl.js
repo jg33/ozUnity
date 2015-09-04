@@ -22,8 +22,15 @@ public var tightTracking:boolean;
 public var gyroResetter:GameObject;
 public var foundTarget:boolean;
 
-public var maxDistanceThreshold:float = 10;
-public var maxAngleThreshold:float = 10;
+//tolerance is how far it can vary before it ignores the target
+public var maxDistanceTolerance:float = 1;
+public var maxAngleTolerance:float = 1;
+
+//threshold is how far away it can be for [timeout] frames before updating
+public var minDistanceThreshold:float = 10; 
+public var minAngleThreshold:float = 10;
+public var timeout:int = 20;
+private var errorFrames:int = 0;
 
 function Start () {
 	ARCam = GameObject.Find("ARCamera");
@@ -66,32 +73,41 @@ function Update () {
 	} else {
 	
 		//Calculate when to track
-		if (targetPositionArray.length == 0  && foundTarget){
-			updateTarget();
-			isTracking = true;
+		if(foundTarget){
+			if (targetPositionArray.length == 0 ){
+				updateTarget();
+				isTracking = true;
+				errorFrames = 0;
+			} else if ( targetPositionArray.length > 0 && targetPositionArray.length < 20 ){ //initial calibration
+		    	updateTarget();
+		    	isTracking = true;
+		    	Debug.Log("intial tracking....");
+		    } else if ( Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= 0.01 && 
+		    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= maxDistanceTolerance &&
+		    	Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= maxAngleTolerance
+		    	){ 		//used to be 0.01, 1, 1.
 
-		} else if ( targetPositionArray.length > 0 && targetPositionArray.length < 20){ //initial calibration
-	    	updateTarget();
-	    	isTracking = true;
-	    	Debug.Log("intial tracking....");
-	    } else if ( Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= 0.01 && 
-	    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= maxDistanceThreshold &&
-	    	Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= maxAngleThreshold
-	    	){ 		//used to be 0.01, 1, 1.
-
-	    	updateTarget();
-	    	isTracking = true;
-	    	Debug.Log("tracking.... Dist: " + Vector3.Distance(targetPositionArray[targetPositionArray.length-1],ARCam.transform.localPosition) );
-
-	    } else {
-	    	isTracking = false;
-	    }
+		    	updateTarget();
+		    	isTracking = true;
+		    	Debug.Log("tracking.... Dist: " + Vector3.Distance(targetPositionArray[targetPositionArray.length-1],ARCam.transform.localPosition) );
+				errorFrames=0;
+		    } else if (errorFrames > timeout){
+		    	//updateTarget();
+		    	errorFrames=0;
+		    } else if(Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= minDistanceThreshold || 
+		    Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= minAngleThreshold){
+		    	errorFrames++;
+		    }else {
+		    	isTracking = false;
+		    }
+		    
+		    if(isTracking && Time.frameCount%1 == 0 ){
+		    	gyroResetter.SendMessage("setTightTracking",false);
+		    	GameObject.Find("GyroResetter").SendMessage("resetGyro");
+		    	Debug.Log("Gyro Reset!");
+		    };
 	    
-	    if(isTracking && Time.frameCount%1 == 0 ){
-	    	gyroResetter.SendMessage("setTightTracking",false);
-	    	GameObject.Find("GyroResetter").SendMessage("resetGyro");
-	    	Debug.Log("Gyro Reset!");
-	    };
+	    }
 		
 		smoothToTarget(targetPosition, smoothing);
 		
@@ -181,7 +197,7 @@ public function getInvertedGyro(){
 
 public function lostTarget(){
 	isTracking = false;
-
+	foundTarget = false;
 }
 
 public function setTightTracking(b:boolean){

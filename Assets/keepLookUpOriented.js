@@ -14,5 +14,4 @@ function Update () {
 	rot.SetEulerAngles(x,y,z);
 	this.transform.localRotation= rot;
 	
-	Debug.Log(y);
 }
