@@ -136,7 +136,7 @@ function Update () {
 						break;
 						
 						case 7:
-							cueComponent.playMovie("NoPlaceLikeMoe");
+							cueComponent.playMovie("kazoo");
 							Debug.Log("no place!");
 
 						break;
@@ -278,6 +278,7 @@ function setActiveScene(newScene:String){
 		canvasObject = sceneArray[prevCue];
 //		animation["UIFadeOut"].speed = transitionSpeed;
 		canvasObject.GetComponent(Animation).Play("UIFadeOut");
+		GameObject.Find("Camera Container").SendMessage("resetTracking");
 		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length+3);
 		for (j = 0; j< sceneArray.Count  ;j++){ //turn off the rest
 			if(j!=i){

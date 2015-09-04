@@ -491,4 +491,10 @@ public class VideoTexture_FullScreen : MonoBehaviour
 		}
 
 	}
+
+	public void setLastFrame(int _frame){
+		lastFrame = _frame;
+
+
+	}
 }
