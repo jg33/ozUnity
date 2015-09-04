@@ -262,6 +262,7 @@ function setActiveScene(newScene:String){
 		canvasObject.GetComponent(Animation).Play("UIFadeIn");
 	
 		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length+3);
+		GameObject.Find("Camera Container").SendMessage("resetTracking");
 
 		for (var j = 0; j< sceneArray.Count  ;j++){ //turn off the rest
 			if(j!=i){
@@ -296,6 +297,7 @@ function setActiveScene(newScene:String){
 		}
 		canvasObject = sceneArray[0];
 		canvasObject.SetActive(true);
+		GameObject.Find("Camera Container").SendMessage("resetTracking");
 
 	}
 
