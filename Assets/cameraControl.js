@@ -22,6 +22,9 @@ public var tightTracking:boolean;
 public var gyroResetter:GameObject;
 public var foundTarget:boolean;
 
+public var maxDistanceThreshold:float = 10;
+public var maxAngleThreshold:float = 10;
+
 function Start () {
 	ARCam = GameObject.Find("ARCamera");
 	
@@ -71,9 +74,9 @@ function Update () {
 	    	updateTarget();
 	    	isTracking = true;
 	    	Debug.Log("intial tracking....");
-	    } else if ( Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= 0.0001 && 
-	    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= 10 &&
-	    	Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= 10
+	    } else if ( Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= 0.01 && 
+	    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= maxDistanceThreshold &&
+	    	Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= maxAngleThreshold
 	    	){ 		//used to be 0.01, 1, 1.
 
 	    	updateTarget();
