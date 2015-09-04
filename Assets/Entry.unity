@@ -270,6 +270,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
+  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -623,6 +624,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
+  m_TargetEye: 3
   m_HDR: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -717,6 +719,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
+  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -806,7 +809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67decd01da9e4df5a9e75cc2f41fa50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectionIP: 127.0.0.1
+  connectionIP: 192.168.1.4
   portNumber: 16261
   timeout: 300
   cueComponent: {fileID: 1120223039}
@@ -1155,6 +1158,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
+  m_TargetEye: 3
   m_HDR: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -1601,6 +1605,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
+  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
