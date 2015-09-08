@@ -28,9 +28,9 @@ function updateTargetPos(){
 
 function overrideTargetPos(x:float,y:float,z:float){
 
-	targetPos.x=x;
-	targetPos.y=y;
-	targetPos.z=z;
+	targetPos.transform.localPosition.x=x;
+	targetPos.transform.localPosition.y=y;
+	targetPos.transform.localPosition.z=z;
 
 
 }

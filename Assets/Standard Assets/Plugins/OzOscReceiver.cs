@@ -158,6 +158,11 @@ public class OzOscReceiver : MonoBehaviour {
 			cueControl.transitionSpeed = (int)oscMessage.Values[0];
 			break;
 
+		case "/setImageTargetPosition":
+
+
+			break;
+
 		default:
 			Debug.Log("unhandled osc: " + msgValue );
 			break;

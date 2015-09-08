@@ -173,13 +173,12 @@ public class cueSystem : MonoBehaviour{
 				Debug.Log("NoPlaceLikeMoe");
 				
 			} else if(clipName == "scratches"){
-				seqPlayer.SendMessage("loadMovie","scratchSm" );
 				seqPlayer.SendMessage("setFrames", 117);
+				seqPlayer.SendMessage("loadMovie","scratchSm" );
 				seqPlayer.SendMessage("play");
 			} else if(clipName == "tvStatic"){
-				seqPlayer.SendMessage("loadMovie","tvStatic" );
 				seqPlayer.SendMessage("setFrames", 70);
-
+				seqPlayer.SendMessage("loadMovie","tvStatic" );
 				seqPlayer.SendMessage("play");
 			}
 
