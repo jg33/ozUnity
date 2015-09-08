@@ -174,14 +174,18 @@ function Update () {
 			var msg:GameObject = GameObject.Find("Message");
 			var msgTxt: UI.Text = msg.GetComponent(UI.Text);
 			currentTextSelection = cueComponent.textSelection;
-			msgTxt.text = messageText[currentTextSelection];
-			if (messageText[currentTextSelection].Length>140){
-				//msg.transform.GetComponent(RectTransform).anchorMin = Vector2(0,-400);
-				//msg.transform.GetComponent(RectTransform).anchorMax = Vector2(0,800);
-			} else {
-				//msg.transform.GetComponent(RectTransform).anchorMin = Vector2(0,-150);
-				//msg.transform.GetComponent(RectTransform).anchorMax = Vector2(0,300);
-			}
+//			msgTxt.text = messageText[currentTextSelection];
+			
+			msg.SendMessage("changeText", messageText[currentTextSelection]);
+
+
+//			if (messageText[currentTextSelection].Length>140){
+//				//msg.transform.GetComponent(RectTransform).anchorMin = Vector2(0,-400);
+//				//msg.transform.GetComponent(RectTransform).anchorMax = Vector2(0,800);
+//			} else {
+//				//msg.transform.GetComponent(RectTransform).anchorMin = Vector2(0,-150);
+//				//msg.transform.GetComponent(RectTransform).anchorMax = Vector2(0,300);
+//			}
 		}
 		
 		/// Movie Sync ///
