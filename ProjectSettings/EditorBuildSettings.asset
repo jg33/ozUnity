@@ -17,3 +17,5 @@ EditorBuildSettings:
     path: Assets/Poppies_V2/Poppy_V2.unity
   - enabled: 0
     path: Assets/KEVAN_MONTCLAIR_TESTING/LookTests_Evals.unity
+  - enabled: 0
+    path: Assets/coins.unity
