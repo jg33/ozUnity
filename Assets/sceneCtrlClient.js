@@ -56,7 +56,7 @@ function Update () {
 			//GameObject.Destroy(GameObject.Find("Camera Container"));
 			//yield WaitForSeconds(1);
 			GameObject.Find("Camera Container").SendMessage("setTightTracking", false);
-			GameObject.Find("Look Up").GetComponent(Renderer).enabled = true;
+//			GameObject.Find("Look Up").GetComponent(Renderer).enabled = true;
 
 			Debug.Log("Connected! Loading Active Mode!");
 			Application.LoadLevel(2);
@@ -64,16 +64,18 @@ function Update () {
 			camObj = GameObject.Find("Camera");
 			GameObject.Find("RealImageTarget").SendMessage("updateTargetPos");
 
+
 		
 		} else if(Application.loadedLevel == 1 && forcePassive){ //if connected and in passive mode show connected text
 			var alert:GameObject = GameObject.Find("InstructionAlertText");
 			alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
-			
+			GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
+
 		} else if (forcePassive && Application.loadedLevel != 1){
 			//GameObject.Destroy(GameObject.Find("Camera Container"));
 			//yield WaitForSeconds(1);
 			GameObject.Find("Camera Container").SendMessage("setTightTracking", true);			
-			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
+//			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
 
 			Application.LoadLevel(1);
 
@@ -84,6 +86,7 @@ function Update () {
 			transitionSpeed = cueComponent.transitionSpeed;
 			setActiveScene(cueComponent.cueNumber.ToString());
 			GameObject.Find("RealImageTarget").SendMessage("updateTargetPos");
+
 
 		} else if (cueComponent.cueNumber == 1 && Application.loadedLevel == 2 && !GameObject.Find("Scene1")){
 			setActiveScene("1"); // emergency backup goto 1
@@ -228,11 +231,20 @@ function OnConnectedToServer(){
 		connected = true;
 		var alert:GameObject = GameObject.Find("InstructionAlertText");
 		alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
+//		var indicatorAnimator: Animator = GameObject.Find("ConnectedLight").GetComponent(Animator);
+//		indicatorAnimator.SetBool("connected", true);
+		GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
 	}
 
 function OnDisconnectedFromServer(){
 		Debug.Log ("Disconnected From Server");
 		connected = false;
+//		
+//		var indicatorAnimator: Animator = GameObject.Find("ConnectedLight").GetComponent(Animator);
+//		indicatorAnimator.SetBool("connected",false);
+
+		GameObject.Find("ConnectedLight").SendMessage("setConnected", false);
+
 	}
 
 function OnFailedToConnect(error: NetworkConnectionError){
@@ -254,6 +266,8 @@ function setActiveScene(newScene:String){
 	
 	sceneArray = GameObject.Find("Scenes").GetComponent.<sceneList>().sceneArray;
 	
+	GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
+
 	if(i == 1){
 		canvasObject = sceneArray[i];
 		Debug.Log(sceneArray[i]);
@@ -280,6 +294,10 @@ function setActiveScene(newScene:String){
 //		animation["UIFadeOut"].speed = transitionSpeed;
 		canvasObject.GetComponent(Animation).Play("UIFadeOut");
 		GameObject.Find("Camera Container").SendMessage("resetTracking");
+		
+		var lookupAni: Animator = GameObject.Find("Look Up").GetComponent(Animator);
+		lookupAni.SetTrigger("goLookUp");
+		
 		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length+3);
 		for (j = 0; j< sceneArray.Count  ;j++){ //turn off the rest
 			if(j!=i){
@@ -287,6 +305,8 @@ function setActiveScene(newScene:String){
 				canvasObject.SetActive(false);
 			}
 		}
+		
+
 		
 	
 	} else if (i==0){

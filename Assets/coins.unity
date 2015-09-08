@@ -96,15 +96,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 46.5
+      value: 53.9000015
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -131.199997
+      value: -133.800003
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -.899999976
+      value: 2.9000001
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -328,7 +328,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: startDelay
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19900002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_RenderMode
@@ -419,11 +419,24 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 290447179}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d97d9b97b404488684956db8572cc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &290447181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 290447179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a3c54b044d9b443081f1b5c0b768adb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonImage: {fileID: 2800000, guid: 93fcbda1d78a8430aa5aba6d6a9989b8, type: 3}
+  buttonImage2: {fileID: 2800000, guid: 42d299253a57245a6b0f8ae8cb0f584a, type: 3}
 --- !u!4 &341845629 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
@@ -441,15 +454,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 37.4000015
+      value: 44.7999992
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -128.100006
+      value: -130.699997
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -13.1999998
+      value: -9.39999962
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -673,7 +686,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: startDelay
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19900002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_RenderMode
@@ -767,15 +780,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 46.5
+      value: 53.9000015
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -131.199997
+      value: -133.800003
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -13.1999998
+      value: -9.39999962
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -999,7 +1012,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: startDelay
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19900002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_RenderMode
@@ -1097,11 +1110,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: -12.8000002
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1163,15 +1176,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 37.4000015
+      value: 44.7999992
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -128.100006
+      value: -130.699997
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -.899999976
+      value: 2.9000001
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1395,7 +1408,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: startDelay
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19900002, guid: 213c3312568623e47903adc329c8115c, type: 2}
       propertyPath: m_RenderMode
