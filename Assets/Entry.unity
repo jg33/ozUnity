@@ -146,7 +146,7 @@ MonoBehaviour:
   gyroResetter: {fileID: 1638352695}
   foundTarget: 0
   maxDistanceTolerance: 2
-  maxAngleTolerance: 2
+  maxAngleTolerance: 1
   minDistanceThreshold: 10
   minAngleThreshold: 10
   timeout: 20
