@@ -75,7 +75,7 @@ function Update () {
 			//GameObject.Destroy(GameObject.Find("Camera Container"));
 			//yield WaitForSeconds(1);
 			GameObject.Find("Camera Container").SendMessage("setTightTracking", true);			
-//			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
+			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
 
 			Application.LoadLevel(1);
 
@@ -266,7 +266,7 @@ function setActiveScene(newScene:String){
 	
 	sceneArray = GameObject.Find("Scenes").GetComponent.<sceneList>().sceneArray;
 	
-	GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
+	//GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
 
 	if(i == 1){
 		canvasObject = sceneArray[i];
