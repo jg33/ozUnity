@@ -41,7 +41,7 @@ function Update () {
 		currentEvent = cueComponent.tempEventTriggers ;
 		switch( currentEvent ){
 						case 1:
-						cueComponent.playMovie("MoeTest");
+						cueComponent.playMovie("NoPlaceLikeMoe");
 						Debug.Log("MoeTest!");
 
 						break;
