@@ -92,30 +92,16 @@ public class OzOscReceiver : MonoBehaviour {
 			break;
 		case "/triggerEvent":
 			int eventID = (int)oscMessage.Values[0];
-
 			cueControl.tempEventTriggers = eventID;
 			Debug.Log ("Event! " + eventID);
-//
-//			switch (eventID){
-//				//MOE_VIDEO, RANDOM_RAINBOW, TORNADO_ALERT, APPLAUSE, AWW, NO_PLACE
-//			case 0:
-//				break;
-//
-//			case 1:
-//				break;
-//
-//
-//				default: 
-//
-//				break;	
-//
-//			}
-
 			break;
+
+
 		case "/selectText":
 			cueControl.textSelection = (int)oscMessage.Values[0];
-
+			Debug.Log("select text");
 			break;	
+
 		case "/sendText":
 
 			break;
@@ -160,6 +146,11 @@ public class OzOscReceiver : MonoBehaviour {
 
 		case "/setImageTargetPosition":
 
+
+			break;
+
+		case "/playAudio":
+			//NetworkView nv = GameObject.Find("Network").GetComponent(NetworkView);
 
 			break;
 

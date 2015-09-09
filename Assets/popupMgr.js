@@ -80,9 +80,11 @@ function OnGUI()
 function Update(){
 	if(listEntrySelected != prevSelected ){
 		GameObject.Find("Network").SendMessage("selectText", listEntrySelected);
-	
-			}
+		prevSelected = listEntrySelected;
+		Debug.Log("text selected in dropdown");
+	}
 	
 }
+
 
 
