@@ -100,9 +100,9 @@ function Update () {
 		
 				switch( currentEventCue ){
 						case 1:
-						cueComponent.playMovie("MoeTest");
-						Debug.Log("MoeTest!");
-
+							cueComponent.playMovie("MoeTest");
+							Debug.Log("MoeTest!");
+	
 						break;
 				
 						case 2:
@@ -112,30 +112,25 @@ function Update () {
 						break;
 				
 						case 3:
-						cueComponent.stopMovie();
-
+							cueComponent.stopMovie();
+							cueComponent.stopAudio();
 						break;
 						
 						case 4:
-						
-						cueComponent.playAudio("noPlace");
-						Debug.Log("no place audio!");
+							cueComponent.playAudio("noPlace");
+							Debug.Log("no place audio!");
 
 						break;
 						
-						case 5:
-						
-						cueComponent.playMovie("randomRainbow");
-						Debug.Log("random rainbow!");
+						case 5:				
+							cueComponent.playMovie("randomRainbow");
+							Debug.Log("random rainbow!");
 
 						break;
 						
 						case 6:
-							camObj = GameObject.Find("Camera");
-							var clip :AudioClip= Resources.Load("Audience_Applause_1");
-							camObj.GetComponent(AudioSource).clip = clip;
-							camObj.GetComponent(AudioSource).Play(); 
-							Debug.Log("APPLAUSE!");
+							cueComponent.playAudio("applause");
+							Debug.Log("applesauce.");
 						break;
 						
 						case 7:
@@ -157,6 +152,35 @@ function Update () {
 						case 10:
 							setCompletedShow();
 						break;
+						
+						case 11:
+							cueComponent.playAudio("wind1");
+							Debug.Log("wind!");
+						break;
+						
+						
+						case 12:
+							cueComponent.playAudio("cicada");
+							Debug.Log("cicada!");
+						break;	
+						
+						case 13:
+							cueComponent.playAudio("frogs1");
+							Debug.Log("frogs!");						
+						break;
+						
+						
+						case 14:
+							cueComponent.playAudio("drums1");
+							Debug.Log("drums1!");	
+						break;
+						
+						case 15:
+							cueComponent.playAudio("drums2");
+							Debug.Log("drums2!");	
+						break;
+						
+						
 						
 						default: 
 						break;

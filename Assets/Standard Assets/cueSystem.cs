@@ -240,20 +240,65 @@ public class cueSystem : MonoBehaviour{
 	}
 	
 	[RPC] public void  playAudio(string clipName){
+
 		if(Network.isClient){
 			AudioSource source = (AudioSource)GameObject.Find("Camera").GetComponent<AudioSource>();
+			AudioClip clip;
 
-			if(clipName == "noPlace"){
-				AudioClip clip = Resources.Load ("no_place_like_home2") as AudioClip;
-				source.Play();
+			source.Stop();
+
+			switch (clipName){
+			case "applause":
+				clip = Resources.Load ("Audience_Applause_1") as AudioClip;
+				break;
+			case "noPlace":
+				clip = Resources.Load ("no_place_like_home2") as AudioClip;
+				break;
+			case "cicada":
+				clip = Resources.Load ("cicada") as AudioClip;
+				break;
+			case "cicada2":
+				clip = Resources.Load ("cicada2") as AudioClip;
+				break;
+			case "frogs1":
+				clip = Resources.Load ("frogs1") as AudioClip;				
+				break;
+			case "frogs2":
+				clip = Resources.Load ("frogs2") as AudioClip;				
+				break;
+			case "drums1":
+				clip = Resources.Load ("DRUMS-76") as AudioClip;				
+				break;
+			case "drums2":
+				clip = Resources.Load ("riser drum open") as AudioClip;				
+				break;
+			case "wind":
+				clip = Resources.Load ("wind") as AudioClip;	
+				break;
+			case "wind2":
+				clip = Resources.Load ("wind2") as AudioClip;	
+				break;
+			case "wind3":
+				clip = Resources.Load ("wind3") as AudioClip;	
+				break;
+			case "wind4":
+				clip = Resources.Load ("wind4") as AudioClip;
+				break;
+
+			default:
+				clip = Resources.Load ("0") as AudioClip;
+				break;
 			}
+			source.clip = clip;
+			source.Play();
 
 		}
 		
 	}
 	
 	[RPC] public void stopAudio(){
-
+		AudioSource source = (AudioSource)GameObject.Find("Camera").GetComponent<AudioSource>();
+		source.Stop();
 		
 	}
 
