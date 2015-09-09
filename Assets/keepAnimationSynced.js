@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-enum Scene{tornado,munchkin,poppy,monkey};
+enum Scene{tornado,munchkin,poppy,monkey,fire};
 
 public var scene:Scene;
 private var cueCtrl:cueSystem;
@@ -55,7 +55,12 @@ function Update () {
 			}	
 		break;
 		
-		
+		case Scene.fire:
+			if(cueCtrl.fireState != currentState){
+				currentState = cueCtrl.fireState;
+				ani.SetInteger("state", currentState);
+			}	
+		break;
 		
 		default:
 		break;

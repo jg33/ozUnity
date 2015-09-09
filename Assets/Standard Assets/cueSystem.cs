@@ -326,5 +326,7 @@ public class cueSystem : MonoBehaviour{
 	public void setMonkeyState(float i){
 		monkeyState = (int) i;
 	}
-
+	public void setFireState(float i){
+		fireState = (int) i;
+	}
 }
