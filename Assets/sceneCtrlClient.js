@@ -69,13 +69,16 @@ function Update () {
 		} else if(Application.loadedLevel == 1 && forcePassive){ //if connected and in passive mode show connected text
 			var alert:GameObject = GameObject.Find("InstructionAlertText");
 			alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
-			GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
+			var alertPanel:GameObject = GameObject.Find("InstructionAlertPanel");
+			alertPanel.GetComponent(UI.Image).color = Color(0.1,0.733,0.3);
+			
+//			GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
 
 		} else if (forcePassive && Application.loadedLevel != 1){
 			//GameObject.Destroy(GameObject.Find("Camera Container"));
 			//yield WaitForSeconds(1);
 			GameObject.Find("Camera Container").SendMessage("setTightTracking", true);			
-			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
+//			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
 
 			Application.LoadLevel(1);
 
@@ -236,6 +239,10 @@ function Update () {
 //			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
 			Application.LoadLevel(1);
 			
+			var alert2:GameObject = GameObject.Find("InstructionAlertText");
+			alert2.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
+			var alertPanel2:GameObject = GameObject.Find("InstructionAlertPanel");
+			alert2.GetComponent(UI.Image).color = Color(1,1,1);
 
 		}
 	
@@ -272,7 +279,10 @@ function OnDisconnectedFromServer(){
 //		indicatorAnimator.SetBool("connected",false);
 
 		GameObject.Find("ConnectedLight").SendMessage("setConnected", false);
-
+		var alert:GameObject = GameObject.Find("InstructionAlertText");
+		alert.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
+		var alertPanel:GameObject = GameObject.Find("InstructionAlertPanel");
+		alert.GetComponent(UI.Image).color = Color(1,1,1);
 	}
 
 function OnFailedToConnect(error: NetworkConnectionError){

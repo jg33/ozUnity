@@ -2611,7 +2611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &283364748
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7247,7 +7247,7 @@ GameObject:
   - 222: {fileID: 583409522}
   - 114: {fileID: 583409521}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: InstructionAlertPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

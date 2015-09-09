@@ -137,11 +137,11 @@ public class cueSystem : MonoBehaviour{
 				int rando = Random.Range(1,7);
 				string videoString = string.Format("Video/rainbow_{0:00}.mp4", rando );
 					#if UNITY_IPHONE
-					Handheld.PlayFullScreenMovie(videoString);
+				Handheld.PlayFullScreenMovie(videoString, Color.black, FullScreenMovieControlMode.Hidden);
 					#elif UNITY_ANDROID
 					string path = Application.persistentDataPath + "/" + videoString;
 					Debug.LogError( "The video path: " + path );
-					Handheld.PlayFullScreenMovie( Application.persistentDataPath + "/" + videoString);
+				Handheld.PlayFullScreenMovie( Application.persistentDataPath + "/" + videoString, Color.black, FullScreenMovieControlMode.Hidden);
 					#endif
 			
 			} else if(clipName == "MoeTest"){
