@@ -2,7 +2,8 @@
 
 
 public var AREnabled:boolean = true;
-private var ARCam:Behaviour;
+private var ARCam:Vuforia.QCARAbstractBehaviour;
+private var webCamBehavior:Vuforia.WebCamAbstractBehaviour;
 
 function Start () {
 
@@ -11,11 +12,20 @@ function Start () {
 function Update () {
 	if(!ARCam){
 		ARCam = GameObject.Find("ARCamera").GetComponent("QCARBehaviour");
+		webCamBehavior = ARCam.gameObject.GetComponent("WebCamBehavior");
 	}
 	
 	if(AREnabled && !ARCam.enabled){
 		ARCam.enabled = true;
+		Debug.Log("Enabled AR");
 	} else if (!AREnabled && ARCam.enabled){
-		ARCam.enabled = false;
-	}
+		delayDisable(3);
+		Debug.Log("Disabled AR");
+	} 
+}
+
+function delayDisable(secs:float){
+	yield WaitForSeconds(secs);
+	ARCam.enabled = false;
+
 }

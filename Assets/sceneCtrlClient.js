@@ -62,7 +62,8 @@ function Update () {
 			Application.LoadLevel(2);
 			currentCue = -1; //force scene refresh
 			camObj = GameObject.Find("Camera");
-			GameObject.Find("RealImageTarget").SendMessage("updateTargetPos");
+			var realTarget:GameObject = GameObject.Find("RealImageTarget");
+			if(realTarget) realTarget.SendMessage("updateTargetPos");
 
 
 		
@@ -240,9 +241,9 @@ function Update () {
 			Application.LoadLevel(1);
 			
 			var alert2:GameObject = GameObject.Find("InstructionAlertText");
-			alert2.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
+			if (alert2) alert2.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
 			var alertPanel2:GameObject = GameObject.Find("InstructionAlertPanel");
-			alert2.GetComponent(UI.Image).color = Color(1,1,1);
+			if(alertPanel2) alertPanel2.GetComponent(UI.Image).color = Color(1,1,1);
 
 		}
 	
@@ -268,7 +269,7 @@ function OnConnectedToServer(){
 		alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
 //		var indicatorAnimator: Animator = GameObject.Find("ConnectedLight").GetComponent(Animator);
 //		indicatorAnimator.SetBool("connected", true);
-		GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
+//		GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
 	}
 
 function OnDisconnectedFromServer(){
@@ -278,11 +279,11 @@ function OnDisconnectedFromServer(){
 //		var indicatorAnimator: Animator = GameObject.Find("ConnectedLight").GetComponent(Animator);
 //		indicatorAnimator.SetBool("connected",false);
 
-		GameObject.Find("ConnectedLight").SendMessage("setConnected", false);
+//		GameObject.Find("ConnectedLight").SendMessage("setConnected", false);
 		var alert:GameObject = GameObject.Find("InstructionAlertText");
-		alert.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
+		if(alert) alert.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
 		var alertPanel:GameObject = GameObject.Find("InstructionAlertPanel");
-		alert.GetComponent(UI.Image).color = Color(1,1,1);
+		if(alertPanel) alertPanel .GetComponent(UI.Image).color = Color(1,1,1);
 	}
 
 function OnFailedToConnect(error: NetworkConnectionError){
@@ -319,7 +320,7 @@ function setActiveScene(newScene:String){
 		for (var j = 0; j< sceneArray.Count  ;j++){ //turn off the rest
 			if(j!=i){
 				canvasObject = sceneArray[j];
-				canvasObject.SetActive(false);
+				if (canvasObject) canvasObject.SetActive(false);
 			}
 		}
 		
@@ -340,7 +341,7 @@ function setActiveScene(newScene:String){
 		for (j = 0; j< sceneArray.Count  ;j++){ //turn off the rest
 			if(j!=i){
 				canvasObject = sceneArray[j];
-				canvasObject.SetActive(false);
+				if(canvasObject) canvasObject.SetActive(false);
 			}
 		}
 		
