@@ -118,7 +118,7 @@ Transform:
   - {fileID: 1638352696}
   - {fileID: 2058628100}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!114 &228227264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   tightTracking: 1
   gyroResetter: {fileID: 1638352695}
   foundTarget: 0
-  maxDistanceTolerance: 2
+  maxDistanceTolerance: 1
   maxAngleTolerance: 1
   minDistanceThreshold: 10
   minAngleThreshold: 10
@@ -885,7 +885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67decd01da9e4df5a9e75cc2f41fa50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectionIP: 127.0.0.1
+  connectionIP: '192.168.1.2 '
   portNumber: 16261
   timeout: 300
   cueComponent: {fileID: 1120223039}
