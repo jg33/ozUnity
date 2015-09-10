@@ -103,8 +103,8 @@ function Update () {
 		
 				switch( currentEventCue ){
 						case 1:
-							cueComponent.playMovie("MoeTest");
-							Debug.Log("MoeTest!");
+							cueComponent.playMovie("judyInterview");
+							Debug.Log("judyInterview!");
 	
 						break;
 				
@@ -204,7 +204,7 @@ function Update () {
 //			msgTxt.text = messageText[currentTextSelection];
 			
 			msg.SendMessage("changeText", messageText[currentTextSelection]);
-
+			Debug.Log("Text Changed!");
 
 //			if (messageText[currentTextSelection].Length>140){
 //				//msg.transform.GetComponent(RectTransform).anchorMin = Vector2(0,-400);
@@ -380,8 +380,8 @@ function handleEvent(state:TriggeredEvents){
 function setupText(){
 
 	messageText[0]= " ";
-	messageText[1]= "App ready... Please wait.";
-	messageText[2]= "There's only one way to succeed in this business. Step on those guys. Gouge their eyes out. Trample on them. Kick them in the balls. You'll be a smash.";
+	messageText[1]= " ";
+	messageText[2]= "App ready... Please wait.";
 	messageText[3]= "'Ding Dong' reached number 2 in the UK Singles Chart following the death of Margaret Thatcher on 8 April 2013.";
 	messageText[4]= "Which";
 	messageText[5]= "Golden Snitch";

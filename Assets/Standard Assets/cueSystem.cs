@@ -180,6 +180,10 @@ public class cueSystem : MonoBehaviour{
 				seqPlayer.SendMessage("setFrames", 70);
 				seqPlayer.SendMessage("loadMovie","tvStatic" );
 				seqPlayer.SendMessage("play");
+			} else if(clipName == "judyInterview"){
+				seqPlayer.SendMessage("setFrames", 185);
+				seqPlayer.SendMessage("loadMovie","judyInterview" );
+				seqPlayer.SendMessage("play");
 			}
 
 		
