@@ -8,7 +8,7 @@ public class androidObbManager : MonoBehaviour {
 	
 	void Start () {
 		#if UNITY_ANDROID
-	//	StartCoroutine( ExtractObbDatasets() );
+		StartCoroutine( ExtractObbDatasets() );
 		#endif
 	}
 	private IEnumerator ExtractObbDatasets () {
