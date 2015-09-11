@@ -266,7 +266,9 @@ function OnConnectedToServer(){
 		Debug.Log ("Connected To Server");
 		connected = true;
 		var alert:GameObject = GameObject.Find("InstructionAlertText");
-		alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
+		if (alert) alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
+		var alertPanel:GameObject = GameObject.Find("InstructionAlertPanel");
+		if(alertPanel) alertPanel .GetComponent(UI.Image).color = Color(0.1,0.733,0.3);
 //		var indicatorAnimator: Animator = GameObject.Find("ConnectedLight").GetComponent(Animator);
 //		indicatorAnimator.SetBool("connected", true);
 //		GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
