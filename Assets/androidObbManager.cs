@@ -37,21 +37,19 @@ public class androidObbManager : MonoBehaviour {
 		foreach (string filename in filesInOBB) {
 
 			//Debug.LogError("Attempting to load: " + filename + " " + Path.GetFileName(filename));
-			if (!filename.EndsWith(".meta")) {
 
-				WWW fileRequest = new WWW("file:/"+filename);
+			WWW fileRequest = new WWW(filename);
 
-				yield return fileRequest;
+			yield return fileRequest;
 
-				if (!string.IsNullOrEmpty (fileRequest.error)) {
-					Debug.LogError ("QCAR FILES DIDN'T LOAD! " + fileRequest.error);
-					Debug.Log(fileRequest.url);
+			if (!string.IsNullOrEmpty (fileRequest.error)) {
+				Debug.LogError ("QCAR FILES DIDN'T LOAD! " + fileRequest.error);
+				Debug.Log(fileRequest.url);
+			} else {
+				if ( filename.EndsWith(".mp4") ) {
+					Save(fileRequest, toDir + "/Video/" + Path.GetFileName(filename) );
 				} else {
-					if ( filename.EndsWith(".mp4") ) {
-						Save(fileRequest, toDir + "/Video/" + Path.GetFileName(filename) );
-					} else {
-						Save(fileRequest, toDir + "/QCAR/" + Path.GetFileName(filename) );
-					}
+					Save(fileRequest, toDir + "/QCAR/" + Path.GetFileName(filename) );
 				}
 			}
 		}
@@ -66,6 +64,6 @@ public class androidObbManager : MonoBehaviour {
 		if(File.Exists(outputPath))
 			Debug.LogWarning("File successfully saved at: " + outputPath);
 		else
-			Debug.LogWarning("Failure!! - File does not exist at: " + outputPath);
+			Debug.LogError("Failure!! - File does not exist at: " + outputPath);
 	}
 }
