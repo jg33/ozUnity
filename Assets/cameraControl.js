@@ -32,6 +32,9 @@ public var minAngleThreshold:float = 10;
 public var timeout:int = 20;
 private var errorFrames:int = 0;
 
+private var backgroundPlane:GameObject;
+private var virtualBackgroundPlane:GameObject;
+
 function Start () {
 	ARCam = GameObject.Find("ARCamera");
 	
@@ -43,6 +46,16 @@ function Start () {
 }
 
 function Update () {
+	
+	if(!backgroundPlane){
+		backgroundPlane = GameObject.Find("BackgroundPlane");
+	}
+	
+	if(!virtualBackgroundPlane){
+		virtualBackgroundPlane = GameObject.Find("Virtual BackgroundPlane");
+	
+	}
+	
 	if (GameObject.Find("TextureBufferCamera")){
 		cameraCam = GameObject.Find("TextureBufferCamera");
 		cameraCam.transform.localPosition.x = 1000; //hide camera mirroring cam
@@ -56,8 +69,8 @@ function Update () {
 		var cam:Camera = ARCam.GetComponentsInChildren(Camera)[0];
 		projMatrix = cam.get_projectionMatrix();
 	
-		GameObject.Find("BackgroundPlane").transform.localScale = GameObject.Find("Virtual BackgroundPlane").transform.localScale;
-		GameObject.Find("Virtual BackgroundPlane").GetComponent.<Renderer>().enabled = false;
+		backgroundPlane.transform.localScale = virtualBackgroundPlane.transform.localScale;
+		virtualBackgroundPlane.GetComponent.<Renderer>().enabled = false;
 	
 		cam = this.GetComponentsInChildren(Camera)[0];
 		cam.set_projectionMatrix(projMatrix);
@@ -174,9 +187,9 @@ function updateTarget(){
 	var cam:Camera = ARCam.GetComponentsInChildren(Camera)[0];
 	projMatrix = cam.get_projectionMatrix();
 	
-	GameObject.Find("BackgroundPlane").transform.localScale = GameObject.Find("Virtual BackgroundPlane").transform.localScale;
+	backgroundPlane.transform.localScale = virtualBackgroundPlane.transform.localScale;
 	//GameObject.Find("BackgroundPlane").transform.localScale = Vector3(2368,1,1435);
-	GameObject.Find("Virtual BackgroundPlane").GetComponent.<Renderer>().enabled = false;
+	virtualBackgroundPlane.GetComponent.<Renderer>().enabled = false;
 	
 	cam = this.GetComponentsInChildren(Camera)[0];
 	cam.set_projectionMatrix(projMatrix);
