@@ -885,7 +885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67decd01da9e4df5a9e75cc2f41fa50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectionIP: 192.168.1.2
+  connectionIP: 192.168.1.11
   portNumber: 16261
   timeout: 300
   cueComponent: {fileID: 1120223039}
@@ -928,6 +928,8 @@ MonoBehaviour:
   monkeyState: 0
   fireState: 0
   forcePassive: 0
+  imageTargetX: -1
+  imageTargetY: -1
 --- !u!4 &1120223040
 Transform:
   m_ObjectHideFlags: 0
