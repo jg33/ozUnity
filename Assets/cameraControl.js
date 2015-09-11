@@ -32,6 +32,8 @@ public var minAngleThreshold:float = 10;
 public var timeout:int = 20;
 private var errorFrames:int = 0;
 
+private var backgroundPlane:GameObject;
+
 function Start () {
 	ARCam = GameObject.Find("ARCamera");
 	
@@ -40,6 +42,8 @@ function Start () {
 	targetPositionArray = new Array();
 	targetRotationArray = new Array();
 	targetGyroCorrectionArray = new Array();
+	
+	backgroundPlane = GameObject.Find("BackgroundPlane");
 }
 
 function Update () {
@@ -56,12 +60,11 @@ function Update () {
 		var cam:Camera = ARCam.GetComponentsInChildren(Camera)[0];
 		projMatrix = cam.get_projectionMatrix();
 	
-		GameObject.Find("BackgroundPlane").transform.localScale = GameObject.Find("Virtual BackgroundPlane").transform.localScale;
+		backgroundPlane.transform.localScale = GameObject.Find("Virtual BackgroundPlane").transform.localScale;
 		GameObject.Find("Virtual BackgroundPlane").GetComponent.<Renderer>().enabled = false;
 	
 		cam = this.GetComponentsInChildren(Camera)[0];
 		cam.set_projectionMatrix(projMatrix);
-		
 		
 		// motion blur toggle //
 //		var motionAmp:Behaviour = cam.gameObject.GetComponent("AmplifyMotionEffect");
@@ -174,9 +177,9 @@ function updateTarget(){
 	var cam:Camera = ARCam.GetComponentsInChildren(Camera)[0];
 	projMatrix = cam.get_projectionMatrix();
 	
-	GameObject.Find("BackgroundPlane").transform.localScale = GameObject.Find("Virtual BackgroundPlane").transform.localScale;
+	backgroundPlane.transform.localScale = GameObject.Find("Virtual BackgroundPlane").transform.localScale;
 	//GameObject.Find("BackgroundPlane").transform.localScale = Vector3(2368,1,1435);
-	GameObject.Find("Virtual BackgroundPlane").GetComponent.<Renderer>().enabled = false;
+	backgroundPlane.GetComponent.<Renderer>().enabled = false;
 	
 	cam = this.GetComponentsInChildren(Camera)[0];
 	cam.set_projectionMatrix(projMatrix);
@@ -188,11 +191,11 @@ function updateTarget(){
 
 
 public function getInvertedGyro(){
-    		var  invertedOrientation:Quaternion;
-    		invertedOrientation = Quaternion.Inverse(GameObject.Find("UPFTHeadTracker").transform.localRotation);
-    		var invertedEulers = invertedOrientation.eulerAngles;
-    		invertedOrientation = Quaternion.Euler(invertedEulers.x, invertedEulers.y, invertedEulers.z   );
-    		return invertedOrientation;
+	var  invertedOrientation:Quaternion;
+	invertedOrientation = Quaternion.Inverse(GameObject.Find("UPFTHeadTracker").transform.localRotation);
+	var invertedEulers = invertedOrientation.eulerAngles;
+	invertedOrientation = Quaternion.Euler(invertedEulers.x, invertedEulers.y, invertedEulers.z   );
+	return invertedOrientation;
 }
 
 public function lostTarget(){

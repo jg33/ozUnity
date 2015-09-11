@@ -8,7 +8,7 @@ public class androidObbManager : MonoBehaviour {
 	
 	void Start () {
 		#if UNITY_ANDROID
-		StartCoroutine( ExtractObbDatasets() );
+	//	StartCoroutine( ExtractObbDatasets() );
 		#endif
 	}
 	private IEnumerator ExtractObbDatasets () {
@@ -25,7 +25,7 @@ public class androidObbManager : MonoBehaviour {
 		List<string> filesInOBB = new List<string>();
 		filesInOBB.Add ( Application.streamingAssetsPath + "/QCAR/ozUnity.xml" );
 		filesInOBB.Add ( Application.streamingAssetsPath + "/QCAR/ozUnity.dat" );
-		
+
 		filesInOBB.Add ( Application.streamingAssetsPath + "/Video/rainbow_01.mp4" );
 		filesInOBB.Add ( Application.streamingAssetsPath + "/Video/rainbow_02.mp4" );
 		filesInOBB.Add ( Application.streamingAssetsPath + "/Video/rainbow_03.mp4" );
@@ -39,12 +39,13 @@ public class androidObbManager : MonoBehaviour {
 			//Debug.LogError("Attempting to load: " + filename + " " + Path.GetFileName(filename));
 			if (!filename.EndsWith(".meta")) {
 
-				WWW fileRequest = new WWW(filename);
+				WWW fileRequest = new WWW("file:/"+filename);
 
 				yield return fileRequest;
 
 				if (!string.IsNullOrEmpty (fileRequest.error)) {
 					Debug.LogError ("QCAR FILES DIDN'T LOAD! " + fileRequest.error);
+					Debug.Log(fileRequest.url);
 				} else {
 					if ( filename.EndsWith(".mp4") ) {
 						Save(fileRequest, toDir + "/Video/" + Path.GetFileName(filename) );
@@ -55,16 +56,16 @@ public class androidObbManager : MonoBehaviour {
 			}
 		}
 		//Tell QCAR to re-search for files; it searches before the files are loaded.
-		GameObject.Find ("ARCamera").GetComponent<DataSetLoadBehaviour> ().AddOSSpecificExternalDatasetSearchDirs ();
+		GameObject.Find ("ARCamera").GetComponent<DatabaseLoadBehaviour> ().AddOSSpecificExternalDatasetSearchDirs ();
 	}
 	private void Save(WWW www, string outputPath) {
-		Debug.LogError( "Writing File: " + www.url + " to: " + outputPath);
+		Debug.LogWarning( "Writing File: " + www.url + " to: " + outputPath);
 		File.WriteAllBytes(outputPath, www.bytes);
 		
 		// Verify that the File has been actually stored
 		if(File.Exists(outputPath))
 			Debug.LogWarning("File successfully saved at: " + outputPath);
 		else
-			Debug.LogError("Failure!! - File does not exist at: " + outputPath);
+			Debug.LogWarning("Failure!! - File does not exist at: " + outputPath);
 	}
 }

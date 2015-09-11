@@ -10,7 +10,7 @@ function Start () {
 
 function Update () {
 	if(!ARCam){
-		ARCam = GameObject.Find("ARCamera").GetComponent("QCARBehaviour");
+		ARCam = GameObject.Find("ARCamera").GetComponent("VuforiaBehaviour");
 	}
 	
 	if(AREnabled && !ARCam.enabled){

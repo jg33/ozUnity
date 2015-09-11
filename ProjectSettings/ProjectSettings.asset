@@ -77,6 +77,7 @@ PlayerSettings:
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
+  virtualRealitySupported: 0
   productGUID: edd5aa87491414ca59ea2b08cfbbb063
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 14
@@ -91,6 +92,9 @@ PlayerSettings:
   APKExpansionFiles: 1
   preloadShaders: 0
   StripUnusedMeshComponents: 1
+  VertexChannelCompressionMask:
+    serializedVersion: 2
+    m_Bits: 238
   iPhoneSdkVersion: 988
   iPhoneTargetOSVersion: 22
   uIPrerenderedIcon: 0
@@ -206,6 +210,8 @@ PlayerSettings:
   ps4SaveDataImagePath: 
   ps4BGMPath: 
   ps4ShareFilePath: 
+  ps4ShareOverlayImagePath: 
+  ps4PrivacyGuardImagePath: 
   ps4NPtitleDatPath: 
   ps4RemotePlayKeyAssignment: -1
   ps4EnterButtonAssignment: 1
@@ -268,7 +274,6 @@ PlayerSettings:
   psp2InfoBarOnStartup: 0
   psp2InfoBarColor: 0
   psmSplashimage: {fileID: 0}
-  virtualRealitySupported: 0
   spritePackerPolicy: 
   scriptingDefineSymbols:
     1: IS_UNITYEDITOR_ANIMATIONS_AVAILABLE;IS_CANDLELIGHT_HYPERTEXT_AVAILABLE;IS_CANDLELIGHT_SCENE_GUI_AVAILABLE
