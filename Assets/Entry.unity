@@ -894,6 +894,7 @@ MonoBehaviour:
   prevCue: 0
   sceneArray: []
   timeoutCounter: 0
+  disconnectedTimeout: 1000
 --- !u!148 &1120223038
 NetworkView:
   m_ObjectHideFlags: 0
