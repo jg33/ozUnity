@@ -111,7 +111,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 228227262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 333248820}
@@ -928,6 +928,8 @@ MonoBehaviour:
   monkeyState: 0
   fireState: 0
   forcePassive: 0
+  imageTargetX: -1
+  imageTargetY: -1
 --- !u!4 &1120223040
 Transform:
   m_ObjectHideFlags: 0
