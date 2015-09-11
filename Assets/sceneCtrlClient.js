@@ -27,6 +27,9 @@ private var currentTextSelection: int = 0;
 
 private var transitionSpeed : int =1;
 
+public var disconnectedTimeout: int = 100;
+private var disconnectedTimer: int = 0;
+
 // one-shot events that fire on cue or never //
 enum TriggeredEvents{ MOE_VIDEO, RANDOM_RAINBOW, TORNADO_ALERT, APPLAUSE, AWW, NO_PLACE };
 
@@ -231,19 +234,33 @@ function Update () {
 		
 	} else{ //not connected
 	
-		if (Application.loadedLevel != 1 ){
+		if (Application.loadedLevel == 2 ){ //if in active mode and disconnected, try to connect!
 			
-			//GameObject.Destroy(GameObject.Find("Camera Container"));
-			//yield WaitForSeconds(1);
-			Debug.Log("Disconnected! Loading Passive Mode! :'(");
-			GameObject.Find("Camera Container").SendMessage("setTightTracking", true);
-//			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
-			Application.LoadLevel(1);
+			if(disconnectedTimer > disconnectedTimeout){ //timeout connection, kick to passive
+				disconnectedTimer = 0;
+
+				Debug.Log("Disconnected! Loading Passive Mode! :'(");
+				GameObject.Find("Camera Container").SendMessage("setTightTracking", true);
+				Application.LoadLevel(1);
 			
-			var alert2:GameObject = GameObject.Find("InstructionAlertText");
-			if (alert2) alert2.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
-			var alertPanel2:GameObject = GameObject.Find("InstructionAlertPanel");
-			if(alertPanel2) alertPanel2.GetComponent(UI.Image).color = Color(1,1,1);
+				var alert2:GameObject = GameObject.Find("InstructionAlertText");
+				if (alert2) alert2.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
+				var alertPanel2:GameObject = GameObject.Find("InstructionAlertPanel");
+				if(alertPanel2) alertPanel2.GetComponent(UI.Image).color = Color(1,1,1);
+			
+			} else {
+				Debug.Log("Disconnected for "+disconnectedTimer+"/"+disconnectedTimeout);
+				if(disconnectedTimer%30 == 0){ 
+					Network.Connect (connectionIP, portNumber); //try really hard to reconnect
+					Debug.Log("trying to connect");
+				}
+				disconnectedTimer++;
+			}
+			
+
+			
+			
+
 
 		}
 	
@@ -265,8 +282,14 @@ function Update () {
 function OnConnectedToServer(){
 		Debug.Log ("Connected To Server");
 		connected = true;
-		var alert:GameObject = GameObject.Find("InstructionAlertText");
-		alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
+		disconnectedTimer = 0;
+
+		if(Application.loadedLevel ==1){
+			var alert:GameObject = GameObject.Find("InstructionAlertText");
+			if (alert) alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
+			var alertPanel:GameObject = GameObject.Find("InstructionAlertPanel");
+			if(alertPanel) alertPanel .GetComponent(UI.Image).color = Color(0.1,0.733,0.3);
+		}
 //		var indicatorAnimator: Animator = GameObject.Find("ConnectedLight").GetComponent(Animator);
 //		indicatorAnimator.SetBool("connected", true);
 //		GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
@@ -280,10 +303,12 @@ function OnDisconnectedFromServer(){
 //		indicatorAnimator.SetBool("connected",false);
 
 //		GameObject.Find("ConnectedLight").SendMessage("setConnected", false);
-		var alert:GameObject = GameObject.Find("InstructionAlertText");
-		if(alert) alert.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
-		var alertPanel:GameObject = GameObject.Find("InstructionAlertPanel");
-		if(alertPanel) alertPanel .GetComponent(UI.Image).color = Color(1,1,1);
+		if(Application.loadedLevel ==1){
+			var alert:GameObject = GameObject.Find("InstructionAlertText");
+			if(alert) alert.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
+			var alertPanel:GameObject = GameObject.Find("InstructionAlertPanel");
+			if(alertPanel) alertPanel .GetComponent(UI.Image).color = Color(1,1,1);
+		}
 	}
 
 function OnFailedToConnect(error: NetworkConnectionError){

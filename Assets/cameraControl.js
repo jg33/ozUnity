@@ -35,6 +35,7 @@ private var errorFrames:int = 0;
 private var backgroundPlane:GameObject;
 private var virtualBackgroundPlane:GameObject;
 
+
 function Start () {
 	ARCam = GameObject.Find("ARCamera");
 	
@@ -104,18 +105,21 @@ function Update () {
 		    	isTracking = true;
 		    	Debug.Log("tracking.... Dist: " + Vector3.Distance(targetPositionArray[targetPositionArray.length-1],ARCam.transform.localPosition) );
 				errorFrames=0;
-		    } else if (errorFrames > timeout){
-		    	//updateTarget();
-		    	errorFrames=0;
-		    } else if(Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= minDistanceThreshold || 
-		    Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= minAngleThreshold){
-		    	errorFrames++;
-		    }else {
+				
+//		    } else if (errorFrames > timeout){
+//		    	//updateTarget();
+//		    	errorFrames=0;
+//		    } else if(Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= minDistanceThreshold || 
+//		    Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= minAngleThreshold){
+//		    	errorFrames++;
+		   
+		     }else {
 		    	isTracking = false;
 		    }
 		    
+		    gyroResetter.SendMessage("setTightTracking",false);
+
 		    if(isTracking && Time.frameCount%1 == 0 ){
-		    	gyroResetter.SendMessage("setTightTracking",false);
 		    	GameObject.Find("GyroResetter").SendMessage("resetGyro");
 		    	Debug.Log("Gyro Reset!");
 		    };
