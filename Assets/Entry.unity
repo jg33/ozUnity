@@ -145,7 +145,7 @@ MonoBehaviour:
   tightTracking: 1
   gyroResetter: {fileID: 1638352695}
   foundTarget: 0
-  maxDistanceTolerance: 2
+  maxDistanceTolerance: 1
   maxAngleTolerance: 1
   minDistanceThreshold: 10
   minAngleThreshold: 10

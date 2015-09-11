@@ -16,6 +16,9 @@ public class cueSystem : MonoBehaviour{
 
 	public bool forcePassive = false;
 
+	public float imageTargetX = -1;
+	public float imageTargetY = -1;
+
 	NetworkView nv;
 
 	private GameObject seqPlayer;
@@ -102,7 +105,8 @@ public class cueSystem : MonoBehaviour{
 			stream.Serialize (ref poppyState);
 			stream.Serialize (ref monkeyState);
 			stream.Serialize (ref fireState);
-
+			stream.Serialize (ref imageTargetX);
+			stream.Serialize (ref imageTargetY);
 
 
 
@@ -117,6 +121,9 @@ public class cueSystem : MonoBehaviour{
 			stream.Serialize (ref poppyState);
 			stream.Serialize (ref monkeyState);
 			stream.Serialize (ref fireState);
+			stream.Serialize (ref imageTargetX);
+			stream.Serialize (ref imageTargetY);
+
 		}
 	}
 
@@ -137,11 +144,11 @@ public class cueSystem : MonoBehaviour{
 				int rando = Random.Range(1,7);
 				string videoString = string.Format("Video/rainbow_{0:00}.mp4", rando );
 					#if UNITY_IPHONE
-					Handheld.PlayFullScreenMovie(videoString);
+				Handheld.PlayFullScreenMovie(videoString, Color.black, FullScreenMovieControlMode.Hidden);
 					#elif UNITY_ANDROID
 					string path = Application.persistentDataPath + "/" + videoString;
 					Debug.LogError( "The video path: " + path );
-					Handheld.PlayFullScreenMovie( Application.persistentDataPath + "/" + videoString);
+				Handheld.PlayFullScreenMovie( Application.persistentDataPath + "/" + videoString, Color.black, FullScreenMovieControlMode.Hidden);
 					#endif
 			
 			} else if(clipName == "MoeTest"){
@@ -179,6 +186,10 @@ public class cueSystem : MonoBehaviour{
 			} else if(clipName == "tvStatic"){
 				seqPlayer.SendMessage("setFrames", 70);
 				seqPlayer.SendMessage("loadMovie","tvStatic" );
+				seqPlayer.SendMessage("play");
+			} else if(clipName == "judyInterview"){
+				seqPlayer.SendMessage("setFrames", 185);
+				seqPlayer.SendMessage("loadMovie","judyInterview" );
 				seqPlayer.SendMessage("play");
 			}
 
@@ -326,5 +337,7 @@ public class cueSystem : MonoBehaviour{
 	public void setMonkeyState(float i){
 		monkeyState = (int) i;
 	}
-
+	public void setFireState(float i){
+		fireState = (int) i;
+	}
 }

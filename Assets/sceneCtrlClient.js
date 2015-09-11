@@ -62,20 +62,24 @@ function Update () {
 			Application.LoadLevel(2);
 			currentCue = -1; //force scene refresh
 			camObj = GameObject.Find("Camera");
-			GameObject.Find("RealImageTarget").SendMessage("updateTargetPos");
+			var realTarget:GameObject = GameObject.Find("RealImageTarget");
+			if(realTarget) realTarget.SendMessage("updateTargetPos");
 
 
 		
 		} else if(Application.loadedLevel == 1 && forcePassive){ //if connected and in passive mode show connected text
 			var alert:GameObject = GameObject.Find("InstructionAlertText");
 			alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
-			GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
+			var alertPanel:GameObject = GameObject.Find("InstructionAlertPanel");
+			alertPanel.GetComponent(UI.Image).color = Color(0.1,0.733,0.3);
+			
+//			GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
 
 		} else if (forcePassive && Application.loadedLevel != 1){
 			//GameObject.Destroy(GameObject.Find("Camera Container"));
 			//yield WaitForSeconds(1);
 			GameObject.Find("Camera Container").SendMessage("setTightTracking", true);			
-			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
+//			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
 
 			Application.LoadLevel(1);
 
@@ -100,8 +104,8 @@ function Update () {
 		
 				switch( currentEventCue ){
 						case 1:
-							cueComponent.playMovie("MoeTest");
-							Debug.Log("MoeTest!");
+							cueComponent.playMovie("judyInterview");
+							Debug.Log("judyInterview!");
 	
 						break;
 				
@@ -201,7 +205,7 @@ function Update () {
 //			msgTxt.text = messageText[currentTextSelection];
 			
 			msg.SendMessage("changeText", messageText[currentTextSelection]);
-
+			Debug.Log("Text Changed!");
 
 //			if (messageText[currentTextSelection].Length>140){
 //				//msg.transform.GetComponent(RectTransform).anchorMin = Vector2(0,-400);
@@ -236,6 +240,10 @@ function Update () {
 //			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
 			Application.LoadLevel(1);
 			
+			var alert2:GameObject = GameObject.Find("InstructionAlertText");
+			if (alert2) alert2.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
+			var alertPanel2:GameObject = GameObject.Find("InstructionAlertPanel");
+			if(alertPanel2) alertPanel2.GetComponent(UI.Image).color = Color(1,1,1);
 
 		}
 	
@@ -261,7 +269,7 @@ function OnConnectedToServer(){
 		alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
 //		var indicatorAnimator: Animator = GameObject.Find("ConnectedLight").GetComponent(Animator);
 //		indicatorAnimator.SetBool("connected", true);
-		GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
+//		GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
 	}
 
 function OnDisconnectedFromServer(){
@@ -271,8 +279,11 @@ function OnDisconnectedFromServer(){
 //		var indicatorAnimator: Animator = GameObject.Find("ConnectedLight").GetComponent(Animator);
 //		indicatorAnimator.SetBool("connected",false);
 
-		GameObject.Find("ConnectedLight").SendMessage("setConnected", false);
-
+//		GameObject.Find("ConnectedLight").SendMessage("setConnected", false);
+		var alert:GameObject = GameObject.Find("InstructionAlertText");
+		if(alert) alert.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
+		var alertPanel:GameObject = GameObject.Find("InstructionAlertPanel");
+		if(alertPanel) alertPanel .GetComponent(UI.Image).color = Color(1,1,1);
 	}
 
 function OnFailedToConnect(error: NetworkConnectionError){
@@ -309,7 +320,7 @@ function setActiveScene(newScene:String){
 		for (var j = 0; j< sceneArray.Count  ;j++){ //turn off the rest
 			if(j!=i){
 				canvasObject = sceneArray[j];
-				canvasObject.SetActive(false);
+				if (canvasObject) canvasObject.SetActive(false);
 			}
 		}
 		
@@ -330,7 +341,7 @@ function setActiveScene(newScene:String){
 		for (j = 0; j< sceneArray.Count  ;j++){ //turn off the rest
 			if(j!=i){
 				canvasObject = sceneArray[j];
-				canvasObject.SetActive(false);
+				if(canvasObject) canvasObject.SetActive(false);
 			}
 		}
 		
@@ -369,9 +380,9 @@ function handleEvent(state:TriggeredEvents){
 
 function setupText(){
 
-	messageText[0]= "There's only one way to succeed in this business. Step on those guys. Gouge their eyes out. Trample on them. Kick them in the balls. You'll be a smash.";
-	messageText[1]= "App ready... Please wait.";
-	messageText[2]= " ";
+	messageText[0]= " ";
+	messageText[1]= " ";
+	messageText[2]= "App ready... Please wait.";
 	messageText[3]= "'Ding Dong' reached number 2 in the UK Singles Chart following the death of Margaret Thatcher on 8 April 2013.";
 	messageText[4]= "Which";
 	messageText[5]= "Golden Snitch";
