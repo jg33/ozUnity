@@ -16,6 +16,9 @@ public class cueSystem : MonoBehaviour{
 
 	public bool forcePassive = false;
 
+	public float imageTargetX = -1;
+	public float imageTargetY = -1;
+
 	NetworkView nv;
 
 	private GameObject seqPlayer;
@@ -102,7 +105,8 @@ public class cueSystem : MonoBehaviour{
 			stream.Serialize (ref poppyState);
 			stream.Serialize (ref monkeyState);
 			stream.Serialize (ref fireState);
-
+			stream.Serialize (ref imageTargetX);
+			stream.Serialize (ref imageTargetY);
 
 
 
@@ -117,6 +121,9 @@ public class cueSystem : MonoBehaviour{
 			stream.Serialize (ref poppyState);
 			stream.Serialize (ref monkeyState);
 			stream.Serialize (ref fireState);
+			stream.Serialize (ref imageTargetX);
+			stream.Serialize (ref imageTargetY);
+
 		}
 	}
 

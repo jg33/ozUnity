@@ -141,16 +141,17 @@ public class OzOscReceiver : MonoBehaviour {
 			break;
 
 		case "/transitionSpeed":
-			cueControl.transitionSpeed = (int)oscMessage.Values[0];
-			break;
-
-		case "/setImageTargetPosition":
-
-
+			cueControl.transitionSpeed = (float)oscMessage.Values[0];
 			break;
 
 		case "/playAudio":
 			//NetworkView nv = GameObject.Find("Network").GetComponent(NetworkView);
+
+			break;
+
+		case "/targetPosition":
+			cueControl.imageTargetX = (float)oscMessage.Values[0];
+			cueControl.imageTargetY = (float)oscMessage.Values[1];
 
 			break;
 
