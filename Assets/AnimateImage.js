@@ -62,7 +62,9 @@ function play(){
 
 function stop(){
 	isPlaying = false;
-
+	for(var i =0;i<texArray.length;i++){
+		texArray[i] = Resources.Load("black-64") as Texture;
+	}
 }
 
 function pad(n:String, width:int, z:String) {
