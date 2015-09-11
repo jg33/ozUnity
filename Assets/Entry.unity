@@ -228,6 +228,10 @@ Prefab:
       propertyPath: m_Name
       value: Virtual BackgroundPlane
       objectReference: {fileID: 0}
+    - target: {fileID: 11400008, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
+      propertyPath: mKeepARCameraAlive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
   m_IsPrefabParent: 0
@@ -985,6 +989,8 @@ MonoBehaviour:
   monkeyState: 0
   fireState: 0
   forcePassive: 0
+  imageTargetX: -1
+  imageTargetY: -1
 --- !u!4 &1120223040
 Transform:
   m_ObjectHideFlags: 0

@@ -201,11 +201,11 @@ function updateTarget(){
 
 
 public function getInvertedGyro(){
-    		var  invertedOrientation:Quaternion;
-    		invertedOrientation = Quaternion.Inverse(GameObject.Find("UPFTHeadTracker").transform.localRotation);
-    		var invertedEulers = invertedOrientation.eulerAngles;
-    		invertedOrientation = Quaternion.Euler(invertedEulers.x, invertedEulers.y, invertedEulers.z   );
-    		return invertedOrientation;
+	var  invertedOrientation:Quaternion;
+	invertedOrientation = Quaternion.Inverse(GameObject.Find("UPFTHeadTracker").transform.localRotation);
+	var invertedEulers = invertedOrientation.eulerAngles;
+	invertedOrientation = Quaternion.Euler(invertedEulers.x, invertedEulers.y, invertedEulers.z   );
+	return invertedOrientation;
 }
 
 public function lostTarget(){
