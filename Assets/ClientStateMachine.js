@@ -6,7 +6,8 @@ function Start () {
 	
 	if(PlayerPrefs.GetInt("FirstLaunch",0) != 0){
 	
-		GameObject.Find("Intro").SetActive(false);
+		var intro:GameObject = GameObject.Find("Intro");
+		if(intro) intro.SetActive(false);
 		Debug.Log("INTRO OFF");	
 
 	}
