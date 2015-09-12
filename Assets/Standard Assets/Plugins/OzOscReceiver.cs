@@ -38,6 +38,7 @@ public class OzOscReceiver : MonoBehaviour {
 	private NetworkView nv;
 	private bool flagTextSend = false;
 	private string textToSend;
+	private float currentTime;
 
 	public void Start ()
 	{
@@ -72,7 +73,8 @@ public class OzOscReceiver : MonoBehaviour {
 			nv.RPC("setTextRemote", RPCMode.All, textToSend);
 			flagTextSend = false;
 		}
-		
+
+		currentTime = Time.time;
 	}
 	
 	
@@ -162,6 +164,9 @@ public class OzOscReceiver : MonoBehaviour {
 			cueControl.imageTargetZ = (float)oscMessage.Values[2];
 			break;
 
+		case "/ping":
+			Debug.Log("ping at: "+ currentTime );
+			break;
 
 		default:
 			Debug.Log("unhandled osc: " + msgValue );

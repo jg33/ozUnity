@@ -317,7 +317,7 @@ public class cueSystem : MonoBehaviour{
 
 	[RPC] public void setTextRemote(string _text){
 		GameObject msg = GameObject.Find("Message");
-		msg.SendMessage("changeText", _text);
+		if (msg) msg.SendMessage("changeText", _text);
 		Debug.Log ("Changed Text: "+ _text);
 	}
 
