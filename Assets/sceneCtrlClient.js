@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 public var connectionIP:String = "127.0.0.1";
 public var portNumber:int = 16261;
@@ -234,7 +234,10 @@ function Update () {
 		
 	} else{ //not connected
 	
-		if (Application.loadedLevel == 2 ){ //if in active mode and disconnected, try to connect!
+		if(Application.loadedLevel ==0){
+			Application.LoadLevel(1);
+		
+		} else if (Application.loadedLevel == 2 ){ //if in active mode and disconnected, try to connect!
 			
 			if(disconnectedTimer > disconnectedTimeout){ //timeout connection, kick to passive
 				disconnectedTimer = 0;
@@ -257,11 +260,6 @@ function Update () {
 				}
 				disconnectedTimer++;
 			}
-			
-
-			
-			
-
 
 		}
 	
@@ -421,8 +419,8 @@ function setupText(){
 
 
 function reset(){
-	//currentCue = 0;
-	//currentTextSelection = 0;
+	currentCue = 0;
+	currentTextSelection = 0;
 }
 
 function setCompletedShow(){
