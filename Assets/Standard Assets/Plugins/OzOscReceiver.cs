@@ -101,8 +101,8 @@ public class OzOscReceiver : MonoBehaviour {
 			break;
 		case "/triggerEvent":
 			int eventID = (int)oscMessage.Values[0];
-			cueControl.tempEventTriggers = eventID;
 			Debug.Log ("Event! " + eventID);
+			cueControl.tempEventTriggers = eventID;
 			break;
 
 
