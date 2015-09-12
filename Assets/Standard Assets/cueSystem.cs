@@ -340,4 +340,6 @@ public class cueSystem : MonoBehaviour{
 	public void setFireState(float i){
 		fireState = (int) i;
 	}
+
+
 }
