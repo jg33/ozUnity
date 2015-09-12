@@ -30,6 +30,12 @@ private var transitionSpeed : int =1;
 public var disconnectedTimeout: int = 100;
 private var disconnectedTimer: int = 0;
 
+private var imageTargetX: float = 0;
+private var imageTargetY: float = 0;
+private var imageTargetZ: float = 0;
+
+
+
 // one-shot events that fire on cue or never //
 enum TriggeredEvents{ MOE_VIDEO, RANDOM_RAINBOW, TORNADO_ALERT, APPLAUSE, AWW, NO_PLACE };
 
@@ -229,7 +235,24 @@ function Update () {
 			camObj = GameObject.Find("Camera");
 
 		}
+		
+		
+		/// Image Target Sync ///
+		if(imageTargetX != cueComponent.imageTargetX){
+			imageTargetX = cueComponent.imageTargetX;
+			GameObject.Find("RealImageTarget").SendMessage("overrideTargetXPos",imageTargetX );
+		}
+		if(imageTargetY != cueComponent.imageTargetY){
+			imageTargetY = cueComponent.imageTargetY;
+			GameObject.Find("RealImageTarget").SendMessage("overrideTargetYPos",imageTargetY );
 
+		}
+		if(imageTargetZ != cueComponent.imageTargetZ){
+			imageTargetZ = cueComponent.imageTargetZ;
+			GameObject.Find("RealImageTarget").SendMessage("overrideTargetZPos",imageTargetZ );
+
+		}
+		
 		
 		
 	} else{ //not connected

@@ -16,8 +16,10 @@ public class cueSystem : MonoBehaviour{
 
 	public bool forcePassive = false;
 
-	public float imageTargetX = -1;
-	public float imageTargetY = -1;
+	public float imageTargetX = 0;
+	public float imageTargetY = 0;
+	public float imageTargetZ = 0;
+
 
 	NetworkView nv;
 
@@ -313,6 +315,12 @@ public class cueSystem : MonoBehaviour{
 		
 	}
 
+	[RPC] public void setTextRemote(string _text){
+		GameObject msg = GameObject.Find("Message");
+		msg.SendMessage("changeText", _text);
+		Debug.Log ("Changed Text: "+ _text);
+	}
+
 	public void setTransitionSpeed(float f){
 		transitionSpeed = f;
 	}
@@ -339,6 +347,20 @@ public class cueSystem : MonoBehaviour{
 	}
 	public void setFireState(float i){
 		fireState = (int) i;
+	}
+
+	public void setTargetXPos(float f){
+		imageTargetX = f;
+	}
+
+	public void setTargetYPos(float f){
+		imageTargetY = f;
+
+	}
+
+	public void setTargetZPos(float f){
+		imageTargetZ = f;
+		
 	}
 
 

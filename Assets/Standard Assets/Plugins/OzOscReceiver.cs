@@ -35,8 +35,10 @@ public class OzOscReceiver : MonoBehaviour {
 	private UnityEngine.UI.Slider fireSlider;
 	private UnityEngine.UI.Slider transSpeedSlider;
 
-	
-	
+	private NetworkView nv;
+	private bool flagTextSend = false;
+	private string textToSend;
+
 	public void Start ()
 	{
 		//Initializes on start up to listen for messages
@@ -57,15 +59,19 @@ public class OzOscReceiver : MonoBehaviour {
 		transSpeedSlider = GameObject.Find("Transition Slider").GetComponent<UnityEngine.UI.Slider>();
 
 
-		
+		nv = GameObject.Find("Network").GetComponent<NetworkView>();
+
 		Debug.Log("Osc Running");
 		
 	}
 	
 	public void Update () {
 		
-		///Set Variables///
-		
+		///Send RPC?///
+		if(flagTextSend){
+			nv.RPC("setTextRemote", RPCMode.All, textToSend);
+			flagTextSend = false;
+		}
 		
 	}
 	
@@ -103,7 +109,8 @@ public class OzOscReceiver : MonoBehaviour {
 			break;	
 
 		case "/sendText":
-
+			textToSend = (string) oscMessage.Values[0];
+			flagTextSend = true;
 			break;
 
 		case "/tornadoState":
@@ -152,8 +159,9 @@ public class OzOscReceiver : MonoBehaviour {
 		case "/targetPosition":
 			cueControl.imageTargetX = (float)oscMessage.Values[0];
 			cueControl.imageTargetY = (float)oscMessage.Values[1];
-
+			cueControl.imageTargetZ = (float)oscMessage.Values[2];
 			break;
+
 
 		default:
 			Debug.Log("unhandled osc: " + msgValue );
