@@ -371,7 +371,7 @@ function setActiveScene(newScene:String){
 			}
 		}
 		
-	} else if(i>1){
+	} else if(i>2){
 		canvasObject = sceneArray[i];
 		Debug.Log(sceneArray[i]);
 		canvasObject.SetActive(true);
