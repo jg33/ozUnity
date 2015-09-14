@@ -149,7 +149,7 @@ namespace Vuforia
 				camCtl.SendMessage("setTightTracking", false);
 				GameObject.Find("GyroResetter").SendMessage("setTightTracking", false);
 				if(!storm) storm = GameObject.Find("storm");
-				storm.SetActive(true);
+				if (storm) storm.SetActive(true);
 
 				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name == mTrackableBehaviour.TrackableName){
 					gameObject.transform.GetChild(0).gameObject.SetActive(false);
