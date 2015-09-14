@@ -42,6 +42,10 @@ public class OzOscReceiver : MonoBehaviour {
 	private bool flagAudioSend = false;
 	private string audioToSend;
 
+	private bool flagWikiSend = false;
+	private string wikiHeaderToSend;
+	private string wikiBodyToSend;
+
 	private float currentTime;
 
 	public void Start ()
@@ -82,6 +86,12 @@ public class OzOscReceiver : MonoBehaviour {
 			nv.RPC("stopAudio", RPCMode.All);
 			nv.RPC("playAudio", RPCMode.All , audioToSend);
 			flagAudioSend = false;
+		}
+
+		if (flagWikiSend){
+			
+			nv.RPC("setWiki", RPCMode.All, wikiHeaderToSend, wikiBodyToSend);
+			flagWikiSend = false;
 		}
 
 		currentTime = Time.time;
@@ -180,8 +190,14 @@ public class OzOscReceiver : MonoBehaviour {
 			Debug.Log("ping at: "+ currentTime );
 			break;
 
+		case "/sendWikiText":
+			wikiHeaderToSend = (string) oscMessage.Values[0];
+			wikiBodyToSend = (string) oscMessage.Values[1];
+			flagWikiSend = true;
+
+			break;
 		default:
-			Debug.Log("unhandled osc: " + msgValue );
+			Debug.Log("unhandled osc: " + msgString );
 			break;
 		}
 		

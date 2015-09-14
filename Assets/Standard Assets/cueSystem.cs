@@ -354,6 +354,16 @@ public class cueSystem : MonoBehaviour{
 		Debug.Log ("Changed Text: "+ _text);
 	}
 
+	[RPC] public void setWiki(string _header, string _body){
+		GameObject headerObj = GameObject.Find("WikiHeader");
+		GameObject bodyObj = GameObject.Find("WikiBody");
+
+		if (headerObj) headerObj.SendMessage("changeText", _header);
+		if (bodyObj) bodyObj.SendMessage("changeText", _body);
+
+		Debug.Log ("Changed Wiki: "+ _header +" / "+ _body);
+	}
+	
 	public void setTransitionSpeed(float f){
 		transitionSpeed = f;
 	}
