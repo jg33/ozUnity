@@ -485,7 +485,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 150.000061}
+  m_AnchoredPosition: {x: 20.1000004, y: 150.000061}
   m_SizeDelta: {x: 1009, y: 354}
   m_Pivot: {x: .5, y: 1}
 --- !u!114 &98721545
@@ -8583,8 +8583,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 97, y: -96}
-  m_SizeDelta: {x: 990, y: 623}
+  m_AnchoredPosition: {x: 8.10996246, y: -96}
+  m_SizeDelta: {x: 669.019897, y: 623}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &714493563
 MonoBehaviour:
@@ -8611,12 +8611,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Welcome to the show! To participate:\n\n\t1 ) Turn your ringer \"On\" (not
-    silent)\n\t2 ) In <i>Settings</i>, set vibrate function \"ON\"\n\t3 ) Turn on
-    <i>Airplane Mode</i>\n\t4 ) Manually turn <i>WiFi On</i>\n\t5 ) Connect to the
-    WiFi network <i>\"Surrender Dorothy\"</i>\n\nBEFORE THE SHOW: Flip to page 3 of
-    your playbill \nand point your phone\u2019s camera at it. You\u2019ll discover
-    the \nmagic of OZ.\n\n<i>Thank you and enjoy the show!</i>"
+  m_Text: "Thank you for coming to Elements of Oz!\n\nNew virtual content has been
+    unlocked! Please return \nto OzVision and point your device at the other images
+    in \nyour program!\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<3,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThe
+    Builders"
 --- !u!222 &714493564
 CanvasRenderer:
   m_ObjectHideFlags: 0
