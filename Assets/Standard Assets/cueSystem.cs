@@ -268,34 +268,64 @@ public class cueSystem : MonoBehaviour{
 				clip = Resources.Load ("no_place_like_home2") as AudioClip;
 				break;
 			case "cicada":
-				clip = Resources.Load ("cicada") as AudioClip;
+				clip = Resources.Load ("Audio/ambiance/cicada") as AudioClip;
 				break;
 			case "cicada2":
-				clip = Resources.Load ("cicada2") as AudioClip;
+				clip = Resources.Load ("Audio/ambiance/cicada2") as AudioClip;
 				break;
 			case "frogs1":
-				clip = Resources.Load ("frogs1") as AudioClip;				
+				clip = Resources.Load ("Audio/ambiance/frogs1") as AudioClip;				
 				break;
 			case "frogs2":
-				clip = Resources.Load ("frogs2") as AudioClip;				
+				clip = Resources.Load ("Audio/ambiance/frogs2") as AudioClip;				
 				break;
 			case "drums1":
-				clip = Resources.Load ("DRUMS-76") as AudioClip;				
+				clip = Resources.Load ("Audio/drums/DRUMS-76") as AudioClip;				
 				break;
 			case "drums2":
-				clip = Resources.Load ("riser drum open") as AudioClip;				
+				clip = Resources.Load ("Audio/drums/riser drum open") as AudioClip;				
 				break;
 			case "wind":
-				clip = Resources.Load ("wind") as AudioClip;	
+				clip = Resources.Load ("Audio/wind/wind") as AudioClip;	
 				break;
 			case "wind2":
-				clip = Resources.Load ("wind2") as AudioClip;	
+				clip = Resources.Load ("Audio/wind/wind2") as AudioClip;	
 				break;
 			case "wind3":
-				clip = Resources.Load ("wind3") as AudioClip;	
+				clip = Resources.Load ("Audio/wind/wind3") as AudioClip;	
 				break;
 			case "wind4":
-				clip = Resources.Load ("wind4") as AudioClip;
+				clip = Resources.Load ("Audio/wind/wind4") as AudioClip;
+				break;
+			case "applause1":
+				clip = Resources.Load ("Audio/applause/applause1") as AudioClip;
+				break;
+			case "applauses":
+				clip = Resources.Load ("Audio/applause/applauses") as AudioClip;
+				break;
+			case "applauses2":
+				clip = Resources.Load ("Audio/applause/applauses2") as AudioClip;
+				break;
+			case "applauses9":
+				clip = Resources.Load ("Audio/applause/applauses9") as AudioClip;
+				break;
+			case "dudescheering":
+				clip = Resources.Load ("Audio/applause/dudescheering") as AudioClip;
+				break;
+			case "dudescheering2":
+				clip = Resources.Load ("Audio/applause/dudescheering2") as AudioClip;
+				break;
+			case "dudescheering3":
+				clip = Resources.Load ("Audio/applause/dudescheering3") as AudioClip;
+				break;
+			case "ladiescheering":
+				clip = Resources.Load ("Audio/applause/ladiescheering") as AudioClip;
+				break;
+			case "ladiescheering2":
+				clip = Resources.Load ("Audio/applause/ladiescheering2") as AudioClip;
+				break;
+			case "ladiescheering3":
+				clip = Resources.Load ("Audio/applause/ladiescheering3") as AudioClip;
 				break;
 
 			default:
@@ -310,8 +340,11 @@ public class cueSystem : MonoBehaviour{
 	}
 	
 	[RPC] public void stopAudio(){
-		AudioSource source = (AudioSource)GameObject.Find("Camera").GetComponent<AudioSource>();
-		source.Stop();
+		GameObject sourceObj = GameObject.Find("Camera");
+		if(sourceObj) {
+			AudioSource source = (AudioSource)sourceObj.GetComponent<AudioSource>();
+			source.Stop();
+		}
 		
 	}
 

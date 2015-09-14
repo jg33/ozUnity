@@ -38,6 +38,10 @@ public class OzOscReceiver : MonoBehaviour {
 	private NetworkView nv;
 	private bool flagTextSend = false;
 	private string textToSend;
+
+	private bool flagAudioSend = false;
+	private string audioToSend;
+
 	private float currentTime;
 
 	public void Start ()
@@ -72,6 +76,12 @@ public class OzOscReceiver : MonoBehaviour {
 		if(flagTextSend){
 			nv.RPC("setTextRemote", RPCMode.All, textToSend);
 			flagTextSend = false;
+		}
+		if (flagAudioSend){
+
+			nv.RPC("stopAudio", RPCMode.All);
+			nv.RPC("playAudio", RPCMode.All , audioToSend);
+			flagAudioSend = false;
 		}
 
 		currentTime = Time.time;
@@ -155,7 +165,8 @@ public class OzOscReceiver : MonoBehaviour {
 			break;
 
 		case "/playAudio":
-			//NetworkView nv = GameObject.Find("Network").GetComponent(NetworkView);
+			audioToSend = (string) oscMessage.Values[0];
+			flagAudioSend = true;
 
 			break;
 
