@@ -371,7 +371,26 @@ function setActiveScene(newScene:String){
 			}
 		}
 		
-	} else if(i>2){
+	} else if (i==2){
+		canvasObject = sceneArray[i];
+		Debug.Log(sceneArray[i]);
+		canvasObject.SetActive(true);
+		
+		canvasObject = sceneArray[prevCue];
+		canvasObject.GetComponent(Animation).Play("UIFadeOut");
+		GameObject.Find("Camera Container").SendMessage("resetTracking");
+
+		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length+3);
+		for (j = 0; j< sceneArray.Count  ;j++){ //turn off the rest
+			if(j!=i){
+				canvasObject = sceneArray[j];
+				if(canvasObject) canvasObject.SetActive(false);
+			}
+		}
+		
+	
+	
+	}else if(i>2){
 		canvasObject = sceneArray[i];
 		Debug.Log(sceneArray[i]);
 		canvasObject.SetActive(true);

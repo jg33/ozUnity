@@ -18,6 +18,7 @@ function Update () {
 	if(AREnabled && !ARCam.enabled){
 		ARCam.enabled = true;
 		Debug.Log("Enabled AR");
+		yield WaitForSeconds(1);
 	} else if (!AREnabled && ARCam.enabled){
 		delayDisable(3);
 		Debug.Log("Disabled AR");
