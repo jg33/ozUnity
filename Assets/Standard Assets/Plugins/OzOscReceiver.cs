@@ -111,95 +111,96 @@ public class OzOscReceiver : MonoBehaviour {
 		Debug.Log(msgString); //log the message and values coming from OSC
 		
 		//FUNCTIONS YOU WANT CALLED WHEN A SPECIFIC MESSAGE IS RECEIVED
-		switch (msgAddress){
-	
-		case "/cue":
-			int cue = (int)oscMessage.Values[0];
-			cueControl.cueNumber = cue;
-
-			break;
-		case "/triggerEvent":
-			int eventID = (int)oscMessage.Values[0];
-			Debug.Log ("Event! " + eventID);
-			cueControl.tempEventTriggers = eventID;
-			break;
-
-
-		case "/selectText":
-			cueControl.textSelection = (int)oscMessage.Values[0];
-			Debug.Log("select text");
-			break;	
-
-		case "/sendText":
-			textToSend = (string) oscMessage.Values[0];
-			flagTextSend = true;
-			break;
-
-		case "/tornadoState":
-			cueControl.tornadoState = (int)oscMessage.Values[0];
-			tornadoSlider.value =  (int)oscMessage.Values[0];
-			break;
-		case "/munchkinState":
-			cueControl.munchkinState = (int)oscMessage.Values[0]; 
-			munchkinSlider.value =  (int)oscMessage.Values[0];
-
-			break;
-
-		case "/poppyState":
-			cueControl.poppyState = (int)oscMessage.Values[0];
-			poppySlider.value =  (int)oscMessage.Values[0];
-
-			break;
-
-		case "/monkeyState":
-			cueControl.monkeyState = (int)oscMessage.Values[0];
-			monkeySlider.value =  (int)oscMessage.Values[0];
-
-			break;
-		case "/fireState":
-			cueControl.fireState = (int)oscMessage.Values[0];
-			fireSlider.value =  (int)oscMessage.Values[0];
-
-			break;
-		case "/forcePassive":
-			if((int)oscMessage.Values[0] == 1){
-				cueControl.forcePassive = true;
-			} else {
-				cueControl.forcePassive = false;
-			}
-			break;
-
-		case "/transitionSpeed":
-			cueControl.transitionSpeed = (float)oscMessage.Values[0];
-			break;
-
-		case "/playAudio":
-			audioToSend = (string) oscMessage.Values[0];
-			flagAudioSend = true;
-
-			break;
-
-		case "/targetPosition":
-			cueControl.imageTargetX = (float)oscMessage.Values[0];
-			cueControl.imageTargetY = (float)oscMessage.Values[1];
-			cueControl.imageTargetZ = (float)oscMessage.Values[2];
-			break;
-
-		case "/ping":
-			Debug.Log("ping at: "+ currentTime );
-			break;
-
-		case "/sendWikiText":
-			wikiHeaderToSend = (string) oscMessage.Values[0];
-			wikiBodyToSend = (string) oscMessage.Values[1];
-			flagWikiSend = true;
-
-			break;
-		default:
-			Debug.Log("unhandled osc: " + msgString );
-			break;
-		}
+		if(oscMessage.Values.Count>0){ // only fire if we've got values.
+			switch (msgAddress){
 		
+			case "/cue":
+				int cue = (int)oscMessage.Values[0];
+				cueControl.cueNumber = cue;
+
+				break;
+			case "/triggerEvent":
+				int eventID = (int)oscMessage.Values[0];
+				Debug.Log ("Event! " + eventID);
+				cueControl.tempEventTriggers = eventID;
+				break;
+
+
+			case "/selectText":
+				cueControl.textSelection = (int)oscMessage.Values[0];
+				Debug.Log("select text");
+				break;	
+
+			case "/sendText":
+				textToSend = (string) oscMessage.Values[0];
+				flagTextSend = true;
+				break;
+
+			case "/tornadoState":
+				cueControl.tornadoState = (int)oscMessage.Values[0];
+				tornadoSlider.value =  (int)oscMessage.Values[0];
+				break;
+			case "/munchkinState":
+				cueControl.munchkinState = (int)oscMessage.Values[0]; 
+				munchkinSlider.value =  (int)oscMessage.Values[0];
+
+				break;
+
+			case "/poppyState":
+				cueControl.poppyState = (int)oscMessage.Values[0];
+				poppySlider.value =  (int)oscMessage.Values[0];
+
+				break;
+
+			case "/monkeyState":
+				cueControl.monkeyState = (int)oscMessage.Values[0];
+				monkeySlider.value =  (int)oscMessage.Values[0];
+
+				break;
+			case "/fireState":
+				cueControl.fireState = (int)oscMessage.Values[0];
+				fireSlider.value =  (int)oscMessage.Values[0];
+
+				break;
+			case "/forcePassive":
+				if((int)oscMessage.Values[0] == 1){
+					cueControl.forcePassive = true;
+				} else {
+					cueControl.forcePassive = false;
+				}
+				break;
+
+			case "/transitionSpeed":
+				cueControl.transitionSpeed = (float)oscMessage.Values[0];
+				break;
+
+			case "/playAudio":
+				audioToSend = (string) oscMessage.Values[0];
+				flagAudioSend = true;
+
+				break;
+
+			case "/targetPosition":
+				cueControl.imageTargetX = (float)oscMessage.Values[0];
+				cueControl.imageTargetY = (float)oscMessage.Values[1];
+				cueControl.imageTargetZ = (float)oscMessage.Values[2];
+				break;
+
+			case "/ping":
+				Debug.Log("ping at: "+ currentTime );
+				break;
+
+			case "/sendWikiText":
+				wikiHeaderToSend = (string) oscMessage.Values[0];
+				wikiBodyToSend = (string) oscMessage.Values[1];
+				flagWikiSend = true;
+
+				break;
+			default:
+				Debug.Log("unhandled osc: " + msgString );
+				break;
+			}
+		}
 	}
 
 
