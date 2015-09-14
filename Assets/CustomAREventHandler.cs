@@ -101,6 +101,9 @@ namespace Vuforia
 				camCtl.SendMessage("updateTarget");
 				camCtl.SendMessage("setFoundTarget",true);
 
+				if(!storm) storm = GameObject.Find("storm");
+				if (storm) storm.SetActive(false);
+
 				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name == mTrackableBehaviour.TrackableName){
 					if(gameObject.transform.childCount>0) gameObject.transform.GetChild(0).gameObject.SetActive(true);
 				}
@@ -140,6 +143,9 @@ namespace Vuforia
 				GameObject camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("lostTarget");
 
+				if(!storm) storm = GameObject.Find("storm");
+				if (storm) storm.SetActive(true);
+				
 				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name == mTrackableBehaviour.TrackableName){
 					if(gameObject.transform.childCount>0) gameObject.transform.GetChild(0).gameObject.SetActive(false);
 				}
