@@ -931,6 +931,7 @@ MonoBehaviour:
   forcePassive: 0
   imageTargetX: -1
   imageTargetY: -1
+  imageTargetZ: 0
 --- !u!4 &1120223040
 Transform:
   m_ObjectHideFlags: 0
