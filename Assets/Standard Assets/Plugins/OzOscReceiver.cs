@@ -108,7 +108,6 @@ public class OzOscReceiver : MonoBehaviour {
 		
 		string msgString = Osc.OscMessageToString(oscMessage); //the message and value combined
 		string msgAddress = oscMessage.Address; //the message parameters
-		var msgValue = oscMessage.Values[0]; //the message value
 		Debug.Log(msgString); //log the message and values coming from OSC
 		
 		//FUNCTIONS YOU WANT CALLED WHEN A SPECIFIC MESSAGE IS RECEIVED
