@@ -1,0 +1,4394 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Mland_FlowersEnter
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.41666663
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 2.9567101, y: 2.9567132, z: 2.9567132}
+        outSlope: {x: 2.9567101, y: 2.9567132, z: 2.9567132}
+        tangentMode: 0
+      - time: 3.83333325
+        value: {x: 7.1453824, y: 7.14539003, z: 7.14539003}
+        inSlope: {x: 2.9567101, y: 2.9567132, z: 2.9567132}
+        outSlope: {x: 2.9567101, y: 2.9567132, z: 2.9567132}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: FlowerTree2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.16666675
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 24.8504963, y: 24.8505192, z: 24.8505192}
+        outSlope: {x: 24.8504963, y: 24.8505192, z: 24.8505192}
+        tangentMode: 0
+      - time: 3.33333325
+        value: {x: 28.9922428, y: 28.9922695, z: 28.9922695}
+        inSlope: {x: 24.8504963, y: 24.8505192, z: 24.8505192}
+        outSlope: {x: 24.8504963, y: 24.8505192, z: 24.8505192}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: FlowerTree2 (3)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: .0606604591, y: .0606604405, z: .0606604405}
+        outSlope: {x: .0606604591, y: .0606604405, z: .0606604405}
+        tangentMode: 0
+      - time: 2.5
+        value: {x: .0707705319, y: .0707705095, z: .0707705095}
+        inSlope: {x: .0606604591, y: .0606604405, z: .0606604405}
+        outSlope: {x: .0606604591, y: .0606604405, z: .0606604405}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: FlowerTree_1_FIXEDLEAVES
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 7.9199152, y: 7.91991472, z: 7.91991472}
+        outSlope: {x: 7.9199152, y: 7.91991472, z: 7.91991472}
+        tangentMode: 0
+      - time: .416666657
+        value: {x: 3.29996467, y: 3.29996443, z: 3.29996443}
+        inSlope: {x: 7.9199152, y: 7.91991472, z: 7.91991472}
+        outSlope: {x: 7.9199152, y: 7.91991472, z: 7.91991472}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SpikeyFlowerAniamtion_Wind_V1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .583333313
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 7.72610331, y: 7.7261014, z: 7.7261014}
+        outSlope: {x: 7.72610331, y: 7.7261014, z: 7.7261014}
+        tangentMode: 0
+      - time: 1.08333337
+        value: {x: 3.86305213, y: 3.86305118, z: 3.86305118}
+        inSlope: {x: 7.72610331, y: 7.7261014, z: 7.7261014}
+        outSlope: {x: 7.72610331, y: 7.7261014, z: 7.7261014}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: CarrotFlower
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .333333343
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 4.65163374, y: 4.65163755, z: 4.65163755}
+        outSlope: {x: 4.65163374, y: 4.65163755, z: 4.65163755}
+        tangentMode: 0
+      - time: 2.33333325
+        value: {x: 9.30326653, y: 9.30327415, z: 9.30327415}
+        inSlope: {x: 4.65163374, y: 4.65163755, z: 4.65163755}
+        outSlope: {x: 4.65163374, y: 4.65163755, z: 4.65163755}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: Flower2_Wind
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 3.75
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 16.3734417, y: 16.3734455, z: 16.3734455}
+        outSlope: {x: 16.3734417, y: 16.3734455, z: 16.3734455}
+        tangentMode: 0
+      - time: 4.25
+        value: {x: 8.18672085, y: 8.18672276, z: 8.18672276}
+        inSlope: {x: 16.3734417, y: 16.3734455, z: 16.3734455}
+        outSlope: {x: 16.3734417, y: 16.3734455, z: 16.3734455}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SpikeyFlowerAniamtion_Wind_V1 (5)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 3.25
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 14.7490702, y: 14.7490749, z: 14.7490749}
+        outSlope: {x: 14.7490702, y: 14.7490749, z: 14.7490749}
+        tangentMode: 0
+      - time: 3.58333325
+        value: {x: 4.91635561, y: 4.91635704, z: 4.91635704}
+        inSlope: {x: 14.7490702, y: 14.7490749, z: 14.7490749}
+        outSlope: {x: 14.7490702, y: 14.7490749, z: 14.7490749}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SpikeyFlowerAniamtion_Wind_V1 (4)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 7.71802473, y: 7.71802473, z: 7.71802473}
+        outSlope: {x: 7.71802473, y: 7.71802473, z: 7.71802473}
+        tangentMode: 0
+      - time: 1.66666663
+        value: {x: 2.57267427, y: 2.57267427, z: 2.57267427}
+        inSlope: {x: 7.71802473, y: 7.71802473, z: 7.71802473}
+        outSlope: {x: 7.71802473, y: 7.71802473, z: 7.71802473}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SpikeyFlowerAniamtion_Wind_V1 (3)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.08333337
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 7.71802473, y: 7.71802473, z: 7.71802473}
+        outSlope: {x: 7.71802473, y: 7.71802473, z: 7.71802473}
+        tangentMode: 0
+      - time: 1.41666663
+        value: {x: 2.57267427, y: 2.57267427, z: 2.57267427}
+        inSlope: {x: 7.71802473, y: 7.71802473, z: 7.71802473}
+        outSlope: {x: 7.71802473, y: 7.71802473, z: 7.71802473}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SpikeyFlowerAniamtion_Wind_V1 (2)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .0833333358
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 7.7180233, y: 7.7180233, z: 7.7180233}
+        outSlope: {x: 7.7180233, y: 7.7180233, z: 7.7180233}
+        tangentMode: 0
+      - time: .416666657
+        value: {x: 2.57267427, y: 2.57267427, z: 2.57267427}
+        inSlope: {x: 7.7180233, y: 7.7180233, z: 7.7180233}
+        outSlope: {x: 7.7180233, y: 7.7180233, z: 7.7180233}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SpikeyFlowerAniamtion_Wind_V1 (1)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 7.46686268, y: 7.46686077, z: 7.46686077}
+        outSlope: {x: 7.46686268, y: 7.46686077, z: 7.46686077}
+        tangentMode: 0
+      - time: 1.41666663
+        value: {x: 3.11119246, y: 3.11119175, z: 3.11119175}
+        inSlope: {x: 7.46686268, y: 7.46686077, z: 7.46686077}
+        outSlope: {x: 7.46686268, y: 7.46686077, z: 7.46686077}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: CarrotFlower (3)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 14.3015089, y: 14.3015041, z: 14.3015041}
+        outSlope: {x: 14.3015089, y: 14.3015041, z: 14.3015041}
+        tangentMode: 0
+      - time: 1.75
+        value: {x: 5.95896149, y: 5.95895958, z: 5.95895958}
+        inSlope: {x: 14.3015089, y: 14.3015041, z: 14.3015041}
+        outSlope: {x: 14.3015089, y: 14.3015041, z: 14.3015041}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: CarrotFlower (2)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 3.91356945, y: 3.91356826, z: 3.91356826}
+        outSlope: {x: 3.91356945, y: 3.91356826, z: 3.91356826}
+        tangentMode: 0
+      - time: .5
+        value: {x: 1.95678473, y: 1.95678413, z: 1.95678413}
+        inSlope: {x: 3.91356945, y: 3.91356826, z: 3.91356826}
+        outSlope: {x: 3.91356945, y: 3.91356826, z: 3.91356826}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: CarrotFlower (1)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: .0471803546, y: .0471803397, z: .0471803397}
+        outSlope: {x: .0471803546, y: .0471803397, z: .0471803397}
+        tangentMode: 0
+      - time: 2.5
+        value: {x: .0707705319, y: .0707705095, z: .0707705095}
+        inSlope: {x: .0471803546, y: .0471803397, z: .0471803397}
+        outSlope: {x: .0471803546, y: .0471803397, z: .0471803397}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: FlowerTree_1_FIXEDLEAVES (4)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.41666675
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: .10277801, y: .10277798, z: .10277798}
+        outSlope: {x: .10277801, y: .10277798, z: .10277798}
+        tangentMode: 0
+      - time: 3.91666675
+        value: {x: .154167011, y: .154166967, z: .154166967}
+        inSlope: {x: .10277801, y: .10277798, z: .10277798}
+        outSlope: {x: .10277801, y: .10277798, z: .10277798}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: FlowerTree_1_FIXEDLEAVES (3)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.91666663
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: .0324084349, y: .0324084312, z: .0324084312}
+        outSlope: {x: .0324084349, y: .0324084312, z: .0324084312}
+        tangentMode: 0
+      - time: 3.83333325
+        value: {x: .0621161684, y: .0621161573, z: .0621161573}
+        inSlope: {x: .0324084349, y: .0324084312, z: .0324084312}
+        outSlope: {x: .0324084349, y: .0324084312, z: .0324084312}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: FlowerTree_1_FIXEDLEAVES (2)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: .0616667978, y: .0616667867, z: .0616667867}
+        outSlope: {x: .0616667978, y: .0616667867, z: .0616667867}
+        tangentMode: 0
+      - time: 4.08333349
+        value: {x: .154166996, y: .154166967, z: .154166967}
+        inSlope: {x: .0616667978, y: .0616667867, z: .0616667867}
+        outSlope: {x: .0616667978, y: .0616667867, z: .0616667867}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: FlowerTree_1_FIXEDLEAVES (1)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.5
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        outSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        tangentMode: 0
+      - time: 2
+        value: {x: 12.0999165, y: 12.0999241, z: 12.0999241}
+        inSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        outSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers (2)/Flower2_Pinwheel (6)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.25
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 29.0363789, y: 29.0363979, z: 29.0363979}
+        outSlope: {x: 29.0363789, y: 29.0363979, z: 29.0363979}
+        tangentMode: 0
+      - time: 1.75
+        value: {x: 14.5181894, y: 14.518199, z: 14.518199}
+        inSlope: {x: 29.0363789, y: 29.0363979, z: 29.0363979}
+        outSlope: {x: 29.0363789, y: 29.0363979, z: 29.0363979}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers (2)/Flower2_Pinwheel (5)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.08333337
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 26.7902012, y: 26.7902164, z: 26.7902164}
+        outSlope: {x: 26.7902012, y: 26.7902164, z: 26.7902164}
+        tangentMode: 0
+      - time: 1.5
+        value: {x: 11.1625824, y: 11.1625891, z: 11.1625891}
+        inSlope: {x: 26.7902012, y: 26.7902164, z: 26.7902164}
+        outSlope: {x: 26.7902012, y: 26.7902164, z: 26.7902164}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers (2)/Flower2_Pinwheel (4)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .583333313
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 14.1084671, y: 14.1084738, z: 14.1084738}
+        outSlope: {x: 14.1084671, y: 14.1084738, z: 14.1084738}
+        tangentMode: 0
+      - time: 1.08333337
+        value: {x: 7.0542345, y: 7.05423784, z: 7.05423784}
+        inSlope: {x: 14.1084671, y: 14.1084738, z: 14.1084738}
+        outSlope: {x: 14.1084671, y: 14.1084738, z: 14.1084738}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers (2)/Flower2_Pinwheel (3)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .416666657
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 26.4394722, y: 26.4394875, z: 26.4394875}
+        outSlope: {x: 26.4394722, y: 26.4394875, z: 26.4394875}
+        tangentMode: 0
+      - time: .833333313
+        value: {x: 11.0164461, y: 11.0164528, z: 11.0164528}
+        inSlope: {x: 26.4394722, y: 26.4394875, z: 26.4394875}
+        outSlope: {x: 26.4394722, y: 26.4394875, z: 26.4394875}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers (2)/Flower2_Pinwheel (2)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 29.0398006, y: 29.0398178, z: 29.0398178}
+        outSlope: {x: 29.0398006, y: 29.0398178, z: 29.0398178}
+        tangentMode: 0
+      - time: .416666657
+        value: {x: 12.0999165, y: 12.0999241, z: 12.0999241}
+        inSlope: {x: 29.0398006, y: 29.0398178, z: 29.0398178}
+        outSlope: {x: 29.0398006, y: 29.0398178, z: 29.0398178}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers (2)/Flower2_Pinwheel (1)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.08333325
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 9.27130604, y: 9.27131462, z: 9.27131462}
+        outSlope: {x: 9.27130604, y: 9.27131462, z: 9.27131462}
+        tangentMode: 0
+      - time: 4.25
+        value: {x: 20.0878315, y: 20.0878487, z: 20.0878487}
+        inSlope: {x: 9.27130604, y: 9.27131462, z: 9.27131462}
+        outSlope: {x: 9.27130604, y: 9.27131462, z: 9.27131462}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: FlowerTree2 (7)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.08333337
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 7.08982229, y: 7.08982849, z: 7.08982849}
+        outSlope: {x: 7.08982229, y: 7.08982849, z: 7.08982849}
+        tangentMode: 0
+      - time: 3.91666675
+        value: {x: 20.0878315, y: 20.0878487, z: 20.0878487}
+        inSlope: {x: 7.08982229, y: 7.08982849, z: 7.08982849}
+        outSlope: {x: 7.08982229, y: 7.08982849, z: 7.08982849}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: FlowerTree2 (6)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .916666687
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 7.03859425, y: 7.03860044, z: 7.03860044}
+        outSlope: {x: 7.03859425, y: 7.03860044, z: 7.03860044}
+        tangentMode: 0
+      - time: 2.66666675
+        value: {x: 12.3175402, y: 12.3175507, z: 12.3175507}
+        inSlope: {x: 7.03859425, y: 7.03860044, z: 7.03860044}
+        outSlope: {x: 7.03859425, y: 7.03860044, z: 7.03860044}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: FlowerTree2 (5)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.41666663
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 7.77949905, y: 7.77950525, z: 7.77950525}
+        outSlope: {x: 7.77949905, y: 7.77950525, z: 7.77950525}
+        tangentMode: 0
+      - time: 3
+        value: {x: 12.3175402, y: 12.3175507, z: 12.3175507}
+        inSlope: {x: 7.77949905, y: 7.77950525, z: 7.77950525}
+        outSlope: {x: 7.77949905, y: 7.77950525, z: 7.77950525}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: FlowerTree2 (4)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.25
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        outSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        tangentMode: 0
+      - time: 1.75
+        value: {x: 12.0999165, y: 12.0999241, z: 12.0999241}
+        inSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        outSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers (1)/Flower2_Pinwheel (12)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 33.0493355, y: 33.0493546, z: 33.0493546}
+        outSlope: {x: 33.0493355, y: 33.0493546, z: 33.0493546}
+        tangentMode: 0
+      - time: 1.33333337
+        value: {x: 11.0164461, y: 11.0164528, z: 11.0164528}
+        inSlope: {x: 33.0493355, y: 33.0493546, z: 33.0493546}
+        outSlope: {x: 33.0493355, y: 33.0493546, z: 33.0493546}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers (1)/Flower2_Pinwheel (11)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .416666657
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 16.9301624, y: 16.930172, z: 16.930172}
+        outSlope: {x: 16.9301624, y: 16.930172, z: 16.930172}
+        tangentMode: 0
+      - time: .833333313
+        value: {x: 7.0542345, y: 7.05423784, z: 7.05423784}
+        inSlope: {x: 16.9301624, y: 16.930172, z: 16.930172}
+        outSlope: {x: 16.9301624, y: 16.930172, z: 16.930172}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers (1)/Flower2_Pinwheel (10)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 33.4877434, y: 33.4877625, z: 33.4877625}
+        outSlope: {x: 33.4877434, y: 33.4877625, z: 33.4877625}
+        tangentMode: 0
+      - time: 1.5
+        value: {x: 11.1625824, y: 11.1625891, z: 11.1625891}
+        inSlope: {x: 33.4877434, y: 33.4877625, z: 33.4877625}
+        outSlope: {x: 33.4877434, y: 33.4877625, z: 33.4877625}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers (1)/Flower2_Pinwheel (9)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.41666663
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 43.5545616, y: 43.5545921, z: 43.5545921}
+        outSlope: {x: 43.5545616, y: 43.5545921, z: 43.5545921}
+        tangentMode: 0
+      - time: 1.75
+        value: {x: 14.5181894, y: 14.518199, z: 14.518199}
+        inSlope: {x: 43.5545616, y: 43.5545921, z: 43.5545921}
+        outSlope: {x: 43.5545616, y: 43.5545921, z: 43.5545921}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers (1)/Flower2_Pinwheel (8)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 36.2997589, y: 36.2997818, z: 36.2997818}
+        outSlope: {x: 36.2997589, y: 36.2997818, z: 36.2997818}
+        tangentMode: 0
+      - time: 1.91666663
+        value: {x: 12.0999165, y: 12.0999241, z: 12.0999241}
+        inSlope: {x: 36.2997589, y: 36.2997818, z: 36.2997818}
+        outSlope: {x: 36.2997589, y: 36.2997818, z: 36.2997818}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers (1)/Flower2_Pinwheel (7)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .75
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 3.85993814, y: 3.8599422, z: 3.8599422}
+        outSlope: {x: 3.85993814, y: 3.8599422, z: 3.8599422}
+        tangentMode: 0
+      - time: 2.83333325
+        value: {x: 8.04153728, y: 8.04154587, z: 8.04154587}
+        inSlope: {x: 3.85993814, y: 3.8599422, z: 3.8599422}
+        outSlope: {x: 3.85993814, y: 3.8599422, z: 3.8599422}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: Flower2_Wind (5)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 9.25911903, y: 9.25912857, z: 9.25912857}
+        outSlope: {x: 9.25911903, y: 9.25912857, z: 9.25912857}
+        tangentMode: 0
+      - time: 2.58333325
+        value: {x: 14.6602716, y: 14.6602869, z: 14.6602869}
+        inSlope: {x: 9.25911903, y: 9.25912857, z: 9.25912857}
+        outSlope: {x: 9.25911903, y: 9.25912857, z: 9.25912857}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: Flower2_Wind (4)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 10.995203, y: 10.9952145, z: 10.9952145}
+        outSlope: {x: 10.995203, y: 10.9952145, z: 10.9952145}
+        tangentMode: 0
+      - time: 2.91666675
+        value: {x: 14.6602716, y: 14.6602869, z: 14.6602869}
+        inSlope: {x: 10.995203, y: 10.9952145, z: 10.9952145}
+        outSlope: {x: 10.995203, y: 10.9952145, z: 10.9952145}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: Flower2_Wind (3)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 7.3301363, y: 7.33014393, z: 7.33014393}
+        outSlope: {x: 7.3301363, y: 7.33014393, z: 7.33014393}
+        tangentMode: 0
+      - time: 3.33333325
+        value: {x: 14.6602716, y: 14.6602869, z: 14.6602869}
+        inSlope: {x: 7.3301363, y: 7.33014393, z: 7.33014393}
+        outSlope: {x: 7.3301363, y: 7.33014393, z: 7.33014393}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: Flower2_Wind (2)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 12.7927084, y: 12.7927217, z: 12.7927217}
+        outSlope: {x: 12.7927084, y: 12.7927217, z: 12.7927217}
+        tangentMode: 0
+      - time: 3.41666675
+        value: {x: 23.4532986, y: 23.4533234, z: 23.4533234}
+        inSlope: {x: 12.7927084, y: 12.7927217, z: 12.7927217}
+        outSlope: {x: 12.7927084, y: 12.7927217, z: 12.7927217}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: Flower2_Wind (1)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.16666675
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 3.1967051, y: 3.19670844, z: 3.19670844}
+        outSlope: {x: 3.1967051, y: 3.19670844, z: 3.19670844}
+        tangentMode: 0
+      - time: 3.66666675
+        value: {x: 4.79505777, y: 4.79506254, z: 4.79506254}
+        inSlope: {x: 3.1967051, y: 3.19670844, z: 3.19670844}
+        outSlope: {x: 3.1967051, y: 3.19670844, z: 3.19670844}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: FlowerTree2 (2)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .75
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 4.42620707, y: 4.42621136, z: 4.42621136}
+        outSlope: {x: 4.42620707, y: 4.42621136, z: 4.42621136}
+        tangentMode: 0
+      - time: 1.83333337
+        value: {x: 4.79505777, y: 4.79506254, z: 4.79506254}
+        inSlope: {x: 4.42620707, y: 4.42621136, z: 4.42621136}
+        outSlope: {x: 4.42620707, y: 4.42621136, z: 4.42621136}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: FlowerTree2 (1)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .583333313
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 24.1998291, y: 24.1998444, z: 24.1998444}
+        outSlope: {x: 24.1998291, y: 24.1998444, z: 24.1998444}
+        tangentMode: 0
+      - time: 1.08333337
+        value: {x: 12.0999165, y: 12.0999241, z: 12.0999241}
+        inSlope: {x: 24.1998291, y: 24.1998444, z: 24.1998444}
+        outSlope: {x: 24.1998291, y: 24.1998444, z: 24.1998444}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers/Flower2_Pinwheel (12)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .333333343
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 26.4394722, y: 26.4394875, z: 26.4394875}
+        outSlope: {x: 26.4394722, y: 26.4394875, z: 26.4394875}
+        tangentMode: 0
+      - time: .75
+        value: {x: 11.0164461, y: 11.0164528, z: 11.0164528}
+        inSlope: {x: 26.4394722, y: 26.4394875, z: 26.4394875}
+        outSlope: {x: 26.4394722, y: 26.4394875, z: 26.4394875}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers/Flower2_Pinwheel (11)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 16.9301624, y: 16.930172, z: 16.930172}
+        outSlope: {x: 16.9301624, y: 16.930172, z: 16.930172}
+        tangentMode: 0
+      - time: .416666657
+        value: {x: 7.0542345, y: 7.05423784, z: 7.05423784}
+        inSlope: {x: 16.9301624, y: 16.930172, z: 16.930172}
+        outSlope: {x: 16.9301624, y: 16.930172, z: 16.930172}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers/Flower2_Pinwheel (10)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 16.7438736, y: 16.7438831, z: 16.7438831}
+        outSlope: {x: 16.7438736, y: 16.7438831, z: 16.7438831}
+        tangentMode: 0
+      - time: .666666687
+        value: {x: 11.1625824, y: 11.1625891, z: 11.1625891}
+        inSlope: {x: 16.7438736, y: 16.7438831, z: 16.7438831}
+        outSlope: {x: 16.7438736, y: 16.7438831, z: 16.7438831}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers/Flower2_Pinwheel (9)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .916666687
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 29.0363827, y: 29.0364017, z: 29.0364017}
+        outSlope: {x: 29.0363827, y: 29.0364017, z: 29.0364017}
+        tangentMode: 0
+      - time: 1.41666663
+        value: {x: 14.5181894, y: 14.518199, z: 14.518199}
+        inSlope: {x: 29.0363827, y: 29.0364017, z: 29.0364017}
+        outSlope: {x: 29.0363827, y: 29.0364017, z: 29.0364017}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers/Flower2_Pinwheel (8)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        outSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        tangentMode: 0
+      - time: 1.66666663
+        value: {x: 12.0999165, y: 12.0999241, z: 12.0999241}
+        inSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        outSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers/Flower2_Pinwheel (7)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        outSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        tangentMode: 0
+      - time: 1.66666663
+        value: {x: 12.0999165, y: 12.0999241, z: 12.0999241}
+        inSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        outSlope: {x: 24.1998329, y: 24.1998482, z: 24.1998482}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers/Flower2_Pinwheel (6)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .916666687
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 29.0363827, y: 29.0364017, z: 29.0364017}
+        outSlope: {x: 29.0363827, y: 29.0364017, z: 29.0364017}
+        tangentMode: 0
+      - time: 1.41666663
+        value: {x: 14.5181894, y: 14.518199, z: 14.518199}
+        inSlope: {x: 29.0363827, y: 29.0364017, z: 29.0364017}
+        outSlope: {x: 29.0363827, y: 29.0364017, z: 29.0364017}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers/Flower2_Pinwheel (5)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .666666687
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 22.3251667, y: 22.3251801, z: 22.3251801}
+        outSlope: {x: 22.3251667, y: 22.3251801, z: 22.3251801}
+        tangentMode: 0
+      - time: 1.16666663
+        value: {x: 11.1625824, y: 11.1625891, z: 11.1625891}
+        inSlope: {x: 22.3251667, y: 22.3251801, z: 22.3251801}
+        outSlope: {x: 22.3251667, y: 22.3251801, z: 22.3251801}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers/Flower2_Pinwheel (4)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 21.1627026, y: 21.1627121, z: 21.1627121}
+        outSlope: {x: 21.1627026, y: 21.1627121, z: 21.1627121}
+        tangentMode: 0
+      - time: .333333343
+        value: {x: 7.0542345, y: 7.05423784, z: 7.05423784}
+        inSlope: {x: 21.1627026, y: 21.1627121, z: 21.1627121}
+        outSlope: {x: 21.1627026, y: 21.1627121, z: 21.1627121}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers/Flower2_Pinwheel (3)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .333333343
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 26.4394722, y: 26.4394875, z: 26.4394875}
+        outSlope: {x: 26.4394722, y: 26.4394875, z: 26.4394875}
+        tangentMode: 0
+      - time: .75
+        value: {x: 11.0164461, y: 11.0164528, z: 11.0164528}
+        inSlope: {x: 26.4394722, y: 26.4394875, z: 26.4394875}
+        outSlope: {x: 26.4394722, y: 26.4394875, z: 26.4394875}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers/Flower2_Pinwheel (2)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 29.0398006, y: 29.0398178, z: 29.0398178}
+        outSlope: {x: 29.0398006, y: 29.0398178, z: 29.0398178}
+        tangentMode: 0
+      - time: .416666657
+        value: {x: 12.0999165, y: 12.0999241, z: 12.0999241}
+        inSlope: {x: 29.0398006, y: 29.0398178, z: 29.0398178}
+        outSlope: {x: 29.0398006, y: 29.0398178, z: 29.0398178}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: SmallFlowers/Flower2_Pinwheel (1)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.66666663
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 30.4808884, y: 30.4809151, z: 30.4809151}
+        outSlope: {x: 30.4808884, y: 30.4809151, z: 30.4809151}
+        tangentMode: 0
+      - time: 4
+        value: {x: 71.1220779, y: 71.122139, z: 71.122139}
+        inSlope: {x: 30.4808884, y: 30.4809151, z: 30.4809151}
+        outSlope: {x: 30.4808884, y: 30.4809151, z: 30.4809151}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: FlowerTree2 (8)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.08333325
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 30.4808922, y: 30.480917, z: 30.480917}
+        outSlope: {x: 30.4808922, y: 30.480917, z: 30.480917}
+        tangentMode: 0
+      - time: 4.41666651
+        value: {x: 71.1220779, y: 71.122139, z: 71.122139}
+        inSlope: {x: 30.4808922, y: 30.480917, z: 30.480917}
+        outSlope: {x: 30.4808922, y: 30.480917, z: 30.480917}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: FlowerTree2 (9)
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 12
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - path: 3060685183
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2294050627
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2245168506
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 741124439
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2177791745
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 4196111580
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3694226201
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3307887192
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2322320543
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2473655774
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3093147165
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 657836768
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1043266465
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 352561250
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2365789432
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3259138623
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3680088958
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 4034191549
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 511066519
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 895160916
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 742400789
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1661056466
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2048558227
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1362614096
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3973098055
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 4123761414
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3739666629
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3355310468
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 178418544
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 563028147
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 949228018
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 4010501221
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 4128265508
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1904757227
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 896400181
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 745982580
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1664572595
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2049732082
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1359035953
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2443664898
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3129609665
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2339096231
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2688980324
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3109921829
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2561179313
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2176012272
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 103502655
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 523264638
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 874328509
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 755368188
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1648858683
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2069669754
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1349645497
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1799927432
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1918076873
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: 4.41666651
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.41666663
+        value: 0
+        inSlope: 2.9567101
+        outSlope: 2.9567101
+        tangentMode: 10
+      - time: 3.83333325
+        value: 7.1453824
+        inSlope: 2.9567101
+        outSlope: 2.9567101
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: FlowerTree2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.41666663
+        value: 0
+        inSlope: 2.9567132
+        outSlope: 2.9567132
+        tangentMode: 10
+      - time: 3.83333325
+        value: 7.14539003
+        inSlope: 2.9567132
+        outSlope: 2.9567132
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: FlowerTree2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.41666663
+        value: 0
+        inSlope: 2.9567132
+        outSlope: 2.9567132
+        tangentMode: 10
+      - time: 3.83333325
+        value: 7.14539003
+        inSlope: 2.9567132
+        outSlope: 2.9567132
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: FlowerTree2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.16666675
+        value: 0
+        inSlope: 24.8504963
+        outSlope: 24.8504963
+        tangentMode: 10
+      - time: 3.33333325
+        value: 28.9922428
+        inSlope: 24.8504963
+        outSlope: 24.8504963
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: FlowerTree2 (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.16666675
+        value: 0
+        inSlope: 24.8505192
+        outSlope: 24.8505192
+        tangentMode: 10
+      - time: 3.33333325
+        value: 28.9922695
+        inSlope: 24.8505192
+        outSlope: 24.8505192
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: FlowerTree2 (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.16666675
+        value: 0
+        inSlope: 24.8505192
+        outSlope: 24.8505192
+        tangentMode: 10
+      - time: 3.33333325
+        value: 28.9922695
+        inSlope: 24.8505192
+        outSlope: 24.8505192
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: FlowerTree2 (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: 0
+        inSlope: .0606604591
+        outSlope: .0606604591
+        tangentMode: 10
+      - time: 2.5
+        value: .0707705319
+        inSlope: .0606604591
+        outSlope: .0606604591
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: FlowerTree_1_FIXEDLEAVES
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: 0
+        inSlope: .0606604405
+        outSlope: .0606604405
+        tangentMode: 10
+      - time: 2.5
+        value: .0707705095
+        inSlope: .0606604405
+        outSlope: .0606604405
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: FlowerTree_1_FIXEDLEAVES
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: 0
+        inSlope: .0606604405
+        outSlope: .0606604405
+        tangentMode: 10
+      - time: 2.5
+        value: .0707705095
+        inSlope: .0606604405
+        outSlope: .0606604405
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: FlowerTree_1_FIXEDLEAVES
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 7.9199152
+        outSlope: 7.9199152
+        tangentMode: 10
+      - time: .416666657
+        value: 3.29996467
+        inSlope: 7.9199152
+        outSlope: 7.9199152
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SpikeyFlowerAniamtion_Wind_V1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 7.91991472
+        outSlope: 7.91991472
+        tangentMode: 10
+      - time: .416666657
+        value: 3.29996443
+        inSlope: 7.91991472
+        outSlope: 7.91991472
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SpikeyFlowerAniamtion_Wind_V1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 7.91991472
+        outSlope: 7.91991472
+        tangentMode: 10
+      - time: .416666657
+        value: 3.29996443
+        inSlope: 7.91991472
+        outSlope: 7.91991472
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SpikeyFlowerAniamtion_Wind_V1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .583333313
+        value: 0
+        inSlope: 7.72610331
+        outSlope: 7.72610331
+        tangentMode: 10
+      - time: 1.08333337
+        value: 3.86305213
+        inSlope: 7.72610331
+        outSlope: 7.72610331
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: CarrotFlower
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .583333313
+        value: 0
+        inSlope: 7.7261014
+        outSlope: 7.7261014
+        tangentMode: 10
+      - time: 1.08333337
+        value: 3.86305118
+        inSlope: 7.7261014
+        outSlope: 7.7261014
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: CarrotFlower
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .583333313
+        value: 0
+        inSlope: 7.7261014
+        outSlope: 7.7261014
+        tangentMode: 10
+      - time: 1.08333337
+        value: 3.86305118
+        inSlope: 7.7261014
+        outSlope: 7.7261014
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: CarrotFlower
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .333333343
+        value: 0
+        inSlope: 4.65163374
+        outSlope: 4.65163374
+        tangentMode: 10
+      - time: 2.33333325
+        value: 9.30326653
+        inSlope: 4.65163374
+        outSlope: 4.65163374
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: Flower2_Wind
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .333333343
+        value: 0
+        inSlope: 4.65163755
+        outSlope: 4.65163755
+        tangentMode: 10
+      - time: 2.33333325
+        value: 9.30327415
+        inSlope: 4.65163755
+        outSlope: 4.65163755
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: Flower2_Wind
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .333333343
+        value: 0
+        inSlope: 4.65163755
+        outSlope: 4.65163755
+        tangentMode: 10
+      - time: 2.33333325
+        value: 9.30327415
+        inSlope: 4.65163755
+        outSlope: 4.65163755
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: Flower2_Wind
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 3.75
+        value: 0
+        inSlope: 16.3734417
+        outSlope: 16.3734417
+        tangentMode: 10
+      - time: 4.25
+        value: 8.18672085
+        inSlope: 16.3734417
+        outSlope: 16.3734417
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SpikeyFlowerAniamtion_Wind_V1 (5)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 3.75
+        value: 0
+        inSlope: 16.3734455
+        outSlope: 16.3734455
+        tangentMode: 10
+      - time: 4.25
+        value: 8.18672276
+        inSlope: 16.3734455
+        outSlope: 16.3734455
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SpikeyFlowerAniamtion_Wind_V1 (5)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 3.75
+        value: 0
+        inSlope: 16.3734455
+        outSlope: 16.3734455
+        tangentMode: 10
+      - time: 4.25
+        value: 8.18672276
+        inSlope: 16.3734455
+        outSlope: 16.3734455
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SpikeyFlowerAniamtion_Wind_V1 (5)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 3.25
+        value: 0
+        inSlope: 14.7490702
+        outSlope: 14.7490702
+        tangentMode: 10
+      - time: 3.58333325
+        value: 4.91635561
+        inSlope: 14.7490702
+        outSlope: 14.7490702
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SpikeyFlowerAniamtion_Wind_V1 (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 3.25
+        value: 0
+        inSlope: 14.7490749
+        outSlope: 14.7490749
+        tangentMode: 10
+      - time: 3.58333325
+        value: 4.91635704
+        inSlope: 14.7490749
+        outSlope: 14.7490749
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SpikeyFlowerAniamtion_Wind_V1 (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 3.25
+        value: 0
+        inSlope: 14.7490749
+        outSlope: 14.7490749
+        tangentMode: 10
+      - time: 3.58333325
+        value: 4.91635704
+        inSlope: 14.7490749
+        outSlope: 14.7490749
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SpikeyFlowerAniamtion_Wind_V1 (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: 0
+        inSlope: 7.71802473
+        outSlope: 7.71802473
+        tangentMode: 10
+      - time: 1.66666663
+        value: 2.57267427
+        inSlope: 7.71802473
+        outSlope: 7.71802473
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SpikeyFlowerAniamtion_Wind_V1 (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: 0
+        inSlope: 7.71802473
+        outSlope: 7.71802473
+        tangentMode: 10
+      - time: 1.66666663
+        value: 2.57267427
+        inSlope: 7.71802473
+        outSlope: 7.71802473
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SpikeyFlowerAniamtion_Wind_V1 (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: 0
+        inSlope: 7.71802473
+        outSlope: 7.71802473
+        tangentMode: 10
+      - time: 1.66666663
+        value: 2.57267427
+        inSlope: 7.71802473
+        outSlope: 7.71802473
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SpikeyFlowerAniamtion_Wind_V1 (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.08333337
+        value: 0
+        inSlope: 7.71802473
+        outSlope: 7.71802473
+        tangentMode: 10
+      - time: 1.41666663
+        value: 2.57267427
+        inSlope: 7.71802473
+        outSlope: 7.71802473
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SpikeyFlowerAniamtion_Wind_V1 (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.08333337
+        value: 0
+        inSlope: 7.71802473
+        outSlope: 7.71802473
+        tangentMode: 10
+      - time: 1.41666663
+        value: 2.57267427
+        inSlope: 7.71802473
+        outSlope: 7.71802473
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SpikeyFlowerAniamtion_Wind_V1 (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.08333337
+        value: 0
+        inSlope: 7.71802473
+        outSlope: 7.71802473
+        tangentMode: 10
+      - time: 1.41666663
+        value: 2.57267427
+        inSlope: 7.71802473
+        outSlope: 7.71802473
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SpikeyFlowerAniamtion_Wind_V1 (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .0833333358
+        value: 0
+        inSlope: 7.7180233
+        outSlope: 7.7180233
+        tangentMode: 10
+      - time: .416666657
+        value: 2.57267427
+        inSlope: 7.7180233
+        outSlope: 7.7180233
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SpikeyFlowerAniamtion_Wind_V1 (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .0833333358
+        value: 0
+        inSlope: 7.7180233
+        outSlope: 7.7180233
+        tangentMode: 10
+      - time: .416666657
+        value: 2.57267427
+        inSlope: 7.7180233
+        outSlope: 7.7180233
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SpikeyFlowerAniamtion_Wind_V1 (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .0833333358
+        value: 0
+        inSlope: 7.7180233
+        outSlope: 7.7180233
+        tangentMode: 10
+      - time: .416666657
+        value: 2.57267427
+        inSlope: 7.7180233
+        outSlope: 7.7180233
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SpikeyFlowerAniamtion_Wind_V1 (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: 0
+        inSlope: 7.46686268
+        outSlope: 7.46686268
+        tangentMode: 10
+      - time: 1.41666663
+        value: 3.11119246
+        inSlope: 7.46686268
+        outSlope: 7.46686268
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: CarrotFlower (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: 0
+        inSlope: 7.46686077
+        outSlope: 7.46686077
+        tangentMode: 10
+      - time: 1.41666663
+        value: 3.11119175
+        inSlope: 7.46686077
+        outSlope: 7.46686077
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: CarrotFlower (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: 0
+        inSlope: 7.46686077
+        outSlope: 7.46686077
+        tangentMode: 10
+      - time: 1.41666663
+        value: 3.11119175
+        inSlope: 7.46686077
+        outSlope: 7.46686077
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: CarrotFlower (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: 0
+        inSlope: 14.3015089
+        outSlope: 14.3015089
+        tangentMode: 10
+      - time: 1.75
+        value: 5.95896149
+        inSlope: 14.3015089
+        outSlope: 14.3015089
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: CarrotFlower (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: 0
+        inSlope: 14.3015041
+        outSlope: 14.3015041
+        tangentMode: 10
+      - time: 1.75
+        value: 5.95895958
+        inSlope: 14.3015041
+        outSlope: 14.3015041
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: CarrotFlower (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: 0
+        inSlope: 14.3015041
+        outSlope: 14.3015041
+        tangentMode: 10
+      - time: 1.75
+        value: 5.95895958
+        inSlope: 14.3015041
+        outSlope: 14.3015041
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: CarrotFlower (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 3.91356945
+        outSlope: 3.91356945
+        tangentMode: 10
+      - time: .5
+        value: 1.95678473
+        inSlope: 3.91356945
+        outSlope: 3.91356945
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: CarrotFlower (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 3.91356826
+        outSlope: 3.91356826
+        tangentMode: 10
+      - time: .5
+        value: 1.95678413
+        inSlope: 3.91356826
+        outSlope: 3.91356826
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: CarrotFlower (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 3.91356826
+        outSlope: 3.91356826
+        tangentMode: 10
+      - time: .5
+        value: 1.95678413
+        inSlope: 3.91356826
+        outSlope: 3.91356826
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: CarrotFlower (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: 0
+        inSlope: .0471803546
+        outSlope: .0471803546
+        tangentMode: 10
+      - time: 2.5
+        value: .0707705319
+        inSlope: .0471803546
+        outSlope: .0471803546
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: FlowerTree_1_FIXEDLEAVES (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: 0
+        inSlope: .0471803397
+        outSlope: .0471803397
+        tangentMode: 10
+      - time: 2.5
+        value: .0707705095
+        inSlope: .0471803397
+        outSlope: .0471803397
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: FlowerTree_1_FIXEDLEAVES (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: 0
+        inSlope: .0471803397
+        outSlope: .0471803397
+        tangentMode: 10
+      - time: 2.5
+        value: .0707705095
+        inSlope: .0471803397
+        outSlope: .0471803397
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: FlowerTree_1_FIXEDLEAVES (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.41666675
+        value: 0
+        inSlope: .10277801
+        outSlope: .10277801
+        tangentMode: 10
+      - time: 3.91666675
+        value: .154167011
+        inSlope: .10277801
+        outSlope: .10277801
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: FlowerTree_1_FIXEDLEAVES (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.41666675
+        value: 0
+        inSlope: .10277798
+        outSlope: .10277798
+        tangentMode: 10
+      - time: 3.91666675
+        value: .154166967
+        inSlope: .10277798
+        outSlope: .10277798
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: FlowerTree_1_FIXEDLEAVES (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.41666675
+        value: 0
+        inSlope: .10277798
+        outSlope: .10277798
+        tangentMode: 10
+      - time: 3.91666675
+        value: .154166967
+        inSlope: .10277798
+        outSlope: .10277798
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: FlowerTree_1_FIXEDLEAVES (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.91666663
+        value: 0
+        inSlope: .0324084349
+        outSlope: .0324084349
+        tangentMode: 10
+      - time: 3.83333325
+        value: .0621161684
+        inSlope: .0324084349
+        outSlope: .0324084349
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: FlowerTree_1_FIXEDLEAVES (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.91666663
+        value: 0
+        inSlope: .0324084312
+        outSlope: .0324084312
+        tangentMode: 10
+      - time: 3.83333325
+        value: .0621161573
+        inSlope: .0324084312
+        outSlope: .0324084312
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: FlowerTree_1_FIXEDLEAVES (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.91666663
+        value: 0
+        inSlope: .0324084312
+        outSlope: .0324084312
+        tangentMode: 10
+      - time: 3.83333325
+        value: .0621161573
+        inSlope: .0324084312
+        outSlope: .0324084312
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: FlowerTree_1_FIXEDLEAVES (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: 0
+        inSlope: .0616667978
+        outSlope: .0616667978
+        tangentMode: 10
+      - time: 4.08333349
+        value: .154166996
+        inSlope: .0616667978
+        outSlope: .0616667978
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: FlowerTree_1_FIXEDLEAVES (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: 0
+        inSlope: .0616667867
+        outSlope: .0616667867
+        tangentMode: 10
+      - time: 4.08333349
+        value: .154166967
+        inSlope: .0616667867
+        outSlope: .0616667867
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: FlowerTree_1_FIXEDLEAVES (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: 0
+        inSlope: .0616667867
+        outSlope: .0616667867
+        tangentMode: 10
+      - time: 4.08333349
+        value: .154166967
+        inSlope: .0616667867
+        outSlope: .0616667867
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: FlowerTree_1_FIXEDLEAVES (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.5
+        value: 0
+        inSlope: 24.1998329
+        outSlope: 24.1998329
+        tangentMode: 10
+      - time: 2
+        value: 12.0999165
+        inSlope: 24.1998329
+        outSlope: 24.1998329
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers (2)/Flower2_Pinwheel (6)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.5
+        value: 0
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      - time: 2
+        value: 12.0999241
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers (2)/Flower2_Pinwheel (6)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.5
+        value: 0
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      - time: 2
+        value: 12.0999241
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers (2)/Flower2_Pinwheel (6)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.25
+        value: 0
+        inSlope: 29.0363789
+        outSlope: 29.0363789
+        tangentMode: 10
+      - time: 1.75
+        value: 14.5181894
+        inSlope: 29.0363789
+        outSlope: 29.0363789
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers (2)/Flower2_Pinwheel (5)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.25
+        value: 0
+        inSlope: 29.0363979
+        outSlope: 29.0363979
+        tangentMode: 10
+      - time: 1.75
+        value: 14.518199
+        inSlope: 29.0363979
+        outSlope: 29.0363979
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers (2)/Flower2_Pinwheel (5)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.25
+        value: 0
+        inSlope: 29.0363979
+        outSlope: 29.0363979
+        tangentMode: 10
+      - time: 1.75
+        value: 14.518199
+        inSlope: 29.0363979
+        outSlope: 29.0363979
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers (2)/Flower2_Pinwheel (5)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.08333337
+        value: 0
+        inSlope: 26.7902012
+        outSlope: 26.7902012
+        tangentMode: 10
+      - time: 1.5
+        value: 11.1625824
+        inSlope: 26.7902012
+        outSlope: 26.7902012
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers (2)/Flower2_Pinwheel (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.08333337
+        value: 0
+        inSlope: 26.7902164
+        outSlope: 26.7902164
+        tangentMode: 10
+      - time: 1.5
+        value: 11.1625891
+        inSlope: 26.7902164
+        outSlope: 26.7902164
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers (2)/Flower2_Pinwheel (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.08333337
+        value: 0
+        inSlope: 26.7902164
+        outSlope: 26.7902164
+        tangentMode: 10
+      - time: 1.5
+        value: 11.1625891
+        inSlope: 26.7902164
+        outSlope: 26.7902164
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers (2)/Flower2_Pinwheel (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .583333313
+        value: 0
+        inSlope: 14.1084671
+        outSlope: 14.1084671
+        tangentMode: 10
+      - time: 1.08333337
+        value: 7.0542345
+        inSlope: 14.1084671
+        outSlope: 14.1084671
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers (2)/Flower2_Pinwheel (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .583333313
+        value: 0
+        inSlope: 14.1084738
+        outSlope: 14.1084738
+        tangentMode: 10
+      - time: 1.08333337
+        value: 7.05423784
+        inSlope: 14.1084738
+        outSlope: 14.1084738
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers (2)/Flower2_Pinwheel (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .583333313
+        value: 0
+        inSlope: 14.1084738
+        outSlope: 14.1084738
+        tangentMode: 10
+      - time: 1.08333337
+        value: 7.05423784
+        inSlope: 14.1084738
+        outSlope: 14.1084738
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers (2)/Flower2_Pinwheel (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .416666657
+        value: 0
+        inSlope: 26.4394722
+        outSlope: 26.4394722
+        tangentMode: 10
+      - time: .833333313
+        value: 11.0164461
+        inSlope: 26.4394722
+        outSlope: 26.4394722
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers (2)/Flower2_Pinwheel (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .416666657
+        value: 0
+        inSlope: 26.4394875
+        outSlope: 26.4394875
+        tangentMode: 10
+      - time: .833333313
+        value: 11.0164528
+        inSlope: 26.4394875
+        outSlope: 26.4394875
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers (2)/Flower2_Pinwheel (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .416666657
+        value: 0
+        inSlope: 26.4394875
+        outSlope: 26.4394875
+        tangentMode: 10
+      - time: .833333313
+        value: 11.0164528
+        inSlope: 26.4394875
+        outSlope: 26.4394875
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers (2)/Flower2_Pinwheel (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 29.0398006
+        outSlope: 29.0398006
+        tangentMode: 10
+      - time: .416666657
+        value: 12.0999165
+        inSlope: 29.0398006
+        outSlope: 29.0398006
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers (2)/Flower2_Pinwheel (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 29.0398178
+        outSlope: 29.0398178
+        tangentMode: 10
+      - time: .416666657
+        value: 12.0999241
+        inSlope: 29.0398178
+        outSlope: 29.0398178
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers (2)/Flower2_Pinwheel (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 29.0398178
+        outSlope: 29.0398178
+        tangentMode: 10
+      - time: .416666657
+        value: 12.0999241
+        inSlope: 29.0398178
+        outSlope: 29.0398178
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers (2)/Flower2_Pinwheel (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.08333325
+        value: 0
+        inSlope: 9.27130604
+        outSlope: 9.27130604
+        tangentMode: 10
+      - time: 4.25
+        value: 20.0878315
+        inSlope: 9.27130604
+        outSlope: 9.27130604
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: FlowerTree2 (7)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.08333325
+        value: 0
+        inSlope: 9.27131462
+        outSlope: 9.27131462
+        tangentMode: 10
+      - time: 4.25
+        value: 20.0878487
+        inSlope: 9.27131462
+        outSlope: 9.27131462
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: FlowerTree2 (7)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.08333325
+        value: 0
+        inSlope: 9.27131462
+        outSlope: 9.27131462
+        tangentMode: 10
+      - time: 4.25
+        value: 20.0878487
+        inSlope: 9.27131462
+        outSlope: 9.27131462
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: FlowerTree2 (7)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.08333337
+        value: 0
+        inSlope: 7.08982229
+        outSlope: 7.08982229
+        tangentMode: 10
+      - time: 3.91666675
+        value: 20.0878315
+        inSlope: 7.08982229
+        outSlope: 7.08982229
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: FlowerTree2 (6)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.08333337
+        value: 0
+        inSlope: 7.08982849
+        outSlope: 7.08982849
+        tangentMode: 10
+      - time: 3.91666675
+        value: 20.0878487
+        inSlope: 7.08982849
+        outSlope: 7.08982849
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: FlowerTree2 (6)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.08333337
+        value: 0
+        inSlope: 7.08982849
+        outSlope: 7.08982849
+        tangentMode: 10
+      - time: 3.91666675
+        value: 20.0878487
+        inSlope: 7.08982849
+        outSlope: 7.08982849
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: FlowerTree2 (6)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .916666687
+        value: 0
+        inSlope: 7.03859425
+        outSlope: 7.03859425
+        tangentMode: 10
+      - time: 2.66666675
+        value: 12.3175402
+        inSlope: 7.03859425
+        outSlope: 7.03859425
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: FlowerTree2 (5)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .916666687
+        value: 0
+        inSlope: 7.03860044
+        outSlope: 7.03860044
+        tangentMode: 10
+      - time: 2.66666675
+        value: 12.3175507
+        inSlope: 7.03860044
+        outSlope: 7.03860044
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: FlowerTree2 (5)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .916666687
+        value: 0
+        inSlope: 7.03860044
+        outSlope: 7.03860044
+        tangentMode: 10
+      - time: 2.66666675
+        value: 12.3175507
+        inSlope: 7.03860044
+        outSlope: 7.03860044
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: FlowerTree2 (5)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.41666663
+        value: 0
+        inSlope: 7.77949905
+        outSlope: 7.77949905
+        tangentMode: 10
+      - time: 3
+        value: 12.3175402
+        inSlope: 7.77949905
+        outSlope: 7.77949905
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: FlowerTree2 (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.41666663
+        value: 0
+        inSlope: 7.77950525
+        outSlope: 7.77950525
+        tangentMode: 10
+      - time: 3
+        value: 12.3175507
+        inSlope: 7.77950525
+        outSlope: 7.77950525
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: FlowerTree2 (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.41666663
+        value: 0
+        inSlope: 7.77950525
+        outSlope: 7.77950525
+        tangentMode: 10
+      - time: 3
+        value: 12.3175507
+        inSlope: 7.77950525
+        outSlope: 7.77950525
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: FlowerTree2 (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.25
+        value: 0
+        inSlope: 24.1998329
+        outSlope: 24.1998329
+        tangentMode: 10
+      - time: 1.75
+        value: 12.0999165
+        inSlope: 24.1998329
+        outSlope: 24.1998329
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers (1)/Flower2_Pinwheel (12)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.25
+        value: 0
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      - time: 1.75
+        value: 12.0999241
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers (1)/Flower2_Pinwheel (12)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.25
+        value: 0
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      - time: 1.75
+        value: 12.0999241
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers (1)/Flower2_Pinwheel (12)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: 0
+        inSlope: 33.0493355
+        outSlope: 33.0493355
+        tangentMode: 10
+      - time: 1.33333337
+        value: 11.0164461
+        inSlope: 33.0493355
+        outSlope: 33.0493355
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers (1)/Flower2_Pinwheel (11)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: 0
+        inSlope: 33.0493546
+        outSlope: 33.0493546
+        tangentMode: 10
+      - time: 1.33333337
+        value: 11.0164528
+        inSlope: 33.0493546
+        outSlope: 33.0493546
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers (1)/Flower2_Pinwheel (11)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: 0
+        inSlope: 33.0493546
+        outSlope: 33.0493546
+        tangentMode: 10
+      - time: 1.33333337
+        value: 11.0164528
+        inSlope: 33.0493546
+        outSlope: 33.0493546
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers (1)/Flower2_Pinwheel (11)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .416666657
+        value: 0
+        inSlope: 16.9301624
+        outSlope: 16.9301624
+        tangentMode: 10
+      - time: .833333313
+        value: 7.0542345
+        inSlope: 16.9301624
+        outSlope: 16.9301624
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers (1)/Flower2_Pinwheel (10)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .416666657
+        value: 0
+        inSlope: 16.930172
+        outSlope: 16.930172
+        tangentMode: 10
+      - time: .833333313
+        value: 7.05423784
+        inSlope: 16.930172
+        outSlope: 16.930172
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers (1)/Flower2_Pinwheel (10)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .416666657
+        value: 0
+        inSlope: 16.930172
+        outSlope: 16.930172
+        tangentMode: 10
+      - time: .833333313
+        value: 7.05423784
+        inSlope: 16.930172
+        outSlope: 16.930172
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers (1)/Flower2_Pinwheel (10)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: 0
+        inSlope: 33.4877434
+        outSlope: 33.4877434
+        tangentMode: 10
+      - time: 1.5
+        value: 11.1625824
+        inSlope: 33.4877434
+        outSlope: 33.4877434
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers (1)/Flower2_Pinwheel (9)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: 0
+        inSlope: 33.4877625
+        outSlope: 33.4877625
+        tangentMode: 10
+      - time: 1.5
+        value: 11.1625891
+        inSlope: 33.4877625
+        outSlope: 33.4877625
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers (1)/Flower2_Pinwheel (9)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: 0
+        inSlope: 33.4877625
+        outSlope: 33.4877625
+        tangentMode: 10
+      - time: 1.5
+        value: 11.1625891
+        inSlope: 33.4877625
+        outSlope: 33.4877625
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers (1)/Flower2_Pinwheel (9)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.41666663
+        value: 0
+        inSlope: 43.5545616
+        outSlope: 43.5545616
+        tangentMode: 10
+      - time: 1.75
+        value: 14.5181894
+        inSlope: 43.5545616
+        outSlope: 43.5545616
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers (1)/Flower2_Pinwheel (8)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.41666663
+        value: 0
+        inSlope: 43.5545921
+        outSlope: 43.5545921
+        tangentMode: 10
+      - time: 1.75
+        value: 14.518199
+        inSlope: 43.5545921
+        outSlope: 43.5545921
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers (1)/Flower2_Pinwheel (8)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.41666663
+        value: 0
+        inSlope: 43.5545921
+        outSlope: 43.5545921
+        tangentMode: 10
+      - time: 1.75
+        value: 14.518199
+        inSlope: 43.5545921
+        outSlope: 43.5545921
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers (1)/Flower2_Pinwheel (8)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: 0
+        inSlope: 36.2997589
+        outSlope: 36.2997589
+        tangentMode: 10
+      - time: 1.91666663
+        value: 12.0999165
+        inSlope: 36.2997589
+        outSlope: 36.2997589
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers (1)/Flower2_Pinwheel (7)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: 0
+        inSlope: 36.2997818
+        outSlope: 36.2997818
+        tangentMode: 10
+      - time: 1.91666663
+        value: 12.0999241
+        inSlope: 36.2997818
+        outSlope: 36.2997818
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers (1)/Flower2_Pinwheel (7)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: 0
+        inSlope: 36.2997818
+        outSlope: 36.2997818
+        tangentMode: 10
+      - time: 1.91666663
+        value: 12.0999241
+        inSlope: 36.2997818
+        outSlope: 36.2997818
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers (1)/Flower2_Pinwheel (7)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .75
+        value: 0
+        inSlope: 3.85993814
+        outSlope: 3.85993814
+        tangentMode: 10
+      - time: 2.83333325
+        value: 8.04153728
+        inSlope: 3.85993814
+        outSlope: 3.85993814
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: Flower2_Wind (5)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .75
+        value: 0
+        inSlope: 3.8599422
+        outSlope: 3.8599422
+        tangentMode: 10
+      - time: 2.83333325
+        value: 8.04154587
+        inSlope: 3.8599422
+        outSlope: 3.8599422
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: Flower2_Wind (5)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .75
+        value: 0
+        inSlope: 3.8599422
+        outSlope: 3.8599422
+        tangentMode: 10
+      - time: 2.83333325
+        value: 8.04154587
+        inSlope: 3.8599422
+        outSlope: 3.8599422
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: Flower2_Wind (5)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: 0
+        inSlope: 9.25911903
+        outSlope: 9.25911903
+        tangentMode: 10
+      - time: 2.58333325
+        value: 14.6602716
+        inSlope: 9.25911903
+        outSlope: 9.25911903
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: Flower2_Wind (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: 0
+        inSlope: 9.25912857
+        outSlope: 9.25912857
+        tangentMode: 10
+      - time: 2.58333325
+        value: 14.6602869
+        inSlope: 9.25912857
+        outSlope: 9.25912857
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: Flower2_Wind (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: 0
+        inSlope: 9.25912857
+        outSlope: 9.25912857
+        tangentMode: 10
+      - time: 2.58333325
+        value: 14.6602869
+        inSlope: 9.25912857
+        outSlope: 9.25912857
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: Flower2_Wind (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: 0
+        inSlope: 10.995203
+        outSlope: 10.995203
+        tangentMode: 10
+      - time: 2.91666675
+        value: 14.6602716
+        inSlope: 10.995203
+        outSlope: 10.995203
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: Flower2_Wind (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: 0
+        inSlope: 10.9952145
+        outSlope: 10.9952145
+        tangentMode: 10
+      - time: 2.91666675
+        value: 14.6602869
+        inSlope: 10.9952145
+        outSlope: 10.9952145
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: Flower2_Wind (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: 0
+        inSlope: 10.9952145
+        outSlope: 10.9952145
+        tangentMode: 10
+      - time: 2.91666675
+        value: 14.6602869
+        inSlope: 10.9952145
+        outSlope: 10.9952145
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: Flower2_Wind (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: 0
+        inSlope: 7.3301363
+        outSlope: 7.3301363
+        tangentMode: 10
+      - time: 3.33333325
+        value: 14.6602716
+        inSlope: 7.3301363
+        outSlope: 7.3301363
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: Flower2_Wind (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: 0
+        inSlope: 7.33014393
+        outSlope: 7.33014393
+        tangentMode: 10
+      - time: 3.33333325
+        value: 14.6602869
+        inSlope: 7.33014393
+        outSlope: 7.33014393
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: Flower2_Wind (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.33333337
+        value: 0
+        inSlope: 7.33014393
+        outSlope: 7.33014393
+        tangentMode: 10
+      - time: 3.33333325
+        value: 14.6602869
+        inSlope: 7.33014393
+        outSlope: 7.33014393
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: Flower2_Wind (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: 0
+        inSlope: 12.7927084
+        outSlope: 12.7927084
+        tangentMode: 10
+      - time: 3.41666675
+        value: 23.4532986
+        inSlope: 12.7927084
+        outSlope: 12.7927084
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: Flower2_Wind (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: 0
+        inSlope: 12.7927217
+        outSlope: 12.7927217
+        tangentMode: 10
+      - time: 3.41666675
+        value: 23.4533234
+        inSlope: 12.7927217
+        outSlope: 12.7927217
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: Flower2_Wind (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.58333337
+        value: 0
+        inSlope: 12.7927217
+        outSlope: 12.7927217
+        tangentMode: 10
+      - time: 3.41666675
+        value: 23.4533234
+        inSlope: 12.7927217
+        outSlope: 12.7927217
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: Flower2_Wind (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.16666675
+        value: 0
+        inSlope: 3.1967051
+        outSlope: 3.1967051
+        tangentMode: 10
+      - time: 3.66666675
+        value: 4.79505777
+        inSlope: 3.1967051
+        outSlope: 3.1967051
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: FlowerTree2 (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.16666675
+        value: 0
+        inSlope: 3.19670844
+        outSlope: 3.19670844
+        tangentMode: 10
+      - time: 3.66666675
+        value: 4.79506254
+        inSlope: 3.19670844
+        outSlope: 3.19670844
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: FlowerTree2 (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.16666675
+        value: 0
+        inSlope: 3.19670844
+        outSlope: 3.19670844
+        tangentMode: 10
+      - time: 3.66666675
+        value: 4.79506254
+        inSlope: 3.19670844
+        outSlope: 3.19670844
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: FlowerTree2 (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .75
+        value: 0
+        inSlope: 4.42620707
+        outSlope: 4.42620707
+        tangentMode: 10
+      - time: 1.83333337
+        value: 4.79505777
+        inSlope: 4.42620707
+        outSlope: 4.42620707
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: FlowerTree2 (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .75
+        value: 0
+        inSlope: 4.42621136
+        outSlope: 4.42621136
+        tangentMode: 10
+      - time: 1.83333337
+        value: 4.79506254
+        inSlope: 4.42621136
+        outSlope: 4.42621136
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: FlowerTree2 (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .75
+        value: 0
+        inSlope: 4.42621136
+        outSlope: 4.42621136
+        tangentMode: 10
+      - time: 1.83333337
+        value: 4.79506254
+        inSlope: 4.42621136
+        outSlope: 4.42621136
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: FlowerTree2 (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .583333313
+        value: 0
+        inSlope: 24.1998291
+        outSlope: 24.1998291
+        tangentMode: 10
+      - time: 1.08333337
+        value: 12.0999165
+        inSlope: 24.1998291
+        outSlope: 24.1998291
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers/Flower2_Pinwheel (12)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .583333313
+        value: 0
+        inSlope: 24.1998444
+        outSlope: 24.1998444
+        tangentMode: 10
+      - time: 1.08333337
+        value: 12.0999241
+        inSlope: 24.1998444
+        outSlope: 24.1998444
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers/Flower2_Pinwheel (12)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .583333313
+        value: 0
+        inSlope: 24.1998444
+        outSlope: 24.1998444
+        tangentMode: 10
+      - time: 1.08333337
+        value: 12.0999241
+        inSlope: 24.1998444
+        outSlope: 24.1998444
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers/Flower2_Pinwheel (12)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .333333343
+        value: 0
+        inSlope: 26.4394722
+        outSlope: 26.4394722
+        tangentMode: 10
+      - time: .75
+        value: 11.0164461
+        inSlope: 26.4394722
+        outSlope: 26.4394722
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers/Flower2_Pinwheel (11)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .333333343
+        value: 0
+        inSlope: 26.4394875
+        outSlope: 26.4394875
+        tangentMode: 10
+      - time: .75
+        value: 11.0164528
+        inSlope: 26.4394875
+        outSlope: 26.4394875
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers/Flower2_Pinwheel (11)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .333333343
+        value: 0
+        inSlope: 26.4394875
+        outSlope: 26.4394875
+        tangentMode: 10
+      - time: .75
+        value: 11.0164528
+        inSlope: 26.4394875
+        outSlope: 26.4394875
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers/Flower2_Pinwheel (11)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 16.9301624
+        outSlope: 16.9301624
+        tangentMode: 10
+      - time: .416666657
+        value: 7.0542345
+        inSlope: 16.9301624
+        outSlope: 16.9301624
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers/Flower2_Pinwheel (10)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 16.930172
+        outSlope: 16.930172
+        tangentMode: 10
+      - time: .416666657
+        value: 7.05423784
+        inSlope: 16.930172
+        outSlope: 16.930172
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers/Flower2_Pinwheel (10)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 16.930172
+        outSlope: 16.930172
+        tangentMode: 10
+      - time: .416666657
+        value: 7.05423784
+        inSlope: 16.930172
+        outSlope: 16.930172
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers/Flower2_Pinwheel (10)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 16.7438736
+        outSlope: 16.7438736
+        tangentMode: 10
+      - time: .666666687
+        value: 11.1625824
+        inSlope: 16.7438736
+        outSlope: 16.7438736
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers/Flower2_Pinwheel (9)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 16.7438831
+        outSlope: 16.7438831
+        tangentMode: 10
+      - time: .666666687
+        value: 11.1625891
+        inSlope: 16.7438831
+        outSlope: 16.7438831
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers/Flower2_Pinwheel (9)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 16.7438831
+        outSlope: 16.7438831
+        tangentMode: 10
+      - time: .666666687
+        value: 11.1625891
+        inSlope: 16.7438831
+        outSlope: 16.7438831
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers/Flower2_Pinwheel (9)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .916666687
+        value: 0
+        inSlope: 29.0363827
+        outSlope: 29.0363827
+        tangentMode: 10
+      - time: 1.41666663
+        value: 14.5181894
+        inSlope: 29.0363827
+        outSlope: 29.0363827
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers/Flower2_Pinwheel (8)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .916666687
+        value: 0
+        inSlope: 29.0364017
+        outSlope: 29.0364017
+        tangentMode: 10
+      - time: 1.41666663
+        value: 14.518199
+        inSlope: 29.0364017
+        outSlope: 29.0364017
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers/Flower2_Pinwheel (8)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .916666687
+        value: 0
+        inSlope: 29.0364017
+        outSlope: 29.0364017
+        tangentMode: 10
+      - time: 1.41666663
+        value: 14.518199
+        inSlope: 29.0364017
+        outSlope: 29.0364017
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers/Flower2_Pinwheel (8)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: 0
+        inSlope: 24.1998329
+        outSlope: 24.1998329
+        tangentMode: 10
+      - time: 1.66666663
+        value: 12.0999165
+        inSlope: 24.1998329
+        outSlope: 24.1998329
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers/Flower2_Pinwheel (7)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: 0
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      - time: 1.66666663
+        value: 12.0999241
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers/Flower2_Pinwheel (7)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: 0
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      - time: 1.66666663
+        value: 12.0999241
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers/Flower2_Pinwheel (7)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: 0
+        inSlope: 24.1998329
+        outSlope: 24.1998329
+        tangentMode: 10
+      - time: 1.66666663
+        value: 12.0999165
+        inSlope: 24.1998329
+        outSlope: 24.1998329
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers/Flower2_Pinwheel (6)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: 0
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      - time: 1.66666663
+        value: 12.0999241
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers/Flower2_Pinwheel (6)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: 0
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      - time: 1.66666663
+        value: 12.0999241
+        inSlope: 24.1998482
+        outSlope: 24.1998482
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers/Flower2_Pinwheel (6)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .916666687
+        value: 0
+        inSlope: 29.0363827
+        outSlope: 29.0363827
+        tangentMode: 10
+      - time: 1.41666663
+        value: 14.5181894
+        inSlope: 29.0363827
+        outSlope: 29.0363827
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers/Flower2_Pinwheel (5)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .916666687
+        value: 0
+        inSlope: 29.0364017
+        outSlope: 29.0364017
+        tangentMode: 10
+      - time: 1.41666663
+        value: 14.518199
+        inSlope: 29.0364017
+        outSlope: 29.0364017
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers/Flower2_Pinwheel (5)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .916666687
+        value: 0
+        inSlope: 29.0364017
+        outSlope: 29.0364017
+        tangentMode: 10
+      - time: 1.41666663
+        value: 14.518199
+        inSlope: 29.0364017
+        outSlope: 29.0364017
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers/Flower2_Pinwheel (5)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .666666687
+        value: 0
+        inSlope: 22.3251667
+        outSlope: 22.3251667
+        tangentMode: 10
+      - time: 1.16666663
+        value: 11.1625824
+        inSlope: 22.3251667
+        outSlope: 22.3251667
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers/Flower2_Pinwheel (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .666666687
+        value: 0
+        inSlope: 22.3251801
+        outSlope: 22.3251801
+        tangentMode: 10
+      - time: 1.16666663
+        value: 11.1625891
+        inSlope: 22.3251801
+        outSlope: 22.3251801
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers/Flower2_Pinwheel (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .666666687
+        value: 0
+        inSlope: 22.3251801
+        outSlope: 22.3251801
+        tangentMode: 10
+      - time: 1.16666663
+        value: 11.1625891
+        inSlope: 22.3251801
+        outSlope: 22.3251801
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers/Flower2_Pinwheel (4)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 21.1627026
+        outSlope: 21.1627026
+        tangentMode: 10
+      - time: .333333343
+        value: 7.0542345
+        inSlope: 21.1627026
+        outSlope: 21.1627026
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers/Flower2_Pinwheel (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 21.1627121
+        outSlope: 21.1627121
+        tangentMode: 10
+      - time: .333333343
+        value: 7.05423784
+        inSlope: 21.1627121
+        outSlope: 21.1627121
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers/Flower2_Pinwheel (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 21.1627121
+        outSlope: 21.1627121
+        tangentMode: 10
+      - time: .333333343
+        value: 7.05423784
+        inSlope: 21.1627121
+        outSlope: 21.1627121
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers/Flower2_Pinwheel (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .333333343
+        value: 0
+        inSlope: 26.4394722
+        outSlope: 26.4394722
+        tangentMode: 10
+      - time: .75
+        value: 11.0164461
+        inSlope: 26.4394722
+        outSlope: 26.4394722
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers/Flower2_Pinwheel (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .333333343
+        value: 0
+        inSlope: 26.4394875
+        outSlope: 26.4394875
+        tangentMode: 10
+      - time: .75
+        value: 11.0164528
+        inSlope: 26.4394875
+        outSlope: 26.4394875
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers/Flower2_Pinwheel (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: .333333343
+        value: 0
+        inSlope: 26.4394875
+        outSlope: 26.4394875
+        tangentMode: 10
+      - time: .75
+        value: 11.0164528
+        inSlope: 26.4394875
+        outSlope: 26.4394875
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers/Flower2_Pinwheel (2)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 29.0398006
+        outSlope: 29.0398006
+        tangentMode: 10
+      - time: .416666657
+        value: 12.0999165
+        inSlope: 29.0398006
+        outSlope: 29.0398006
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: SmallFlowers/Flower2_Pinwheel (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 29.0398178
+        outSlope: 29.0398178
+        tangentMode: 10
+      - time: .416666657
+        value: 12.0999241
+        inSlope: 29.0398178
+        outSlope: 29.0398178
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: SmallFlowers/Flower2_Pinwheel (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 29.0398178
+        outSlope: 29.0398178
+        tangentMode: 10
+      - time: .416666657
+        value: 12.0999241
+        inSlope: 29.0398178
+        outSlope: 29.0398178
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: SmallFlowers/Flower2_Pinwheel (1)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.66666663
+        value: 0
+        inSlope: 30.4808884
+        outSlope: 30.4808884
+        tangentMode: 10
+      - time: 4
+        value: 71.1220779
+        inSlope: 30.4808884
+        outSlope: 30.4808884
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: FlowerTree2 (8)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.66666663
+        value: 0
+        inSlope: 30.4809151
+        outSlope: 30.4809151
+        tangentMode: 10
+      - time: 4
+        value: 71.122139
+        inSlope: 30.4809151
+        outSlope: 30.4809151
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: FlowerTree2 (8)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.66666663
+        value: 0
+        inSlope: 30.4809151
+        outSlope: 30.4809151
+        tangentMode: 10
+      - time: 4
+        value: 71.122139
+        inSlope: 30.4809151
+        outSlope: 30.4809151
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: FlowerTree2 (8)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.08333325
+        value: 0
+        inSlope: 30.4808922
+        outSlope: 30.4808922
+        tangentMode: 10
+      - time: 4.41666651
+        value: 71.1220779
+        inSlope: 30.4808922
+        outSlope: 30.4808922
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.x
+    path: FlowerTree2 (9)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.08333325
+        value: 0
+        inSlope: 30.480917
+        outSlope: 30.480917
+        tangentMode: 10
+      - time: 4.41666651
+        value: 71.122139
+        inSlope: 30.480917
+        outSlope: 30.480917
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.y
+    path: FlowerTree2 (9)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 2.08333325
+        value: 0
+        inSlope: 30.480917
+        outSlope: 30.480917
+        tangentMode: 10
+      - time: 4.41666651
+        value: 71.122139
+        inSlope: 30.480917
+        outSlope: 30.480917
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalScale.z
+    path: FlowerTree2 (9)
+    classID: 4
+    script: {fileID: 0}
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []
