@@ -46,6 +46,13 @@ public class OzOscReceiver : MonoBehaviour {
 	private string wikiHeaderToSend;
 	private string wikiBodyToSend;
 
+	private bool flagTextColorSend = false;
+	private Color textColorToSend;
+
+	private bool flagRandomTextSend = false;
+	private string randomTextBundle;
+
+
 	private float currentTime;
 
 	public void Start ()
@@ -82,16 +89,24 @@ public class OzOscReceiver : MonoBehaviour {
 			flagTextSend = false;
 		}
 		if (flagAudioSend){
-
 			nv.RPC("stopAudio", RPCMode.All);
 			nv.RPC("playAudio", RPCMode.All , audioToSend);
 			flagAudioSend = false;
 		}
 
-		if (flagWikiSend){
-			
+		if (flagWikiSend){		
 			nv.RPC("setWiki", RPCMode.All, wikiHeaderToSend, wikiBodyToSend);
 			flagWikiSend = false;
+		}
+
+		if (flagTextColorSend){			
+			nv.RPC("setTextColor", RPCMode.All, textColorToSend.r,  textColorToSend.g,  textColorToSend.b);
+			flagTextColorSend = false;
+		}
+
+		if (flagRandomTextSend){
+			nv.RPC("sendRandomText", RPCMode.All, randomTextBundle);
+			flagRandomTextSend = false;
 		}
 
 		currentTime = Time.time;
@@ -104,8 +119,6 @@ public class OzOscReceiver : MonoBehaviour {
 	
 	public void AllMessageHandler(OscMessage oscMessage){
 
-
-		
 		string msgString = Osc.OscMessageToString(oscMessage); //the message and value combined
 		string msgAddress = oscMessage.Address; //the message parameters
 		Debug.Log(msgString); //log the message and values coming from OSC
@@ -196,6 +209,20 @@ public class OzOscReceiver : MonoBehaviour {
 				flagWikiSend = true;
 
 				break;
+
+			case "/setTextColor":
+				textColorToSend.r = (float)oscMessage.Values[0];
+				textColorToSend.g = (float)oscMessage.Values[1];
+				textColorToSend.b = (float)oscMessage.Values[2];
+				flagTextColorSend = true;
+				break;
+
+			case "/sendRandomText":
+				randomTextBundle = (string) oscMessage.Values[0];
+				flagRandomTextSend = true;
+				break;
+
+
 			default:
 				Debug.Log("unhandled osc: " + msgString );
 				break;

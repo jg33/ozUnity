@@ -370,7 +370,27 @@ public class cueSystem : MonoBehaviour{
 
 		Debug.Log ("Changed Wiki: "+ _header +" / "+ _body);
 	}
-	
+
+
+	[RPC] public void setTextColor(float _r, float _g, float _b){
+		Color newColor = new Color(_r,_g,_b);
+		GameObject msg = GameObject.Find("Message");
+		if (msg) msg.SendMessage("setColor", newColor);
+	}
+
+	[RPC] public void sendRandomText(string _textBundle){
+		string selectedText;
+		string[] splitStrings = _textBundle.Split('|');
+
+		Random.seed = Time.frameCount;
+		selectedText = splitStrings[  (int)Random.Range(0, splitStrings.Length) ];
+
+		GameObject msg = GameObject.Find("Message");
+		if (msg) msg.SendMessage("changeText", selectedText);
+		Debug.Log ("Changed Text: "+ selectedText);
+		
+	}
+
 	public void setTransitionSpeed(float f){
 		transitionSpeed = f;
 	}
