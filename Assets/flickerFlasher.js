@@ -9,6 +9,6 @@ function Start () {
 }
 
 function Update () {
-	flasher.color.a = Random.Range(0,1000)*0.001;
+	flasher.color.a = Mathf.PerlinNoise(Time.frameCount*0.2,Time.frameCount*0.024);
 	
 }
