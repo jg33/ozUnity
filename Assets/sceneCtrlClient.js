@@ -167,8 +167,8 @@ function Update () {
 						break;
 						
 						case 11:
-							cueComponent.playAudio("wind1");
-							Debug.Log("wind!");
+							cueComponent.playAudio("munchkinLaugh");
+							Debug.Log("munchkinLaugh!");
 						break;
 						
 						
