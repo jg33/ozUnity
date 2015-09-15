@@ -2,6 +2,8 @@
 
 var poppyScene: GameObject;
 var tornadoScene: GameObject;
+var mLandScene: GameObject;
+var scene1: GameObject;
 var camObj: GameObject;
 
 private var mindPoppies: boolean = false;
@@ -15,23 +17,25 @@ function Start () {
 }
 
 function Update () {
+
 	///SEPIA TONING
-	
-	if(tornadoScene.active && !sepiaOn){
+	if(tornadoScene.active){
 		//enable sepia
 		//camObj.GetComponent("CC_Vintage").range= 1;
 		//camObj.GetComponent("CC_Hue Focus").amount=1 ;
-		GameObject.Find("Camera").GetComponent.<Animator>().SetTrigger("to_bw");
-		sepiaOn = true;
-		Debug.Log("to bw!");
+		GameObject.Find("Camera").GetComponent.<Animator>().SetBool("isSepia", true);
+		//Debug.Log("to bw!");
 	
-	} else if(!tornadoScene.active && sepiaOn ){
+	} else if(mLandScene.active || scene1.active){
+		//Don't control sepia in MLand!
+		//Debug.Log("not controlling sepia.");
+	
+	} else if(!tornadoScene.active){
 		// disable filter
 		//camObj.GetComponent("CC_Vintage").amount=0;
 		//camObj.GetComponent("CC_Hue Focus").range= 111;
-		GameObject.Find("Camera").GetComponent.<Animator>().SetTrigger("Anim1_M");
-		sepiaOn = false;
-		Debug.Log("to color!");
+		GameObject.Find("Camera").GetComponent.<Animator>().SetBool("isSepia", false);
+		//Debug.Log("to color!");
 
 	}
 
