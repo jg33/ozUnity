@@ -8,18 +8,12 @@ AnimatorController:
   m_Name: Camera
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Anim1_M
-    m_Type: 9
+  - m_Name: isSepia
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: to_bw
-    m_Type: 9
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -62,7 +56,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: to_bw
+    m_ConditionEvent: isSepia
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 110242260}
@@ -85,8 +79,8 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Anim1_M
+  - m_ConditionMode: 2
+    m_ConditionEvent: isSepia
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 110234240}
@@ -208,10 +202,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 110242260}
-    m_Position: {x: 300, y: 0, z: 0}
+    m_Position: {x: 444, y: 0, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110234240}
-    m_Position: {x: 300, y: 192, z: 0}
+    m_Position: {x: 444, y: 204, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

@@ -147,8 +147,8 @@ function Update () {
 						break;
 						
 						case 7:
-							cueComponent.playMovie("kazoo");
-							Debug.Log("no place!");
+							//Animate Sepia -> Color
+							GameObject.Find("Camera").GetComponent.<Animator>().SetBool("isSepia", false);
 
 						break;
 						
