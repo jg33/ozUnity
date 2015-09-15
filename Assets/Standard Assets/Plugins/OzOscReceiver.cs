@@ -52,6 +52,9 @@ public class OzOscReceiver : MonoBehaviour {
 	private bool flagRandomTextSend = false;
 	private string randomTextBundle;
 
+	private bool flagSetAudioLoop = false;
+	private bool audioLoopSend;
+
 
 	private float currentTime;
 
@@ -109,6 +112,12 @@ public class OzOscReceiver : MonoBehaviour {
 			flagRandomTextSend = false;
 		}
 
+		if (flagSetAudioLoop){
+			nv.RPC("setAudioLoop", RPCMode.All, audioLoopSend);
+			flagSetAudioLoop = false;
+		}
+		
+		
 		currentTime = Time.time;
 	}
 	
@@ -222,7 +231,15 @@ public class OzOscReceiver : MonoBehaviour {
 				randomTextBundle = (string) oscMessage.Values[0];
 				flagRandomTextSend = true;
 				break;
-
+			
+			case "/setAudioLooping":
+				if((int)oscMessage.Values[0] ==0){
+					audioLoopSend = false;
+				} else{
+					audioLoopSend = true;
+				}
+				flagSetAudioLoop = true;
+				break;
 
 			default:
 				Debug.Log("unhandled osc: " + msgString );

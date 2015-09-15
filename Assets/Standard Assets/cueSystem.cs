@@ -336,7 +336,7 @@ public class cueSystem : MonoBehaviour{
 				break;
 
 			default:
-				clip = Resources.Load ("0") as AudioClip;
+				clip = Resources.Load ("Audio/etc/"+clipName) as AudioClip;			
 				break;
 			}
 			source.clip = clip;
@@ -353,6 +353,11 @@ public class cueSystem : MonoBehaviour{
 			source.Stop();
 		}
 		
+	}
+
+	[RPC] public void setAudioLoop(bool _looping){
+		AudioSource source = (AudioSource)GameObject.Find("Camera").GetComponent<AudioSource>();
+		source.loop = _looping;
 	}
 
 	[RPC] public void setTextRemote(string _text){
@@ -390,6 +395,8 @@ public class cueSystem : MonoBehaviour{
 		Debug.Log ("Changed Text: "+ selectedText);
 		
 	}
+
+
 
 	public void setTransitionSpeed(float f){
 		transitionSpeed = f;
