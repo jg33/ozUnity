@@ -335,6 +335,29 @@ public class cueSystem : MonoBehaviour{
 				clip = Resources.Load ("Audio/applause/ladiescheering3") as AudioClip;
 				break;
 
+			case "laughShort":
+				switch(Random.Range(0,4)){
+				case 0:
+					clip = Resources.Load ("Audio/laughter/Laugh Track 2-02") as AudioClip;
+					break;
+				case 1:
+					clip = Resources.Load ("Audio/laughter/Laugh Track 2-06") as AudioClip;
+					break;
+				case 2:
+					clip = Resources.Load ("Audio/laughter/Laugh Track 2-10") as AudioClip;
+					break;
+				case 3:
+					clip = Resources.Load ("Audio/laughter/Laugh Track 2-14") as AudioClip;
+					break;
+				default:
+					clip = Resources.Load ("Audio/laughter/Laugh Track 2-02") as AudioClip;
+					break;
+				}
+				break;
+			case "laughLong":
+					clip = Resources.Load ("Audio/laughter/Laugh Track") as AudioClip;
+				break;
+
 			default:
 				clip = Resources.Load ("Audio/etc/"+clipName) as AudioClip;			
 				break;

@@ -6,7 +6,7 @@ var animator:Animator;
 
 private var backButton:GameObject;
 private var nextButton:GameObject;
-private var totalPanels = 4;
+private var totalPanels = 3;
 
 function Start () {
 	currentPanel = 0;
@@ -20,9 +20,7 @@ function Update () {
 function panelUp(){
 	currentPanel++;
 	if (currentPanel > totalPanels) currentPanel = 0;
-	animator.SetInteger("panel #", currentPanel);
-	
-	
+		animator.SetInteger("panel #", currentPanel);
 	setButtons();
 
 }
@@ -44,7 +42,7 @@ function setButtons(){
 		backButton.GetComponent(UI.Text).text = "CLOSE";
 		nextButton.GetComponent(UI.Text).text = "NEXT";
 
-		} else if(currentPanel == 4){
+		} else if(currentPanel == 3){
 		nextButton.GetComponent(UI.Text).text = "DONE";
 		backButton.GetComponent(UI.Text).text = "BACK";
 

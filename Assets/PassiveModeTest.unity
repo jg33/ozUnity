@@ -22062,7 +22062,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Turn Airplane Mode on
+  m_Text: "Connect to the \n\u201CSurrender Dorothy\u201D WiFi network"
 --- !u!222 &1388386558
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22457,7 +22457,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ensure vibrate is on
+  m_Text: Turn Airplane Mode on
 --- !u!222 &1474488794
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27032,7 +27032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1809041593
 RectTransform:
   m_ObjectHideFlags: 0
