@@ -35,6 +35,9 @@ private var errorFrames:int = 0;
 private var backgroundPlane:GameObject;
 private var virtualBackgroundPlane:GameObject;
 
+private var calibrationTimeout:int = 1800;
+public var calibrationTimer:int = 0;
+private var calibrationMsg:GameObject;
 
 function Start () {
 	ARCam = GameObject.Find("ARCamera");
@@ -91,10 +94,13 @@ function Update () {
 			if (targetPositionArray.length == 0 ){
 				updateTarget();
 				isTracking = true;
-				errorFrames = 0;
+				errorFrames = 0; //depreciated
+				calibrationTimer = 0; //reset calibration timer
 			} else if ( targetPositionArray.length > 0 && targetPositionArray.length < 20 ){ //initial calibration
 		    	updateTarget();
 		    	isTracking = true;
+		    	calibrationTimer = 0; //reset calibration timer
+
 		    	Debug.Log("intial tracking....");
 		    } else if ( Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= 0.01 && 
 		    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= maxDistanceTolerance &&
@@ -104,15 +110,7 @@ function Update () {
 		    	updateTarget();
 		    	isTracking = true;
 		    	Debug.Log("tracking.... Dist: " + Vector3.Distance(targetPositionArray[targetPositionArray.length-1],ARCam.transform.localPosition) );
-				errorFrames=0;
-				
-//		    } else if (errorFrames > timeout){
-//		    	//updateTarget();
-//		    	errorFrames=0;
-//		    } else if(Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= minDistanceThreshold || 
-//		    Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= minAngleThreshold){
-//		    	errorFrames++;
-		   
+				errorFrames=0;	   
 		     }else {
 		    	isTracking = false;
 		    }
@@ -123,8 +121,26 @@ function Update () {
 		    	GameObject.Find("GyroResetter").SendMessage("resetGyro");
 		    	Debug.Log("Gyro Reset!");
 		    };
+		    
+		    // send a poke-to-calibrate message, only in active mode //
+		    if(calibrationTimer>calibrationTimeout && Application.loadedLevel == 2){
+		    	if(!calibrationMsg){
+		    		calibrationMsg = GameObject.Find("Tap Screen Msg");
+		    	} else{
+		    		calibrationMsg.GetComponent(Animator).SetBool("showRecalMsg", true);
+		    	}
+		    
+		    }
 	    
-	    }
+	    } else { //if lost target, add time to uncalibrated timer, but don't show the message!
+			calibrationTimer++;
+			if(!calibrationMsg){
+			    		calibrationMsg = GameObject.Find("Tap Screen Msg");
+			    	} else{
+			    		calibrationMsg.GetComponent(Animator).SetBool("showRecalMsg", false);
+			    	}
+	
+		}
 		
 		smoothToTarget(targetPosition, smoothing);
 		
@@ -134,11 +150,8 @@ function Update () {
 				updateTarget();
 				
 		}
-		
-//		motionAmp  = this.gameObject.GetComponentsInChildren(Camera)[0].gameObject.GetComponent("AmplifyMotionEffect");
-//		motionAmp.enabled = true;
 
-	}
+	} 
 	
 }
 

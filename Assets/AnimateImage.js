@@ -61,6 +61,8 @@ function play(){
 }
 
 function stop(){
+	yield WaitForSeconds(1);
+
 	isPlaying = false;
 	for(var i =0;i<texArray.length;i++){
 		texArray[i] = Resources.Load("black-64") as Texture;

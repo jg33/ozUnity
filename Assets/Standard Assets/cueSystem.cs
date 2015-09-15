@@ -185,14 +185,19 @@ public class cueSystem : MonoBehaviour{
 				seqPlayer.SendMessage("setFrames", 117);
 				seqPlayer.SendMessage("loadMovie","scratchSm" );
 				seqPlayer.SendMessage("play");
+				seqPlayer.GetComponent<Animator>().SetBool("textureIn", true);
 			} else if(clipName == "tvStatic"){
 				seqPlayer.SendMessage("setFrames", 70);
 				seqPlayer.SendMessage("loadMovie","tvStatic" );
 				seqPlayer.SendMessage("play");
+				seqPlayer.GetComponent<Animator>().SetBool("textureIn", true);
+
 			} else if(clipName == "judyInterview"){
 				seqPlayer.SendMessage("setFrames", 185);
 				seqPlayer.SendMessage("loadMovie","judyInterview" );
 				seqPlayer.SendMessage("play");
+				seqPlayer.GetComponent<Animator>().SetBool("textureIn", true);
+
 			}
 
 		
@@ -242,6 +247,8 @@ public class cueSystem : MonoBehaviour{
 	[RPC] public void  stopMovie(){
 
 		if (Network.isClient){
+
+			seqPlayer.GetComponent<Animator>().SetBool("textureIn", false);
 			GameObject.Find ("Camera").SendMessage("Stop");
 			seqPlayer.SendMessage("stop");
 
@@ -329,7 +336,7 @@ public class cueSystem : MonoBehaviour{
 				break;
 
 			default:
-				clip = Resources.Load ("0") as AudioClip;
+				clip = Resources.Load ("Audio/etc/"+clipName) as AudioClip;			
 				break;
 			}
 			source.clip = clip;
@@ -348,6 +355,11 @@ public class cueSystem : MonoBehaviour{
 		
 	}
 
+	[RPC] public void setAudioLoop(bool _looping){
+		AudioSource source = (AudioSource)GameObject.Find("Camera").GetComponent<AudioSource>();
+		source.loop = _looping;
+	}
+
 	[RPC] public void setTextRemote(string _text){
 		GameObject msg = GameObject.Find("Message");
 		if (msg) msg.SendMessage("changeText", _text);
@@ -363,7 +375,29 @@ public class cueSystem : MonoBehaviour{
 
 		Debug.Log ("Changed Wiki: "+ _header +" / "+ _body);
 	}
-	
+
+
+	[RPC] public void setTextColor(float _r, float _g, float _b){
+		Color newColor = new Color(_r,_g,_b);
+		GameObject msg = GameObject.Find("Message");
+		if (msg) msg.SendMessage("setColor", newColor);
+	}
+
+	[RPC] public void sendRandomText(string _textBundle){
+		string selectedText;
+		string[] splitStrings = _textBundle.Split('|');
+
+		Random.seed = Time.frameCount;
+		selectedText = splitStrings[  (int)Random.Range(0, splitStrings.Length) ];
+
+		GameObject msg = GameObject.Find("Message");
+		if (msg) msg.SendMessage("changeText", selectedText);
+		Debug.Log ("Changed Text: "+ selectedText);
+		
+	}
+
+
+
 	public void setTransitionSpeed(float f){
 		transitionSpeed = f;
 	}
