@@ -116,7 +116,10 @@ public class OzOscReceiver : MonoBehaviour {
 			nv.RPC("setAudioLoop", RPCMode.All, audioLoopSend);
 			flagSetAudioLoop = false;
 		}
-		
+
+
+
+
 		
 		currentTime = Time.time;
 	}
@@ -160,28 +163,28 @@ public class OzOscReceiver : MonoBehaviour {
 
 			case "/tornadoState":
 				cueControl.tornadoState = (int)oscMessage.Values[0];
-				tornadoSlider.value =  (int)oscMessage.Values[0];
+			//	tornadoSlider.value =  (int)oscMessage.Values[0];
 				break;
 			case "/munchkinState":
 				cueControl.munchkinState = (int)oscMessage.Values[0]; 
-				munchkinSlider.value =  (int)oscMessage.Values[0];
 
+				//	munchkinSlider.value =  (int)oscMessage.Values[0];
 				break;
 
 			case "/poppyState":
 				cueControl.poppyState = (int)oscMessage.Values[0];
-				poppySlider.value =  (int)oscMessage.Values[0];
+			//	poppySlider.value =  (int)oscMessage.Values[0];
 
 				break;
 
 			case "/monkeyState":
 				cueControl.monkeyState = (int)oscMessage.Values[0];
-				monkeySlider.value =  (int)oscMessage.Values[0];
+			//	monkeySlider.value =  (int)oscMessage.Values[0];
 
 				break;
 			case "/fireState":
 				cueControl.fireState = (int)oscMessage.Values[0];
-				fireSlider.value =  (int)oscMessage.Values[0];
+			//	fireSlider.value =  (int)oscMessage.Values[0];
 
 				break;
 			case "/forcePassive":
