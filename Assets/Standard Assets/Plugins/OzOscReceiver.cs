@@ -214,6 +214,7 @@ public class OzOscReceiver : MonoBehaviour {
 				textColorToSend.r = (float)oscMessage.Values[0];
 				textColorToSend.g = (float)oscMessage.Values[1];
 				textColorToSend.b = (float)oscMessage.Values[2];
+				Debug.Log (textColorToSend);
 				flagTextColorSend = true;
 				break;
 

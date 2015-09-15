@@ -3,7 +3,7 @@
 var nextColor:Color;
 
 function Start () {
-	nextColor = Color(255,255,255);
+	nextColor = Color(1,1,1);
 }
 
 

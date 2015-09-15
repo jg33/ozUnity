@@ -27143,7 +27143,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'The Kasser Theater at Montclair State University is easily accessible from
     NYC by car, train or bus.  Detailed information on transportation options can
-    be found <a name="">here.</a>
+    be found <a name=""><i>here.</i></a>
 
 '
   m_DefaultStyles: {fileID: 0}
@@ -27192,7 +27192,7 @@ MonoBehaviour:
     m_LinkKeywordCollections: []
     m_InputText: 'The Kasser Theater at Montclair State University is easily accessible
       from NYC by car, train or bus.  Detailed information on transportation options
-      can be found <a name="">here.</a>
+      can be found <a name=""><i>here.</i></a>
 
 '
     m_InputTextSourceObject: {fileID: 0}
@@ -27200,7 +27200,7 @@ MonoBehaviour:
     m_IsRichTextDesired: 1
     m_OutputText: 'The Kasser Theater at Montclair State University is easily accessible
       from NYC by car, train or bus.  Detailed information on transportation options
-      can be found here.
+      can be found <i>here.</i>
 
 '
     m_QuadKeywordCollections: []
@@ -29976,7 +29976,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2103678325
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29991,7 +29991,7 @@ RectTransform:
   m_RootOrder: 9
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: -193, y: -3488}
+  m_AnchoredPosition: {x: -40.9900017, y: -3496.6001}
   m_SizeDelta: {x: 733.599976, y: 278.600006}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &2103678326
@@ -30019,7 +30019,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: <a name="parable">o</a>
+  m_Text: <a name="mcLink">o</a>
   m_DefaultStyles: {fileID: 0}
   m_QuadRenderersPool: []
   m_Interactable: 1
@@ -30064,7 +30064,7 @@ MonoBehaviour:
   m_ShouldOverrideStylesLineSpacing: 0
   m_TextProcessor:
     m_LinkKeywordCollections: []
-    m_InputText: <a name="parable">o</a>
+    m_InputText: <a name="mcLink">o</a>
     m_InputTextSourceObject: {fileID: 0}
     m_IsDynamicFontDesired: 1
     m_IsRichTextDesired: 1
