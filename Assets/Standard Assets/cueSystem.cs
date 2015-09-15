@@ -185,14 +185,19 @@ public class cueSystem : MonoBehaviour{
 				seqPlayer.SendMessage("setFrames", 117);
 				seqPlayer.SendMessage("loadMovie","scratchSm" );
 				seqPlayer.SendMessage("play");
+				seqPlayer.GetComponent<Animator>().SetBool("textureIn", true);
 			} else if(clipName == "tvStatic"){
 				seqPlayer.SendMessage("setFrames", 70);
 				seqPlayer.SendMessage("loadMovie","tvStatic" );
 				seqPlayer.SendMessage("play");
+				seqPlayer.GetComponent<Animator>().SetBool("textureIn", true);
+
 			} else if(clipName == "judyInterview"){
 				seqPlayer.SendMessage("setFrames", 185);
 				seqPlayer.SendMessage("loadMovie","judyInterview" );
 				seqPlayer.SendMessage("play");
+				seqPlayer.GetComponent<Animator>().SetBool("textureIn", true);
+
 			}
 
 		
@@ -242,6 +247,8 @@ public class cueSystem : MonoBehaviour{
 	[RPC] public void  stopMovie(){
 
 		if (Network.isClient){
+
+			seqPlayer.GetComponent<Animator>().SetBool("textureIn", false);
 			GameObject.Find ("Camera").SendMessage("Stop");
 			seqPlayer.SendMessage("stop");
 
