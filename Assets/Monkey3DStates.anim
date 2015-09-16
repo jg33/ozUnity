@@ -203,7 +203,223 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: MonkeyFlight_3 (8)/FlyingMonkey_1 (6)
-  m_FloatCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (4)/FlyingMonkey_1 (6)/MonkeySound_1
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (3)/FlyingMonkey_1 (6)/MonkeySound_4
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (2)/FlyingMonkey_1 (6)/MonkeySound_3
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (1)/FlyingMonkey_1 (6)/MonkeySound_2
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3/FlyingMonkey_1 (6)/MonkeySound_1 (1)
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (5)/FlyingMonkey_1 (6)/MonkeySound_3 (1)
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (6)/FlyingMonkey_1 (6)/MonkeySound_2 (1)
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (7)/FlyingMonkey_1 (6)/MonkeySound_4 (1)
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (8)/FlyingMonkey_1 (6)/MonkeySound_3 (2)
+    classID: 82
+    script: {fileID: 0}
   m_PPtrCurves: []
   m_SampleRate: 12
   m_WrapMode: 0
@@ -264,6 +480,60 @@ AnimationClip:
       attribute: 3
       script: {fileID: 0}
       classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 228163525
+      attribute: 4104493590
+      script: {fileID: 0}
+      classID: 82
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2126178033
+      attribute: 4104493590
+      script: {fileID: 0}
+      classID: 82
+      customType: 0
+      isPPtrCurve: 0
+    - path: 792749210
+      attribute: 4104493590
+      script: {fileID: 0}
+      classID: 82
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3549719061
+      attribute: 4104493590
+      script: {fileID: 0}
+      classID: 82
+      customType: 0
+      isPPtrCurve: 0
+    - path: 966218878
+      attribute: 4104493590
+      script: {fileID: 0}
+      classID: 82
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3347242202
+      attribute: 4104493590
+      script: {fileID: 0}
+      classID: 82
+      customType: 0
+      isPPtrCurve: 0
+    - path: 695855505
+      attribute: 4104493590
+      script: {fileID: 0}
+      classID: 82
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3903854488
+      attribute: 4104493590
+      script: {fileID: 0}
+      classID: 82
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1521023966
+      attribute: 4104493590
+      script: {fileID: 0}
+      classID: 82
       customType: 0
       isPPtrCurve: 0
     pptrCurveMapping: []
@@ -932,6 +1202,222 @@ AnimationClip:
     attribute: m_LocalScale.z
     path: MonkeyFlight_3 (8)/FlyingMonkey_1 (6)
     classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (4)/FlyingMonkey_1 (6)/MonkeySound_1
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (3)/FlyingMonkey_1 (6)/MonkeySound_4
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (2)/FlyingMonkey_1 (6)/MonkeySound_3
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (1)/FlyingMonkey_1 (6)/MonkeySound_2
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3/FlyingMonkey_1 (6)/MonkeySound_1 (1)
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (5)/FlyingMonkey_1 (6)/MonkeySound_3 (1)
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (6)/FlyingMonkey_1 (6)/MonkeySound_2 (1)
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (7)/FlyingMonkey_1 (6)/MonkeySound_4 (1)
+    classID: 82
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .666666687
+        outSlope: .666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: .333333343
+        outSlope: .333333343
+        tangentMode: 10
+      - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Volume
+    path: MonkeyFlight_3 (8)/FlyingMonkey_1 (6)/MonkeySound_3 (2)
+    classID: 82
     script: {fileID: 0}
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0

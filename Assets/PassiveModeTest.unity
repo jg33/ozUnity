@@ -469,7 +469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &98721544
 RectTransform:
   m_ObjectHideFlags: 0
@@ -481,9 +481,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1593520426}
-  - {fileID: 714493562}
   m_Father: {fileID: 1247131280}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_AnchorMin: {x: .5, y: 0}
   m_AnchorMax: {x: .5, y: 1}
   m_AnchoredPosition: {x: -46.2999992, y: -130.600006}
@@ -8540,12 +8539,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: .594192028, y: .594192088, z: .594192088}
   m_Children: []
-  m_Father: {fileID: 98721544}
-  m_RootOrder: 1
+  m_Father: {fileID: 1247131280}
+  m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.10996246, y: -96}
-  m_SizeDelta: {x: 669.019897, y: 623}
+  m_AnchoredPosition: {x: -38.1901207, y: -161.300018}
+  m_SizeDelta: {x: 787.419922, y: 492.400024}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &714493563
 MonoBehaviour:
@@ -8574,7 +8573,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Thank you for coming to Elements of Oz!\n\nNew virtual content has been
     unlocked! Please return \nto OzVision and point your device at the other images
-    in \nyour program!\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<3,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThe
+    in \nyour program!\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThe
     Builders"
 --- !u!222 &714493564
 CanvasRenderer:
@@ -18369,6 +18368,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 714493562}
   - {fileID: 98721544}
   - {fileID: 2067315928}
   m_Father: {fileID: 1175587389}
@@ -29551,7 +29551,7 @@ RectTransform:
   m_Children:
   - {fileID: 1741417742}
   m_Father: {fileID: 1247131280}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -64, y: 49.5499992}
