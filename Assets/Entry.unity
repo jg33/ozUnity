@@ -886,7 +886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67decd01da9e4df5a9e75cc2f41fa50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectionIP: 192.168.1.2
+  connectionIP: 127.0.0.1
   portNumber: 16261
   timeout: 300
   cueComponent: {fileID: 1120223039}
@@ -964,6 +964,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1402077556}
+  - 81: {fileID: 1402077568}
   - 20: {fileID: 1402077566}
   - 92: {fileID: 1402077565}
   - 124: {fileID: 1402077564}
@@ -1258,6 +1259,13 @@ MonoBehaviour:
   shader: {fileID: 4800000, guid: 4a322dc5352ec48eb82c9294b35d361c, type: 3}
   blurAmount: .100000001
   extraBlur: 1
+--- !u!81 &1402077568
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1402077555}
+  m_Enabled: 1
 --- !u!1 &1561470375
 GameObject:
   m_ObjectHideFlags: 0
