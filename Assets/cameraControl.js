@@ -37,6 +37,8 @@ private var calibrationTimeout:int = 1800;
 public var calibrationTimer:int = 0;
 private var calibrationMsg:GameObject;
 
+private var gotProjMatrix:boolean = false;
+
 function Start () {
 	ARCam = GameObject.Find("ARCamera");
 	
@@ -45,6 +47,7 @@ function Start () {
 	targetPositionArray = new Array();
 	targetRotationArray = new Array();
 	targetGyroCorrectionArray = new Array();
+	
 }
 
 function Update () {
@@ -56,6 +59,11 @@ function Update () {
 	if(!virtualBackgroundPlane){
 		virtualBackgroundPlane = GameObject.Find("Virtual BackgroundPlane");
 	
+	}
+
+	if(!gotProjMatrix && ARCam.GetComponent(Vuforia.WebCamAbstractBehaviour).IsPlaying){ //is camera on? grab projection matrix
+			Invoke ("setProjectionMatrix",0.1);
+			
 	}
 	
 	if (GameObject.Find("TextureBufferCamera")){
@@ -208,6 +216,22 @@ function updateTarget(){
 	
 }
 
+
+public function setProjectionMatrix(){
+		var cam:Camera = ARCam.GetComponentsInChildren(Camera)[0];
+		projMatrix = cam.get_projectionMatrix();
+	
+		backgroundPlane.transform.localScale = virtualBackgroundPlane.transform.localScale;
+		virtualBackgroundPlane.GetComponent.<Renderer>().enabled = false;
+	
+		cam = this.GetComponentsInChildren(Camera)[0];
+		cam.set_projectionMatrix(projMatrix);
+		
+		
+		gotProjMatrix = true;
+
+
+}
 
 public function getInvertedGyro(){
     		var  invertedOrientation:Quaternion;
