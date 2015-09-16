@@ -5,7 +5,7 @@ public var munchkinScene:GameObject;
 public var poppyScene:GameObject;
 public var fireScene:GameObject;
 public var monkeyScene:GameObject;
-
+public var flashScene:GameObject;
 
 private var renderComponent:Canvas;
 
@@ -16,7 +16,7 @@ function Start () {
 
 function Update () {
 
-	if(tornadoScene.active || munchkinScene.active || poppyScene.active || fireScene.active || monkeyScene.active){
+	if(tornadoScene.active || munchkinScene.active || poppyScene.active || fireScene.active || monkeyScene.active || flashScene.active){
 		renderComponent.enabled = true;
 
 	} else {
