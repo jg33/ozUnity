@@ -176,7 +176,7 @@ public class cueSystem : MonoBehaviour{
 				cam.SendMessage("loadMovie", "NoPlaceLikeMoe", SendMessageOptions.DontRequireReceiver);
 				cam.SendMessage("setNumLoops", 5);
 				cam.SendMessage("setLooping", true);
-				cam.SendMessage("setLastFrame",149);
+				cam.SendMessage("setLastFrame", 100);
 				cam.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
 				cam.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
 				Debug.Log("NoPlaceLikeMoe");
@@ -187,7 +187,7 @@ public class cueSystem : MonoBehaviour{
 				seqPlayer.SendMessage("play");
 				seqPlayer.GetComponent<Animator>().SetBool("textureIn", true);
 			} else if(clipName == "tvStatic"){
-				seqPlayer.SendMessage("setFrames", 70);
+				seqPlayer.SendMessage("setFrames", 94);
 				seqPlayer.SendMessage("loadMovie","tvStatic" );
 				seqPlayer.SendMessage("play");
 				seqPlayer.GetComponent<Animator>().SetBool("textureIn", true);
@@ -232,7 +232,7 @@ public class cueSystem : MonoBehaviour{
 				video.SendMessage("loadMovie", "NoPlaceLikeMoe", SendMessageOptions.DontRequireReceiver);
 				video.SendMessage("setNumLoops", 5);
 				video.SendMessage("setLooping", true);
-				video.SendMessage("setLastFrame",149);
+				video.SendMessage("setLastFrame",94);
 
 				video.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
 				video.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
