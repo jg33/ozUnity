@@ -1009,7 +1009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPS: 24
   firstFrame: 0
-  lastFrame: 149
+  lastFrame: 94
   FileName: 0
   digitsFormat: 000
   digitsLocation: 1
