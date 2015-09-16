@@ -61,8 +61,8 @@ function Update () {
 	
 	}
 
-	if(!gotProjMatrix && ARCam.GetComponent(Vuforia.WebCamAbstractBehaviour).IsPlaying){ //is camera on? grab projection matrix
-			Invoke ("setProjectionMatrix",0.1);
+	if(!gotProjMatrix){ //is camera on? grab projection matrix
+			Invoke ("setProjectionMatrix", 1);
 			
 	}
 	
@@ -219,17 +219,18 @@ function updateTarget(){
 
 public function setProjectionMatrix(){
 		var cam:Camera = ARCam.GetComponentsInChildren(Camera)[0];
-		projMatrix = cam.get_projectionMatrix();
+		if(cam){
+			projMatrix = cam.get_projectionMatrix();
 	
-		backgroundPlane.transform.localScale = virtualBackgroundPlane.transform.localScale;
-		virtualBackgroundPlane.GetComponent.<Renderer>().enabled = false;
+			backgroundPlane.transform.localScale = virtualBackgroundPlane.transform.localScale;
+			virtualBackgroundPlane.GetComponent.<Renderer>().enabled = false;
 	
-		cam = this.GetComponentsInChildren(Camera)[0];
-		cam.set_projectionMatrix(projMatrix);
+			cam = this.GetComponentsInChildren(Camera)[0];
+			cam.set_projectionMatrix(projMatrix);
 		
 		
-		gotProjMatrix = true;
-
+			gotProjMatrix = true;
+		}
 
 }
 

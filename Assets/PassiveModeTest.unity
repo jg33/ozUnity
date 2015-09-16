@@ -8663,7 +8663,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Thank you for coming to Elements of Oz!\n\nNew virtual content has been
     unlocked! Please return \nto OzVision and point your device at the other images
-    in \nyour program!\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThe
+    in \nyour program!\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLove,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThe
     Builders"
 --- !u!222 &714493564
 CanvasRenderer:
@@ -15166,6 +15166,7 @@ MonoBehaviour:
   poppyScene: {fileID: 0}
   fireScene: {fileID: 0}
   monkeyScene: {fileID: 0}
+  flashScene: {fileID: 0}
 --- !u!223 &1026320288
 Canvas:
   m_ObjectHideFlags: 0
