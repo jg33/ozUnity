@@ -1,8 +1,6 @@
 ﻿#pragma strict
 
-
 var smoothing: float = 0.1;
-
 
 private var cameraCam: GameObject;
 private var targetPosition: Transform;
@@ -65,32 +63,8 @@ function Update () {
 		cameraCam.transform.localPosition.x = 1000; //hide camera mirroring cam
 	}
 	
-	
-	if(tightTracking){
-		this.gameObject.transform.localPosition = ARCam.transform.localPosition;
-		this.gameObject.transform.localRotation = ARCam.transform.localRotation;
-		
-		var cam:Camera = ARCam.GetComponentsInChildren(Camera)[0];
-		projMatrix = cam.get_projectionMatrix();
-	
-		backgroundPlane.transform.localScale = virtualBackgroundPlane.transform.localScale;
-		virtualBackgroundPlane.GetComponent.<Renderer>().enabled = false;
-	
-		cam = this.GetComponentsInChildren(Camera)[0];
-		cam.set_projectionMatrix(projMatrix);
-		
-		
-		// motion blur toggle //
-//		var motionAmp:Behaviour = cam.gameObject.GetComponent("AmplifyMotionEffect");
-//		motionAmp.enabled = false;
-		
-		gyroResetter.SendMessage("setTightTracking",true);
-		gyroResetter.SendMessage("resetGyro");
-	
-	} else {
-	
 		//Calculate when to track
-		if(foundTarget){
+	if(foundTarget){
 			if (targetPositionArray.length == 0 ){
 				updateTarget();
 				isTracking = true;
@@ -151,6 +125,24 @@ function Update () {
 				
 		}
 
+	
+	
+	if(tightTracking){ //Override cam position if tight tracking
+		this.gameObject.transform.localPosition = ARCam.transform.localPosition;
+		this.gameObject.transform.localRotation = ARCam.transform.localRotation;
+		
+		var cam:Camera = ARCam.GetComponentsInChildren(Camera)[0];
+		projMatrix = cam.get_projectionMatrix();
+	
+		backgroundPlane.transform.localScale = virtualBackgroundPlane.transform.localScale;
+		virtualBackgroundPlane.GetComponent.<Renderer>().enabled = false;
+	
+		cam = this.GetComponentsInChildren(Camera)[0];
+		cam.set_projectionMatrix(projMatrix);
+		
+		gyroResetter.SendMessage("setTightTracking",true);
+		gyroResetter.SendMessage("resetGyro");
+	
 	} 
 	
 }

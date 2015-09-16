@@ -97,6 +97,7 @@ namespace Vuforia
 			}
 
 			 if (mTrackableBehaviour.TrackableName == "Oz_TopTarget_inverted"){
+
 				camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("updateTarget");
 				camCtl.SendMessage("setFoundTarget",true);
@@ -106,6 +107,14 @@ namespace Vuforia
 
 				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name == mTrackableBehaviour.TrackableName){
 					if(gameObject.transform.childCount>0) gameObject.transform.GetChild(0).gameObject.SetActive(true);
+				}
+
+				if(Application.loadedLevel ==1){
+					camCtl.SendMessage("setTightTracking", true);
+	
+				} else{
+					camCtl.SendMessage("setTightTracking", false);
+
 				}
 
 			} else if (mTrackableBehaviour.TrackableName.StartsWith("Passive") && PlayerPrefs.GetInt("CompletedShow",0) != 0){ //if the show's complete, display any passive target
