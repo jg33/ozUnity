@@ -1507,6 +1507,10 @@ Prefab:
       propertyPath: MaxSimultaneousImageTargets
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8100000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
   m_IsPrefabParent: 0

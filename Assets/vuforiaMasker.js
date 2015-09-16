@@ -18,7 +18,6 @@ function Update () {
 
 	if(tornadoScene.active || munchkinScene.active || poppyScene.active || fireScene.active || monkeyScene.active){
 		renderComponent.enabled = true;
-		renderComponent.sortingOrder = -1;
 
 	} else {
 		renderComponent.enabled = false;
