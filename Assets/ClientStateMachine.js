@@ -36,10 +36,7 @@ function Update () {
 		Debug.Log("EXTRAS BUTTON UP");	
 	
 	} else if (PlayerPrefs.GetInt("CompletedShow",0) == 0  && !cameraObj){
-		cameraObj = GameObject.Find("Camera");
-		cameraObj.GetComponent(Animator).SetBool("isSepia", true);
-		Debug.Log("sepia true!");
-		triggeredSepia = true;
+		Invoke("enableSepia", 0.1);
 	}
 	
 	
@@ -57,6 +54,13 @@ function Update () {
 	
 	}
 	
+}
+
+function enableSepia(){
+		cameraObj = GameObject.Find("Camera");
+		cameraObj.GetComponent(Animator).SetBool("isSepia", true);
+		Debug.Log("sepia true!");
+		triggeredSepia = true;
 }
 
 
