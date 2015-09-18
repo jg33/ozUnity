@@ -11,7 +11,7 @@ public class CC_Blend : CC_Base
 
 	public int mode = 0;
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (texture == null || amount == 0f)
 		{

@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: b64fe4f8a695b8c43999179ec893dcd8
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - blowoutTex: {fileID: 2800000, guid: 963b0df0aa029214a8e5f41d36c7cfe7, type: 3}
+  - overlayTex: {fileID: 2800000, guid: 46a8fad175e3a43468b09456c0c4c875, type: 3}
+  - levelsTex: {fileID: 2800000, guid: 7ef2e6a5ed63a034c97ca1538e6727b9, type: 3}
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 04e2159542afb624cb5649bc9b04cd5e, type: 3}
+  userData: 

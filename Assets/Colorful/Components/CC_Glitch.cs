@@ -54,7 +54,12 @@ public class CC_Glitch : CC_Base
 	protected float m_DurationTimer = 0f;
 	protected float m_DurationTimerEnd = 0f;
 
-	void OnEnable()
+	public bool IsActive
+	{
+		get { return m_Activated; }
+	}
+
+	protected virtual void OnEnable()
 	{
 		m_Camera = GetComponent<Camera>();
 	}
@@ -65,7 +70,7 @@ public class CC_Glitch : CC_Base
 		m_DurationTimerEnd = Random.Range(randomDuration.x, randomDuration.y);
 	}
 
-	void Update()
+	protected virtual void Update()
 	{
 		if (m_Activated)
 		{
@@ -116,13 +121,13 @@ public class CC_Glitch : CC_Base
 		}
 	}
 
-	void DoInterferences(RenderTexture source, RenderTexture destination, InterferenceSettings settings)
+	protected virtual void DoInterferences(RenderTexture source, RenderTexture destination, InterferenceSettings settings)
 	{
 		material.SetVector("_Params", new Vector3(settings.speed, settings.density, settings.maxDisplacement));
 		Graphics.Blit(source, destination, material, 0);
 	}
 
-	void DoTearing(RenderTexture source, RenderTexture destination, TearingSettings settings)
+	protected virtual void DoTearing(RenderTexture source, RenderTexture destination, TearingSettings settings)
 	{
 		material.SetVector("_Params", new Vector4(settings.speed, settings.intensity, settings.maxDisplacement, settings.yuvOffset));
 

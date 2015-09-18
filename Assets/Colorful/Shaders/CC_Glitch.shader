@@ -59,7 +59,7 @@
 				#pragma fragmentoption ARB_precision_hint_fastest 
 				#pragma target 3.0
 
-				#include "CC_Glitch.cginc"
+				#include "./CC_Glitch.cginc"
 
 			ENDCG
 		}
@@ -74,7 +74,7 @@
 				#pragma target 3.0
 
 				#define ALLOW_FLIPPING
-				#include "CC_Glitch.cginc"
+				#include "./CC_Glitch.cginc"
 
 			ENDCG
 		}
@@ -89,7 +89,7 @@
 				#pragma target 3.0
 
 				#define YUV_COLOR_BLEEDING
-				#include "CC_Glitch.cginc"
+				#include "./CC_Glitch.cginc"
 
 			ENDCG
 		}
@@ -105,7 +105,7 @@
 				
 				#define ALLOW_FLIPPING
 				#define YUV_COLOR_BLEEDING
-				#include "CC_Glitch.cginc"
+				#include "./CC_Glitch.cginc"
 
 			ENDCG
 		}

@@ -20,7 +20,7 @@ Shader "Hidden/CC_PhotoFilter"
 				#pragma fragment frag
 				#pragma fragmentoption ARB_precision_hint_fastest 
 				#include "UnityCG.cginc"
-				#include "Colorful.cginc"
+				#include "./Colorful.cginc"
 
 				sampler2D _MainTex;
 				half4 _RGB;

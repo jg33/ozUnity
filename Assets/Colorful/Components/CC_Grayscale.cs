@@ -16,7 +16,7 @@ public class CC_Grayscale : CC_Base
 	[Range(0f, 1f)]
 	public float amount = 1.0f;
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (amount == 0f)
 		{

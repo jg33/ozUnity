@@ -24,7 +24,7 @@
 		{			
 			CGPROGRAM
 				#define RADIUS 1
-				#include "CC_Kuwahara.cginc"
+				#include "./CC_Kuwahara.cginc"
 			ENDCG
 		}
 
@@ -32,7 +32,7 @@
 		{			
 			CGPROGRAM
 				#define RADIUS 2
-				#include "CC_Kuwahara.cginc"
+				#include "./CC_Kuwahara.cginc"
 			ENDCG
 		}
 
@@ -40,7 +40,7 @@
 		{			
 			CGPROGRAM
 				#define RADIUS 3
-				#include "CC_Kuwahara.cginc"
+				#include "./CC_Kuwahara.cginc"
 			ENDCG
 		}
 
@@ -48,7 +48,7 @@
 		{			
 			CGPROGRAM
 				#define RADIUS 4
-				#include "CC_Kuwahara.cginc"
+				#include "./CC_Kuwahara.cginc"
 			ENDCG
 		}
 	}

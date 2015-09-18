@@ -15,7 +15,7 @@ public class CC_Frost : CC_Base
 
 	public bool enableVignette = true;
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (scale == 0f)
 		{

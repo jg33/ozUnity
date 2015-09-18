@@ -15,7 +15,7 @@ Shader "Hidden/CC_HueSaturationValue"
 	CGINCLUDE
 	
 		#include "UnityCG.cginc"
-		#include "Colorful.cginc"
+		#include "./Colorful.cginc"
 
 		sampler2D _MainTex;
 		half4 _Master;

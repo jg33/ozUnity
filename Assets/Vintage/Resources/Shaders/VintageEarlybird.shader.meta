@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 2b92092430e800b47a20e55318dc8db3
+ShaderImporter:
+  defaultTextures:
+  - _MainTex: {instanceID: 0}
+  - _CurvesTex: {fileID: 2800000, guid: a7c932a88044ab8449afe2294a409da4, type: 3}
+  - _OverlayTex: {fileID: 2800000, guid: ddec35ce5542dcc40be09e704c77c89a, type: 3}
+  - _VignetteTex: {fileID: 2800000, guid: 4107289c4c6739f45a247d00d4294246, type: 3}
+  - _BlowoutTex: {fileID: 2800000, guid: c13e1ee6f0bd1db44a31ce99326a8b79, type: 3}
+  - _LevelsTex: {fileID: 2800000, guid: e2b8832796fea61469e8fe90e9ae4465, type: 3}
+  userData: 

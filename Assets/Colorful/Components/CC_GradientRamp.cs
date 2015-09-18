@@ -9,7 +9,7 @@ public class CC_GradientRamp : CC_Base
 	[Range(0f, 1f)]
 	public float amount = 1f;
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (rampTexture == null || amount == 0f)
 		{

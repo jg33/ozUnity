@@ -9,7 +9,7 @@ public class CC_PhotoFilter : CC_Base
 	[Range(0f, 1f)]
 	public float density = 0.35f;
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (density == 0f)
 		{

@@ -42,7 +42,7 @@ public class CC_ChannelMixer : CC_Base
 
 	public int currentChannel = 0;
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		material.SetVector("_Red", new Vector4(redR * 0.01f, greenR * 0.01f, blueR * 0.01f));
 		material.SetVector("_Green", new Vector4(redG * 0.01f, greenG * 0.01f, blueG * 0.01f));

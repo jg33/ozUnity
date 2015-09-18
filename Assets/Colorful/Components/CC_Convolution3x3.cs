@@ -12,7 +12,7 @@ public class CC_Convolution3x3 : CC_Base
 	[Range(0f, 1f)]
 	public float amount = 1.0f;
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		material.SetFloat("_PX", 1.0f / (float)Screen.width);
 		material.SetFloat("_PY", 1.0f / (float)Screen.height);

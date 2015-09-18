@@ -10,7 +10,7 @@ public class CC_Sharpen : CC_Base
 	[Range(0f, 1f)]
 	public float clamp = 0.05f;
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (strength == 0f)
 		{

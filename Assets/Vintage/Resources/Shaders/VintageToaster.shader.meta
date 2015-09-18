@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 3cd22bebe865b834481c56871d8cdb4d
+ShaderImporter:
+  defaultTextures:
+  - _MainTex: {instanceID: 0}
+  - _MetalTex: {fileID: 2800000, guid: f3de11d770089b5469f416340626a7b0, type: 3}
+  - _SoftLightTex: {fileID: 2800000, guid: 6471baff86050e644ac7ca367330fc51, type: 3}
+  - _CurvesTex: {fileID: 2800000, guid: c1dc29c528477ee45a2cd945cd306711, type: 3}
+  - _OverlayWarmTex: {fileID: 2800000, guid: 16bcd00dd8173794290d875caaf4274d, type: 3}
+  - _ColorShiftTex: {fileID: 2800000, guid: 91c5e0d0ded2ab04ba7ff9f836d5b081, type: 3}
+  userData: 

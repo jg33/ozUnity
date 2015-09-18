@@ -27,7 +27,7 @@ public class CC_ContrastVignette : CC_Base
 	[Range(0f, 200f)]
 	public float edge = 0f;
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		material.SetVector("_Data", new Vector4(sharpness * 0.01f, darkness * 0.02f, contrast * 0.01f, edge * 0.01f));
 		material.SetVector("_Coeffs", new Vector4(redCoeff, greenCoeff, blueCoeff, 1.0f));

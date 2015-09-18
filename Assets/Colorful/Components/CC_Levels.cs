@@ -35,7 +35,7 @@ public class CC_Levels : CC_Base
 	public int currentChannel = 0;
 	public bool logarithmic = false;
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!isRGB)
 		{

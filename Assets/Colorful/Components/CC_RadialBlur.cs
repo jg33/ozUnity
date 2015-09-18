@@ -13,7 +13,7 @@ public class CC_RadialBlur : CC_Base
 	public Vector2 center = new Vector2(0.5f, 0.5f);
 	public int quality = 1;
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (amount == 0f)
 		{

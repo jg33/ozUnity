@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 63703028c89008d489a0f3116a19613a
+ShaderImporter:
+  defaultTextures:
+  - _MainTex: {instanceID: 0}
+  - _VignetteTex: {fileID: 2800000, guid: 4107289c4c6739f45a247d00d4294246, type: 3}
+  - _MetalTex: {fileID: 2800000, guid: 4b148a5ec87c49d41964f5e2068c35fd, type: 3}
+  - _SoftLightTex: {fileID: 2800000, guid: 37c302d8c5b3d0c4aa981bb2c1366c17, type: 3}
+  - _EdgeBurnTex: {fileID: 2800000, guid: ff111bf146a61b74eb75d6a0a8df383d, type: 3}
+  - _CurvesTex: {fileID: 2800000, guid: 6a1399f77b06b9a428240a76cb9d715b, type: 3}
+  userData: 

@@ -1,0 +1,74 @@
+Vintage 2.2
+--------------------------
+- New effect: Crema.
+
+Vintage 2.1
+--------------------------
+- New effect: Aden.
+- improved quality in Slumber effect.
+
+Vintage 2.0.1
+--------------------------
+- Fix an issue with the editor.
+
+Vintage 2.0
+--------------------------
+- 'Brightness / Contrast / Gamma', 'Hue / Saturation' and 'Film' become separate effects (now under 'Extra Effects' categories).
+  Check www.ibuprogames.com or the documentation for more information.
+- Better support for mobile platforms.
+- Color space linear supported.
+- More options to custimize shaders (see 'CONFIGURATION REGION' in shaders files).
+- WebGL support.
+- New effect 'Slumber'.
+- Code refactoring.
+- Small optimizations.
+- Fixed a bug in the brightness in 'Sutro' effect.
+- Documentation to PDF format.
+
+Vintage 1.7.1
+--------------------------
+- Fix an issue with the editor.
+
+Vintage 1.7
+--------------------------
+- Updated to Unity 5.
+- Offline documentation.
+- Small optimizations.
+
+Vintage 1.6
+--------------------------
+- New effect: Valencia.
+
+Vintage 1.5
+--------------------------
+- New effect: Sierra.
+- Fixed saturation slider values in demo script.
+
+Vintage 1.4
+--------------------------
+- New effect: Rise.
+- Added controls for film effect for all shaders.
+- Minor changes to the shader inspector.
+- Adjusted some textures and import settings.
+- Changes in the game demos GUIs.
+
+Vintage 1.3
+--------------------------
+- New effect: Lomofi.
+- Fixed some incorrect path textures.
+
+Vintage 1.2
+--------------------------
+- New effect: Hudson.
+- Added controls for hue and saturation for all shaders.
+
+Vintage 1.1
+--------------------------
+- New effect: Hefe.
+- Added controls for brightness, contrast and gamma for all shaders.
+- Added the namespace VintageImageEffects.
+- Added the namespace VintageImageEffects.Demo for Slideshow demo scene.
+
+Vintage 1.0
+--------------------------
+- Initial release.

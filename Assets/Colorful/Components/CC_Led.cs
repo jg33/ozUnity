@@ -22,7 +22,7 @@ public class CC_Led : CC_Base
 		m_Camera = GetComponent<Camera>();
 	}
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		switch (mode)
 		{

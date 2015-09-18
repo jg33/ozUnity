@@ -28,13 +28,13 @@ public class CC_AnalogTV : CC_Base
 	[Range(0.01f, 2f)]
 	public float scale = 0.8f;
 
-	void Update()
+	protected virtual void Update()
 	{
 		if (autoPhase)
 			phase += Time.deltaTime * 0.25f;
 	}
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		material.SetFloat("_Phase", phase);
 		material.SetFloat("_NoiseIntensity", noiseIntensity);

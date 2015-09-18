@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 8631f2de83ee58d47bb056892ede0114
+ShaderImporter:
+  defaultTextures:
+  - _MainTex: {instanceID: 0}
+  - _LevelsTex: {fileID: 2800000, guid: 27c008c4471dc3842bb1203aad59b55d, type: 3}
+  - _GradientLevelsTex: {fileID: 2800000, guid: df4f175784eb7b84187e42fa0a8e1fa4,
+      type: 3}
+  userData: 

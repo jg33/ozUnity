@@ -18,7 +18,7 @@ Shader "Hidden/CC_AnalogTV"
 	CGINCLUDE
 
 		#include "UnityCG.cginc"
-		#include "Colorful.cginc"
+		#include "./Colorful.cginc"
 
 		sampler2D _MainTex;
 

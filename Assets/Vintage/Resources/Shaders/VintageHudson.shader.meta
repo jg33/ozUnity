@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: ec606e59371d60d46ac7f185c401620e
+ShaderImporter:
+  defaultTextures:
+  - _MainTex: {instanceID: 0}
+  - _BlowoutTex: {fileID: 2800000, guid: d826b1c67632a73498efd9169de6b7ad, type: 3}
+  - _OverlayTex: {fileID: 2800000, guid: 46a8fad175e3a43468b09456c0c4c875, type: 3}
+  - _LevelsTex: {fileID: 2800000, guid: 1bbc0b737747b35428e339c201b1a065, type: 3}
+  userData: 

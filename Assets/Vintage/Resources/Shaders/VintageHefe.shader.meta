@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 2065c4a172cecad4181d8153bed80411
+ShaderImporter:
+  defaultTextures:
+  - _MainTex: {instanceID: 0}
+  - _EdgeBurnTex: {fileID: 2800000, guid: 0261783b21a6a504e977656980df243b, type: 3}
+  - _LevelsTex: {fileID: 2800000, guid: 433943b7c539206488aa13bddda48ad2, type: 3}
+  - _GradientTex: {fileID: 2800000, guid: c1e5b66afb8a92d42b7388c9404d1c81, type: 3}
+  - _SoftLightTex: {fileID: 2800000, guid: 05b177b48c58e724e837aa961632b685, type: 3}
+  userData: 

@@ -12,7 +12,7 @@ Shader "Hidden/CC_CrossStitch"
 	CGINCLUDE
 	
 		#include "UnityCG.cginc"
-		#include "Colorful.cginc"
+		#include "./Colorful.cginc"
 
 		sampler2D _MainTex;
 		half _StitchSize;

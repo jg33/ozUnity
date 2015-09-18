@@ -16,7 +16,7 @@ public class CC_Vibrance : CC_Base
 
 	public bool advanced = false;
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (amount == 0f)
 		{

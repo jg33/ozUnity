@@ -17,7 +17,7 @@ public class CC_HueFocus : CC_Base
 	public float amount = 1f;
 
 	[ImageEffectTransformsToLDR]
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		float h = hue / 360f;
 		float r = range / 180f;

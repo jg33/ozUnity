@@ -12,7 +12,7 @@ public class CC_Threshold : CC_Base
 
 	public bool useNoise = false;
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		material.SetFloat("_Threshold", threshold / 255f);
 		material.SetFloat("_Range", noiseRange / 255f);

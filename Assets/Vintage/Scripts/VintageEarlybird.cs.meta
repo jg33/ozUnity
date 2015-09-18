@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 63f95c34692a5d34e9f700e7403c3a17
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - curvesTex: {fileID: 2800000, guid: a7c932a88044ab8449afe2294a409da4, type: 3}
+  - overlayTex: {fileID: 2800000, guid: ddec35ce5542dcc40be09e704c77c89a, type: 3}
+  - vignetteTex: {fileID: 2800000, guid: 4107289c4c6739f45a247d00d4294246, type: 3}
+  - blowoutTex: {fileID: 2800000, guid: c13e1ee6f0bd1db44a31ce99326a8b79, type: 3}
+  - levelsTex: {fileID: 2800000, guid: e2b8832796fea61469e8fe90e9ae4465, type: 3}
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 04e2159542afb624cb5649bc9b04cd5e, type: 3}
+  userData: 

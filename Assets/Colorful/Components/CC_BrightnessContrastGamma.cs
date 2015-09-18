@@ -22,7 +22,7 @@ public class CC_BrightnessContrastGamma : CC_Base
 	[Range(0.1f, 9.9f)]
 	public float gamma = 1.0f;
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (brightness == 0f && contrast == 0f && gamma == 1f)
 		{

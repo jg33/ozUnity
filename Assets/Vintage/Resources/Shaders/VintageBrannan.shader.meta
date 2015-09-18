@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 5ddb05f0f8ed8ca458e4d33ddd0585a4
+ShaderImporter:
+  defaultTextures:
+  - _MainTex: {instanceID: 0}
+  - _ProcessTex: {fileID: 2800000, guid: 4febc29c940189a48a4119267a302c6f, type: 3}
+  - _BlowoutTex: {fileID: 2800000, guid: d471f601dc65d1741b817b27b744c39f, type: 3}
+  - _ContrastTex: {fileID: 2800000, guid: bace7c277a9e36a4a9c26453dfe8bb8a, type: 3}
+  - _LumaTex: {fileID: 2800000, guid: 9d06703fa1e781747b1f1dc8fd7bd77e, type: 3}
+  - _ScreenTex: {fileID: 2800000, guid: 71421b4d60489604cbe6d2e88f8c482d, type: 3}
+  userData: 

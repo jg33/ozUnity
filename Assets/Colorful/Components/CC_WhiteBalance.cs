@@ -7,7 +7,7 @@ public class CC_WhiteBalance : CC_Base
 	public Color white = new Color(0.5f, 0.5f, 0.5f);
 	public int mode = 1;
 
-	void Reset()
+	protected virtual void Reset()
 	{
 		white = IsLinear() ? new Color(0.72974005284f, 0.72974005284f, 0.72974005284f) : new Color(0.5f, 0.5f, 0.5f);
 	}

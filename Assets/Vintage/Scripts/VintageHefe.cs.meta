@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: ac15d810fffa5bf41a76d80f6cc76829
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - edgeBurnTex: {fileID: 2800000, guid: 0261783b21a6a504e977656980df243b, type: 3}
+  - levelsTex: {fileID: 2800000, guid: 433943b7c539206488aa13bddda48ad2, type: 3}
+  - gradientTex: {fileID: 2800000, guid: c1e5b66afb8a92d42b7388c9404d1c81, type: 3}
+  - softLightTex: {fileID: 2800000, guid: 05b177b48c58e724e837aa961632b685, type: 3}
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 04e2159542afb624cb5649bc9b04cd5e, type: 3}
+  userData: 

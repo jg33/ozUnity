@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 569c0767f6bd2f849a86170d3cc8a8c5
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - metalTex: {fileID: 2800000, guid: f3de11d770089b5469f416340626a7b0, type: 3}
+  - softLightTex: {fileID: 2800000, guid: 6471baff86050e644ac7ca367330fc51, type: 3}
+  - curvesTex: {fileID: 2800000, guid: c1dc29c528477ee45a2cd945cd306711, type: 3}
+  - overlayWarmTex: {fileID: 2800000, guid: 16bcd00dd8173794290d875caaf4274d, type: 3}
+  - colorShiftTex: {fileID: 2800000, guid: 91c5e0d0ded2ab04ba7ff9f836d5b081, type: 3}
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 04e2159542afb624cb5649bc9b04cd5e, type: 3}
+  userData: 

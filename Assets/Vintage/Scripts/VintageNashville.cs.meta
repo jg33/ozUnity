@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: d86aa7cdcfe535e488d4d2726cb9143b
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - levelsTex: {fileID: 2800000, guid: d44dd39c8ec4fb24690cec7b179011c8, type: 3}
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 04e2159542afb624cb5649bc9b04cd5e, type: 3}
+  userData: 

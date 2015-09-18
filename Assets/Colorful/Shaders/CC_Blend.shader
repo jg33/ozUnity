@@ -10,7 +10,7 @@ Shader "Hidden/CC_Blend"
 	CGINCLUDE
 
 	#include "UnityCG.cginc"
-	#include "Colorful.cginc"
+	#include "./Colorful.cginc"
 
 	#define half4_one half4(1.0, 1.0, 1.0, 1.0)
 

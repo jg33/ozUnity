@@ -1,5 +1,5 @@
 #include "UnityCG.cginc"
-#include "Colorful.cginc"
+#include "./Colorful.cginc"
 
 sampler2D _MainTex;
 half4 _Params; // x: speed, y: intensity, z: maxDisplace, w: yuv offset

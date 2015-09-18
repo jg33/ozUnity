@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 9b1074c18e83e0e4bb9497ac219971b6
+timeCreated: 1435076882
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - lutTex: {fileID: 2800000, guid: 2200d1c1e9e26c64abd89c594278c5cf, type: 3}
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 04e2159542afb624cb5649bc9b04cd5e, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

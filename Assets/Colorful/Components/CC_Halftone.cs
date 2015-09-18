@@ -18,7 +18,7 @@ public class CC_Halftone : CC_Base
 		m_Camera = GetComponent<Camera>();
 	}
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		material.SetFloat("_Density", density);
 		material.SetFloat("_AspectRatio", m_Camera.aspect);

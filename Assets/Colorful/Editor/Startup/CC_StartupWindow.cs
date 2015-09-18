@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿#if !(UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2 || UNITY_4_3 || UNITY_4_5 || UNITY_4_6 || UNITY_5_0)
+#define UNITY_5_1_PLUS
+#endif
+
+using UnityEngine;
 using UnityEditor;
 using System;
 using System.Text.RegularExpressions;
@@ -58,12 +62,21 @@ public class CC_StartupWindow : EditorWindow
 		}
 	}
 
+	public static T LoadAssetAt<T>(string path) where T : UnityEngine.Object
+	{
+#if UNITY_5_1_PLUS
+		return AssetDatabase.LoadAssetAtPath<T>(path);
+#else
+		return Resources.LoadAssetAtPath<T>(path);
+#endif
+	}
+
 	public static bool Init(bool forceOpen)
 	{
 		FindAssets();
 
 		// First line in the changelog is the version string
-		string version = ((TextAsset)AssetDatabase.LoadAssetAtPath(pathChangelog, typeof(TextAsset))).text.Split('\n')[0];
+		string version = LoadAssetAt<TextAsset>(pathChangelog).text.Split('\n')[0];
 
 		if (forceOpen || EditorPrefs.GetString(identifier) != version)
 		{
@@ -83,17 +96,17 @@ public class CC_StartupWindow : EditorWindow
 	void OnEnable()
 	{
 		FindAssets();
-		
+
 		string versionColor = EditorGUIUtility.isProSkin ? "#ffffffee" : "#000000ee";
-		changelogText = ((TextAsset)AssetDatabase.LoadAssetAtPath(pathChangelog, typeof(TextAsset))).text;
+		changelogText = LoadAssetAt<TextAsset>(pathChangelog).text;
 		changelogText = Regex.Replace(changelogText, @"^[0-9].*", "<color=" + versionColor + "><size=13><b>Version $0</b></size></color>", RegexOptions.Multiline);
 		changelogText = Regex.Replace(changelogText, @"^-.*", "  $0", RegexOptions.Multiline);
 
-		headerPic = (Texture2D)AssetDatabase.LoadAssetAtPath(pathImages + "header.jpg", typeof(Texture2D));
-		iconTypogenic = (Texture2D)AssetDatabase.LoadAssetAtPath(pathImages + "icon-typogenic.png", typeof(Texture2D));
-		iconColorful = (Texture2D)AssetDatabase.LoadAssetAtPath(pathImages + "icon-colorful.png", typeof(Texture2D));
-		iconChromatica = (Texture2D)AssetDatabase.LoadAssetAtPath(pathImages + "icon-chromatica.png", typeof(Texture2D));
-		iconSSAOPro = (Texture2D)AssetDatabase.LoadAssetAtPath(pathImages + "icon-ssaopro.png", typeof(Texture2D));
+		headerPic = LoadAssetAt<Texture2D>(pathImages + "header.jpg");
+		iconTypogenic = LoadAssetAt<Texture2D>(pathImages + "icon-typogenic.png");
+		iconColorful = LoadAssetAt<Texture2D>(pathImages + "icon-colorful.png");
+		iconChromatica = LoadAssetAt<Texture2D>(pathImages + "icon-chromatica.png");
+		iconSSAOPro = LoadAssetAt<Texture2D>(pathImages + "icon-ssaopro.png");
 	}
 
 	void OnGUI()

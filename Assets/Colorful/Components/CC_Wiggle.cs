@@ -9,13 +9,13 @@ public class CC_Wiggle : CC_Base
 	public float scale = 12.0f;
 	public bool autoTimer = true;
 
-	void Update()
+	protected virtual void Update()
 	{
 		if (autoTimer)
 			timer += speed * Time.deltaTime;
 	}
 
-	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	protected virtual void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		material.SetFloat("_Timer", timer);
 		material.SetFloat("_Scale", scale);
