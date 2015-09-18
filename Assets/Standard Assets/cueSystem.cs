@@ -16,8 +16,10 @@ public class cueSystem : MonoBehaviour{
 
 	public bool forcePassive = false;
 
-	public float imageTargetX = -1;
-	public float imageTargetY = -1;
+	public float imageTargetX = 0;
+	public float imageTargetY = 0;
+	public float imageTargetZ = 0;
+
 
 	NetworkView nv;
 
@@ -174,7 +176,7 @@ public class cueSystem : MonoBehaviour{
 				cam.SendMessage("loadMovie", "NoPlaceLikeMoe", SendMessageOptions.DontRequireReceiver);
 				cam.SendMessage("setNumLoops", 5);
 				cam.SendMessage("setLooping", true);
-				cam.SendMessage("setLastFrame",149);
+				cam.SendMessage("setLastFrame", 100);
 				cam.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
 				cam.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
 				Debug.Log("NoPlaceLikeMoe");
@@ -183,14 +185,19 @@ public class cueSystem : MonoBehaviour{
 				seqPlayer.SendMessage("setFrames", 117);
 				seqPlayer.SendMessage("loadMovie","scratchSm" );
 				seqPlayer.SendMessage("play");
+				seqPlayer.GetComponent<Animator>().SetBool("textureIn", true);
 			} else if(clipName == "tvStatic"){
-				seqPlayer.SendMessage("setFrames", 70);
+				seqPlayer.SendMessage("setFrames", 94);
 				seqPlayer.SendMessage("loadMovie","tvStatic" );
 				seqPlayer.SendMessage("play");
+				seqPlayer.GetComponent<Animator>().SetBool("textureIn", true);
+
 			} else if(clipName == "judyInterview"){
 				seqPlayer.SendMessage("setFrames", 185);
 				seqPlayer.SendMessage("loadMovie","judyInterview" );
 				seqPlayer.SendMessage("play");
+				seqPlayer.GetComponent<Animator>().SetBool("textureIn", true);
+
 			}
 
 		
@@ -225,7 +232,7 @@ public class cueSystem : MonoBehaviour{
 				video.SendMessage("loadMovie", "NoPlaceLikeMoe", SendMessageOptions.DontRequireReceiver);
 				video.SendMessage("setNumLoops", 5);
 				video.SendMessage("setLooping", true);
-				video.SendMessage("setLastFrame",149);
+				video.SendMessage("setLastFrame",94);
 
 				video.SendMessage("gotoPosition", 0.01f, SendMessageOptions.DontRequireReceiver);
 				video.SendMessage("Play", SendMessageOptions.DontRequireReceiver);
@@ -240,6 +247,8 @@ public class cueSystem : MonoBehaviour{
 	[RPC] public void  stopMovie(){
 
 		if (Network.isClient){
+
+			seqPlayer.GetComponent<Animator>().SetBool("textureIn", false);
 			GameObject.Find ("Camera").SendMessage("Stop");
 			seqPlayer.SendMessage("stop");
 
@@ -266,38 +275,111 @@ public class cueSystem : MonoBehaviour{
 				clip = Resources.Load ("no_place_like_home2") as AudioClip;
 				break;
 			case "cicada":
-				clip = Resources.Load ("cicada") as AudioClip;
+				clip = Resources.Load ("Audio/ambiance/cicada") as AudioClip;
 				break;
 			case "cicada2":
-				clip = Resources.Load ("cicada2") as AudioClip;
+				clip = Resources.Load ("Audio/ambiance/cicada2") as AudioClip;
 				break;
 			case "frogs1":
-				clip = Resources.Load ("frogs1") as AudioClip;				
+				clip = Resources.Load ("Audio/ambiance/frogs1") as AudioClip;				
 				break;
 			case "frogs2":
-				clip = Resources.Load ("frogs2") as AudioClip;				
+				clip = Resources.Load ("Audio/ambiance/frogs2") as AudioClip;				
 				break;
 			case "drums1":
-				clip = Resources.Load ("DRUMS-76") as AudioClip;				
+				clip = Resources.Load ("Audio/drums/DRUMS-76") as AudioClip;				
 				break;
 			case "drums2":
-				clip = Resources.Load ("riser drum open") as AudioClip;				
+				clip = Resources.Load ("Audio/drums/riser drum open") as AudioClip;				
 				break;
 			case "wind":
-				clip = Resources.Load ("wind") as AudioClip;	
+				clip = Resources.Load ("Audio/wind/wind") as AudioClip;	
 				break;
 			case "wind2":
-				clip = Resources.Load ("wind2") as AudioClip;	
+				clip = Resources.Load ("Audio/wind/wind2") as AudioClip;	
 				break;
 			case "wind3":
-				clip = Resources.Load ("wind3") as AudioClip;	
+				clip = Resources.Load ("Audio/wind/wind3") as AudioClip;	
 				break;
 			case "wind4":
-				clip = Resources.Load ("wind4") as AudioClip;
+				clip = Resources.Load ("Audio/wind/wind4") as AudioClip;
+				break;
+			case "applause1":
+				clip = Resources.Load ("Audio/applause/applause1") as AudioClip;
+				break;
+			case "applauses":
+				clip = Resources.Load ("Audio/applause/applauses") as AudioClip;
+				break;
+			case "applauses2":
+				clip = Resources.Load ("Audio/applause/applauses2") as AudioClip;
+				break;
+			case "applauses9":
+				clip = Resources.Load ("Audio/applause/applauses9") as AudioClip;
+				break;
+			case "dudescheering":
+				clip = Resources.Load ("Audio/applause/dudescheering") as AudioClip;
+				break;
+			case "dudescheering2":
+				clip = Resources.Load ("Audio/applause/dudescheering2") as AudioClip;
+				break;
+			case "dudescheering3":
+				clip = Resources.Load ("Audio/applause/dudescheering3") as AudioClip;
+				break;
+			case "ladiescheering":
+				clip = Resources.Load ("Audio/applause/ladiescheering") as AudioClip;
+				break;
+			case "ladiescheering2":
+				clip = Resources.Load ("Audio/applause/ladiescheering2") as AudioClip;
+				break;
+			case "ladiescheering3":
+				clip = Resources.Load ("Audio/applause/ladiescheering3") as AudioClip;
+				break;
+
+			case "laughShort":
+				switch(Random.Range(0,3)){
+				case 0:
+					clip = Resources.Load ("Audio/laughter/Laugh Track 2-02") as AudioClip;
+					break;
+				case 1:
+					clip = Resources.Load ("Audio/laughter/Laugh Track 2-06") as AudioClip;
+					break;
+				case 2:
+					clip = Resources.Load ("Audio/laughter/Laugh Track 2-10") as AudioClip;
+					break;
+				case 3:
+					clip = Resources.Load ("Audio/laughter/Laugh Track 2-14") as AudioClip;
+					break;
+				default:
+					clip = Resources.Load ("Audio/laughter/Laugh Track 2-02") as AudioClip;
+					break;
+				}
+				break;
+			case "laughLong":
+					clip = Resources.Load ("Audio/laughter/Laugh Track") as AudioClip;
+				break;
+			case "munchkinLaugh":
+				switch(Random.Range(0,3)){
+				case 0:
+					clip = Resources.Load ("Audio/munchkins/munchkins1") as AudioClip;
+					break;
+				case 1:
+					clip = Resources.Load ("Audio/munchkins/munchkins2") as AudioClip;
+					break;
+				case 2:
+					clip = Resources.Load ("Audio/munchkins/munchkins3") as AudioClip;
+					break;
+				case 3:
+					clip = Resources.Load ("Audio/munchkins/munchkins4") as AudioClip;
+					break;
+				default:
+					clip = Resources.Load ("AuAudio/munchkins/munchkins1") as AudioClip;
+					break;
+				}
+				break;
 				break;
 
 			default:
-				clip = Resources.Load ("0") as AudioClip;
+				clip = Resources.Load ("Audio/etc/"+clipName) as AudioClip;			
 				break;
 			}
 			source.clip = clip;
@@ -308,10 +390,56 @@ public class cueSystem : MonoBehaviour{
 	}
 	
 	[RPC] public void stopAudio(){
-		AudioSource source = (AudioSource)GameObject.Find("Camera").GetComponent<AudioSource>();
-		source.Stop();
+		GameObject sourceObj = GameObject.Find("Camera");
+		if(sourceObj) {
+			AudioSource source = (AudioSource)sourceObj.GetComponent<AudioSource>();
+			source.Stop();
+		}
 		
 	}
+
+	[RPC] public void setAudioLoop(bool _looping){
+		AudioSource source = (AudioSource)GameObject.Find("Camera").GetComponent<AudioSource>();
+		source.loop = _looping;
+	}
+
+	[RPC] public void setTextRemote(string _text){
+		GameObject msg = GameObject.Find("Message");
+		if (msg) msg.SendMessage("changeText", _text);
+		Debug.Log ("Changed Text: "+ _text);
+	}
+
+	[RPC] public void setWiki(string _header, string _body){
+		GameObject headerObj = GameObject.Find("WikiHeader");
+		GameObject bodyObj = GameObject.Find("WikiBody");
+
+		if (headerObj) headerObj.SendMessage("changeText", _header);
+		if (bodyObj) bodyObj.SendMessage("changeText", _body);
+
+		Debug.Log ("Changed Wiki: "+ _header +" / "+ _body);
+	}
+
+
+	[RPC] public void setTextColor(float _r, float _g, float _b){
+		Color newColor = new Color(_r,_g,_b);
+		GameObject msg = GameObject.Find("Message");
+		if (msg) msg.SendMessage("setColor", newColor);
+	}
+
+	[RPC] public void sendRandomText(string _textBundle){
+		string selectedText;
+		string[] splitStrings = _textBundle.Split('|');
+
+		Random.seed = Time.frameCount;
+		selectedText = splitStrings[  (int)Random.Range(0, splitStrings.Length) ];
+
+		GameObject msg = GameObject.Find("Message");
+		if (msg) msg.SendMessage("changeText", selectedText);
+		Debug.Log ("Changed Text: "+ selectedText);
+		
+	}
+
+
 
 	public void setTransitionSpeed(float f){
 		transitionSpeed = f;
@@ -340,4 +468,20 @@ public class cueSystem : MonoBehaviour{
 	public void setFireState(float i){
 		fireState = (int) i;
 	}
+
+	public void setTargetXPos(float f){
+		imageTargetX = f;
+	}
+
+	public void setTargetYPos(float f){
+		imageTargetY = f;
+
+	}
+
+	public void setTargetZPos(float f){
+		imageTargetZ = f;
+		
+	}
+
+
 }

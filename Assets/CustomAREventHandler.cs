@@ -96,10 +96,27 @@ namespace Vuforia
 				component.enabled = true;
 			}
 
-			if (mTrackableBehaviour.TrackableName == "Oz_TopTarget_inverted"){
+			 if (mTrackableBehaviour.TrackableName == "Oz_TopTarget_inverted"){
+
 				camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("updateTarget");
 				camCtl.SendMessage("setFoundTarget",true);
+
+				if(!storm) storm = GameObject.Find("storm");
+				if (storm) storm.SetActive(false);
+
+				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name == mTrackableBehaviour.TrackableName){
+					if(gameObject.transform.childCount>0) gameObject.transform.GetChild(0).gameObject.SetActive(true);
+				}
+
+				if(Application.loadedLevel ==1){
+					camCtl.SendMessage("setTightTracking", true);
+	
+				} else{
+					camCtl.SendMessage("setTightTracking", false);
+
+				}
+
 			} else if (mTrackableBehaviour.TrackableName.StartsWith("Passive") && PlayerPrefs.GetInt("CompletedShow",0) != 0){ //if the show's complete, display any passive target
 				camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("setTightTracking", true);
@@ -131,14 +148,23 @@ namespace Vuforia
 		
 		private void OnTrackingLost() {
 
-			if (mTrackableBehaviour.TrackableName == "Oz_TopTarget_inverted"){
+			 if (mTrackableBehaviour.TrackableName == "Oz_TopTarget_inverted"){
 				GameObject camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("lostTarget");
+
+				if(!storm) storm = GameObject.Find("storm");
+				if (storm) storm.SetActive(true);
+				
+				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name == mTrackableBehaviour.TrackableName){
+					if(gameObject.transform.childCount>0) gameObject.transform.GetChild(0).gameObject.SetActive(false);
+				}
+
 			} else if (mTrackableBehaviour.TrackableName.StartsWith( "Passive" ) ){
 				GameObject camCtl = GameObject.Find ("Camera Container");
 				camCtl.SendMessage("setTightTracking", false);
+				GameObject.Find("GyroResetter").SendMessage("setTightTracking", false);
 				if(!storm) storm = GameObject.Find("storm");
-				storm.SetActive(true);
+				if (storm) storm.SetActive(true);
 
 				if(gameObject.GetComponent<ImageTargetBehaviour>().ImageTarget.Name == mTrackableBehaviour.TrackableName){
 					gameObject.transform.GetChild(0).gameObject.SetActive(false);
@@ -147,7 +173,7 @@ namespace Vuforia
 
 				}
 
-				GameObject.Find("GyroResetter").SendMessage("resetResetter");
+				GameObject.Find("GyroResetter").SendMessage("resetResetter"); //zeros out gyro to keep storm
 
 			}
 

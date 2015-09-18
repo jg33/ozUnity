@@ -1,8 +1,6 @@
 ﻿#pragma strict
 
-
 var smoothing: float = 0.1;
-
 
 private var cameraCam: GameObject;
 private var targetPosition: Transform;
@@ -35,6 +33,12 @@ private var errorFrames:int = 0;
 private var backgroundPlane:GameObject;
 private var virtualBackgroundPlane:GameObject;
 
+private var calibrationTimeout:int = 1800;
+public var calibrationTimer:int = 0;
+private var calibrationMsg:GameObject;
+
+private var gotProjMatrix:boolean = false;
+
 function Start () {
 	ARCam = GameObject.Find("ARCamera");
 	
@@ -43,6 +47,7 @@ function Start () {
 	targetPositionArray = new Array();
 	targetRotationArray = new Array();
 	targetGyroCorrectionArray = new Array();
+	
 }
 
 function Update () {
@@ -55,14 +60,82 @@ function Update () {
 		virtualBackgroundPlane = GameObject.Find("Virtual BackgroundPlane");
 	
 	}
+
+	if(!gotProjMatrix){ //is camera on? grab projection matrix
+			Invoke ("setProjectionMatrix", 1);
+			
+	}
 	
 	if (GameObject.Find("TextureBufferCamera")){
 		cameraCam = GameObject.Find("TextureBufferCamera");
 		cameraCam.transform.localPosition.x = 1000; //hide camera mirroring cam
 	}
 	
+		//Calculate when to track
+	if(foundTarget){
+			if (targetPositionArray.length == 0 ){
+				updateTarget();
+				isTracking = true;
+				errorFrames = 0; //depreciated
+				calibrationTimer = 0; //reset calibration timer
+			} else if ( targetPositionArray.length > 0 && targetPositionArray.length < 20 ){ //initial calibration
+		    	updateTarget();
+		    	isTracking = true;
+		    	calibrationTimer = 0; //reset calibration timer
+
+		    	Debug.Log("intial tracking....");
+		    } else if ( Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= 0.01 && 
+		    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= maxDistanceTolerance &&
+		    	Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= maxAngleTolerance
+		    	){ 		//used to be 0.01, 1, 1.
+
+		    	updateTarget();
+		    	isTracking = true;
+		    	Debug.Log("tracking.... Dist: " + Vector3.Distance(targetPositionArray[targetPositionArray.length-1],ARCam.transform.localPosition) );
+				errorFrames=0;	   
+		     }else {
+		    	isTracking = false;
+		    }
+		    
+		    gyroResetter.SendMessage("setTightTracking",false);
+
+		    if(isTracking && Time.frameCount%1 == 0 ){
+		    	GameObject.Find("GyroResetter").SendMessage("resetGyro");
+		    	Debug.Log("Gyro Reset!");
+		    };
+		    
+		    // send a poke-to-calibrate message, only in active mode //
+		    if(calibrationTimer>calibrationTimeout && Application.loadedLevel == 2){
+		    	if(!calibrationMsg){
+		    		calibrationMsg = GameObject.Find("Tap Screen Msg");
+		    	} else{
+		    		calibrationMsg.GetComponent(Animator).SetBool("showRecalMsg", true);
+		    	}
+		    
+		    }
+	    
+	    } else { //if lost target, add time to uncalibrated timer, but don't show the message!
+			calibrationTimer++;
+			if(!calibrationMsg){
+			    		calibrationMsg = GameObject.Find("Tap Screen Msg");
+			    	} else{
+			    		calibrationMsg.GetComponent(Animator).SetBool("showRecalMsg", false);
+			    	}
 	
-	if(tightTracking){
+		}
+		
+		smoothToTarget(targetPosition, smoothing);
+		
+		if(Input.GetButton("Fire1") && foundTarget ){
+		
+				resetTracking();
+				updateTarget();
+				
+		}
+
+	
+	
+	if(tightTracking){ //Override cam position if tight tracking
 		this.gameObject.transform.localPosition = ARCam.transform.localPosition;
 		this.gameObject.transform.localRotation = ARCam.transform.localRotation;
 		
@@ -75,66 +148,10 @@ function Update () {
 		cam = this.GetComponentsInChildren(Camera)[0];
 		cam.set_projectionMatrix(projMatrix);
 		
-		
-		// motion blur toggle //
-//		var motionAmp:Behaviour = cam.gameObject.GetComponent("AmplifyMotionEffect");
-//		motionAmp.enabled = false;
-		
 		gyroResetter.SendMessage("setTightTracking",true);
 		gyroResetter.SendMessage("resetGyro");
 	
-	} else {
-	
-		//Calculate when to track
-		if(foundTarget){
-			if (targetPositionArray.length == 0 ){
-				updateTarget();
-				isTracking = true;
-				errorFrames = 0;
-			} else if ( targetPositionArray.length > 0 && targetPositionArray.length < 20 ){ //initial calibration
-		    	updateTarget();
-		    	isTracking = true;
-		    	Debug.Log("intial tracking....");
-		    } else if ( Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= 0.01 && 
-		    	Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) <= maxDistanceTolerance &&
-		    	Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= maxAngleTolerance
-		    	){ 		//used to be 0.01, 1, 1.
-
-		    	updateTarget();
-		    	isTracking = true;
-		    	Debug.Log("tracking.... Dist: " + Vector3.Distance(targetPositionArray[targetPositionArray.length-1],ARCam.transform.localPosition) );
-				errorFrames=0;
-		    } else if (errorFrames > timeout){
-		    	//updateTarget();
-		    	errorFrames=0;
-		    } else if(Vector3.Distance(targetPosition.localPosition,ARCam.transform.localPosition) >= minDistanceThreshold || 
-		    Quaternion.Angle(targetPosition.localRotation, ARCam.transform.localRotation) <= minAngleThreshold){
-		    	errorFrames++;
-		    }else {
-		    	isTracking = false;
-		    }
-		    
-		    if(isTracking && Time.frameCount%1 == 0 ){
-		    	gyroResetter.SendMessage("setTightTracking",false);
-		    	GameObject.Find("GyroResetter").SendMessage("resetGyro");
-		    	Debug.Log("Gyro Reset!");
-		    };
-	    
-	    }
-		
-		smoothToTarget(targetPosition, smoothing);
-		
-		if(Input.GetButton("Fire1") && foundTarget ){
-		
-				resetTracking();
-				updateTarget();
-				
-		}
-		
-//		motionAmp  = this.gameObject.GetComponentsInChildren(Camera)[0].gameObject.GetComponent("AmplifyMotionEffect");
-//		motionAmp.enabled = true;
-
-	}
+	} 
 	
 }
 
@@ -199,6 +216,23 @@ function updateTarget(){
 	
 }
 
+
+public function setProjectionMatrix(){
+		var cam:Camera = ARCam.GetComponentsInChildren(Camera)[0];
+		if(cam){
+			projMatrix = cam.get_projectionMatrix();
+	
+			backgroundPlane.transform.localScale = virtualBackgroundPlane.transform.localScale;
+			virtualBackgroundPlane.GetComponent.<Renderer>().enabled = false;
+	
+			cam = this.GetComponentsInChildren(Camera)[0];
+			cam.set_projectionMatrix(projMatrix);
+		
+		
+			gotProjMatrix = true;
+		}
+
+}
 
 public function getInvertedGyro(){
 	var  invertedOrientation:Quaternion;

@@ -17,6 +17,8 @@ function Update () {
 			GameObject.Find("Camera Container").SendMessage("resetTracking");
 
 	}
+	
+	
 
 }
 
@@ -31,6 +33,22 @@ function overrideTargetPos(x:float,y:float,z:float){
 	targetPos.transform.localPosition.x=x;
 	targetPos.transform.localPosition.y=y;
 	targetPos.transform.localPosition.z=z;
+}
 
+function overrideTargetXPos(x:float){
+	targetPos.transform.localPosition.x=x;
+	Debug.Log("overridePosition X: " + x);
+}
+
+function overrideTargetYPos(y:float){
+	targetPos.transform.localPosition.y=y;
+	Debug.Log("overridePosition Y: " + y);
 
 }
+
+function overrideTargetZPos(z:float){
+	targetPos.transform.localPosition.z=z;
+		Debug.Log("overridePosition Z: " + z);
+
+}
+

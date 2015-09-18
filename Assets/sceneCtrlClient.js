@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 public var connectionIP:String = "127.0.0.1";
 public var portNumber:int = 16261;
@@ -26,6 +26,15 @@ private var messageText:String[] = new String[10];
 private var currentTextSelection: int = 0;
 
 private var transitionSpeed : int =1;
+
+public var disconnectedTimeout: int = 100;
+private var disconnectedTimer: int = 0;
+
+private var imageTargetX: float = 0;
+private var imageTargetY: float = 0;
+private var imageTargetZ: float = 0;
+
+
 
 // one-shot events that fire on cue or never //
 enum TriggeredEvents{ MOE_VIDEO, RANDOM_RAINBOW, TORNADO_ALERT, APPLAUSE, AWW, NO_PLACE };
@@ -138,8 +147,8 @@ function Update () {
 						break;
 						
 						case 7:
-							cueComponent.playMovie("kazoo");
-							Debug.Log("no place!");
+							//Animate Sepia -> Color
+							GameObject.Find("Camera").GetComponent.<Animator>().SetBool("isSepia", false);
 
 						break;
 						
@@ -158,8 +167,8 @@ function Update () {
 						break;
 						
 						case 11:
-							cueComponent.playAudio("wind1");
-							Debug.Log("wind!");
+							cueComponent.playAudio("munchkinLaugh");
+							Debug.Log("munchkinLaugh!");
 						break;
 						
 						
@@ -200,11 +209,11 @@ function Update () {
 		/// Text Cueing ///
 		if (cueComponent.textSelection != currentTextSelection && Application.loadedLevel == 2 &&currentCue ==1){
 			var msg:GameObject = GameObject.Find("Message");
-			var msgTxt: UI.Text = msg.GetComponent(UI.Text);
+//			var msgTxt: UI.Text = msg.GetComponent(UI.Text);
 			currentTextSelection = cueComponent.textSelection;
 //			msgTxt.text = messageText[currentTextSelection];
 			
-			msg.SendMessage("changeText", messageText[currentTextSelection]);
+			if(msg) msg.SendMessage("changeText", messageText[currentTextSelection]);
 			Debug.Log("Text Changed!");
 
 //			if (messageText[currentTextSelection].Length>140){
@@ -226,24 +235,54 @@ function Update () {
 			camObj = GameObject.Find("Camera");
 
 		}
+		
+		
+		/// Image Target Sync ///
+		if(imageTargetX != cueComponent.imageTargetX){
+			imageTargetX = cueComponent.imageTargetX;
+			GameObject.Find("RealImageTarget").SendMessage("overrideTargetXPos",imageTargetX );
+		}
+		if(imageTargetY != cueComponent.imageTargetY){
+			imageTargetY = cueComponent.imageTargetY;
+			GameObject.Find("RealImageTarget").SendMessage("overrideTargetYPos",imageTargetY );
 
+		}
+		if(imageTargetZ != cueComponent.imageTargetZ){
+			imageTargetZ = cueComponent.imageTargetZ;
+			GameObject.Find("RealImageTarget").SendMessage("overrideTargetZPos",imageTargetZ );
+
+		}
+		
 		
 		
 	} else{ //not connected
 	
-		if (Application.loadedLevel != 1 ){
-			
-			//GameObject.Destroy(GameObject.Find("Camera Container"));
-			//yield WaitForSeconds(1);
-			Debug.Log("Disconnected! Loading Passive Mode! :'(");
-			GameObject.Find("Camera Container").SendMessage("setTightTracking", true);
-//			GameObject.Find("Look Up").GetComponent(Renderer).enabled = false;
+		if(Application.loadedLevel ==0){
 			Application.LoadLevel(1);
+		
+		} else if (Application.loadedLevel == 2 ){ //if in active mode and disconnected, try to connect!
 			
-			var alert2:GameObject = GameObject.Find("InstructionAlertText");
-			if (alert2) alert2.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
-			var alertPanel2:GameObject = GameObject.Find("InstructionAlertPanel");
-			if(alertPanel2) alertPanel2.GetComponent(UI.Image).color = Color(1,1,1);
+			if(disconnectedTimer > disconnectedTimeout){ //timeout connection, kick to passive
+				disconnectedTimer = 0;
+
+				Debug.Log("Disconnected! Loading Passive Mode! :'(");
+				GameObject.Find("Camera Container").SendMessage("setTightTracking", true);
+				Application.LoadLevel(1);
+				reset();
+				
+				var alert2:GameObject = GameObject.Find("InstructionAlertText");
+				if (alert2) alert2.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
+				var alertPanel2:GameObject = GameObject.Find("InstructionAlertPanel");
+				if(alertPanel2) alertPanel2.GetComponent(UI.Image).color = Color(1,1,1);
+			
+			} else {
+				Debug.Log("Disconnected for "+disconnectedTimer+"/"+disconnectedTimeout);
+				if(disconnectedTimer%30 == 0){ 
+					Network.Connect (connectionIP, portNumber); //try really hard to reconnect
+					Debug.Log("trying to connect");
+				}
+				disconnectedTimer++;
+			}
 
 		}
 	
@@ -265,8 +304,14 @@ function Update () {
 function OnConnectedToServer(){
 		Debug.Log ("Connected To Server");
 		connected = true;
-		var alert:GameObject = GameObject.Find("InstructionAlertText");
-		alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
+		disconnectedTimer = 0;
+
+		if(Application.loadedLevel ==1){
+			var alert:GameObject = GameObject.Find("InstructionAlertText");
+			if (alert) alert.GetComponent(UI.Text).text = "You are now connected. Enjoy the Show!";
+			var alertPanel:GameObject = GameObject.Find("InstructionAlertPanel");
+			if(alertPanel) alertPanel .GetComponent(UI.Image).color = Color(0.1,0.733,0.3);
+		}
 //		var indicatorAnimator: Animator = GameObject.Find("ConnectedLight").GetComponent(Animator);
 //		indicatorAnimator.SetBool("connected", true);
 //		GameObject.Find("ConnectedLight").SendMessage("setConnected", true);
@@ -280,10 +325,12 @@ function OnDisconnectedFromServer(){
 //		indicatorAnimator.SetBool("connected",false);
 
 //		GameObject.Find("ConnectedLight").SendMessage("setConnected", false);
-		var alert:GameObject = GameObject.Find("InstructionAlertText");
-		if(alert) alert.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
-		var alertPanel:GameObject = GameObject.Find("InstructionAlertPanel");
-		if(alertPanel) alertPanel .GetComponent(UI.Image).color = Color(1,1,1);
+		if(Application.loadedLevel ==1){
+			var alert:GameObject = GameObject.Find("InstructionAlertText");
+			if(alert) alert.GetComponent(UI.Text).text = "Are you at the theater? Tap here to set up your phone for the show.";
+			var alertPanel:GameObject = GameObject.Find("InstructionAlertPanel");
+			if(alertPanel) alertPanel .GetComponent(UI.Image).color = Color(1,1,1);
+		}
 	}
 
 function OnFailedToConnect(error: NetworkConnectionError){
@@ -324,7 +371,26 @@ function setActiveScene(newScene:String){
 			}
 		}
 		
-	} else if(i>1){
+	} else if (i==2 || i==7){
+		canvasObject = sceneArray[i];
+		Debug.Log(sceneArray[i]);
+		canvasObject.SetActive(true);
+		
+		canvasObject = sceneArray[prevCue];
+		canvasObject.GetComponent(Animation).Play("UIFadeOut");
+		GameObject.Find("Camera Container").SendMessage("resetTracking");
+
+		yield WaitForSeconds(canvasObject.GetComponent(Animation).clip.length+3);
+		for (j = 0; j< sceneArray.Count  ;j++){ //turn off the rest
+			if(j!=i){
+				canvasObject = sceneArray[j];
+				if(canvasObject) canvasObject.SetActive(false);
+			}
+		}
+		
+	
+	
+	}else if(i>2){
 		canvasObject = sceneArray[i];
 		Debug.Log(sceneArray[i]);
 		canvasObject.SetActive(true);
@@ -394,7 +460,10 @@ function setupText(){
 }
 
 
-
+function reset(){
+	currentCue = 0;
+	currentTextSelection = 0;
+}
 
 function setCompletedShow(){
 	

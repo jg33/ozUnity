@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
 var targetRotation: Quaternion;
-
+var tightRotation: Quaternion;
 var tightTracking: boolean;
 
 
@@ -19,7 +19,7 @@ function Update () {
 
 	//Debug.Log("grav: "+Input.gyro.gravity);
 	if(tightTracking){
-		transform.localRotation = targetRotation;
+		transform.localRotation = tightRotation;
 	} else{
 		transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation,0.04  );
 	}
@@ -31,7 +31,12 @@ public function resetGyro(){
     		invertedOrientation = Quaternion.Inverse(GameObject.Find("UPFTHeadTracker").transform.localRotation);
     		var invertedEulers = invertedOrientation.eulerAngles;
     		invertedOrientation = Quaternion.Euler(invertedEulers.x, invertedEulers.y, invertedEulers.z   );
+		
+		if(tightTracking){ //gotta keep 'em separated..
+    		tightRotation = invertedOrientation;
+    		} else{
     		targetRotation = invertedOrientation;
+    		}
 
    		 }
    		 
